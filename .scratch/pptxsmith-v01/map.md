@@ -18,6 +18,7 @@
 
 - [引擎基座复用盘点](issues/02-引擎基座复用盘点.md)：Open XML SDK 是保真基础候选；ShapeCrawler 可作为高层加速层但需回归夹具；PptxGenJS 仅保留为新稿生成候选；OfficeCLI/GenOffice 暂不作核心。
 - [中文字体与校准矩阵方案](issues/04-中文字体与校准矩阵方案.md)：固定静态 Source Han Sans/Noto CJK 基线，统一使用 HarfBuzz-backed shaping，按字体×目标软件二维校准；商用字体上传必须单独处理授权。
+- [校验与渲染 QA 工具盘点](issues/03-校验与渲染QA工具盘点.md)：交付闸门必须组合 OpenXmlValidator、关系/部件闭包、语义探针、HarfBuzz-backed 字体/几何检查、LibreOffice 独立渲染信号和 PowerPoint/WPS 目标软件抽检；任何单项都不能代表最终真相。
 
 ## Not yet specified
 
@@ -39,4 +40,4 @@
 
 ## Frontier
 
-当前事实研究票“[校验与渲染 QA 工具盘点](issues/03-校验与渲染QA工具盘点.md)”仍 open；完成后才能处理“终决文档引擎与总技术栈”。
+事实研究票已闭合，当前进入第一张需要所有者判断的模块票：**[终决文档引擎与总技术栈](issues/01-终决文档引擎与总技术栈.md)**。它依赖引擎复用、QA 和字体研究结果。
