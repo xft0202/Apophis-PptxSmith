@@ -16,7 +16,8 @@
 
 ## Decisions so far
 
-<!-- 本地图尚无已关闭票。既有 ADR 是地图输入，不冒充本地图已解决票；技术栈 ADR-0003 已被挑战，ADR-0009 待决。 -->
+- [引擎基座复用盘点](issues/02-引擎基座复用盘点.md)：Open XML SDK 是保真基础候选；ShapeCrawler 可作为高层加速层但需回归夹具；PptxGenJS 仅保留为新稿生成候选；OfficeCLI/GenOffice 暂不作核心。
+- [中文字体与校准矩阵方案](issues/04-中文字体与校准矩阵方案.md)：固定静态 Source Han Sans/Noto CJK 基线，统一使用 HarfBuzz-backed shaping，按字体×目标软件二维校准；商用字体上传必须单独处理授权。
 
 ## Not yet specified
 
@@ -38,8 +39,4 @@
 
 ## Frontier
 
-按编号处理。当前最前沿是 02、03、04 三张事实研究票；它们完成后才能处理 01 技术终决票。
-
-- [引擎基座复用盘点](issues/02-引擎基座复用盘点.md)
-- [校验与渲染 QA 工具盘点](issues/03-校验与渲染QA工具盘点.md)
-- [中文字体与校准矩阵方案](issues/04-中文字体与校准矩阵方案.md)
+当前事实研究票“[校验与渲染 QA 工具盘点](issues/03-校验与渲染QA工具盘点.md)”仍 open；完成后才能处理“终决文档引擎与总技术栈”。
