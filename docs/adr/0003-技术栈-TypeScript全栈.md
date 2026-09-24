@@ -1,6 +1,6 @@
 # 技术栈：TypeScript 全栈 + PptxGenJS + 自研 fontkit 量字
 
-Status: accepted (2026-09-24，所有者授权委托决策)
+Status: challenged (2026-09-24，所有者不满意，Spike C 同题实测后被 ADR-0009 提案挑战；若 ADR-0009 获确认则本 ADR 作废）
 
 产品形态对标 sandun.cc（对话式 agent Web 产品：需求调研→大纲策划→策划稿→设计稿的分阶段流水线），且长期开源。据此决定：**全栈 TypeScript 单语言**——Next.js Web 前端、Node agent 编排、PptxGenJS 编译原生 PPTX、基于 fontkit 自研中文量字引擎（方法与校准数据借鉴 MIT 的 cjk-pptx-engine）。**02/03 报告中的 Java 21 编排 + Apache POI 路线作废。**
 
