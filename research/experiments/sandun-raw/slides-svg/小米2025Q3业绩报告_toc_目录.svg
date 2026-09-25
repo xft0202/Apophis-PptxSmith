@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+    ]]></style>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#000000" flood-opacity="0.04"/>
+    </filter>
+    <pattern id='grid' width='40' height='40' patternUnits='userSpaceOnUse'>
+      <path d='M 40 0 L 0 0 0 40' fill='none' stroke='#E5E5E5' stroke-width='0.5'/>
+    </pattern>
+    <radialGradient id='glow' cx='90%' cy='90%' r='50%'>
+      <stop offset='0%' stop-color='#FF6700' stop-opacity='0.08'/>
+      <stop offset='100%' stop-color='#FF6700' stop-opacity='0'/>
+    </radialGradient>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id='bg'>
+    <rect width='100%' height='100%' fill='#F8F9FA'/>
+    <rect width='100%' height='100%' fill='url(#grid)'/>
+    <rect width='100%' height='100%' fill='url(#glow)'/>
+  </g>
+
+  <!-- LAYER 2: Content -->
+  <g id="content_layer" transform="translate(140, 140)">
+    <!-- Item 01 -->
+    <g transform="translate(0, 0)">
+      <rect width="1000" height="85" rx="12" fill="#FFFFFF" filter="url(#cardShadow)"/>
+      <rect x="0" y="25" width="4" height="35" rx="2" fill="#FF6700"/>
+      <text x="30" y="58" font-size="38" fill="#FF6700" class="ppt-font-cn-heading">01</text>
+      <text x="110" y="42" font-size="24" fill="#1A1A1A" class="ppt-font-cn-heading">整体财务表现回顾</text>
+      <text x="110" y="70" font-size="16" fill="#757575" class="ppt-font-cn-body">核心指标与利润结构优化</text>
+      <circle cx="950" cy="42.5" r="16" fill="#FFF4ED" />
+      <path d="M947 36.5 L953 42.5 L947 48.5" stroke="#FF6700" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Item 02 -->
+    <g transform="translate(0, 105)">
+      <rect width="1000" height="85" rx="12" fill="#FFFFFF" filter="url(#cardShadow)"/>
+      <rect x="0" y="25" width="4" height="35" rx="2" fill="#FF6700"/>
+      <text x="30" y="58" font-size="38" fill="#FF6700" class="ppt-font-cn-heading">02</text>
+      <text x="110" y="42" font-size="24" fill="#1A1A1A" class="ppt-font-cn-heading">“手机 × AIoT”核心业务分析</text>
+      <text x="110" y="70" font-size="16" fill="#757575" class="ppt-font-cn-body">全球竞争地位与生态连接</text>
+      <circle cx="950" cy="42.5" r="16" fill="#FFF4ED" />
+      <path d="M947 36.5 L953 42.5 L947 48.5" stroke="#FF6700" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Item 03 -->
+    <g transform="translate(0, 210)">
+      <rect width="1000" height="85" rx="12" fill="#FFFFFF" filter="url(#cardShadow)"/>
+      <rect x="0" y="25" width="4" height="35" rx="2" fill="#FF6700"/>
+      <text x="30" y="58" font-size="38" fill="#FF6700" class="ppt-font-cn-heading">03</text>
+      <text x="110" y="42" font-size="24" fill="#1A1A1A" class="ppt-font-cn-heading">智能电动汽车与创新业务突破</text>
+      <text x="110" y="70" font-size="16" fill="#757575" class="ppt-font-cn-body">盈利里程碑与市场领跑</text>
+      <circle cx="950" cy="42.5" r="16" fill="#FFF4ED" />
+      <path d="M947 36.5 L953 42.5 L947 48.5" stroke="#FF6700" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Item 04 -->
+    <g transform="translate(0, 315)">
+      <rect width="1000" height="85" rx="12" fill="#FFFFFF" filter="url(#cardShadow)"/>
+      <rect x="0" y="25" width="4" height="35" rx="2" fill="#FF6700"/>
+      <text x="30" y="58" font-size="38" fill="#FF6700" class="ppt-font-cn-heading">04</text>
+      <text x="110" y="42" font-size="24" fill="#1A1A1A" class="ppt-font-cn-heading">底层技术研发与 AI 战略布局</text>
+      <text x="110" y="70" font-size="16" fill="#757575" class="ppt-font-cn-body">研发投入与人车家全生态灵魂</text>
+      <circle cx="950" cy="42.5" r="16" fill="#FFF4ED" />
+      <path d="M947 36.5 L953 42.5 L947 48.5" stroke="#FF6700" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Item 05 -->
+    <g transform="translate(0, 420)">
+      <rect width="1000" height="85" rx="12" fill="#FFFFFF" filter="url(#cardShadow)"/>
+      <rect x="0" y="25" width="4" height="35" rx="2" fill="#FF6700"/>
+      <text x="30" y="58" font-size="38" fill="#FF6700" class="ppt-font-cn-heading">05</text>
+      <text x="110" y="42" font-size="24" fill="#1A1A1A" class="ppt-font-cn-heading">财务资源状况与社会责任</text>
+      <text x="110" y="70" font-size="16" fill="#757575" class="ppt-font-cn-body">资金储备与 ESG 评级上调</text>
+      <circle cx="950" cy="42.5" r="16" fill="#FFF4ED" />
+      <path d="M947 36.5 L953 42.5 L947 48.5" stroke="#FF6700" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id='header'>
+    <rect x='40' y='46' width='6' height='26' rx='3' fill='#FF6700'/>
+    <text x='58' y='66' font-size='26' fill='#1A1A1A' class='ppt-font-cn-heading'>目录 / CONTENTS</text>
+  </g>
+  
+  <!-- Footer Decor -->
+  <rect x="40" y="680" width="1200" height="1" fill="#E5E5E5"/>
+  <text x="40" y="700" font-size="12" fill="#A0A0A0" class="ppt-font-cn-body">XIAOMI CORPORATION ANNUAL REPORT</text>
+</svg>

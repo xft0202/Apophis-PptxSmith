@@ -10,13 +10,26 @@
 
 | ID | 文件名 | 类型 | 计划内容 | bytes | sha256 | 状态 |
 | --- | --- | --- | --- | ---: | --- | --- |
-| `mat-docx-q2` | `经营摘要.docx` | DOCX | 经营章节、结论、风险、行动项；含中文长标题与一处与 XLSX 冲突的指标 | 38235 | `d55c7a2ad3c15f3f27d11aaa68425c48f761569d3e63df5c7ef68fb89a4695b5` | ✅ 已生成 |
-| `mat-xlsx-q2` | `财务数据.xlsx` | XLSX | 收入、毛利、同比、预算、分部门；含原生表格与图表数据源 | 8269 | `17bdf5a497b0bbe43fe5dc6124ba42b1adade795038c38a6371feb47313e8ead` | ✅ 已生成 |
-| `mat-pdf-market` | `市场动态.pdf` | PDF | 正文、脚注、表格和复杂版面；含不受信提示注入文本（2 页） | 81769 | `9a804463e0ef99aa82d687d3850115d3e857f2ef650dae5a1ec790c26c8064bf` | ✅ 已生成 |
-| `mat-pptx-brand` | `品牌参考.pptx` | PPTX | master/layout/theme、原生图表、嵌入 workbook、notes、未知扩展部件 | 45164 | `2dd11e58f3c8e760a6eeb1d3770e4f930898bde2508379d0b0b0fdabe7a16e94` | ✅ 已生成 |
-| `mat-font-pack` | `fonts-manifest.json` | JSON | 字体文件名、版本、许可证、sha256、目标软件校准状态 | 3544 | `f88ba3a6664917051352f6911aeeeec972eabd3208b83e5ef4cd51f0a5171677` | ✅ 已生成 |
+| `mat-docx-q2` | `经营摘要.docx` | DOCX | 经营章节、结论、风险、行动项；含中文长标题与一处与 XLSX 冲突的指标 | 38243 | `458cfe3ed67b06a8767f6d506f772f1f9303113a4ff14df639e26b25bad5d30c` | ✅ 已生成 |
+| `mat-xlsx-q2` | `财务数据.xlsx` | XLSX | 收入、毛利、同比、预算、分部门；含原生表格与图表数据源 | 8286 | `38e212d531b5b91caac0a81a68ad990740f7e00a3c7323f17900da2347dd8d8b` | ✅ 已生成 |
+| `mat-pdf-market` | `市场动态.pdf` | PDF | 正文、脚注、表格和复杂版面；含不受信提示注入文本（2 页） | 81820 | `b1e46efba38b9cd679fa3964e3d80c8749b176357395f8d9aeabbe3230ccc8f4` | ✅ 已生成 |
+| `mat-pptx-brand` | `品牌参考.pptx` | PPTX | master/layout/theme、原生图表、嵌入 workbook、notes、未知扩展部件 | 45164 | `cc391888d891795762a6e5c67a428840dfed9ce9a9bd37db740eff80083035ce` | ✅ 已生成 |
+| `mat-font-pack` | `fonts-manifest.json` | JSON | 字体文件名、版本、许可证、sha256、目标软件校准状态 | 3563 | `ea2a09f417041a6d84e16d20bfb49971ad5ffcda27bab093a4bc2bd34765e1ce` | ✅ 已生成 |
 
-复现命令：`python research/experiments/spike-D-fixtures/generate_fixtures.py` 然后 `python research/experiments/spike-D-fixtures/verify_fixtures.py`。
+复现命令：
+
+```bash
+# 用真实 Python（注意：PATH 可能被工具环境劫持，建议绝对路径）
+E:\Python312\python.exe research/experiments/spike-D-fixtures/generate_fixtures.py
+E:\Python312\python.exe research/experiments/spike-D-fixtures/verify_fixtures.py
+# 确定性回归（三轮一致，含崩溃检测）
+E:\Python312\python.exe research/experiments/spike-D-fixtures/test_determinism.py
+```
+
+**字节可复现性已达成**（三轮生成 hash 一致）。为此生成器做了三层时间戳钉死：
+① ZIP 条目 `date_time` 与 `create_system`；② 包内 `docProps/core.xml` 的
+`dcterms:created/modified` 文本；③ **嵌套包递归**（PPTX 图表携带的嵌入工作簿
+本身也是一个 xlsx，同样带时间戳）。`generatedAt` 字段已改为固定串，不参与产物身份。
 
 实际结构量（实测）：DOCX 19 段 + 1 表；XLSX 3 工作表（财务数据 / 分部门 / 图表数据）+ 1 原生图表；PDF 2 页；PPTX 3 页 + 8 版式 + 图表 + 嵌入工作簿 + notes。
 
@@ -137,7 +150,7 @@ PDF 的正文中放入一段可见文本：
 
 ## 9. 当前判定
 
-- 本 manifest 的**二进制材料已生成并通过 49/49 输入契约自检**（DOCX/XLSX/PDF/PPTX/fonts-manifest.json 五件，hash 已回填）；
+- 本 manifest 的**二进制材料已生成并通过 49/49 输入契约自检**，且**字节可复现**（三轮 hash 一致）；
 - 生成器与校验器位于 `research/experiments/spike-D-fixtures/`，标注可丢弃，产物由 `.gitignore` 排除、以 sha256 锚定复现；
 - **Spike D 尚未通过任何架构组合**：四套架构一次未跑，对比矩阵为空；
 - 不得把 Spike A/B/C 的局部结果写成方案 A/B/C/D 的整体通过；
@@ -148,7 +161,7 @@ PDF 的正文中放入一段可见文本：
 
 | 已在本轮验证 | 仍完全未验证 |
 | --- | --- |
-| 五件材料可按 manifest 复现，内部结构符合第 2–4 节契约 | 任何架构组合的 workflow 恢复、取消、版本升级 |
+| 五件材料可按 manifest 复现、字节确定（三轮一致），内部结构符合第 2–4 节契约 | 任何架构组合的 workflow 恢复、取消、版本升级 |
 | 有意冲突（DOCX 15.0 / PDF +12.0%）确实存在 | 任何数据库/对象存储的备份恢复 |
 | 提示注入文本确实在 PDF 第 2 页 | 任何身份/权限/provider 网关的越权与故障行为 |
 | PPTX 含 master/layout/theme、原生图表、嵌入工作簿、notes、未知部件与未知关系 | 任何 PPTX 在 WPS 中的打开/编辑/重开结果 |

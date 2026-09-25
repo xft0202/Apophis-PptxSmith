@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+      .fill-heritage { fill: #B0352F; }
+      .fill-dark { fill: #1A1A1A; }
+      .fill-sub { fill: #666666; }
+      .stroke-heritage { stroke: #B0352F; }
+    ]]></style>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.05"/>
+      </pattern>
+      <filter id="noise">
+        <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" stitchTiles="stitch"/>
+        <feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.02 0"/>
+      </filter>
+    </defs>
+    <rect width="100%" height="100%" fill="#FDFCFB"/>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <rect width="100%" height="100%" filter="url(#noise)"/>
+    <circle cx="90%" cy="10%" r="300" fill="#B0352F" fill-opacity="0.03"/>
+  </g>
+
+  <!-- LAYER 2: Content Layer -->
+  <g id="content_layer">
+    <!-- Module 1: Day 1 Process -->
+    <g transform="translate(40, 100)">
+      <rect width="590" height="280" rx="4" fill="#FFFFFF" filter="url(#shadow)" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.2"/>
+      <path d="M 0 0 H 590 V 4 L 586 8 H 4 L 0 4 Z" fill="#B0352F" fill-opacity="0.8"/>
+      <text class="ppt-font-cn-theme-heritage fill-heritage" x="24" y="42" font-size="22">Day 1：皇权巅峰与中轴脊梁</text>
+      
+      <!-- Timeline Path -->
+      <path d="M 80 150 H 510" class="stroke-heritage" stroke-width="2" stroke-dasharray="4 4" stroke-opacity="0.3"/>
+      
+      <!-- Node 1 -->
+      <g transform="translate(80, 150)">
+        <circle r="6" class="fill-heritage"/>
+        <text class="ppt-font-cn-heading fill-sub" y="-45" text-anchor="middle" font-size="14">上午</text>
+        <text class="ppt-font-cn-heading fill-dark" y="30" text-anchor="middle" font-size="17">天安门广场</text>
+        <text class="ppt-font-cn-body fill-sub" y="55" text-anchor="middle" font-size="13">观升旗 / 纪念碑</text>
+      </g>
+      
+      <!-- Node 2 -->
+      <g transform="translate(295, 150)">
+        <circle r="10" class="fill-heritage"/>
+        <circle r="16" fill="none" class="stroke-heritage" stroke-width="1" stroke-opacity="0.2"/>
+        <text class="ppt-font-cn-heading fill-sub" y="-45" text-anchor="middle" font-size="14">正午</text>
+        <text class="ppt-font-cn-heading fill-dark" y="30" text-anchor="middle" font-size="17">故宫博物院</text>
+        <text class="ppt-font-cn-body fill-sub" y="55" text-anchor="middle" font-size="13">穿越午门 / 解析三大殿</text>
+      </g>
+      
+      <!-- Node 3 -->
+      <g transform="translate(510, 150)">
+        <circle r="6" class="fill-heritage"/>
+        <text class="ppt-font-cn-heading fill-sub" y="-45" text-anchor="middle" font-size="14">傍晚</text>
+        <text class="ppt-font-cn-heading fill-dark" y="30" text-anchor="middle" font-size="17">景山公园</text>
+        <text class="ppt-font-cn-body fill-sub" y="55" text-anchor="middle" font-size="13">万春亭俯瞰故宫</text>
+      </g>
+    </g>
+
+    <!-- Module 2: Day 2 Process -->
+    <g transform="translate(650, 100)">
+      <rect width="590" height="280" rx="4" fill="#FFFFFF" filter="url(#shadow)" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.2"/>
+      <path d="M 0 0 H 590 V 4 L 586 8 H 4 L 0 4 Z" fill="#B0352F" fill-opacity="0.8"/>
+      <text class="ppt-font-cn-theme-heritage fill-heritage" x="24" y="42" font-size="22">Day 2：王府遗韵与胡同烟火</text>
+      
+      <!-- Timeline Path -->
+      <path d="M 80 150 H 510" class="stroke-heritage" stroke-width="2" stroke-dasharray="4 4" stroke-opacity="0.3"/>
+      
+      <!-- Node 1 -->
+      <g transform="translate(80, 150)">
+        <circle r="6" class="fill-heritage"/>
+        <text class="ppt-font-cn-heading fill-sub" y="-45" text-anchor="middle" font-size="14">上午</text>
+        <text class="ppt-font-cn-heading fill-dark" y="30" text-anchor="middle" font-size="17">恭王府</text>
+        <text class="ppt-font-cn-body fill-sub" y="55" text-anchor="middle" font-size="13">和珅宅邸 / 园林艺术</text>
+      </g>
+      
+      <!-- Node 2 -->
+      <g transform="translate(295, 150)">
+        <circle r="10" class="fill-heritage"/>
+        <circle r="16" fill="none" class="stroke-heritage" stroke-width="1" stroke-opacity="0.2"/>
+        <text class="ppt-font-cn-heading fill-sub" y="-45" text-anchor="middle" font-size="14">下午</text>
+        <text class="ppt-font-cn-heading fill-dark" y="30" text-anchor="middle" font-size="17">什刹海</text>
+        <text class="ppt-font-cn-body fill-sub" y="55" text-anchor="middle" font-size="13">银锭桥头西山寻照</text>
+      </g>
+      
+      <!-- Node 3 -->
+      <g transform="translate(510, 150)">
+        <circle r="6" class="fill-heritage"/>
+        <text class="ppt-font-cn-heading fill-sub" y="-45" text-anchor="middle" font-size="14">晚上</text>
+        <text class="ppt-font-cn-heading fill-dark" y="30" text-anchor="middle" font-size="17">南锣鼓巷</text>
+        <text class="ppt-font-cn-body fill-sub" y="55" text-anchor="middle" font-size="13">青砖灰瓦 / 文艺小店</text>
+      </g>
+    </g>
+
+    <!-- Module 3: Expert Guide -->
+    <g transform="translate(40, 400)">
+      <rect width="386" height="280" rx="4" fill="#FFFFFF" filter="url(#shadow)" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.1"/>
+      <text class="ppt-font-cn-theme-heritage fill-heritage" x="24" y="42" font-size="20">专家级通行指南</text>
+      
+      <g transform="translate(24, 75)">
+        <rect width="80" height="24" rx="2" fill="#B0352F" fill-opacity="0.1"/>
+        <text class="ppt-font-cn-heading fill-heritage" x="40" y="17" text-anchor="middle" font-size="13">预约预警</text>
+        <text class="ppt-font-cn-body fill-dark" x="90" y="17" font-size="13">故宫提前7天，天安门提前1-7天</text>
+      </g>
+      
+      <g transform="translate(24, 125)">
+        <rect width="80" height="24" rx="2" fill="#666666" fill-opacity="0.1"/>
+        <text class="ppt-font-cn-heading fill-sub" x="40" y="17" text-anchor="middle" font-size="13">体力坐标</text>
+        <text class="ppt-font-cn-body fill-dark" x="90" y="17" font-size="13">2.5万步/日，地铁出行效率最高</text>
+      </g>
+      
+      <g transform="translate(24, 175)">
+        <rect width="80" height="24" rx="2" fill="#B0352F" fill-opacity="0.1"/>
+        <text class="ppt-font-cn-heading fill-heritage" x="40" y="17" text-anchor="middle" font-size="13">效率Tips</text>
+        <text class="ppt-font-cn-body fill-dark" x="90" y="17" font-size="13">避开周一闭馆，提前1小时安检</text>
+      </g>
+      
+      <rect x="24" y="225" width="338" height="36" rx="18" fill="#FDFCFB" stroke="#B0352F" stroke-width="1" stroke-opacity="0.1"/>
+      <text class="ppt-font-cn-body fill-sub" x="193" y="248" text-anchor="middle" font-size="13">建议住宿：前门或东四环周边，地铁沿线</text>
+    </g>
+
+    <!-- Module 4: Contrast -->
+    <g transform="translate(446, 400)">
+      <rect width="386" height="280" rx="4" fill="#FFFFFF" filter="url(#shadow)" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.1"/>
+      <text class="ppt-font-cn-theme-heritage fill-heritage" x="24" y="42" font-size="20">场景转换：从庄严到灵动</text>
+      
+      <line x1="193" y1="80" x2="193" y2="250" stroke="#B0352F" stroke-width="1" stroke-opacity="0.1" stroke-dasharray="2 2"/>
+      <circle cx="193" cy="165" r="20" fill="#FDFCFB" stroke="#B0352F" stroke-width="1" stroke-opacity="0.3"/>
+      <text class="ppt-font-cn-theme-heritage fill-heritage" x="193" y="172" text-anchor="middle" font-size="16">VS</text>
+      
+      <!-- Day 1 Experience -->
+      <g transform="translate(0, 80)">
+        <text class="ppt-font-cn-heading fill-heritage" x="96" y="30" text-anchor="middle" font-size="15">Day 1 体验</text>
+        <g class="ppt-font-cn-body fill-sub" font-size="13" text-anchor="middle">
+          <text x="96" y="65">红墙黄瓦</text>
+          <text x="96" y="90">对称美学</text>
+          <text x="96" y="115">宏大叙事</text>
+          <text x="96" y="140">历史厚度</text>
+        </g>
+      </g>
+      
+      <!-- Day 2 Experience -->
+      <g transform="translate(193, 80)">
+        <text class="ppt-font-cn-heading fill-heritage" x="96" y="30" text-anchor="middle" font-size="15">Day 2 体验</text>
+        <g class="ppt-font-cn-body fill-sub" font-size="13" text-anchor="middle">
+          <text x="96" y="65">绿柳绕堤</text>
+          <text x="96" y="90">胡同转角</text>
+          <text x="96" y="115">民俗风情</text>
+          <text x="96" y="140">生活温度</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Image Slot -->
+    <image id="ai-image-img-1" data-ai-slot-id="img-1" x="0" y="0" width="388" height="280" href="https://images.unsplash.com/photo-1740390364580-bfc152f2499d?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGFuY2llbnQlMjBhcmNoaXRlY3R1cmUlMjBhZXJpYWwlMjB2aWV3fGVufDB8fHx8MTc3MzE5OTQzOHww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" data-source-url="https://unsplash.com/photos/a-view-of-a-city-from-a-hill-top-Qc2QV9uCNqk?utm_medium=referral&amp;utm_source=superppt+agent" preserveAspectRatio="xMidYMid slice" transform="translate(852, 400)"><title>https://unsplash.com/photos/a-view-of-a-city-from-a-hill-top-Qc2QV9uCNqk?utm_medium=referral&amp;utm_source=superppt+agent</title></image>
+  </g>
+
+  <!-- LAYER 3: Header Layer -->
+  <g id="header">
+    <rect x="40" y="48" width="4" height="24" rx="2" fill="#B0352F"/>
+    <text class="ppt-font-cn-heading" x="58" y="66" font-size="26" fill="#1A1A1A">Day 1-2：从现代地标到皇城根下的历史回响</text>
+    <line x1="40" y1="85" x2="120" y2="85" stroke="#B0352F" stroke-width="1" stroke-opacity="0.3"/>
+  </g>
+
+  <g id="ai-image-layer">
+    <clipPath id="clip-ai-image-img-1">
+      <rect x="852.00" y="400.00" width="388.00" height="280.00" rx="12"/>
+    </clipPath>
+    
+  </g>
+</svg>

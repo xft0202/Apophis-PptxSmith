@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .card-shadow { filter: drop-shadow(0px 4px 12px rgba(0,0,0,0.05)); }
+    ]]></style>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="0.5"/>
+    </pattern>
+    <radialGradient id="glow" cx="90%" cy="90%" r="50%">
+      <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FF6700" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6700"/>
+      <stop offset="100%" stop-color="#FF8C00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Global Background -->
+  <g id="bg">
+    <rect width="100%" height="100%" fill="#F8F9FA"/>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <rect width="100%" height="100%" fill="url(#glow)"/>
+  </g>
+
+  <!-- LAYER 2: Content Layer -->
+  <g id="content_layer">
+    <!-- Module 1: Top Hero Card -->
+    <g transform="translate(40, 100)" class="card-shadow">
+      <rect width="1200" height="180" rx="16" fill="#FFFFFF"/>
+      <rect x="0" y="0" width="4" height="180" rx="2" fill="url(#orangeGrad)"/>
+      <text class="ppt-font-cn-heading" x="40" y="45" font-size="20" fill="#666666">业务总盘子：规模创历史新高</text>
+      
+      <text class="ppt-font-cn-heading" x="40" y="130" font-size="72" fill="#1A1A1A">94</text>
+      <text class="ppt-font-cn-heading" x="130" y="130" font-size="28" fill="#1A1A1A">亿元</text>
+      
+      <g transform="translate(320, 105)">
+        <path d="M 0 0 L 12 -16 L 24 0" fill="none" stroke="#10B981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <text class="ppt-font-cn-heading" x="35" y="0" font-size="36" fill="#10B981">+10.8%</text>
+        <text class="ppt-font-cn-body" x="175" y="0" font-size="18" fill="#999999">YoY</text>
+      </g>
+      
+      <text class="ppt-font-cn-body" x="40" y="160" font-size="16" fill="#94A3B8">2025年Q3互联网服务总收入刷新历史纪录，变现效率持续优化</text>
+    </g>
+
+    <!-- Module 2: Bottom Left Card -->
+    <g transform="translate(40, 300)" class="card-shadow">
+      <rect width="590" height="380" rx="16" fill="#FFFFFF"/>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="22" fill="#1A1A1A">增长新引擎：境外变现强劲</text>
+      <text class="ppt-font-cn-body" x="30" y="75" font-size="15" fill="#666666">境外收入达 33 亿元，同比激增 19.1%</text>
+      
+      <!-- Highlight Data -->
+      <g transform="translate(30, 100)">
+        <text class="ppt-font-cn-heading" x="0" y="35" font-size="48" fill="#FF6700">34.9%</text>
+        <text class="ppt-font-cn-body" x="160" y="15" font-size="14" fill="#999999">境外收入占比</text>
+        <text class="ppt-font-cn-heading" x="160" y="38" font-size="16" fill="#1A1A1A">创历史新高</text>
+      </g>
+
+      <!-- Chart Slot 1 -->
+      <g data-chart-slot-id="chart-1" data-chart-type="pie" transform="translate(40, 160)"><rect x="0" y="0" width="510" height="190" rx="8" fill="#F8F9FA"/><rect x="0.5" y="0.5" width="509" height="189" rx="7.5" fill="none" stroke="#E5E5E5" stroke-width="1"/><path d="M 204 95 L 265.3311066513704 138.1682216093995 A 75 75 0 0 0 204 20 Z" fill="#FF6700" stroke="#F8F9FA" stroke-width="2"/><text x="247.36682397344396" y="72.73161257620289" text-anchor="middle" dominant-baseline="central" font-size="14" fill="#FFFFFF" font-weight="bold">35%</text><path d="M 204 95 L 203.34550983762185 20.002855770187153 A 75 75 0 1 0 264.95206233248206 138.7017859751432 Z" fill="#333333" stroke="#F8F9FA" stroke-width="2"/><text x="160.63317602655604" y="117.26838742379714" text-anchor="middle" dominant-baseline="central" font-size="14" fill="#FFFFFF" font-weight="bold">65%</text><g transform="translate(397.8, 38)"><g transform="translate(0, 0)"><rect width="12" height="12" fill="#FF6700" rx="2"/><text x="18" y="10" font-size="12" fill="#444444">境外收入</text></g><g transform="translate(0, 22)"><rect width="12" height="12" fill="#333333" rx="2"/><text x="18" y="10" font-size="12" fill="#444444">境内收入</text></g></g></g>
+    </g>
+
+    <!-- Module 3: Bottom Right Card -->
+    <g transform="translate(650, 300)" class="card-shadow">
+      <rect width="590" height="380" rx="16" fill="#FFFFFF"/>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="22" fill="#1A1A1A">核心基本盘：广告业务高效增长</text>
+      <text class="ppt-font-cn-body" x="30" y="75" font-size="15" fill="#666666">收入占比达 76.6%，增速远超业务大盘</text>
+
+      <!-- Highlight Data -->
+      <g transform="translate(30, 100)">
+        <text class="ppt-font-cn-heading" x="0" y="35" font-size="48" fill="#1A1A1A">72</text>
+        <text class="ppt-font-cn-heading" x="60" y="35" font-size="20" fill="#1A1A1A">亿元</text>
+        <text class="ppt-font-cn-heading" x="160" y="35" font-size="28" fill="#10B981">+17.4%</text>
+        <text class="ppt-font-cn-body" x="275" y="35" font-size="16" fill="#999999">YoY</text>
+      </g>
+
+      <!-- Chart Slot 2 -->
+      <g data-chart-slot-id="chart-2" data-chart-type="bar" transform="translate(40, 160)"><rect x="0" y="0" width="510" height="190" rx="8" fill="#F8F9FA"/><rect x="0.5" y="0.5" width="509" height="189" rx="7.5" fill="none" stroke="#E5E5E5" stroke-width="1"/><line x1="50" y1="150" x2="490" y2="150" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="154" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">0</text><line x1="50" y1="126" x2="490" y2="126" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="130" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">5</text><line x1="50" y1="102" x2="490" y2="102" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="106" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">10</text><line x1="50" y1="78" x2="490" y2="78" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="82" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">15</text><line x1="50" y1="54" x2="490" y2="54" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="58" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">20</text><line x1="50" y1="30" x2="490" y2="30" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="34" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">25</text><path d="M 56 150 L 56 70.48 A 4 4 0 0 1 60 66.48 L 260 66.48 A 4 4 0 0 1 264 70.48 L 264 150 Z" fill="#FF6700"/><text x="160" y="58.480000000000004" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">17.4%</text><text x="160" y="174" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">广告业务增速</text><path d="M 276 150 L 276 102.16 A 4 4 0 0 1 280 98.16 L 480 98.16 A 4 4 0 0 1 484 102.16 L 484 150 Z" fill="#333333"/><text x="380" y="90.16" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">10.8%</text><text x="380" y="174" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">整体业务增速</text><line x1="42" y1="150" x2="490" y2="150" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/><line x1="50" y1="30" x2="50" y2="158" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/></g>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Global Header -->
+  <g id="header">
+    <rect x="40" y="46" width="6" height="26" rx="3" fill="#FF6700"/>
+    <text x="58" y="66" class="ppt-font-cn-heading" font-size="26" fill="#1A1A1A">互联网服务：营收创纪录，境外贡献度提升</text>
+  </g>
+</svg>

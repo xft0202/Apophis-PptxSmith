@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-09-25T15:48:35.970597+00:00",
+  "generatedAt": "FROZEN (determinism: not part of artifact identity)",
   "artifacts": [
     {
       "file": "经营摘要.docx",
-      "bytes": 38235,
-      "sha256": "d55c7a2ad3c15f3f27d11aaa68425c48f761569d3e63df5c7ef68fb89a4695b5"
+      "bytes": 38243,
+      "sha256": "458cfe3ed67b06a8767f6d506f772f1f9303113a4ff14df639e26b25bad5d30c"
     },
     {
       "file": "财务数据.xlsx",
-      "bytes": 8269,
-      "sha256": "17bdf5a497b0bbe43fe5dc6124ba42b1adade795038c38a6371feb47313e8ead"
+      "bytes": 8286,
+      "sha256": "38e212d531b5b91caac0a81a68ad990740f7e00a3c7323f17900da2347dd8d8b"
     },
     {
       "file": "市场动态.pdf",
-      "bytes": 81769,
-      "sha256": "9a804463e0ef99aa82d687d3850115d3e857f2ef650dae5a1ec790c26c8064bf"
+      "bytes": 81820,
+      "sha256": "b1e46efba38b9cd679fa3964e3d80c8749b176357395f8d9aeabbe3230ccc8f4"
     },
     {
       "file": "品牌参考.pptx",
       "bytes": 45164,
-      "sha256": "2dd11e58f3c8e760a6eeb1d3770e4f930898bde2508379d0b0b0fdabe7a16e94"
+      "sha256": "cc391888d891795762a6e5c67a428840dfed9ce9a9bd37db740eff80083035ce"
     },
     {
       "file": "fonts-manifest.json",
-      "bytes": 3544,
-      "sha256": "f88ba3a6664917051352f6911aeeeec972eabd3208b83e5ef4cd51f0a5171677"
+      "bytes": 3563,
+      "sha256": "ea2a09f417041a6d84e16d20bfb49971ad5ffcda27bab093a4bc2bd34765e1ce"
     }
   ],
   "pptxUnknownPart": {

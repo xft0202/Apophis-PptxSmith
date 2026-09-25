@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+      .en-num { font-family: 'Arial', sans-serif; font-weight: 700; }
+      .card-shadow { filter: drop-shadow(0 4px 12px rgba(176, 53, 47, 0.08)); }
+    ]]></style>
+    <g id="bg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.05"/></pattern><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.02 0"/></filter></defs><rect width="100%" height="100%" fill="#FDFCFB"/><rect width="100%" height="100%" fill="url(#grid)"/><rect width="100%" height="100%" filter="url(#noise)"/><circle cx="90%" cy="10%" r="300" fill="#B0352F" fill-opacity="0.03"/></g>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <use href="#bg"/>
+
+  <!-- LAYER 2: Content -->
+  <g id="content_layer">
+    <!-- Module 1: Day 3 -->
+    <g transform="translate(40, 100)" class="card-shadow">
+      <rect width="386" height="410" rx="12" fill="#FFFFFF" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.2"/>
+      <!-- Image Slot 1 -->
+      <image id="ai-image-img-1" data-ai-slot-id="img-1" x="0" y="0" width="346" height="180" href="https://images.unsplash.com/photo-1623836506940-1db1f8fbcbcd?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHxzdW1tZXIlMjBwYWxhY2UlMjBiZWlqaW5nJTIwa3VubWluZyUyMGxha2UlMjBib2F0fGVufDB8fHx8MTc3MzE5OTQzOHww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" data-source-url="https://unsplash.com/photos/brown-wooden-boat-on-dock-during-daytime-tweUaVcgfQ4?utm_medium=referral&amp;utm_source=superppt+agent" preserveAspectRatio="xMidYMid slice" transform="translate(20, 20)"><title>https://unsplash.com/photos/brown-wooden-boat-on-dock-during-daytime-tweUaVcgfQ4?utm_medium=referral&amp;utm_source=superppt+agent</title></image>
+      <text class="en-num" x="24" y="235" font-size="14" fill="#B0352F" opacity="0.6">DAY 03</text>
+      <text class="ppt-font-cn-theme-heritage" x="24" y="268" font-size="24" fill="#1A1A1A">皇家美学与学术之光</text>
+      <g transform="translate(24, 305)">
+        <rect x="0" y="0" width="4" height="4" transform="rotate(45 2 2)" fill="#B0352F"/>
+        <text class="ppt-font-cn-body" x="18" y="8" font-size="16" fill="#4A4A4A">上午：颐和园（避暑动线泛舟）</text>
+        <rect x="0" y="30" width="4" height="4" transform="rotate(45 2 32)" fill="#B0352F"/>
+        <text class="ppt-font-cn-body" x="18" y="38" font-size="16" fill="#4A4A4A">下午：圆明园遗址/清北打卡</text>
+        <line x1="0" y1="65" x2="338" y2="65" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.1"/>
+        <text class="ppt-font-cn-body" x="0" y="88" font-size="14" fill="#8C8C8C">核心亮点：水系路线串联皇家避暑史</text>
+      </g>
+    </g>
+
+    <!-- Module 2: Day 4 -->
+    <g transform="translate(446, 100)" class="card-shadow">
+      <rect width="386" height="410" rx="12" fill="#FFFFFF" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.2"/>
+      <!-- Image Slot 2 -->
+      <image id="ai-image-img-2" data-ai-slot-id="img-2" x="0" y="0" width="346" height="180" href="https://images.unsplash.com/photo-1647550641123-c37cc8464592?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHxncmVhdCUyMHdhbGwlMjBvZiUyMGNoaW5hJTIwYmFkYWxpbmclMjBzY2VuZXJ5fGVufDB8fHx8MTc3MzE5OTQzOXww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" data-source-url="https://unsplash.com/photos/the-great-wall-of-china-on-a-sunny-day-q550i-IyLAQ?utm_medium=referral&amp;utm_source=superppt+agent" preserveAspectRatio="xMidYMid slice" transform="translate(20, 20)"><title>https://unsplash.com/photos/the-great-wall-of-china-on-a-sunny-day-q550i-IyLAQ?utm_medium=referral&amp;utm_source=superppt+agent</title></image>
+      <text class="en-num" x="24" y="235" font-size="14" fill="#B0352F" opacity="0.6">DAY 04</text>
+      <text class="ppt-font-cn-theme-heritage" x="24" y="268" font-size="24" fill="#1A1A1A">巨龙之脊与双奥印记</text>
+      <g transform="translate(24, 305)">
+        <rect x="0" y="0" width="4" height="4" transform="rotate(45 2 2)" fill="#B0352F"/>
+        <text class="ppt-font-cn-body" x="18" y="8" font-size="16" fill="#4A4A4A">上午：八达岭长城（高铁直达）</text>
+        <rect x="0" y="30" width="4" height="4" transform="rotate(45 2 32)" fill="#B0352F"/>
+        <text class="ppt-font-cn-body" x="18" y="38" font-size="16" fill="#4A4A4A">傍晚：奥园捕捉鸟巢/水立方夜景</text>
+        <line x1="0" y1="65" x2="338" y2="65" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.1"/>
+        <text class="ppt-font-cn-body" x="0" y="88" font-size="14" fill="#8C8C8C">核心亮点：跨越时空的古今奇迹对比</text>
+      </g>
+    </g>
+
+    <!-- Module 3: Day 5 -->
+    <g transform="translate(852, 100)" class="card-shadow">
+      <rect width="386" height="410" rx="12" fill="#FFFFFF" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.2"/>
+      <!-- Image Slot 3 -->
+      <image id="ai-image-img-3" data-ai-slot-id="img-3" x="0" y="0" width="346" height="180" href="https://images.unsplash.com/photo-1769950971259-d9dfb821c7b8?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHx0ZW1wbGUlMjBvZiUyMGhlYXZlbiUyMGJlaWppbmclMjBoYWxsJTIwb2YlMjBwcmF5ZXIlMjBmb3IlMjBnb29kJTIwaGFydmVzdHN8ZW58MHx8fHwxNzczMTk5NDQwfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" data-source-url="https://unsplash.com/photos/the-hall-of-prayer-for-good-harvests-in-beijing-rAFTHeom-dg?utm_medium=referral&amp;utm_source=superppt+agent" preserveAspectRatio="xMidYMid slice" transform="translate(20, 20)"><title>https://unsplash.com/photos/the-hall-of-prayer-for-good-harvests-in-beijing-rAFTHeom-dg?utm_medium=referral&amp;utm_source=superppt+agent</title></image>
+      <text class="en-num" x="24" y="235" font-size="14" fill="#B0352F" opacity="0.6">DAY 05</text>
+      <text class="ppt-font-cn-theme-heritage" x="24" y="268" font-size="24" fill="#1A1A1A">祭天祈福与京味收官</text>
+      <g transform="translate(24, 305)">
+        <rect x="0" y="0" width="4" height="4" transform="rotate(45 2 2)" fill="#B0352F"/>
+        <text class="ppt-font-cn-body" x="18" y="8" font-size="16" fill="#4A4A4A">上午：天坛公园（祈福仪式感）</text>
+        <rect x="0" y="30" width="4" height="4" transform="rotate(45 2 32)" fill="#B0352F"/>
+        <text class="ppt-font-cn-body" x="18" y="38" font-size="16" fill="#4A4A4A">下午：前门大街/大栅栏收官</text>
+        <line x1="0" y1="65" x2="338" y2="65" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.1"/>
+        <text class="ppt-font-cn-body" x="0" y="88" font-size="14" fill="#8C8C8C">核心亮点：圆形建筑隐喻旅程圆满</text>
+      </g>
+    </g>
+
+    <!-- Module 4: Tips -->
+    <g transform="translate(40, 535)">
+      <rect width="1200" height="145" rx="12" fill="#FDFCFB" stroke="#B0352F" stroke-width="1" stroke-dasharray="6 3" stroke-opacity="0.3"/>
+      <rect x="20" y="-12" width="220" height="24" rx="4" fill="#B0352F"/>
+      <text class="ppt-font-cn-heading" x="35" y="5" font-size="16" fill="#FFFFFF">避坑与提效指南 · 效率至上</text>
+      
+      <g transform="translate(40, 45)">
+        <!-- Tip 1 -->
+        <g transform="translate(0, 0)">
+          <path d="M0 0 L10 0 L10 60 L0 60 Z" fill="#B0352F" fill-opacity="0.05"/>
+          <text class="ppt-font-cn-heading" x="15" y="22" font-size="18" fill="#B0352F">交通：长城高铁</text>
+          <text class="ppt-font-cn-body" x="15" y="48" font-size="15" fill="#4A4A4A">提前订票，比大巴节省 2 小时</text>
+        </g>
+        <!-- Tip 2 -->
+        <g transform="translate(380, 0)">
+          <path d="M0 0 L10 0 L10 60 L0 60 Z" fill="#B0352F" fill-opacity="0.05"/>
+          <text class="ppt-font-cn-heading" x="15" y="22" font-size="18" fill="#B0352F">预约：天坛联票</text>
+          <text class="ppt-font-cn-body" x="15" y="48" font-size="15" fill="#4A4A4A">必买联票，否则无法进入祈年殿</text>
+        </g>
+        <!-- Tip 3 -->
+        <g transform="translate(760, 0)">
+          <path d="M0 0 L10 0 L10 60 L0 60 Z" fill="#B0352F" fill-opacity="0.05"/>
+          <text class="ppt-font-cn-heading" x="15" y="22" font-size="18" fill="#B0352F">时机：错峰出行</text>
+          <text class="ppt-font-cn-body" x="15" y="48" font-size="15" fill="#4A4A4A">周一故宫闭馆，此行程完美避开高峰</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <rect x="40" y="48" width="4" height="24" rx="2" fill="#B0352F"/>
+    <text x="58" y="66" class="ppt-font-cn-heading" font-size="26" fill="#1A1A1A">Day 3-5：长城壮歌与皇家园林的文化巡礼</text>
+    <line x1="40" y1="85" x2="120" y2="85" stroke="#B0352F" stroke-width="1" stroke-opacity="0.3"/>
+  </g>
+
+  <g id="ai-image-layer">
+    <clipPath id="clip-ai-image-img-1">
+      <rect x="20.00" y="20.00" width="346.00" height="180.00" rx="12"/>
+    </clipPath>
+    
+    <clipPath id="clip-ai-image-img-2">
+      <rect x="20.00" y="20.00" width="346.00" height="180.00" rx="12"/>
+    </clipPath>
+    
+    <clipPath id="clip-ai-image-img-3">
+      <rect x="20.00" y="20.00" width="346.00" height="180.00" rx="12"/>
+    </clipPath>
+    
+  </g>
+</svg>

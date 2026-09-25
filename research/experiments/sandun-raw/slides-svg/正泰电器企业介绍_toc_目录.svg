@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+    ]]></style>
+    <filter id="card_shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#064E3B" flood-opacity="0.06"/>
+    </filter>
+    <linearGradient id="card_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#F0FDF4" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background (Eco-Fluid Design System) -->
+  <g id="bg">
+    <defs>
+      <linearGradient id="eco_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F0FDF4"/>
+        <stop offset="100%" stop-color="#FFFFFF"/>
+      </linearGradient>
+      <filter id="blur_blob">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="60" result="blur"/>
+      </filter>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#eco_grad)"/>
+    <circle cx="10%" cy="20%" r="300" fill="#DCFCE7" filter="url(#blur_blob)" opacity="0.6"/>
+    <circle cx="90%" cy="80%" r="400" fill="#F0FDFA" filter="url(#blur_blob)" opacity="0.8"/>
+    <path d="M0 0 Q480 20 960 0 T1920 0" fill="none" stroke="#10B981" stroke-width="1" stroke-opacity="0.2"/>
+  </g>
+
+  <!-- LAYER 2: Content Layer -->
+  <g id="content_layer">
+    <!-- Module 01 -->
+    <g transform="translate(80, 160)">
+      <rect width="540" height="200" rx="16" fill="url(#card_grad)" filter="url(#card_shadow)"/>
+      <rect width="6" height="48" x="0" y="76" rx="3" fill="#10B981"/>
+      <text x="30" y="70" class="ppt-font-cn-heading" font-size="64" fill="#10B981" opacity="0.12">01</text>
+      <text x="30" y="105" class="ppt-font-cn-heading" font-size="28" fill="#064E3B">走进正泰——行业领航者</text>
+      <text x="30" y="148" class="ppt-font-cn-body" font-size="18" fill="#374151">企业概况、资本实力与行业地位</text>
+    </g>
+
+    <!-- Module 02 -->
+    <g transform="translate(660, 160)">
+      <rect width="540" height="200" rx="16" fill="url(#card_grad)" filter="url(#card_shadow)"/>
+      <rect width="6" height="48" x="0" y="76" rx="3" fill="#10B981"/>
+      <text x="30" y="70" class="ppt-font-cn-heading" font-size="64" fill="#10B981" opacity="0.12">02</text>
+      <text x="30" y="105" class="ppt-font-cn-heading" font-size="28" fill="#064E3B">核心业务——低压电器全产业链</text>
+      <text x="30" y="148" class="ppt-font-cn-body" font-size="18" fill="#374151">产品矩阵、技术优势与工业数智化赋能</text>
+    </g>
+
+    <!-- Module 03 -->
+    <g transform="translate(80, 400)">
+      <rect width="540" height="200" rx="16" fill="url(#card_grad)" filter="url(#card_shadow)"/>
+      <rect width="6" height="48" x="0" y="76" rx="3" fill="#10B981"/>
+      <text x="30" y="70" class="ppt-font-cn-heading" font-size="64" fill="#10B981" opacity="0.12">03</text>
+      <text x="30" y="105" class="ppt-font-cn-heading" font-size="28" fill="#064E3B">协同发展——光伏新能源板块</text>
+      <text x="30" y="148" class="ppt-font-cn-body" font-size="18" fill="#374151">光伏全生命周期管理与安能领军地位</text>
+    </g>
+
+    <!-- Module 04 -->
+    <g transform="translate(660, 400)">
+      <rect width="540" height="200" rx="16" fill="url(#card_grad)" filter="url(#card_shadow)"/>
+      <rect width="6" height="48" x="0" y="76" rx="3" fill="#10B981"/>
+      <text x="30" y="70" class="ppt-font-cn-heading" font-size="64" fill="#10B981" opacity="0.12">04</text>
+      <text x="30" y="105" class="ppt-font-cn-heading" font-size="28" fill="#064E3B">全球布局与经典案例实践</text>
+      <text x="30" y="148" class="ppt-font-cn-body" font-size="18" fill="#374151">全球化战略、本土化智造与行业标杆案例</text>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header (Eco-Fluid Header) -->
+  <g id="header">
+    <circle cx="44" cy="60" r="6" fill="#10B981"/>
+    <text x="58" y="66" class="ppt-font-cn-heading" font-size="26" fill="#064E3B">目录</text>
+    <rect x="40" y="90" width="1200" height="1" fill="#10B981" fill-opacity="0.15"/>
+  </g>
+</svg>

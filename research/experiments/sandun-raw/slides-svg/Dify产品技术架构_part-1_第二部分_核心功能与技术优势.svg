@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .en-heading { font-family: 'Arial', sans-serif; font-weight: 900; }
+      .en-sub { font-family: 'Arial', sans-serif; font-weight: 700; letter-spacing: 4px; }
+      
+      /* Theme Specific Colors */
+      .text-bright { fill: #FFFFFF; }
+      .text-accent { fill: #3B82F6; }
+      .text-description { fill: #94A3B8; }
+      .glass-card { fill: #FFFFFF; fill-opacity: 0.03; stroke: #3B82F6; stroke-opacity: 0.2; }
+    ]]></style>
+    
+    <!-- Design System: Aurora Logic Background Defs -->
+    <linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' style='stop-color:#05070A;stop-opacity:1' />
+      <stop offset='100%' style='stop-color:#0C121E;stop-opacity:1' />
+    </linearGradient>
+    <pattern id='microGrid' width='40' height='40' patternUnits='userSpaceOnUse'>
+      <path d='M 40 0 L 0 0 0 40' fill='none' stroke='#344256' stroke-width='0.5' stroke-opacity='0.3'/>
+    </pattern>
+    <filter id='glow'>
+      <feGaussianBlur stdDeviation='50' result='blur'/>
+      <feComposite in='SourceGraphic' in2='blur' operator='over'/>
+    </filter>
+    <filter id='softGlow'>
+      <feGaussianBlur stdDeviation='10' result='blur'/>
+      <feComposite in='SourceGraphic' in2='blur' operator='over'/>
+    </filter>
+  </defs>
+
+  <!-- LAYER 1: Global Background -->
+  <g id='bg'>
+    <rect width='100%' height='100%' fill='url(#grad1)'/>
+    <rect width='100%' height='100%' fill='url(#microGrid)'/>
+    <circle cx='90%' cy='10%' r='300' fill='#1E40AF' fill-opacity='0.15' filter='url(#glow)'/>
+    <circle cx='10%' cy='90%' r='250' fill='#4F46E5' fill-opacity='0.1' filter='url(#glow)'/>
+    <!-- Transition Overlay -->
+    <rect width='100%' height='100%' fill='black' fill-opacity='0.2'/>
+  </g>
+
+  <!-- LAYER 2: Content (Transition Page Layout) -->
+  <g id="content_layer">
+    <!-- Chapter Indicator -->
+    <g transform="translate(640, 200)">
+      <text class="en-heading" x="0" y="0" text-anchor="middle" font-size="120" fill="#3B82F6" opacity="0.15" filter="url(#softGlow)">02</text>
+      <text class="en-sub" x="0" y="30" text-anchor="middle" font-size="24" fill="#3B82F6">PART TWO</text>
+    </g>
+
+    <!-- Main Title -->
+    <text class="ppt-font-cn-heading text-bright" x="640" y="330" text-anchor="middle" font-size="56">第二部分：核心功能与技术优势</text>
+
+    <!-- Divider Decor -->
+    <g transform="translate(540, 370)">
+      <rect x="0" y="0" width="200" height="4" rx="2" fill="#3B82F6" fill-opacity="0.8"/>
+      <circle cx="100" cy="2" r="6" fill="#FFFFFF" filter="url(#softGlow)"/>
+    </g>
+
+    <!-- Slogan -->
+    <text class="ppt-font-cn-body text-description" x="640" y="430" text-anchor="middle" font-size="24">全栈 LLMOps 引擎，重塑 AI 应用从原型到生产的构建范式</text>
+
+    <!-- Content Preview Grid (Strictly following Layout Reference) -->
+    <g transform="translate(240, 520)">
+      <!-- Preview Box 1 -->
+      <g transform="translate(0, 0)">
+        <rect class="glass-card" x="0" y="0" width="380" height="120" rx="16"/>
+        <rect x="20" y="24" width="4" height="20" rx="2" fill="#3B82F6"/>
+        <text class="ppt-font-cn-heading text-bright" x="32" y="42" font-size="20">四大核心引擎</text>
+        <text class="ppt-font-cn-body text-description" x="32" y="78" font-size="16">工作流、智能体、RAG、多模型管理</text>
+      </g>
+
+      <!-- Preview Box 2 -->
+      <g transform="translate(420, 0)">
+        <rect class="glass-card" x="0" y="0" width="380" height="120" rx="16"/>
+        <rect x="20" y="24" width="4" height="20" rx="2" fill="#3B82F6"/>
+        <text class="ppt-font-cn-heading text-bright" x="32" y="42" font-size="20">架构技术优势</text>
+        <text class="ppt-font-cn-body text-description" x="32" y="78" font-size="16">高性能后端架构与灵活私有化部署</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Accent (Aurora Style) -->
+  <rect x="0" y="712" width="1280" height="8" fill="#3B82F6" fill-opacity="0.6"/>
+</svg>

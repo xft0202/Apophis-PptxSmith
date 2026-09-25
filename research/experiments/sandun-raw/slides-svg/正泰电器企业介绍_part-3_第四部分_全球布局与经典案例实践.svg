@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+    ]]></style>
+    <linearGradient id="text_grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#064E3B"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="soft_shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.1"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- LAYER 1: Global Background (Eco-Fluid) -->
+  <g id="bg">
+    <defs>
+      <linearGradient id="eco_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F0FDF4"/>
+        <stop offset="100%" stop-color="#FFFFFF"/>
+      </linearGradient>
+      <filter id="blur_blob">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="60" result="blur"/>
+      </filter>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#eco_grad)"/>
+    <circle cx="10%" cy="20%" r="300" fill="#DCFCE7" filter="url(#blur_blob)" opacity="0.6"/>
+    <circle cx="90%" cy="80%" r="400" fill="#F0FDFA" filter="url(#blur_blob)" opacity="0.8"/>
+    <path d="M0 0 Q480 20 960 0 T1920 0" fill="none" stroke="#10B981" stroke-width="1" stroke-opacity="0.2"/>
+  </g>
+
+  <!-- LAYER 2: Content Layer (Transition Page Specific) -->
+  <g id="content_layer">
+    <!-- Giant Stylized Background Number -->
+    <text x="1180" y="620" font-size="420" fill="#10B981" text-anchor="end" class="ppt-font-cn-heading" opacity="0.08">04</text>
+    
+    <!-- Decorative Fluid Element -->
+    <path d="M120 200 L160 200" stroke="#10B981" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Part Label -->
+    <text x="120" y="240" font-size="28" fill="#10B981" letter-spacing="4" class="ppt-font-cn-heading">PART 04</text>
+    
+    <!-- Main Title: Visual Enhancement -->
+    <text x="120" y="340" font-size="72" fill="#064E3B" class="ppt-font-cn-heading" filter="url(#soft_shadow)">全球布局与经典案例实践</text>
+    
+    <!-- Decorative Accent Line -->
+    <rect x="120" y="380" width="120" height="6" rx="3" fill="url(#text_grad)"/>
+    
+    <!-- Subtitle: Typographic Polish -->
+    <text x="120" y="440" font-size="30" fill="#374151" class="ppt-font-cn-body">跨越地理疆界连接绿色能源</text>
+    <text x="120" y="485" font-size="30" fill="#374151" class="ppt-font-cn-body">以全球化视野与本土化服务深耕标杆工程</text>
+    
+    <!-- Description: Secondary Information -->
+    <g opacity="0.8">
+      <text x="120" y="550" font-size="20" fill="#6B7280" class="ppt-font-cn-body">盘点正泰在全球范围内的营销网络布局</text>
+      <text x="120" y="585" font-size="20" fill="#6B7280" class="ppt-font-cn-body">分享在不同行业领域落地的经典成功案例</text>
+    </g>
+
+    <!-- Bottom Decorative Line -->
+    <rect x="120" y="660" width="1040" height="1" fill="#10B981" opacity="0.2"/>
+  </g>
+</svg>

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+    ]]></style>
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.05"/>
+    </filter>
+    <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6700" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#FF6700" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="0.5"/>
+      </pattern>
+      <radialGradient id="glow" cx="90%" cy="90%" r="50%">
+        <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"/>
+        <stop offset="100%" stop-color="#FF6700" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="#F8F9FA"/>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <rect width="100%" height="100%" fill="url(#glow)"/>
+  </g>
+
+  <!-- LAYER 2: Content -->
+  <g id="content_layer">
+    <!-- Card 1: Core Milestone (Left) -->
+    <g transform="translate(40, 110)">
+      <rect width="580" height="570" rx="16" fill="#FFFFFF" filter="url(#card-shadow)"/>
+      <rect width="580" height="80" rx="16" fill="url(#grad-orange)"/>
+      <text class="ppt-font-cn-heading" x="30" y="48" font-size="22" fill="#1A1A1A">规模里程碑：跨入“十亿时代”</text>
+      
+      <!-- Big Number Display -->
+      <text class="ppt-font-cn-heading" x="30" y="150" font-size="82" fill="#FF6700">1,035.5 <tspan font-size="28" fill="#666666" class="ppt-font-cn-body">百万</tspan></text>
+      <text class="ppt-font-cn-body" x="30" y="195" font-size="18" fill="#666666">连接设备数（不含手机、平板及电脑）</text>
+      
+      <!-- Growth Indicator -->
+      <rect x="30" y="225" width="150" height="40" rx="20" fill="#FFF2E8"/>
+      <path d="M45 250 L52 240 L59 250" stroke="#FF6700" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <text class="ppt-font-cn-heading" x="68" y="252" font-size="22" fill="#FF6700">+20.2% <tspan font-size="14" class="ppt-font-cn-body" fill="#666666">YoY</tspan></text>
+      
+      <!-- Chart Area for Device Growth -->
+      <text class="ppt-font-cn-body" x="30" y="305" font-size="14" fill="#999999">IoT 平台连接设备数增长趋势 (百万)</text>
+      <g data-chart-slot-id="chart-1" data-chart-type="bar" transform="translate(30, 320)"><rect x="0" y="0" width="520" height="210" rx="8" fill="#F8F9FA"/><rect x="0.5" y="0.5" width="519" height="209" rx="7.5" fill="none" stroke="#E5E5E5" stroke-width="1"/><line x1="50" y1="170" x2="500" y2="170" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="174" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">0</text><line x1="50" y1="142" x2="500" y2="142" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="146" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">500</text><line x1="50" y1="114" x2="500" y2="114" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="118" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">1000</text><line x1="50" y1="86" x2="500" y2="86" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="90" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">1500</text><line x1="50" y1="58" x2="500" y2="58" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="62" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">2000</text><line x1="50" y1="30" x2="500" y2="30" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="34" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">2500</text><path d="M 56 170 L 56 151.5776 A 4 4 0 0 1 60 147.5776 L 190 147.5776 A 4 4 0 0 1 194 151.5776 L 194 170 Z" fill="#FF6700"/><text x="125" y="139.5776" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">400.4百万</text><text x="125" y="194" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">2021 Q3</text><path d="M 206 170 L 206 142.7352 A 4 4 0 0 1 210 138.7352 L 340 138.7352 A 4 4 0 0 1 344 142.7352 L 344 170 Z" fill="#333333"/><text x="275" y="130.7352" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">558.3百万</text><text x="275" y="194" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">2022 Q3</text><path d="M 356 170 L 356 116.012 A 4 4 0 0 1 360 112.012 L 490 112.012 A 4 4 0 0 1 494 116.012 L 494 170 Z" fill="#808080"/><text x="425" y="104.012" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">1035.5百万</text><text x="425" y="194" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">2023 Q3</text><line x1="42" y1="170" x2="500" y2="170" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/><line x1="50" y1="30" x2="50" y2="178" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/></g>
+    </g>
+
+    <!-- Card 2: User Stickiness (Top Right) -->
+    <g transform="translate(640, 110)">
+      <rect width="600" height="170" rx="16" fill="#FFFFFF" filter="url(#card-shadow)"/>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="20" fill="#1A1A1A">生态护城河：高粘性用户激增</text>
+      
+      <text class="ppt-font-cn-heading" x="30" y="110" font-size="48" fill="#1A1A1A">21.6 <tspan font-size="20" fill="#666666" class="ppt-font-cn-body">百万</tspan></text>
+      <text class="ppt-font-cn-body" x="30" y="140" font-size="16" fill="#666666">拥有 5 件及以上连接至 IoT 平台设备的用户数</text>
+      
+      <g transform="translate(450, 45)">
+        <circle cx="50" cy="50" r="45" fill="#FFF2E8"/>
+        <text class="ppt-font-cn-heading" x="50" y="52" text-anchor="middle" font-size="20" fill="#FF6700">+26.1%</text>
+        <text class="ppt-font-cn-body" x="50" y="115" text-anchor="middle" font-size="12" fill="#999999">增速领先大盘</text>
+      </g>
+    </g>
+
+    <!-- Card 3: Business Quality (Middle Right) -->
+    <g transform="translate(640, 300)">
+      <rect width="600" height="170" rx="16" fill="#FFFFFF" filter="url(#card-shadow)"/>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="20" fill="#1A1A1A">盈利质变：收入与利润双增</text>
+      
+      <g transform="translate(30, 75)">
+        <text class="ppt-font-cn-body" x="0" y="15" font-size="16" fill="#666666">Q3 营业收入</text>
+        <text class="ppt-font-cn-heading" x="0" y="55" font-size="38" fill="#1A1A1A">276 <tspan font-size="18" fill="#666666" class="ppt-font-cn-body">亿元</tspan></text>
+        <text class="ppt-font-cn-body" x="0" y="82" font-size="14" fill="#22C55E">同比增长 +5.6%</text>
+      </g>
+      
+      <line x1="300" y1="75" x2="300" y2="145" stroke="#EEEEEE" stroke-width="1"/>
+      
+      <g transform="translate(330, 75)">
+        <text class="ppt-font-cn-body" x="0" y="15" font-size="16" fill="#666666">IoT 业务毛利率</text>
+        <text class="ppt-font-cn-heading" x="0" y="55" font-size="38" fill="#FF6700">23.9%</text>
+        <text class="ppt-font-cn-body" x="0" y="82" font-size="14" fill="#FF6700">提升 3.2 个百分点</text>
+      </g>
+    </g>
+
+    <!-- Card 4: Traffic Engines (Bottom Right) -->
+    <g transform="translate(640, 490)">
+      <rect width="600" height="190" rx="16" fill="#FFFFFF" filter="url(#card-shadow)"/>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="20" fill="#1A1A1A">交互引擎：活跃度持续攀升</text>
+      
+      <text class="ppt-font-cn-body" x="30" y="80" font-size="14" fill="#999999">AIoT 流量入口 MAU 对比 (单位：百万)</text>
+      <g data-chart-slot-id="chart-2" data-chart-type="bar" transform="translate(30, 100)"><rect x="0" y="0" width="540" height="80" rx="8" fill="#F8F9FA"/><rect x="0.5" y="0.5" width="539" height="79" rx="7.5" fill="none" stroke="#E5E5E5" stroke-width="1"/><line x1="50" y1="40" x2="520" y2="40" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="44" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">0</text><line x1="50" y1="38" x2="520" y2="38" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="42" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">50</text><line x1="50" y1="36" x2="520" y2="36" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="40" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">100</text><line x1="50" y1="34" x2="520" y2="34" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="38" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">150</text><line x1="50" y1="32" x2="520" y2="32" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="36" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">200</text><line x1="50" y1="30" x2="520" y2="30" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="34" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">250</text><path d="M 56 40 L 56 39.416 A 4 4 0 0 1 60 35.416 L 275 35.416 A 4 4 0 0 1 279 39.416 L 279 40 Z" fill="#FF6700"/><text x="167.5" y="27.415999999999997" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">114.6百万</text><text x="167.5" y="64" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">米家 APP</text><path d="M 291 40 L 291 37.864 A 4 4 0 0 1 295 33.864 L 510 33.864 A 4 4 0 0 1 514 37.864 L 514 40 Z" fill="#333333"/><text x="402.5" y="25.863999999999997" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">153.4百万</text><text x="402.5" y="64" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">小爱同学</text><line x1="42" y1="40" x2="520" y2="40" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/><line x1="50" y1="30" x2="50" y2="48" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/></g>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <rect x="40" y="46" width="6" height="26" rx="3" fill="#FF6700"/>
+    <text class="ppt-font-cn-heading" x="58" y="66" font-size="26" fill="#1A1A1A">IoT 平台：连接设备数首破 10 亿大关</text>
+  </g>
+</svg>

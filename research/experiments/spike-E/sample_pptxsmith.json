@@ -1,0 +1,99 @@
+{
+ "measure": {
+  "font": "NotoSansSC-Regular.ttf",
+  "sizePt": 12,
+  "boxWidthIn": 6.6,
+  "lines": 5,
+  "rawLineFactor": 1.2,
+  "predictedHeightIn": 1.0
+ },
+ "parts": {
+  "slides": 3,
+  "charts": [
+   "ppt/charts/chart1.xml"
+  ],
+  "embeddings": [
+   "ppt/embeddings/Microsoft_Excel_Sheet1.xlsx"
+  ],
+  "notesSlides": [
+   "ppt/notesSlides/notesSlide1.xml"
+  ],
+  "theme": [
+   "ppt/theme/theme1.xml",
+   "ppt/theme/theme2.xml"
+  ],
+  "media": [],
+  "svgParts": [],
+  "totalParts": 50,
+  "embeddedWorkbookCells": [
+   [
+    null,
+    "营业收入（亿元）",
+    "同比",
+    null,
+    null
+   ],
+   [
+    "Q1",
+    12.4,
+    0.086,
+    null,
+    null
+   ],
+   [
+    "Q2",
+    15.1,
+    0.124,
+    null,
+    null
+   ],
+   [
+    "Q3",
+    14.6,
+    -0.037,
+    null,
+    null
+   ],
+   [
+    "Q4",
+    18.6,
+    0.093,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  ],
+  "chartCachedValues": [
+   "营业收入（亿元）",
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "12.4",
+   "15.1",
+   "14.6",
+   "18.6",
+   "同比",
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "0.086",
+   "0.124",
+   "-0.037",
+   "0.093"
+  ],
+  "chartHasExternalData": true,
+  "chartSeriesNames": [
+   "营业收入（亿元）",
+   "同比"
+  ]
+ },
+ "sha256": "2f336cf85f54d76aadac8ddb3ed195ef5283eeb015044b5e904d740550b6862b"
+}

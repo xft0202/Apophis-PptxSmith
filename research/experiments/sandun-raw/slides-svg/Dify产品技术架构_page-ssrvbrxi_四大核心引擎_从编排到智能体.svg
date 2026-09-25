@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+      
+      .card-bg { fill: rgba(255, 255, 255, 0.03); stroke: rgba(59, 130, 246, 0.3); stroke-width: 1; }
+      .accent-glow { filter: url(#glow); }
+      .text-primary { fill: #FFFFFF; }
+      .text-secondary { fill: #94A3B8; }
+      .text-accent { fill: #3B82F6; }
+    ]]></style>
+    
+    <!-- Global Background Definitions -->
+    <linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' style='stop-color:#05070A;stop-opacity:1' />
+      <stop offset='100%' style='stop-color:#0C121E;stop-opacity:1' />
+    </linearGradient>
+    <pattern id='microGrid' width='40' height='40' patternUnits='userSpaceOnUse'>
+      <path d='M 40 0 L 0 0 0 40' fill='none' stroke='#344256' stroke-width='0.5' stroke-opacity='0.3'/>
+    </pattern>
+    <filter id='glow'>
+      <feGaussianBlur stdDeviation='5' result='blur'/>
+      <feComposite in='SourceGraphic' in2='blur' operator='over'/>
+    </filter>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:0.05" />
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background (Must Reuse) -->
+  <g id='bg'>
+    <rect width='100%' height='100%' fill='url(#grad1)'/>
+    <rect width='100%' height='100%' fill='url(#microGrid)'/>
+    <circle cx='90%' cy='10%' r='300' fill='#1E40AF' fill-opacity='0.15' filter='url(#glow)'/>
+    <circle cx='10%' cy='90%' r='250' fill='#4F46E5' fill-opacity='0.1' filter='url(#glow)'/>
+  </g>
+
+  <!-- LAYER 2: Content (Bento Grid Layout) -->
+  <g id="content_layer">
+    <!-- Module 1: Chatbot -->
+    <g transform="translate(40, 110)">
+      <rect width="590" height="220" rx="16" class="card-bg"/>
+      <rect width="4" height="40" x="0" y="30" fill="#3B82F6" rx="2"/>
+      <text class="ppt-font-cn-heading text-primary" x="24" y="55" font-size="22">聊天助手 (Chatbot)</text>
+      <text class="ppt-font-cn-heading text-accent" x="24" y="85" font-size="16">敏捷对话引擎 · 零门槛上手</text>
+      <text class="ppt-font-cn-body text-secondary" x="24" y="125" font-size="15">
+        <tspan x="24" dy="0">基于 LLM 的原生对话范式，支持多轮上下文记忆与开场白引导。</tspan>
+        <tspan x="24" dy="26">适用于标准客服、知识问答等高频交互场景。</tspan>
+      </text>
+      <!-- Abstract Icon -->
+      <circle cx="540" cy="50" r="20" fill="url(#cardGrad)" stroke="#3B82F6" stroke-width="1.5" class="accent-glow"/>
+      <path d="M532 50h16M540 42v16" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Module 2: Agent -->
+    <g transform="translate(650, 110)">
+      <rect width="590" height="220" rx="16" class="card-bg"/>
+      <rect width="4" height="40" x="0" y="30" fill="#3B82F6" rx="2"/>
+      <text class="ppt-font-cn-heading text-primary" x="24" y="55" font-size="22">智能体 (Agent)</text>
+      <text class="ppt-font-cn-heading text-accent" x="24" y="85" font-size="16">自主推理引擎 · 任务自动拆解</text>
+      <text class="ppt-font-cn-body text-secondary" x="24" y="125" font-size="15">
+        <tspan x="24" dy="0">采用 ReAct 推理框架，具备任务分解、自主规划与工具调用能力。</tspan>
+        <tspan x="24" dy="26">适用于股票分析、订餐等需外部 API 协作的复杂目标。</tspan>
+      </text>
+      <!-- Abstract Icon -->
+      <rect x="520" y="30" width="40" height="40" rx="8" fill="url(#cardGrad)" stroke="#3B82F6" stroke-width="1.5" class="accent-glow"/>
+      <circle cx="540" cy="50" r="6" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Module 3: Workflow -->
+    <g transform="translate(40, 350)">
+      <rect width="590" height="220" rx="16" class="card-bg"/>
+      <rect width="4" height="40" x="0" y="30" fill="#3B82F6" rx="2"/>
+      <text class="ppt-font-cn-heading text-primary" x="24" y="55" font-size="22">工作流 (Workflow)</text>
+      <text class="ppt-font-cn-heading text-accent" x="24" y="85" font-size="16">自动化批处理引擎 · 确定性逻辑</text>
+      <text class="ppt-font-cn-body text-secondary" x="24" y="125" font-size="15">
+        <tspan x="24" dy="0">通过可视化节点编排实现单向自动化。适用于批量内容生成、</tspan>
+        <tspan x="24" dy="26">数据清洗、邮件自动化等单轮生产任务。</tspan>
+      </text>
+      <!-- Abstract Icon -->
+      <path d="M520 40h15l10 10-10 10h-15z" fill="url(#cardGrad)" stroke="#3B82F6" stroke-width="1.5" transform="translate(0, 5)" class="accent-glow"/>
+      <path d="M545 50h15" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="3 2"/>
+    </g>
+
+    <!-- Module 4: Chatflow -->
+    <g transform="translate(650, 350)">
+      <rect width="590" height="220" rx="16" class="card-bg"/>
+      <rect width="4" height="40" x="0" y="30" fill="#3B82F6" rx="2"/>
+      <text class="ppt-font-cn-heading text-primary" x="24" y="55" font-size="22">对话流 (Chatflow)</text>
+      <text class="ppt-font-cn-heading text-accent" x="24" y="85" font-size="16">逻辑对话引擎 · 复杂路径控制</text>
+      <text class="ppt-font-cn-body text-secondary" x="24" y="125" font-size="15">
+        <tspan x="24" dy="0">融合工作流的严谨逻辑与对话交互。支持多分支判断、循环编排。</tspan>
+        <tspan x="24" dy="26">适用于医疗问诊、金融合规等强流程控制场景。</tspan>
+      </text>
+      <!-- Abstract Icon -->
+      <path d="M520 35l20 30 20-30z" fill="url(#cardGrad)" stroke="#3B82F6" stroke-width="1.5" stroke-linejoin="round" class="accent-glow"/>
+    </g>
+
+    <!-- Module 5: Infrastructure Support -->
+    <g transform="translate(40, 590)">
+      <rect width="1200" height="90" rx="12" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+      <text class="ppt-font-cn-heading text-primary" x="24" y="35" font-size="18">统一底座支撑 (Infrastructure)</text>
+      
+      <!-- Support Items -->
+      <g transform="translate(24, 50)">
+        <rect width="360" height="28" rx="6" fill="rgba(59, 130, 246, 0.1)"/>
+        <text class="ppt-font-cn-body text-secondary" x="12" y="20" font-size="14">
+          <tspan class="ppt-font-cn-heading text-accent">模型中心：</tspan>数百种 LLM 无缝切换
+        </text>
+      </g>
+      <g transform="translate(410, 50)">
+        <rect width="360" height="28" rx="6" fill="rgba(59, 130, 246, 0.1)"/>
+        <text class="ppt-font-cn-body text-secondary" x="12" y="20" font-size="14">
+          <tspan class="ppt-font-cn-heading text-accent">RAG 管道：</tspan>企业级知识库向量化检索
+        </text>
+      </g>
+      <g transform="translate(796, 50)">
+        <rect width="380" height="28" rx="6" fill="rgba(59, 130, 246, 0.1)"/>
+        <text class="ppt-font-cn-body text-secondary" x="12" y="20" font-size="14">
+          <tspan class="ppt-font-cn-heading text-accent">工具箱：</tspan>内置 50+ 联网/搜索/绘图工具
+        </text>
+      </g>
+    </g>
+
+    <!-- Decorative Axis Labels -->
+    <text class="ppt-font-cn-body" x="640" y="342" font-size="12" fill="#4B5563" text-anchor="middle">逻辑复杂度与交互深度 (低 → 高)</text>
+    <line x1="40" y1="340" x2="1240" y2="340" stroke="#344256" stroke-width="1" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- LAYER 3: Header (Must Reuse & Update) -->
+  <g id='header'>
+    <rect x='40' y='46' width='4' height='26' rx='2' fill='#3B82F6'/>
+    <text class="ppt-font-cn-heading" x='58' y='66' font-size='26' fill='#FFFFFF' style='letter-spacing:1px'>四大核心引擎：从编排到智能体</text>
+    <line x1='40' y1='80' x2='920' y2='80' stroke='#FFFFFF' stroke-opacity='0.05' stroke-width='1'/>
+  </g>
+</svg>

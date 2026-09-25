@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+    ]]></style>
+    <filter id="soft_shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.1"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- LAYER 1: Global Background (Eco-Fluid) -->
+  <g id="bg">
+    <defs>
+      <linearGradient id="eco_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F0FDF4"/>
+        <stop offset="100%" stop-color="#FFFFFF"/>
+      </linearGradient>
+      <filter id="blur_blob">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="60" result="blur"/>
+      </filter>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#eco_grad)"/>
+    <circle cx="10%" cy="20%" r="300" fill="#DCFCE7" filter="url(#blur_blob)" opacity="0.6"/>
+    <circle cx="90%" cy="80%" r="400" fill="#F0FDFA" filter="url(#blur_blob)" opacity="0.8"/>
+    <path d="M0 0 Q480 20 960 0 T1920 0" fill="none" stroke="#10B981" stroke-width="1" stroke-opacity="0.2"/>
+  </g>
+
+  <!-- LAYER 2: Content Layer -->
+  <g id="content_layer">
+    <!-- Giant Decorative Number -->
+    <text x="1160" y="600" font-size="320" fill="#10B981" text-anchor="end" class="ppt-font-cn-heading" opacity="0.08">01</text>
+    
+    <!-- Visual Divider / Fluid Accent -->
+    <rect x="100" y="0" width="4" height="720" fill="#10B981" opacity="0.1"/>
+    <circle cx="102" cy="320" r="8" fill="#10B981"/>
+    
+    <!-- Main Content Group -->
+    <g transform="translate(140, 240)">
+      <!-- Part Label -->
+      <rect width="120" height="32" rx="16" fill="#DCFCE7"/>
+      <text x="60" y="22" font-size="20" fill="#059669" text-anchor="middle" letter-spacing="2" class="ppt-font-cn-heading">PART 01</text>
+      
+      <!-- Main Title -->
+      <text x="0" y="100" font-size="72" fill="#064E3B" class="ppt-font-cn-heading" filter="url(#soft_shadow)">走进正泰——行业领航者</text>
+      
+      <!-- Decorative Line -->
+      <rect x="0" y="130" width="120" height="6" rx="3" fill="#10B981"/>
+      
+      <!-- Subtitle -->
+      <text x="0" y="185" font-size="30" fill="#065F46" class="ppt-font-cn-body">扎根实业三十余载，以智慧能源解决方案引领全球电力工业绿色变革</text>
+      
+      <!-- Description -->
+      <g transform="translate(0, 230)">
+        <rect width="680" height="60" rx="8" fill="#10B981" opacity="0.05"/>
+        <text x="20" y="38" font-size="22" fill="#4B5563" class="ppt-font-cn-body">
+          本章将概览正泰集团的发展历程、品牌实力以及在智慧能源领域的领军地位。
+        </text>
+      </g>
+    </g>
+
+    <!-- Bottom Decorative Path -->
+    <path d="M140 650 L1140 650" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="8 4"/>
+    <circle cx="1140" cy="650" r="3" fill="#10B981"/>
+  </g>
+
+  <!-- LAYER 3: Header (Transition Page usually uses custom layout, Global Header omitted as per Step 3) -->
+</svg>

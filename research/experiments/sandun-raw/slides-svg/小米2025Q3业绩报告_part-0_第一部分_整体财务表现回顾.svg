@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+    ]]></style>
+    <linearGradient id="line_grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6700" />
+      <stop offset="100%" stop-color="#FF6700" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background (Xiaomi Pure Momentum Design System) -->
+  <g id="bg">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="0.5"/>
+      </pattern>
+      <radialGradient id="glow" cx="90%" cy="90%" r="50%">
+        <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"/>
+        <stop offset="100%" stop-color="#FF6700" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="#F8F9FA"/>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <rect width="100%" height="100%" fill="url(#glow)"/>
+  </g>
+
+  <!-- LAYER 2: Content (Transition Page Layout) -->
+  <g id="content_layer">
+    <!-- Large Background Decorative Number -->
+    <text x="1240" y="650" font-size="420" text-anchor="end" fill="#FF6700" opacity="0.04" class="ppt-font-cn-heading">01</text>
+    
+    <!-- Vertical Accent Bar -->
+    <rect x="80" y="260" width="6" height="200" rx="3" fill="#FF6700"/>
+    
+    <!-- Part Label -->
+    <text x="120" y="275" font-size="28" fill="#FF6700" letter-spacing="4" class="ppt-font-cn-heading">PART 01</text>
+    
+    <!-- Main Title -->
+    <text x="120" y="375" font-size="84" fill="#1A1A1A" class="ppt-font-cn-heading">整体财务表现回顾</text>
+    
+    <!-- Subtitle -->
+    <text x="120" y="440" font-size="32" fill="#4A4A4A" class="ppt-font-cn-body">稳健增长筑牢发展基石，盈利能力持续优化提升</text>
+    
+    <!-- Decorative Line -->
+    <rect x="120" y="485" width="480" height="2" fill="url(#line_grad)"/>
+    
+    <!-- Description Text -->
+    <text x="120" y="535" font-size="22" fill="#808080" class="ppt-font-cn-body">
+      <tspan x="120" dy="0">深度剖析年度营收、利润及各项核心财务指标，展现集团稳健高效的经营态势。</tspan>
+    </text>
+
+    <!-- Visual Accents -->
+    <circle cx="1180" cy="100" r="60" fill="none" stroke="#FF6700" stroke-width="1.5" opacity="0.1"/>
+    <circle cx="1140" cy="140" r="30" fill="#FF6700" opacity="0.05"/>
+    <path d="M1100 80 L1120 100 M1120 80 L1100 100" stroke="#FF6700" stroke-width="2" opacity="0.2"/>
+  </g>
+
+  <!-- LAYER 3: Header (Discarded for Transition Page as per Contract 6 Special Page Rule) -->
+  <!-- Redesigned central/focal layout used above instead -->
+</svg>

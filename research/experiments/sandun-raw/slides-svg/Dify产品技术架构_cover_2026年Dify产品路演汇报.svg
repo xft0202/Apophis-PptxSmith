@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+      
+      /* 动画与渐变增强 */
+      .glow-text { filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.5)); }
+      .data-line { stroke-dasharray: 4 4; animation: flow 20s linear infinite; }
+      @keyframes flow { from { stroke-dashoffset: 100; } to { stroke-dashoffset: 0; } }
+    ]]></style>
+    
+    <!-- 复用背景定义的渐变与滤镜 -->
+    <linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' style='stop-color:#05070A;stop-opacity:1' />
+      <stop offset='100%' style='stop-color:#0C121E;stop-opacity:1' />
+    </linearGradient>
+    <pattern id='microGrid' width='40' height='40' patternUnits='userSpaceOnUse'>
+      <path d='M 40 0 L 0 0 0 40' fill='none' stroke='#344256' stroke-width='0.5' stroke-opacity='0.3'/>
+    </pattern>
+    <filter id='glow'>
+      <feGaussianBlur stdDeviation='50' result='blur'/>
+      <feComposite in='SourceGraphic' in2='blur' operator='over'/>
+    </filter>
+    
+    <!-- 品牌色渐变 -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#60A5FA" />
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Global Background (极光逻辑) -->
+  <g id='bg'>
+    <rect width='100%' height='100%' fill='url(#grad1)'/>
+    <rect width='100%' height='100%' fill='url(#microGrid)'/>
+    <circle cx='90%' cy='10%' r='300' fill='#1E40AF' fill-opacity='0.15' filter='url(#glow)'/>
+    <circle cx='10%' cy='90%' r='250' fill='#4F46E5' fill-opacity='0.1' filter='url(#glow)'/>
+  </g>
+
+  <!-- LAYER 2: Decorative Elements (Neural Network Nodes) -->
+  <g id="decorations" opacity="0.4">
+    <g transform="translate(850, 150)">
+      <!-- 节点连线 -->
+      <path d="M50,50 L200,20 M200,20 L320,150 M320,150 L180,280 M180,280 L50,50 M50,50 L180,280 M200,20 L180,280" 
+            fill="none" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.3" class="data-line"/>
+      <!-- 节点 -->
+      <circle cx="50" cy="50" r="4" fill="#60A5FA"/>
+      <circle cx="200" cy="20" r="6" fill="#3B82F6">
+        <animate attributeName="r" values="6;8;6" dur="3s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="320" cy="150" r="5" fill="#60A5FA"/>
+      <circle cx="180" cy="280" r="4" fill="#3B82F6"/>
+      <!-- 装饰圆环 -->
+      <circle cx="200" cy="150" r="180" fill="none" stroke="#3B82F6" stroke-width="0.5" stroke-dasharray="10 20" opacity="0.2"/>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Content (Body Layer) -->
+  <g id="content_layer">
+    <!-- 视觉装饰：左侧品牌色竖条 -->
+    <rect x="80" y="300" width="6" height="140" rx="3" fill="url(#brandGrad)"/>
+
+    <!-- 主标题区 -->
+    <g transform="translate(120, 355)">
+      <text class="ppt-font-cn-heading glow-text" font-size="76" fill="#FFFFFF">2026年Dify产品路演汇报</text>
+    </g>
+    
+    <!-- 副标题区 -->
+    <g transform="translate(120, 415)">
+      <text class="ppt-font-cn-body" font-size="28" fill="#60A5FA" style="letter-spacing: 1.5px;">
+        赋能企业AI应用开发，从原型到生产的一站式LLMOps平台
+      </text>
+    </g>
+
+    <!-- 分割线 -->
+    <line x1="120" y1="485" x2="450" y2="485" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1"/>
+
+    <!-- 汇报信息区 -->
+    <g transform="translate(120, 545)">
+      <!-- 汇报人 -->
+      <g transform="translate(0, 0)">
+        <text class="ppt-font-cn-body" font-size="22">
+          <tspan fill="#94A3B8">汇报人：</tspan>
+          <tspan fill="#FFFFFF">[姓名/职位占位]</tspan>
+        </text>
+      </g>
+      <!-- 汇报单位 -->
+      <g transform="translate(0, 45)">
+        <text class="ppt-font-cn-body" font-size="22">
+          <tspan fill="#94A3B8">汇报单位：</tspan>
+          <tspan fill="#FFFFFF">Dify.AI 产品战略部</tspan>
+        </text>
+      </g>
+      <!-- 日期 -->
+      <g transform="translate(0, 90)">
+        <text class="ppt-font-cn-body" font-size="22">
+          <tspan fill="#94A3B8">日期：</tspan>
+          <tspan fill="#FFFFFF">2026年 X 月 X 日</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 底部品牌修饰 -->
+  <rect x="0" y="712" width="1280" height="8" fill="url(#brandGrad)" fill-opacity="0.8"/>
+</svg>

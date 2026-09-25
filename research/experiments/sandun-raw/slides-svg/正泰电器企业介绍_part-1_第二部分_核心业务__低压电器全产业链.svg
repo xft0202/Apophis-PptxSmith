@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+    ]]></style>
+    <linearGradient id='eco_grad' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' stop-color='#F0FDF4'/>
+      <stop offset='100%' stop-color='#FFFFFF'/>
+    </linearGradient>
+    <filter id='blur_blob'>
+      <feGaussianBlur in='SourceGraphic' stdDeviation='60' result='blur'/>
+    </filter>
+    <linearGradient id="line_grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background (Strictly following Design System) -->
+  <g id='bg'>
+    <rect width='100%' height='100%' fill='url(#eco_grad)'/>
+    <circle cx='10%' cy='20%' r='300' fill='#DCFCE7' filter='url(#blur_blob)' opacity='0.6'/>
+    <circle cx='90%' cy='80%' r='400' fill='#F0FDFA' filter='url(#blur_blob)' opacity='0.8'/>
+    <path d='M0 0 Q480 20 960 0 T1920 0' fill='none' stroke='#10B981' stroke-width='1' stroke-opacity='0.2'/>
+  </g>
+
+  <!-- LAYER 2: Content (Transition Page Logic) -->
+  <g id="content_layer">
+    <!-- Giant Background Number (Stylized for Eco-Fluid) -->
+    <text x="1150" y="600" font-size="420" fill="#10B981" fill-opacity="0.05" text-anchor="end" class="ppt-font-cn-heading">02</text>
+    
+    <!-- Decorative Vertical Line -->
+    <rect x="80" y="210" width="4" height="320" rx="2" fill="#10B981" fill-opacity="0.3"/>
+    
+    <!-- Part Label -->
+    <text x="120" y="240" font-size="28" fill="#10B981" letter-spacing="4" class="ppt-font-cn-heading">PART 02</text>
+    
+    <!-- Main Title -->
+    <text x="120" y="340" font-size="72" fill="#064E3B" class="ppt-font-cn-heading">核心业务——低压电器全产业链</text>
+    
+    <!-- Decorative Accent Line -->
+    <rect x="120" y="380" width="600" height="4" rx="2" fill="url(#line_grad)"/>
+    
+    <!-- Subtitle -->
+    <text x="120" y="445" font-size="30" fill="#374151" class="ppt-font-cn-body">
+      构建从研发到智造的全价值链体系，为客户提供全场景的配电保护方案
+    </text>
+    
+    <!-- Description -->
+    <text x="120" y="500" font-size="22" fill="#6B7280" class="ppt-font-cn-body">
+      深入解析正泰低压电器的技术优势、智能化生产工艺及覆盖全行业的系统化产品矩阵。
+    </text>
+
+    <!-- Bottom Decorative Elements -->
+    <circle cx="120" cy="650" r="4" fill="#10B981"/>
+    <rect x="135" y="649" width="1025" height="1" fill="#E5E7EB"/>
+  </g>
+
+  <!-- LAYER 3: Header (Transition Page Discards Global Header per Step 3) -->
+</svg>

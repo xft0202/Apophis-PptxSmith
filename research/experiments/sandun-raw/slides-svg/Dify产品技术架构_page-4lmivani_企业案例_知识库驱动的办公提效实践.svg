@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .impact-number { font-family: 'Impact', sans-serif; }
+      .card-bg { fill: #111827; fill-opacity: 0.6; stroke: #3B82F6; stroke-opacity: 0.2; }
+      .sub-card-traditional { fill: #1F2937; fill-opacity: 0.8; }
+      .sub-card-dify { fill: #1E3A8A; fill-opacity: 0.4; stroke: #3B82F6; stroke-opacity: 0.4; }
+      .accent-blue { fill: #3B82F6; }
+      .text-dim { fill: #94A3B8; }
+      .text-bright { fill: #FFFFFF; }
+    ]]></style>
+    <filter id="glow-small">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#05070A;stop-opacity:1"/>
+        <stop offset="100%" style="stop-color:#0C121E;stop-opacity:1"/>
+      </linearGradient>
+      <pattern id="microGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#344256" stroke-width="0.5" stroke-opacity="0.3"/>
+      </pattern>
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="50" result="blur"/>
+        <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+      </filter>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grad1)"/>
+    <rect width="100%" height="100%" fill="url(#microGrid)"/>
+    <circle cx="90%" cy="10%" r="300" fill="#1E40AF" fill-opacity="0.15" filter="url(#glow)"/>
+    <circle cx="10%" cy="90%" r="250" fill="#4F46E5" fill-opacity="0.1" filter="url(#glow)"/>
+  </g>
+
+  <!-- LAYER 2: Content -->
+  <g id="content_layer">
+    
+    <!-- Module 1: Contrast Board (Top Left) -->
+    <g id="module-1" transform="translate(40, 100)">
+      <rect width="590" height="260" rx="12" class="card-bg"/>
+      <text class="ppt-font-cn-heading text-bright" x="20" y="35" font-size="18">告别“笨重”的传统模式</text>
+      
+      <!-- Left: Traditional -->
+      <rect x="20" y="60" width="265" height="180" rx="8" class="sub-card-traditional"/>
+      <text class="ppt-font-cn-heading text-dim" x="35" y="90" font-size="16">传统模式</text>
+      <circle cx="40" cy="125" r="3" fill="#64748B"/>
+      <text class="ppt-font-cn-body text-dim" x="50" y="130" font-size="14">全文上传 Token 成本极高</text>
+      <circle cx="40" cy="160" r="3" fill="#64748B"/>
+      <text class="ppt-font-cn-body text-dim" x="50" y="165" font-size="14">语义理解偏差大，召回率低</text>
+      <circle cx="40" cy="195" r="3" fill="#64748B"/>
+      <text class="ppt-font-cn-body text-dim" x="50" y="200" font-size="14">私密数据外泄风险不可控</text>
+
+      <!-- Right: Dify -->
+      <rect x="305" y="60" width="265" height="180" rx="8" class="sub-card-dify"/>
+      <text class="ppt-font-cn-heading accent-blue" x="320" y="90" font-size="16">Dify 驱动</text>
+      <path d="M320 125 l4 4 l8 -8" stroke="#3B82F6" stroke-width="2" fill="none"/>
+      <text class="ppt-font-cn-body text-bright" x="340" y="130" font-size="14">智能切片精准召回</text>
+      <path d="M320 160 l4 4 l8 -8" stroke="#3B82F6" stroke-width="2" fill="none"/>
+      <text class="ppt-font-cn-body text-bright" x="340" y="165" font-size="14">按需调用，节省 70% Token</text>
+      <path d="M320 195 l4 4 l8 -8" stroke="#3B82F6" stroke-width="2" fill="none"/>
+      <text class="ppt-font-cn-body text-bright" x="340" y="200" font-size="14">支持私有化部署，数据安全</text>
+    </g>
+
+    <!-- Module 2: RAG Workflow (Top Right) -->
+    <g id="module-2" transform="translate(650, 100)">
+      <rect width="590" height="260" rx="12" class="card-bg"/>
+      <text class="ppt-font-cn-heading text-bright" x="20" y="35" font-size="18">Dify RAG 引擎工作流</text>
+      
+      <g transform="translate(40, 100)">
+        <!-- Step 1 -->
+        <rect width="130" height="80" rx="8" fill="#1F2937" stroke="#344256"/>
+        <text class="ppt-font-cn-heading text-bright" x="65" y="35" text-anchor="middle" font-size="15">输入层</text>
+        <text class="ppt-font-cn-body text-dim" x="65" y="60" text-anchor="middle" font-size="13">多模态文档接入</text>
+        
+        <!-- Arrow 1 -->
+        <path d="M140 40 L170 40" stroke="#3B82F6" stroke-width="2" marker-end="url(#arrowhead-blue)"/>
+        
+        <!-- Step 2 -->
+        <rect x="180" width="150" height="80" rx="8" fill="#2563EB" filter="url(#glow-small)"/>
+        <text class="ppt-font-cn-heading text-bright" x="255" y="35" text-anchor="middle" font-size="15">智能处理层</text>
+        <text class="ppt-font-cn-body text-bright" x="255" y="60" text-anchor="middle" font-size="13">自动清洗与向量化</text>
+        
+        <!-- Arrow 2 -->
+        <path d="M340 40 L370 40" stroke="#3B82F6" stroke-width="2" marker-end="url(#arrowhead-blue)"/>
+        
+        <!-- Step 3 -->
+        <rect x="380" width="130" height="80" rx="8" fill="#1F2937" stroke="#344256"/>
+        <text class="ppt-font-cn-heading text-bright" x="445" y="35" text-anchor="middle" font-size="15">输出层</text>
+        <text class="ppt-font-cn-body text-dim" x="445" y="60" text-anchor="middle" font-size="13">精准权限响应</text>
+      </g>
+      
+      <defs>
+        <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#3B82F6"/>
+        </marker>
+      </defs>
+    </g>
+
+    <!-- Module 3: Scenes (Bottom Left) -->
+    <g id="module-3" transform="translate(40, 380)">
+      <rect width="850" height="300" rx="12" class="card-bg"/>
+      <text class="ppt-font-cn-heading text-bright" x="20" y="35" font-size="18">三大典型办公提效场景</text>
+      
+      <!-- Card 1 -->
+      <g transform="translate(20, 55)">
+        <rect width="256" height="225" rx="8" fill="#161B22" stroke="#344256"/>
+        <text class="ppt-font-cn-heading text-bright" x="15" y="30" font-size="15">金融分析：数据自动化</text>
+        <text class="ppt-font-cn-body text-dim" x="15" y="55" font-size="13">Text2SQL 自动生成报表</text>
+        <image id="ai-image-img-1" data-ai-slot-id="img-1" x="0" y="0" width="226" height="135" href="https://images.unsplash.com/photo-1645226880663-81561dcab0ae?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBkYXRhJTIwYW5hbHlzaXMlMjBkYXNoYm9hcmQlMjBzdG9jayUyMG1hcmtldCUyMHN8ZW58MHx8fHwxNzczMjk4NDU0fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" data-source-url="https://unsplash.com/photos/a-person-holding-a-cell-phone-in-front-of-a-stock-chart-K5mPtONmpHM?utm_medium=referral&amp;utm_source=superppt+agent" preserveAspectRatio="xMidYMid slice" transform="translate(15, 75)"><title>https://unsplash.com/photos/a-person-holding-a-cell-phone-in-front-of-a-stock-chart-K5mPtONmpHM?utm_medium=referral&amp;utm_source=superppt+agent</title></image>
+      </g>
+      
+      <!-- Card 2 -->
+      <g transform="translate(296, 55)">
+        <rect width="256" height="225" rx="8" fill="#161B22" stroke="#344256"/>
+        <text class="ppt-font-cn-heading text-bright" x="15" y="30" font-size="15">智能客服：极速响应</text>
+        <text class="ppt-font-cn-body text-dim" x="15" y="55" font-size="13">处理工单从 15min 降至 3min</text>
+        <image id="ai-image-img-2" data-ai-slot-id="img-2" x="0" y="0" width="226" height="135" href="https://images.unsplash.com/photo-1593955197981-ebf597c1abf8?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHxhaSUyMGN1c3RvbWVyJTIwc2VydmljZSUyMHJvYm90JTIwY2hhdGJvdCUyMGludGVyZmFjZXxlbnwwfHx8fDE3NzMyOTg0NTZ8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" data-source-url="https://unsplash.com/photos/a-machine-that-has-a-face-on-it-fMAeLLefmGE?utm_medium=referral&amp;utm_source=superppt+agent" preserveAspectRatio="xMidYMid slice" transform="translate(15, 75)"><title>https://unsplash.com/photos/a-machine-that-has-a-face-on-it-fMAeLLefmGE?utm_medium=referral&amp;utm_source=superppt+agent</title></image>
+      </g>
+      
+      <!-- Card 3 -->
+      <g transform="translate(572, 55)">
+        <rect width="256" height="225" rx="8" fill="#161B22" stroke="#344256"/>
+        <text class="ppt-font-cn-heading text-bright" x="15" y="30" font-size="15">文档自动化：解放双手</text>
+        <text class="ppt-font-cn-body text-dim" x="15" y="55" font-size="13">日均节省 3 小时重复劳动</text>
+        <image id="ai-image-img-3" data-ai-slot-id="img-3" x="0" y="0" width="226" height="135" href="https://images.unsplash.com/photo-1737358054558-2d1d81018bb2?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHxvZmZpY2UlMjBhdXRvbWF0aW9uJTIwd29ya2Zsb3clMjBkaWdpdGFsJTIwZG9jdW1lbnRzfGVufDB8fHx8MTc3MzI5ODQ1OXww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" data-source-url="https://unsplash.com/photos/a-wooden-desk-topped-with-a-laptop-computer-next-to-a-monitor-U--3jYhT6cI?utm_medium=referral&amp;utm_source=superppt+agent" preserveAspectRatio="xMidYMid slice" transform="translate(15, 75)"><title>https://unsplash.com/photos/a-wooden-desk-topped-with-a-laptop-computer-next-to-a-monitor-U--3jYhT6cI?utm_medium=referral&amp;utm_source=superppt+agent</title></image>
+      </g>
+    </g>
+
+    <!-- Module 4: Data Poster (Bottom Right) -->
+    <g id="module-4" transform="translate(910, 380)">
+      <rect width="330" height="300" rx="12" fill="#1E3A8A" fill-opacity="0.3" stroke="#3B82F6" stroke-opacity="0.5"/>
+      <text class="ppt-font-cn-heading text-bright" x="20" y="35" font-size="18">数说“降本增效”</text>
+      
+      <g transform="translate(0, 60)">
+        <text class="impact-number accent-blue" x="165" y="45" text-anchor="middle" font-size="52" filter="url(#glow-small)">80%<tspan font-size="24">+</tspan></text>
+        <text class="ppt-font-cn-body text-dim" x="165" y="75" text-anchor="middle" font-size="14">综合办公效率提升</text>
+      </g>
+      
+      <g transform="translate(0, 140)">
+        <text class="impact-number text-bright" x="165" y="45" text-anchor="middle" font-size="52">60%</text>
+        <text class="ppt-font-cn-body text-dim" x="165" y="75" text-anchor="middle" font-size="14">减少人工干预审核</text>
+      </g>
+      
+      <g transform="translate(0, 220)">
+        <text class="impact-number accent-blue" x="165" y="45" text-anchor="middle" font-size="52" filter="url(#glow-small)">5<tspan font-size="24">X</tspan></text>
+        <text class="ppt-font-cn-body text-dim" x="165" y="75" text-anchor="middle" font-size="14">语义检索响应速度</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <rect x="40" y="46" width="4" height="26" rx="2" fill="#3B82F6"/>
+    <text x="58" y="66" class="ppt-font-cn-heading text-bright" font-size="26" style="letter-spacing:1px">企业案例：知识库驱动的办公提效实践</text>
+    <line x1="40" y1="80" x2="1240" y2="80" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1"/>
+  </g>
+
+  <g id="ai-image-layer">
+    <clipPath id="clip-ai-image-img-1">
+      <rect x="15.00" y="75.00" width="226.00" height="135.00" rx="12"/>
+    </clipPath>
+    
+    <clipPath id="clip-ai-image-img-2">
+      <rect x="15.00" y="75.00" width="226.00" height="135.00" rx="12"/>
+    </clipPath>
+    
+    <clipPath id="clip-ai-image-img-3">
+      <rect x="15.00" y="75.00" width="226.00" height="135.00" rx="12"/>
+    </clipPath>
+    
+  </g>
+</svg>

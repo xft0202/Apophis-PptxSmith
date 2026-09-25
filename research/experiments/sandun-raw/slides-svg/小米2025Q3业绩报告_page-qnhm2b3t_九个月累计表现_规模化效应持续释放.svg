@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+    ]]></style>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#000000" flood-opacity="0.04"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FF6700"/>
+    </marker>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="0.5"/>
+    </pattern>
+    <radialGradient id="glow" cx="90%" cy="90%" r="50%">
+      <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FF6700" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <rect width="100%" height="100%" fill="#F8F9FA"/>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <rect width="100%" height="100%" fill="url(#glow)"/>
+  </g>
+
+  <!-- LAYER 2: Content -->
+  <g id="content_layer">
+    <!-- Left Card: Strategic Investment -->
+    <g transform="translate(40, 100)">
+      <rect width="590" height="380" rx="16" fill="#FFFFFF" filter="url(#cardShadow)"/>
+      <rect x="0" y="0" width="4" height="24" rx="2" fill="#FF6700" transform="translate(30, 25)"/>
+      <text class="ppt-font-cn-heading" x="42" y="45" font-size="22" fill="#1A1A1A">战略投入：锚定未来增长</text>
+      
+      <!-- Big Data -->
+      <text class="ppt-font-cn-heading" x="30" y="105" font-size="52" fill="#1A1A1A">130 <tspan font-size="24" dy="-14" fill="#666666">亿元</tspan></text>
+      <rect x="30" y="125" width="110" height="28" rx="14" fill="#FFF0E5"/>
+      <text class="ppt-font-cn-heading" x="85" y="144" font-size="16" fill="#FF6700" text-anchor="middle">+86.7% YoY</text>
+      
+      <text class="ppt-font-cn-body" x="30" y="180" font-size="16" fill="#4D4D4D">
+        <tspan x="30" dy="0">2025年前三季度累计资本开支强度近乎翻倍，</tspan>
+        <tspan x="30" dy="26">核心用于产能扩张与技术迭代，支撑规模化效应。</tspan>
+      </text>
+
+      <!-- Chart Slot 1 -->
+      <g data-chart-slot-id="chart-1" data-chart-type="bar" transform="translate(30, 220)"><rect x="0" y="0" width="530" height="130" rx="8" fill="#F8F9FA"/><rect x="0.5" y="0.5" width="529" height="129" rx="7.5" fill="none" stroke="#E5E5E5" stroke-width="1"/><line x1="50" y1="90" x2="510" y2="90" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="94" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">0</text><line x1="50" y1="78" x2="510" y2="78" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="82" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">50</text><line x1="50" y1="66" x2="510" y2="66" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="70" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">100</text><line x1="50" y1="54" x2="510" y2="54" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="58" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">150</text><line x1="50" y1="42" x2="510" y2="42" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="46" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">200</text><line x1="50" y1="30" x2="510" y2="30" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="34" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">250</text><path d="M 56 90 L 56 77.29599999999999 A 4 4 0 0 1 60 73.29599999999999 L 270 73.29599999999999 A 4 4 0 0 1 274 77.29599999999999 L 274 90 Z" fill="#FF6700"/><text x="165" y="65.29599999999999" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">69.6亿元</text><text x="165" y="114" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">2024前三季度</text><path d="M 286 90 L 286 62.8 A 4 4 0 0 1 290 58.8 L 500 58.8 A 4 4 0 0 1 504 62.8 L 504 90 Z" fill="#333333"/><text x="395" y="50.8" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">130亿元</text><text x="395" y="114" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">2025前三季度</text><line x1="42" y1="90" x2="510" y2="90" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/><line x1="50" y1="30" x2="50" y2="98" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/></g>
+    </g>
+
+    <!-- Right Card: Shareholder Returns -->
+    <g transform="translate(650, 100)">
+      <rect width="590" height="380" rx="16" fill="#FFFFFF" filter="url(#cardShadow)"/>
+      <rect x="0" y="0" width="4" height="24" rx="2" fill="#FF6700" transform="translate(30, 25)"/>
+      <text class="ppt-font-cn-heading" x="42" y="45" font-size="22" fill="#1A1A1A">股东回馈：彰显市场信心</text>
+      
+      <!-- Big Data -->
+      <text class="ppt-font-cn-heading" x="30" y="105" font-size="52" fill="#1A1A1A">15.4 <tspan font-size="24" dy="-14" fill="#666666">亿港元</tspan></text>
+      <text class="ppt-font-cn-body" x="30" y="145" font-size="18" fill="#4D4D4D">累计回购约 <tspan fill="#FF6700" class="ppt-font-cn-heading">3,410</tspan> 万股</text>
+      
+      <text class="ppt-font-cn-body" x="30" y="180" font-size="16" fill="#4D4D4D">
+        <tspan x="30" dy="0">在高速成长期同步实施大规模回购，反映现金流</tspan>
+        <tspan x="30" dy="26">充沛及对当前资产价值的极度认可。</tspan>
+      </text>
+
+      <!-- Chart Slot 2 -->
+      <g data-chart-slot-id="chart-2" data-chart-type="line" transform="translate(30, 220)"><rect x="0" y="0" width="530" height="130" rx="8" fill="#F8F9FA"/><rect x="0.5" y="0.5" width="529" height="129" rx="7.5" fill="none" stroke="#E5E5E5" stroke-width="1"/><defs><linearGradient id="lg-mwkpy" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FF6700" stop-opacity="0.1"/><stop offset="100%" stop-color="#FF6700" stop-opacity="0.0"/></linearGradient></defs><line x1="50" y1="90" x2="510" y2="90" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="94" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">0</text><line x1="50" y1="78" x2="510" y2="78" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="82" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">5</text><line x1="50" y1="66" x2="510" y2="66" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="70" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">10</text><line x1="50" y1="54" x2="510" y2="54" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="58" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">15</text><line x1="50" y1="42" x2="510" y2="42" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="46" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">20</text><line x1="50" y1="30" x2="510" y2="30" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="34" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">25</text><polygon points="50,90 50,82.32 280,69.6 510,53.04 510,90" fill="url(#lg-mwkpy)"/><polyline points="50,82.32 280,69.6 510,53.04" fill="none" stroke="#FF6700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="50" cy="82.32" r="5" fill="#FFFFFF" stroke="#FF6700" stroke-width="2.5"/><text x="50" y="70.32" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">3.2亿港元</text><text x="50" y="114" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">Q1</text><circle cx="280" cy="69.6" r="5" fill="#FFFFFF" stroke="#FF6700" stroke-width="2.5"/><text x="280" y="57.599999999999994" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">8.5亿港元</text><text x="280" y="114" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">Q2</text><circle cx="510" cy="53.04" r="5" fill="#FFFFFF" stroke="#FF6700" stroke-width="2.5"/><text x="510" y="41.04" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">15.4亿港元</text><text x="510" y="114" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">Q3</text><line x1="42" y1="90" x2="510" y2="90" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/><line x1="50" y1="30" x2="50" y2="98" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/></g>
+    </g>
+
+    <!-- Bottom Card: Logic Flow -->
+    <g transform="translate(40, 500)">
+      <rect width="1200" height="180" rx="16" fill="#FFFFFF" filter="url(#cardShadow)"/>
+      <text class="ppt-font-cn-heading" x="30" y="40" font-size="18" fill="#666666">财务逻辑：双轮驱动闭环</text>
+      
+      <g transform="translate(60, 75)">
+        <!-- Step 1 -->
+        <rect x="0" y="0" width="220" height="70" rx="12" fill="#F8F9FA" stroke="#E5E5E5" stroke-width="1"/>
+        <text class="ppt-font-cn-heading" x="110" y="32" font-size="18" fill="#1A1A1A" text-anchor="middle">投入端</text>
+        <text class="ppt-font-cn-body" x="110" y="54" font-size="14" fill="#666666" text-anchor="middle">高资本开支形成壁垒</text>
+        
+        <line x1="235" y1="35" x2="285" y2="35" stroke="#FF6700" stroke-width="2" marker-end="url(#arrowhead)"/>
+        
+        <!-- Step 2 -->
+        <rect x="300" y="0" width="220" height="70" rx="12" fill="#1A1A1A"/>
+        <text class="ppt-font-cn-heading" x="410" y="32" font-size="18" fill="#FFFFFF" text-anchor="middle">规模化红利</text>
+        <text class="ppt-font-cn-body" x="410" y="54" font-size="14" fill="#CCCCCC" text-anchor="middle">单位成本持续下行</text>
+
+        <line x1="535" y1="35" x2="585" y2="35" stroke="#FF6700" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+        <!-- Step 3 -->
+        <rect x="600" y="0" width="220" height="70" rx="12" fill="#F8F9FA" stroke="#E5E5E5" stroke-width="1"/>
+        <text class="ppt-font-cn-heading" x="710" y="32" font-size="18" fill="#1A1A1A" text-anchor="middle">现金流释放</text>
+        <text class="ppt-font-cn-body" x="710" y="54" font-size="14" fill="#666666" text-anchor="middle">经营效率稳步提升</text>
+
+        <line x1="835" y1="35" x2="885" y2="35" stroke="#FF6700" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+        <!-- Step 4 -->
+        <rect x="900" y="0" width="220" height="70" rx="12" fill="#FFFFFF" stroke="#FF6700" stroke-width="2"/>
+        <text class="ppt-font-cn-heading" x="1010" y="32" font-size="18" fill="#FF6700" text-anchor="middle">价值回馈</text>
+        <text class="ppt-font-cn-body" x="1010" y="54" font-size="14" fill="#666666" text-anchor="middle">股票回购增厚权益</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <rect x="40" y="46" width="6" height="26" rx="3" fill="#FF6700"/>
+    <text class="ppt-font-cn-heading" x="58" y="66" font-size="26" fill="#1A1A1A">九个月累计表现：规模化效应持续释放</text>
+  </g>
+</svg>

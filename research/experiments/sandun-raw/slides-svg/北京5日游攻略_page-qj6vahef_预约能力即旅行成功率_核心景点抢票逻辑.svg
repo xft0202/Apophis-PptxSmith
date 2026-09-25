@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" xmlns:xlink="http://www.w3.org/1999/xlink"><style data-img-radius="1">image{clip-path:inset(0 round 8px)}</style>
+  <defs>
+    <style>
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+      .stat-number { font-family: 'Impact', 'Arial Black', sans-serif; }
+    </style>
+    
+    <!-- Background Patterns & Filters -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.05"></path>
+    </pattern>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" stitchTiles="stitch"></feTurbulence>
+      <feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.02 0"></feColorMatrix>
+    </filter>
+    <filter id="cardShadow" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#B0352F" flood-opacity="0.05"></feDropShadow>
+    </filter>
+    
+    <!-- Markers -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#B0352F" fill-opacity="0.4"></polygon>
+    </marker>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <rect width="100%" height="100%" fill="#FDFCFB"></rect>
+    <rect width="100%" height="100%" fill="url(#grid)"></rect>
+    <rect width="100%" height="100%" filter="url(#noise)"></rect>
+    <circle cx="90%" cy="10%" r="300" fill="#B0352F" fill-opacity="0.03"></circle>
+  </g>
+
+  <!-- LAYER 2: Content -->
+  <g id="content_layer">
+    
+    <!-- Module 1: 预约现状 -->
+    <g transform="translate(40, 100)">
+      <rect width="380" height="280" rx="12" fill="#FFFFFF" filter="url(#cardShadow)"></rect>
+      <path d="M 0 12 Q 0 0 12 0 L 100 0 L 80 40 L 0 40 Z" fill="#B0352F" fill-opacity="0.08"></path>
+      <text class="ppt-font-cn-theme-heritage" x="24" y="28" font-size="20" fill="#B0352F">预约现状</text>
+      
+      <text class="stat-number" x="24" y="105" font-size="64" fill="#B0352F">100%</text>
+      <text class="ppt-font-cn-heading" x="185" y="100" font-size="22" fill="#B0352F">预约制</text>
+      
+      <text class="ppt-font-cn-body" x="24" y="140" font-size="16" fill="#4A4A4A">
+        <tspan x="24" dy="0">北京核心景点已全面取消现场售票</tspan>
+        <tspan x="24" dy="26">热门景点旺季抢光仅需 <tspan fill="#B0352F" font-weight="700">5分钟</tspan></tspan>
+      </text>
+
+      <!-- Image Slot img-1: Locked Coordinates -->
+      <image id="ai-image-img-1" data-ai-slot-id="img-1" x="0" y="0" width="332" height="80" href="https://images.unsplash.com/photo-1730136804642-7fd9dcc77ac4?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHxiZWlqaW5nJTIwZm9yYmlkZGVuJTIwY2l0eSUyMG1lcmlkaWFuJTIwZ2F0ZSUyMGNyb3dkJTIwZW50cmFuY2V8ZW58MHx8fHwxNzczMTk5NDUwfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" data-source-url="https://unsplash.com/photos/a-person-standing-in-front-of-a-red-building-0yyGNjh7sXY?utm_medium=referral&amp;utm_source=superppt+agent" preserveAspectRatio="xMidYMid slice" transform="translate(24, 180)"><title>https://unsplash.com/photos/a-person-standing-in-front-of-a-red-building-0yyGNjh7sXY?utm_medium=referral&amp;utm_source=superppt+agent</title></image>
+    </g>
+
+    <!-- Module 2: 矩阵式作战表 -->
+    <g transform="translate(440, 100)">
+      <rect width="800" height="280" rx="12" fill="#FFFFFF" filter="url(#cardShadow)"></rect>
+      <path d="M 0 12 Q 0 0 12 0 L 300 0 L 280 40 L 0 40 Z" fill="#B0352F" fill-opacity="0.08"></path>
+      <text class="ppt-font-cn-theme-heritage" x="24" y="28" font-size="20" fill="#B0352F">2026 核心景点放票“生死时刻”</text>
+      
+      <!-- Table Header -->
+      <rect x="24" y="65" width="752" height="42" rx="6" fill="#FDF7F6"></rect>
+      <text class="ppt-font-cn-heading" x="44" y="92" font-size="15" fill="#666666">景点名称</text>
+      <text class="ppt-font-cn-heading" x="280" y="92" font-size="15" fill="#666666">放票规律 (T+N)</text>
+      <text class="ppt-font-cn-heading" x="500" y="92" font-size="15" fill="#666666">放票时间</text>
+      <text class="ppt-font-cn-heading" x="660" y="92" font-size="15" fill="#666666">抢票难度</text>
+
+      <!-- Rows -->
+      <g transform="translate(24, 115)">
+        <!-- Row 1 -->
+        <text class="ppt-font-cn-heading" x="20" y="25" font-size="16" fill="#1A1A1A" style="">故宫</text>
+        <text class="ppt-font-cn-body" x="256" y="25" font-size="16" fill="#4A4A4A">提前 7 天</text>
+        <text class="ppt-font-cn-heading" x="476" y="25" font-size="18" fill="#B0352F">20:00</text>
+        <rect x="636" y="6" width="60" height="26" rx="4" fill="#B0352F" fill-opacity="0.1"></rect>
+        <text class="ppt-font-cn-heading" x="666" y="24" text-anchor="middle" font-size="13" fill="#B0352F">极难</text>
+        
+        <!-- Row 2 -->
+        <line x1="10" y1="45" x2="742" y2="45" stroke="#EEEEEE" stroke-width="1"></line>
+        <text class="ppt-font-cn-heading" x="20" y="74.55255126953125" font-size="16" fill="#1A1A1A" style="">国博</text>
+        <text class="ppt-font-cn-body" x="256" y="74.55255126953125" font-size="16" fill="#4A4A4A">提前 7 天</text>
+        <text class="ppt-font-cn-heading" x="476.380615234375" y="75.94158935546875" font-size="18" fill="#B0352F">17:00</text>
+        <rect x="636" y="53" width="60" height="26" rx="4" fill="#E67E22" fill-opacity="0.1"></rect>
+        <text class="ppt-font-cn-heading" x="666" y="71" text-anchor="middle" font-size="13" fill="#E67E22">高</text>
+
+        <!-- Row 3 -->
+        <line x1="10" y1="92" x2="742" y2="92" stroke="#EEEEEE" stroke-width="1"></line>
+        
+        
+        
+        
+        
+
+        <!-- Row 4 -->
+        <line x1="10" y1="139" x2="742" y2="139" stroke="#EEEEEE" stroke-width="1"></line>
+        <text class="ppt-font-cn-heading" x="20" y="121.80140686035156" font-size="16" fill="#1A1A1A">天安门升旗</text>
+        <text class="ppt-font-cn-body" x="256" y="121.80133056640625" font-size="16" fill="#4A4A4A" style="">提前 7 天</text>
+        <text class="ppt-font-cn-heading" x="476" y="121.30712890625" font-size="18" fill="#B0352F" style="">12:00</text>
+        <rect x="635.994140625" y="100.248779296875" width="60" height="26" rx="4" fill="#E67E22" fill-opacity="0.1"></rect>
+        <text class="ppt-font-cn-heading" x="665.994140625" y="118.43745422363281" text-anchor="middle" font-size="13" fill="#E67E22">高</text>
+      </g>
+    </g>
+
+    <!-- Module 3: 线性SOP流向图 -->
+    <g transform="translate(40, 400)">
+      <rect width="780" height="280" rx="12" fill="#FFFFFF" filter="url(#cardShadow)"></rect>
+      <path d="M 0 12 Q 0 0 12 0 L 320 0 L 300 40 L 0 40 Z" fill="#B0352F" fill-opacity="0.08"></path>
+      <text class="ppt-font-cn-theme-heritage" x="24" y="28" font-size="20" fill="#B0352F">抢票标准作业程序 (SOP)</text>
+      
+      <!-- Steps -->
+      <g transform="translate(24, 80)">
+        <!-- Step 1 -->
+        <rect width="220" height="160" rx="8" fill="#FDFCFB" stroke="#B0352F" stroke-opacity="0.1"></rect>
+        <circle cx="30" cy="30" r="14" fill="#B0352F"></circle>
+        <text class="ppt-font-cn-heading" x="30" y="35" text-anchor="middle" font-size="14" fill="#FFFFFF">1</text>
+        <text class="ppt-font-cn-heading" x="55" y="36" font-size="18" fill="#1A1A1A">前置实名</text>
+        <text class="ppt-font-cn-body" x="24" y="75" font-size="14" fill="#666666">
+          <tspan x="24" dy="0">提前在「京通」或官方</tspan>
+          <tspan x="24" dy="22">小程序录入所有同行人</tspan>
+          <tspan x="24" dy="22">身份证信息。</tspan>
+        </text>
+        
+        <!-- Step 2 -->
+        <g transform="translate(256, 0)">
+          <rect width="220" height="160" rx="8" fill="#FDFCFB" stroke="#B0352F" stroke-opacity="0.1"></rect>
+          <circle cx="30" cy="30" r="14" fill="#B0352F"></circle>
+          <text class="ppt-font-cn-heading" x="30" y="35" text-anchor="middle" font-size="14" fill="#FFFFFF">2</text>
+          <text class="ppt-font-cn-heading" x="55" y="36" font-size="18" fill="#1A1A1A">卡点刷新</text>
+          <text class="ppt-font-cn-body" x="24" y="75" font-size="14" fill="#666666">
+            <tspan x="24" dy="0">提前5分钟进入页面，</tspan>
+            <tspan x="24" dy="22">保持网络极速，准点</tspan>
+            <tspan x="24" dy="22">高频手动刷新。</tspan>
+          </text>
+          <!-- Arrow 1-2 -->
+          <path d="M-28 80 L-8 80" stroke="#B0352F" stroke-opacity="0.3" stroke-width="2" marker-end="url(#arrowhead)"></path>
+        </g>
+
+        <!-- Step 3 -->
+        <g transform="translate(512, 0)">
+          <rect width="220" height="160" rx="8" fill="#B0352F" fill-opacity="0.03" stroke="#B0352F" stroke-width="1.5"></rect>
+          <circle cx="30" cy="30" r="14" fill="#B0352F"></circle>
+          <text class="ppt-font-cn-heading" x="30" y="35" text-anchor="middle" font-size="14" fill="#FFFFFF">3</text>
+          <text class="ppt-font-cn-heading" x="55" y="36" font-size="18" fill="#B0352F">分批捡漏</text>
+          <text class="ppt-font-cn-body" x="24" y="75" font-size="14" fill="#1A1A1A">
+            <tspan x="24" dy="0">准点后10分钟(未支付)</tspan>
+            <tspan x="24" dy="22">及参观前3天17:00</tspan>
+            <tspan x="24" dy="22">(退票潮)是黄金时机。</tspan>
+          </text>
+          <!-- Arrow 2-3 -->
+          <path d="M-28 80 L-8 80" stroke="#B0352F" stroke-opacity="0.3" stroke-width="2" marker-end="url(#arrowhead)"></path>
+        </g>
+      </g>
+    </g>
+
+    <!-- Module 4: 贴士看板 -->
+    <g transform="translate(840, 400)">
+      <rect width="400" height="280" rx="12" fill="#1A1A1A"></rect>
+      <path d="M 0 0 L 400 0 L 400 60 L 360 40 L 0 40 Z" fill="#B0352F" fill-opacity="0.2"></path>
+      <text class="ppt-font-cn-theme-heritage" x="24" y="28" font-size="20" fill="#FDFCFB">2026 避坑与特权</text>
+      
+      <g transform="translate(24, 75)">
+        <!-- Tip 1 -->
+        <rect y="4" width="4" height="18" fill="#B0352F"></rect>
+        <text class="ppt-font-cn-heading" x="16" y="20" font-size="16" fill="#FDFCFB">统一入口：认准「京通」</text>
+        <text class="ppt-font-cn-body" x="16" y="44" font-size="14" fill="#999999">避免第三方加价风险与信息泄露</text>
+        
+        <!-- Tip 2 -->
+        <rect y="74" width="4" height="18" fill="#B0352F"></rect>
+        <text class="ppt-font-cn-heading" x="16" y="90" font-size="16" fill="#FDFCFB">老人特权：现场登记</text>
+        <text class="ppt-font-cn-body" x="16" y="114" font-size="14" fill="#999999">60岁+部分公园可刷身份证原件</text>
+
+        <!-- Tip 3 -->
+        <rect y="144" width="4" height="18" fill="#B0352F"></rect>
+        <text class="ppt-font-cn-heading" x="16" y="160" font-size="16" fill="#FDFCFB">儿童逻辑：非全免约</text>
+        <text class="ppt-font-cn-body" x="16" y="184" font-size="14" fill="#999999">科技馆等必须单独预约儿童票</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <rect x="40" y="48" width="4" height="24" rx="2" fill="#B0352F"></rect>
+    <text x="58" y="66" class="ppt-font-cn-heading" font-size="26" fill="#1A1A1A">预约能力即旅行成功率：核心景点抢票逻辑</text>
+    <line x1="40" y1="85" x2="120" y2="85" stroke="#B0352F" stroke-width="1" stroke-opacity="0.3"></line>
+  </g>
+
+  <g id="ai-image-layer">
+    <clipPath id="clip-ai-image-img-1">
+      <rect x="24.00" y="180.00" width="332.00" height="80.00" rx="12"></rect>
+    </clipPath>
+    
+  </g>
+</svg>

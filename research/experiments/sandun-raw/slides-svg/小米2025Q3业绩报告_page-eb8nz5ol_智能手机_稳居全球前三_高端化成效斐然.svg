@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720"><style data-img-radius="1">image{clip-path:inset(0 round 8px)}</style>
+  <defs>
+    <style>
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+    </style>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"></feGaussianBlur>
+      <feOffset dx="0" dy="4" result="offsetblur"></feOffset>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.06"></feFuncA>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+    <linearGradient id="grad-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6700"></stop>
+      <stop offset="100%" stop-color="#FF8533"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="0.5"></path>
+      </pattern>
+      <radialGradient id="glow" cx="90%" cy="90%" r="50%">
+        <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"></stop>
+        <stop offset="100%" stop-color="#FF6700" stop-opacity="0"></stop>
+      </radialGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="#F8F9FA"></rect>
+    <rect width="100%" height="100%" fill="url(#grid)"></rect>
+    <rect width="100%" height="100%" fill="url(#glow)"></rect>
+  </g>
+
+  <!-- LAYER 2: Content Layer -->
+  <g id="content_layer">
+    <!-- Module 1: Core Data -->
+    <g transform="translate(40, 100)">
+      <rect width="590" height="280" rx="16" fill="#FFFFFF" filter="url(#card-shadow)"></rect>
+      <rect x="30" y="30" width="4" height="18" rx="2" fill="#FF6700"></rect>
+      <text class="ppt-font-cn-heading" x="42" y="45" font-size="20" fill="#4B5563">全球出货稳居前三</text>
+      
+      <!-- Large Numbers -->
+      <text class="ppt-font-cn-heading" x="30" y="120" font-size="56" fill="#FF6700">4330<tspan font-size="24" dy="-18" fill="#FF6700">万台</tspan></text>
+      <text class="ppt-font-cn-body" x="30" y="150" font-size="16" fill="#6B7280">全球出货量 / 13.6% 市场份额</text>
+      
+      <line x1="30" y1="180" x2="560" y2="180" stroke="#F3F4F6" stroke-width="1.5"></line>
+      
+      <text class="ppt-font-cn-heading" x="30" y="230" font-size="42" fill="#1A1A1A">460<tspan font-size="20" dy="-14" fill="#1A1A1A">亿元</tspan></text>
+      <text class="ppt-font-cn-body" x="30" y="255" font-size="16" fill="#6B7280">2025年Q3智能手机业务收入</text>
+    </g>
+
+    <!-- Module 2: Global Ranking -->
+    <g transform="translate(650, 100)">
+      <rect width="590" height="280" rx="16" fill="#FFFFFF" filter="url(#card-shadow)"></rect>
+      <rect x="30" y="30" width="4" height="18" rx="2" fill="#FF6700"></rect>
+      <text class="ppt-font-cn-heading" x="42" y="45" font-size="20" fill="#4B5563">全球市场多点开花</text>
+      
+      <g transform="translate(30, 80)">
+        <!-- Rank 2 Item -->
+        <rect width="250" height="75" rx="12" fill="#FFF7ED"></rect>
+        <text class="ppt-font-cn-heading" x="15" y="32" font-size="16" fill="#EA580C">排名第二 (Rank 2)</text>
+        <text class="ppt-font-cn-body" x="15" y="58" font-size="18" fill="#1A1A1A">中国大陆、拉美、中东</text>
+        
+        <!-- Rank 3 Item -->
+        <rect x="280" width="250" height="75" rx="12" fill="#F9FAFB" stroke="#F3F4F6" stroke-width="1"></rect>
+        <text class="ppt-font-cn-heading" x="295" y="32" font-size="16" fill="#6B7280">排名第三 (Rank 3)</text>
+        <text class="ppt-font-cn-body" x="295" y="58" font-size="18" fill="#1A1A1A">欧洲、东南亚、非洲</text>
+      </g>
+      
+      <rect x="30" y="185" width="530" height="65" rx="12" fill="#F8F9FA"></rect>
+      <text class="ppt-font-cn-heading" x="45" y="212" font-size="18" fill="#1A1A1A">57个国家和地区排名前三</text>
+      <text class="ppt-font-cn-body" x="45" y="235" font-size="15" fill="#6B7280">中国大陆市占率16.7%，连续6个季度稳居前二</text>
+    </g>
+
+    <!-- Module 3: Premiumization Growth -->
+    <g transform="translate(40, 400)">
+      <rect width="590" height="280" rx="16" fill="#FFFFFF" filter="url(#card-shadow)"></rect>
+      <rect x="30" y="30" width="4" height="18" rx="2" fill="#FF6700"></rect>
+      <text class="ppt-font-cn-heading" x="42" y="45" font-size="20" fill="#4B5563">高端化战略成效斐然</text>
+      
+      <text class="ppt-font-cn-body" x="30" y="82" font-size="14" fill="#9CA3AF">高端机型占比及核心价位段份额 (单位: %)</text>
+      
+      <!-- Chart Slot -->
+      <g data-chart-slot-id="chart-premium" data-chart-type="bar" transform="translate(30, 100)"><rect x="0.5" y="0.5" width="527" height="147" rx="7.5" fill="none" stroke="#E5E5E5" stroke-width="1"></rect><line x1="50" y1="108" x2="508" y2="108" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="112" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">0</text><line x1="50" y1="92.4" x2="508" y2="92.4" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="96.4" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">5</text><line x1="50" y1="76.8" x2="508" y2="76.8" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="80.8" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">10</text><line x1="50" y1="61.2" x2="508" y2="61.2" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="65.2" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">15</text><line x1="50" y1="45.599999999999994" x2="508" y2="45.599999999999994" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="49.599999999999994" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">20</text><line x1="50" y1="30" x2="508" y2="30" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="34" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">25</text><path d="M 56 108 L 56 49.599999999999994 A 4 4 0 0 1 60 45.599999999999994 L 154.5 45.599999999999994 A 4 4 0 0 1 158.5 49.599999999999994 L 158.5 108 Z" fill="#FF6700"></path><text x="107.25" y="37.599999999999994" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">20%</text><text x="107.25" y="132" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">高端占比(去年)</text><path d="M 170.5 108 L 170.5 36.80799999999999 A 4 4 0 0 1 174.5 32.80799999999999 L 269 32.80799999999999 A 4 4 0 0 1 273 36.80799999999999 L 273 108 Z" fill="#333333"></path><text x="221.75" y="24.807999999999993" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">24.1%</text><text x="221.75" y="132" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">高端占比(今年)</text><path d="M 285 108 L 285 70.50399999999999 A 4 4 0 0 1 289 66.50399999999999 L 383.5 66.50399999999999 A 4 4 0 0 1 387.5 70.50399999999999 L 387.5 108 Z" fill="#808080"></path><text x="336.25" y="58.50399999999999" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">13.3%</text><text x="336.25" y="132" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">4k-6k份额(去年)</text><path d="M 399.5 108 L 399.5 53.03200000000001 A 4 4 0 0 1 403.5 49.03200000000001 L 498 49.03200000000001 A 4 4 0 0 1 502 53.03200000000001 L 502 108 Z" fill="#FF9E59"></path><text x="450.75" y="41.03200000000001" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">18.9%</text><text x="450.75" y="132" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">4k-6k份额(今年)</text><line x1="42" y1="108" x2="508" y2="108" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"></line><line x1="50" y1="30" x2="50" y2="116" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"></line></g>
+      
+      <text class="ppt-font-cn-heading" x="30" y="268" font-size="15" fill="#FF6700">高端占比同比提升 4.1 个百分点</text>
+    </g>
+
+    <!-- Module 4: Xiaomi 17 Series -->
+    <g transform="translate(650, 400)">
+      <rect width="590" height="280" rx="16" fill="#FFFFFF" filter="url(#card-shadow)"></rect>
+      <rect x="30" y="30" width="4" height="18" rx="2" fill="#FF6700"></rect>
+      <text class="ppt-font-cn-heading" x="42" y="45" font-size="20" fill="#4B5563">Xiaomi 17 系列：现象级爆发</text>
+      
+      <!-- Image Slot -->
+      <image id="ai-image-img-xiaomi17" data-ai-slot-id="img-xiaomi17" x="0" y="0" width="220" height="180" href="https://images.unsplash.com/photo-1619410766515-6263877c7bfe?crop=entropy&amp;amp;amp;cs=tinysrgb&amp;amp;amp;fit=max&amp;amp;amp;fm=jpg&amp;amp;amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwyfHx4aWFvbWklMjAxNyUyMHNlcmllcyUyMGZsYWdzaGlwJTIwc21hcnRwaG9uZXxlbnwwfHx8fDE3NzQzMzIyNDF8MA&amp;amp;amp;ixlib=rb-4.1.0&amp;amp;amp;q=80&amp;amp;amp;w=1080" data-source-url="https://images.unsplash.com/photo-1760173012724-02c0b8522ada?crop=entropy&amp;amp;amp;amp;amp;amp;amp;cs=tinysrgb&amp;amp;amp;amp;amp;amp;amp;fit=max&amp;amp;amp;amp;amp;amp;amp;fm=jpg&amp;amp;amp;amp;amp;amp;amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwzfHx4aWFvbWklMjAxNyUyMHNlcmllcyUyMGZsYWdzaGlwJTIwc21hcnRwaG9uZXxlbnwwfHx8fDE3NzQzMzIyNDF8MA&amp;amp;amp;amp;amp;amp;amp;ixlib=rb-4.1.0&amp;amp;amp;amp;amp;amp;amp;q=80&amp;amp;amp;amp;amp;amp;amp;w=1080" preserveAspectRatio="xMidYMid slice" transform="translate(30, 70)"><title>https://images.unsplash.com/photo-1760173012724-02c0b8522ada?crop=entropy&amp;amp;amp;amp;cs=tinysrgb&amp;amp;amp;amp;fit=max&amp;amp;amp;amp;fm=jpg&amp;amp;amp;amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwzfHx4aWFvbWklMjAxNyUyMHNlcmllcyUyMGZsYWdzaGlwJTIwc21hcnRwaG9uZXxlbnwwfHx8fDE3NzQzMzIyNDF8MA&amp;amp;amp;amp;ixlib=rb-4.1.0&amp;amp;amp;amp;q=80&amp;amp;amp;amp;w=1080</title></image>
+      
+      <!-- Key Product Info -->
+      <g transform="translate(275, 70)">
+        <text class="ppt-font-cn-heading" x="0" y="32" font-size="30" fill="#1A1A1A">销量同比 +30%</text>
+        <text class="ppt-font-cn-body" x="0" y="60" font-size="15" fill="#6B7280">首月销售表现创历史新高</text>
+        
+        <rect y="85" width="285" height="95" rx="12" fill="#FFF7ED"></rect>
+        <text class="ppt-font-cn-heading" x="15" y="115" font-size="18" fill="#EA580C">Pro/Max 占比 &gt; 80%</text>
+        <text class="ppt-font-cn-body" x="15" y="142" font-size="14" fill="#4B5563">产品结构顶层优化，高端化不仅是</text>
+        <text class="ppt-font-cn-body" x="15" y="164" font-size="14" fill="#4B5563">“卖得多”，更是“贵的好卖”。</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <rect x="40" y="46" width="6" height="26" rx="3" fill="#FF6700"></rect>
+    <text class="ppt-font-cn-heading" x="58" y="66" font-size="26" fill="#1A1A1A">智能手机：稳居全球前三，高端化成效斐然</text>
+  </g>
+
+  <g id="ai-image-layer">
+    <clipPath id="clip-ai-image-img-xiaomi17">
+      <rect x="30.00" y="70.00" width="220.00" height="180.00" rx="12"></rect>
+    </clipPath>
+    
+  </g>
+</svg>

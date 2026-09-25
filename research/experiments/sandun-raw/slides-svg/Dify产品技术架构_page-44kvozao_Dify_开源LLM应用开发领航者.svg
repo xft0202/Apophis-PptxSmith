@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .en-impact { font-family: 'Impact', 'Arial Black', sans-serif; }
+      .en-heading { font-family: 'Arial', sans-serif; font-weight: 700; }
+      .card-bg { fill: rgba(255, 255, 255, 0.03); stroke: rgba(255, 255, 255, 0.1); stroke-width: 1; }
+      .accent-blue { fill: #3B82F6; }
+      .text-dim { fill: #94A3B8; }
+      .text-bright { fill: #FFFFFF; }
+      .text-highlight { fill: #60A5FA; }
+    ]]></style>
+    <filter id="cardGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <linearGradient id="blueDashedGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#3B82F6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#05070A;stop-opacity:1"/>
+        <stop offset="100%" style="stop-color:#0C121E;stop-opacity:1"/>
+      </linearGradient>
+      <pattern id="microGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#344256" stroke-width="0.5" stroke-opacity="0.3"/>
+      </pattern>
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="50" result="blur"/>
+        <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+      </filter>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grad1)"/>
+    <rect width="100%" height="100%" fill="url(#microGrid)"/>
+    <circle cx="90%" cy="10%" r="300" fill="#1E40AF" fill-opacity="0.15" filter="url(#glow)"/>
+    <circle cx="10%" cy="90%" r="250" fill="#4F46E5" fill-opacity="0.1" filter="url(#glow)"/>
+  </g>
+
+  <!-- LAYER 2: Content (Bento Grid) -->
+  <g id="content_layer">
+    
+    <!-- Module 1: Global Growth Stats -->
+    <g id="module-1" transform="translate(40, 100)">
+      <rect class="card-bg" width="380" height="280" rx="16"/>
+      <text class="ppt-font-cn-heading text-dim" x="24" y="40" font-size="18">全球开源社区“现象级”增长</text>
+      
+      <text class="en-impact accent-blue" x="24" y="115" font-size="72">60,000+</text>
+      <text class="ppt-font-cn-heading text-dim" x="24" y="145" font-size="16" style="letter-spacing:2px">GITHUB STARS</text>
+      
+      <g transform="translate(24, 185)">
+        <rect width="332" height="1" fill="white" fill-opacity="0.1"/>
+        <text class="ppt-font-cn-body text-dim" x="0" y="30" font-size="15">
+          <tspan class="ppt-font-cn-heading text-bright">全球排名：</tspan>GitHub 全球项目星标榜第 51 位
+        </text>
+        <text class="ppt-font-cn-body text-dim" x="0" y="60" font-size="15">
+          <tspan class="ppt-font-cn-heading text-bright">用户覆盖：</tspan>175+ 国家 / 200万+ 开发者
+        </text>
+        <text class="ppt-font-cn-body text-dim" x="0" y="90" font-size="15">
+          <tspan class="ppt-font-cn-heading text-bright">部署规模：</tspan>140万+ 台设备全球运行
+        </text>
+      </g>
+    </g>
+
+    <!-- Module 2: Brand & Authority -->
+    <g id="module-2" transform="translate(440, 100)">
+      <rect class="card-bg" width="800" height="280" rx="16"/>
+      <text class="ppt-font-cn-heading text-dim" x="24" y="40" font-size="18">领航者的基因与使命</text>
+      
+      <!-- Brand Meaning -->
+      <g transform="translate(24, 70)">
+        <rect width="360" height="186" rx="12" fill="rgba(59, 130, 246, 0.05)" stroke="rgba(59, 130, 246, 0.2)"/>
+        <text class="en-heading text-bright" x="180" y="60" font-size="32" text-anchor="middle">Define + Modify</text>
+        <text class="en-impact accent-blue" x="180" y="115" font-size="54" text-anchor="middle">= Dify</text>
+        <text class="ppt-font-cn-heading text-highlight" x="180" y="155" font-size="18" text-anchor="middle">Do It For You (为你而做)</text>
+      </g>
+      
+      <!-- Team & Partner -->
+      <g transform="translate(410, 70)">
+        <text class="ppt-font-cn-heading text-bright" x="0" y="20" font-size="17">精英团队背景</text>
+        <text class="ppt-font-cn-body text-dim" x="0" y="50" font-size="14">核心成员来自 腾讯云、阿里云、字节跳动</text>
+        
+        <rect y="85" width="366" height="101" rx="12" fill="rgba(255, 215, 0, 0.05)" stroke="rgba(255, 215, 0, 0.2)"/>
+        <circle cx="40" cy="135" r="20" fill="#EAB308" fill-opacity="0.2"/>
+        <path d="M32 135 L38 141 L48 129" stroke="#EAB308" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text class="ppt-font-cn-heading" x="75" y="128" font-size="18" fill="#FDE047">NVIDIA GTC 黄金合作伙伴</text>
+        <text class="ppt-font-cn-body" x="75" y="153" font-size="14" fill="#FDE047" opacity="0.8">代表中国 AI 工具链走向世界舞台</text>
+      </g>
+    </g>
+
+    <!-- Module 3: Paradigm Shift -->
+    <g id="module-3" transform="translate(40, 400)">
+      <rect class="card-bg" width="780" height="280" rx="16"/>
+      <text class="ppt-font-cn-heading text-dim" x="24" y="40" font-size="18">重新定义 AI 应用生产范式</text>
+      
+      <g transform="translate(24, 80)">
+        <text class="ppt-font-cn-heading text-bright" x="0" y="20" font-size="24">从 Chatbox 走向 Agentic Workflow</text>
+        <g transform="translate(0, 50)">
+           <text class="ppt-font-cn-body text-dim" x="0" y="20" font-size="15">融合 BaaS 与 LLMOps 理念的全栈引擎</text>
+           <text class="ppt-font-cn-body text-dim" x="0" y="50" font-size="15">突破对话框局限，将 AI 嵌入真实业务流程</text>
+           <text class="ppt-font-cn-body text-dim" x="0" y="80" font-size="15">桥接底层模型与业务逻辑，赋能非技术创新者</text>
+        </g>
+        
+        <!-- Logic Icon Flow -->
+        <g transform="translate(0, 165)">
+          <rect width="90" height="32" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+          <text class="ppt-font-cn-heading text-dim" x="45" y="21" font-size="12" text-anchor="middle">底层模型</text>
+          
+          <path d="M100 16 L120 16" stroke="#3B82F6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+          
+          <rect x="130" y="0" width="100" height="32" rx="6" fill="rgba(59, 130, 246, 0.2)" stroke="#3B82F6"/>
+          <text class="ppt-font-cn-heading text-highlight" x="180" y="21" font-size="12" text-anchor="middle">Dify 引擎</text>
+          
+          <path d="M240 16 L260 16" stroke="#3B82F6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+          
+          <rect x="270" y="0" width="90" height="32" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+          <text class="ppt-font-cn-heading text-dim" x="315" y="21" font-size="12" text-anchor="middle">业务逻辑</text>
+        </g>
+      </g>
+
+      <!-- Image Slot -->
+      <image id="ai-image-img-1" data-ai-slot-id="img-1" x="0" y="0" width="336" height="216" href="https://aiphoto.sandunppt.com/public/uploads/superppt/slot-gen/2026/03/12/img-1_d76e21990eb8.png" data-source-url="https://aiphoto.sandunppt.com/public/uploads/superppt/slot-gen/2026/03/12/img-1_d76e21990eb8.png" preserveAspectRatio="xMidYMid slice" transform="translate(420, 440)"><title>https://aiphoto.sandunppt.com/public/uploads/superppt/slot-gen/2026/03/12/img-1_d76e21990eb8.png</title></image>
+    </g>
+
+    <!-- Module 4: Timeline -->
+    <g id="module-4" transform="translate(840, 400)">
+      <rect class="card-bg" width="400" height="280" rx="16"/>
+      <text class="ppt-font-cn-heading text-dim" x="24" y="40" font-size="18">进化历程：从杭州到硅谷</text>
+      
+      <g transform="translate(40, 85)">
+        <line x1="10" y1="10" x2="10" y2="150" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+        
+        <!-- Point 1 -->
+        <circle cx="10" cy="10" r="5" fill="#3B82F6"/>
+        <text class="en-heading text-bright" x="30" y="15" font-size="16">2023.03</text>
+        <text class="ppt-font-cn-body text-dim" x="30" y="38" font-size="14">团队成立，发布 1.0 开源版本</text>
+        
+        <!-- Point 2 -->
+        <circle cx="10" cy="80" r="5" fill="#3B82F6"/>
+        <text class="en-heading text-bright" x="30" y="85" font-size="16">2024.11</text>
+        <text class="ppt-font-cn-body text-dim" x="30" y="108" font-size="14">上线企业级套件，进军合规领域</text>
+        
+        <!-- Point 3 -->
+        <circle cx="10" cy="150" r="5" fill="#3B82F6"/>
+        <text class="en-heading text-highlight" x="30" y="155" font-size="16">2025.03</text>
+        <text class="ppt-font-cn-body text-dim" x="30" y="178" font-size="14">硅谷发布 v1.0.0，开启多模态编排</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <rect x="40" y="46" width="4" height="26" rx="2" fill="#3B82F6"/>
+    <text class="ppt-font-cn-heading text-bright" x="58" y="66" font-size="26" style="letter-spacing:1px">Dify：开源LLM应用开发领航者</text>
+    <line x1="40" y1="80" x2="1240" y2="80" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1"/>
+  </g>
+
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3B82F6"/>
+    </marker>
+  </defs>
+
+  <g id="ai-image-layer">
+    <clipPath id="clip-ai-image-img-1">
+      <rect x="420.00" y="440.00" width="336.00" height="216.00" rx="12"/>
+    </clipPath>
+    
+  </g>
+</svg>

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+      .shadow-card { filter: drop-shadow(0 4px 12px rgba(176, 53, 47, 0.08)); }
+    ]]></style>
+    <!-- Background Patterns & Filters -->
+    <pattern id='grid' width='40' height='40' patternUnits='userSpaceOnUse'>
+      <path d='M 40 0 L 0 0 0 40' fill='none' stroke='#B0352F' stroke-width='0.5' stroke-opacity='0.05'/>
+    </pattern>
+    <filter id='noise'>
+      <feTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='3' stitchTiles='stitch'/>
+      <feColorMatrix type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.02 0'/>
+    </filter>
+    <linearGradient id="grad_red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B0352F;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#B0352F;stop-opacity:0.02" />
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background (严格复用设计规范) -->
+  <g id='bg'>
+    <rect width='100%' height='100%' fill='#FDFCFB'/>
+    <rect width='100%' height='100%' fill='url(#grid)'/>
+    <rect width='100%' height='100%' filter='url(#noise)'/>
+    <circle cx='90%' cy='10%' r='300' fill='#B0352F' fill-opacity='0.03'/>
+    <!-- 章节页额外装饰：底部柔和渐变 -->
+    <rect width="1280" height="300" y="420" fill="url(#grad_red)"/>
+  </g>
+
+  <!-- LAYER 2: Content (Transition Page Layout) -->
+  <g id="content_layer">
+    <!-- Center Content Group -->
+    <g transform="translate(640, 320)">
+      <!-- Chapter Number Background (Theme Style) -->
+      <text class="ppt-font-cn-theme-heritage" x="0" y="-100" text-anchor="middle" font-size="220" fill="#B0352F" fill-opacity="0.06">01</text>
+      
+      <!-- Chapter Label -->
+      <text class="ppt-font-cn-heading" x="0" y="-110" text-anchor="middle" font-size="28" fill="#B0352F" letter-spacing="6">CHAPTER ONE</text>
+      
+      <!-- Main Title (Imperial Heritage Style) -->
+      <g class="ppt-font-cn-theme-heritage">
+        <text x="0" y="-10" text-anchor="middle" font-size="56" fill="#1A1A1A">
+          <tspan x="0" dy="0">第一部分：核心前置</tspan>
+          <tspan x="0" dy="80" font-size="48">2026北京旅游“预约制”生存指南</tspan>
+        </text>
+      </g>
+      
+      <!-- Divider (Heritage Red) -->
+      <rect x="-80" y="110" width="160" height="3" rx="1.5" fill="#B0352F" fill-opacity="0.8"/>
+      
+      <!-- Core Insight -->
+      <text class="ppt-font-cn-body" x="0" y="170" text-anchor="middle" font-size="26" fill="#4A4A4A">
+        核心洞察：2026年，北京旅行的成败不再取决于体力，而取决于你的<tspan fill="#B0352F" font-weight="700">“指尖策略”</tspan>。
+      </text>
+    </g>
+
+    <!-- Key Points (Bento Style Bottom Row) -->
+    <g transform="translate(140, 550)">
+      <!-- Point 1 -->
+      <g transform="translate(0, 0)" class="shadow-card">
+        <rect width="320" height="110" rx="8" fill="#FFFFFF" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.2"/>
+        <rect width="4" height="40" x="0" y="35" fill="#B0352F"/>
+        <text class="ppt-font-cn-heading" x="30" y="48" font-size="22" fill="#1A1A1A">抢票逻辑</text>
+        <text class="ppt-font-cn-body" x="30" y="80" font-size="16" fill="#666666">掌握放票瞬间的生死时速</text>
+        <text class="ppt-font-cn-theme-heritage" x="290" y="45" font-size="32" fill="#B0352F" fill-opacity="0.1" text-anchor="end">01</text>
+      </g>
+      
+      <!-- Point 2 -->
+      <g transform="translate(340, 0)" class="shadow-card">
+        <rect width="320" height="110" rx="8" fill="#FFFFFF" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.2"/>
+        <rect width="4" height="40" x="0" y="35" fill="#B0352F"/>
+        <text class="ppt-font-cn-heading" x="30" y="48" font-size="22" fill="#1A1A1A">分时预约技巧</text>
+        <text class="ppt-font-cn-body" x="30" y="80" font-size="16" fill="#666666">故宫/国博/升旗最优组合</text>
+        <text class="ppt-font-cn-theme-heritage" x="290" y="45" font-size="32" fill="#B0352F" fill-opacity="0.1" text-anchor="end">02</text>
+      </g>
+      
+      <!-- Point 3 -->
+      <g transform="translate(680, 0)" class="shadow-card">
+        <rect width="320" height="110" rx="8" fill="#FFFFFF" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.2"/>
+        <rect width="4" height="40" x="0" y="35" fill="#B0352F"/>
+        <text class="ppt-font-cn-heading" x="30" y="48" font-size="22" fill="#1A1A1A">确定性管理</text>
+        <text class="ppt-font-cn-body" x="30" y="80" font-size="16" fill="#666666">将旅行不确定性降至最低</text>
+        <text class="ppt-font-cn-theme-heritage" x="290" y="45" font-size="32" fill="#B0352F" fill-opacity="0.1" text-anchor="end">03</text>
+      </g>
+    </g>
+
+    <!-- Decorative Corner Element (Imperial Style) -->
+    <g transform="translate(40, 680) scale(0.8)">
+      <path d="M0 0 L40 0 M0 0 L0 -40" stroke="#B0352F" stroke-width="2" fill="none" opacity="0.4"/>
+    </g>
+    <g transform="translate(1240, 680) scale(0.8) rotate(90)">
+      <path d="M0 0 L40 0 M0 0 L0 -40" stroke="#B0352F" stroke-width="2" fill="none" opacity="0.4"/>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Footer (Transition pages don't use Global Header, but can have subtle branding) -->
+  <text x="640" y="700" text-anchor="middle" class="ppt-font-cn-body" font-size="12" fill="#B0352F" fill-opacity="0.4" letter-spacing="2">2026 BEIJING TRAVEL STRATEGY GUIDE</text>
+</svg>

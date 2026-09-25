@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720"><style data-img-radius="1">image{clip-path:inset(0 round 8px)}</style>
+  <defs>
+    <style>
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+      .text-imperial { fill: #B0352F; }
+      .text-dark { fill: #1A1A1A; }
+      .text-gray { fill: #666666; }
+      .text-white { fill: #FFFFFF; }
+    </style>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#B0352F" flood-opacity="0.05"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.05"></path>
+      </pattern>
+      <filter id="noise">
+        <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" stitchTiles="stitch"></feTurbulence>
+        <feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.02 0"></feColorMatrix>
+      </filter>
+    </defs>
+    <rect width="100%" height="100%" fill="#FDFCFB"></rect>
+    <rect width="100%" height="100%" fill="url(#grid)"></rect>
+    <rect width="100%" height="100%" filter="url(#noise)"></rect>
+    <circle cx="90%" cy="10%" r="300" fill="#B0352F" fill-opacity="0.03"></circle>
+  </g>
+
+  <!-- LAYER 2: Content -->
+  <g id="content_layer">
+    <!-- Module 1: Timeline (Left Column) -->
+    <g transform="translate(40, 110)">
+      <rect width="320" height="570" rx="16" fill="#FFFFFF" filter="url(#shadow)"></rect>
+      <rect x="24" y="24" width="4" height="20" rx="2" fill="#B0352F"></rect>
+      <text class="ppt-font-cn-theme-heritage text-imperial" x="36" y="42" font-size="22">24小时抢票准时战</text>
+      
+      <line x1="50" y1="90" x2="50" y2="500" stroke="#B0352F" stroke-width="1.5" stroke-dasharray="4 4" stroke-opacity="0.3"></line>
+      
+      <!-- Time Node 1 -->
+      <g transform="translate(0, 90)">
+        <circle cx="50" cy="30" r="10" fill="#B0352F"></circle>
+        <circle cx="50" cy="30" r="16" fill="none" stroke="#B0352F" stroke-opacity="0.2"></circle>
+        <text class="ppt-font-cn-heading text-imperial" x="75" y="25" font-size="26">12:00</text>
+        <text class="ppt-font-cn-heading text-dark" x="75" y="52" font-size="18">天安门升旗</text>
+        <text class="ppt-font-cn-body text-gray" x="75" y="78" font-size="14">提前9天放票，抢第9天名额</text>
+      </g>
+      
+      <!-- Time Node 2 -->
+      <g transform="translate(0, 230)">
+        <circle cx="50" cy="30" r="10" fill="#B0352F"></circle>
+        <text class="ppt-font-cn-heading text-imperial" x="75" y="25" font-size="26">17:00</text>
+        <text class="ppt-font-cn-heading text-dark" x="75" y="52" font-size="18">国家博物馆</text>
+        <text class="ppt-font-cn-body text-gray" x="75" y="78" font-size="14">提前7天放票，竞争极激烈</text>
+      </g>
+
+      <!-- Time Node 3 -->
+      <g transform="translate(0, 370)">
+        <circle cx="50" cy="30" r="10" fill="#B0352F"></circle>
+        <text class="ppt-font-cn-heading text-imperial" x="75" y="25" font-size="26">20:00</text>
+        <text class="ppt-font-cn-heading text-dark" x="75" y="52" font-size="18">故宫博物院</text>
+        <text class="ppt-font-cn-body text-gray" x="75" y="78" font-size="14">提前7天放票，决战紫禁城</text>
+      </g>
+      
+      <rect x="24" y="510" width="272" height="36" rx="8" fill="#B0352F" fill-opacity="0.05"></rect>
+      <text class="ppt-font-cn-body text-imperial" x="160" y="534" text-anchor="middle" font-size="13">💡 建议设置闹钟，提前3分钟进入页面</text>
+    </g>
+
+    <!-- Module 2: Comparison Matrix (Middle Column) -->
+    <g transform="translate(380, 110)">
+      <rect width="480" height="570" rx="16" fill="#FFFFFF" filter="url(#shadow)"></rect>
+      <rect x="24" y="24" width="4" height="20" rx="2" fill="#B0352F"></rect>
+      <text class="ppt-font-cn-theme-heritage text-imperial" x="36" y="42" font-size="22">三大核心景点预约矩阵</text>
+      
+      <!-- Matrix Header -->
+      <rect x="24" y="70" width="432" height="40" rx="6" fill="#F8F4F2"></rect>
+      <text class="ppt-font-cn-heading text-imperial" x="40" y="96" font-size="15">景点名称</text>
+      <text class="ppt-font-cn-heading text-imperial" x="160" y="96" font-size="15">预约周期</text>
+      <text class="ppt-font-cn-heading text-imperial" x="300" y="96" font-size="15">关键限制/渠道</text>
+
+      <!-- Row 1: Forbidden City -->
+      <g transform="translate(24, 125)">
+        <text class="ppt-font-cn-heading text-dark" x="16" y="30" font-size="16">故宫博物院</text>
+        <text class="ppt-font-cn-body text-dark" x="136" y="30" font-size="14">提前7天</text>
+        <text class="ppt-font-cn-body text-gray" x="276" y="20" font-size="13">周一闭馆；分上午/下午场</text>
+        <text class="ppt-font-cn-body text-imperial" x="276" y="40" font-size="13">小程序：故宫博物院</text>
+        <line x1="0" y1="60" x2="432" y2="60" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.1"></line>
+      </g>
+
+      <!-- Row 2: NM -->
+      <g transform="translate(24, 200)">
+        <text class="ppt-font-cn-heading text-dark" x="16" y="30" font-size="16">国家博物馆</text>
+        <text class="ppt-font-cn-body text-dark" x="136" y="30" font-size="14">提前7天</text>
+        <text class="ppt-font-cn-body text-gray" x="276" y="20" font-size="13">周一闭馆；实名预约</text>
+        <text class="ppt-font-cn-body text-imperial" x="276" y="40" font-size="13">公众号：国家博物馆</text>
+        <line x1="0" y1="60" x2="432" y2="60" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.1"></line>
+      </g>
+
+      <!-- Row 3: Flag -->
+      <g transform="translate(24, 275)">
+        <text class="ppt-font-cn-heading text-dark" x="16" y="30" font-size="16">天安门升旗</text>
+        <text class="ppt-font-cn-body text-dark" x="136" y="30" font-size="14">提前1-9天</text>
+        <text class="ppt-font-cn-body text-gray" x="276" y="20" font-size="13">需选特定“升旗”时段</text>
+        <text class="ppt-font-cn-body text-imperial" x="276" y="40" font-size="13">小程序：天安门广场预约</text>
+      </g>
+
+      <!-- Image Slot -->
+      <image id="ai-image-img-1" data-ai-slot-id="img-1" x="0" y="0" width="432" height="185" href="https://images.unsplash.com/photo-1734260167111-0199f37c7bfd?crop=entropy&amp;amp;amp;cs=tinysrgb&amp;amp;amp;fit=max&amp;amp;amp;fm=jpg&amp;amp;amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHw4fHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMG1vcm5pbmclMjBsaWdodCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NzMxOTk0NDl8MA&amp;amp;amp;ixlib=rb-4.1.0&amp;amp;amp;q=80&amp;amp;amp;w=1080" data-source-url="https://images.unsplash.com/photo-1668690631335-dbfed2d1943c?crop=entropy&amp;amp;amp;amp;amp;amp;amp;cs=tinysrgb&amp;amp;amp;amp;amp;amp;amp;fit=max&amp;amp;amp;amp;amp;amp;amp;fm=jpg&amp;amp;amp;amp;amp;amp;amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMG1vcm5pbmclMjBsaWdodCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NzMxOTk0NDl8MA&amp;amp;amp;amp;amp;amp;amp;ixlib=rb-4.1.0&amp;amp;amp;amp;amp;amp;amp;q=80&amp;amp;amp;amp;amp;amp;amp;w=1080" preserveAspectRatio="xMidYMid slice" transform="translate(24, 360)"><title>https://images.unsplash.com/photo-1668690631335-dbfed2d1943c?crop=entropy&amp;amp;cs=tinysrgb&amp;amp;fit=max&amp;amp;fm=jpg&amp;amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMG1vcm5pbmclMjBsaWdodCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NzMxOTk0NDl8MA&amp;amp;ixlib=rb-4.1.0&amp;amp;q=80&amp;amp;w=1080</title></image>
+    </g>
+
+    <!-- Module 3: Logic Connection (Right Top) -->
+    <g transform="translate(880, 110)">
+      <rect width="360" height="230" rx="16" fill="#FFFFFF" filter="url(#shadow)"></rect>
+      <rect x="24" y="24" width="4" height="20" rx="2" fill="#B0352F"></rect>
+      <text class="ppt-font-cn-theme-heritage text-imperial" x="36" y="42" font-size="22">避坑法则：预约“一票通”</text>
+      
+      <g transform="translate(25, 75)">
+        <rect width="135" height="70" rx="8" fill="#FDFCFB" stroke="#B0352F" stroke-opacity="0.2"></rect>
+        <text class="ppt-font-cn-heading text-dark" x="67.5" y="35" text-anchor="middle" font-size="15">预约故宫/国博</text>
+        <text class="ppt-font-cn-body text-gray" x="67.5" y="55" text-anchor="middle" font-size="12">或其他核心景点</text>
+        
+        <text class="ppt-font-cn-theme-heritage text-imperial" x="155" y="45" font-size="28">≈</text>
+        
+        <rect x="175" y="0" width="135" height="70" rx="8" fill="#B0352F"></rect>
+        <text class="ppt-font-cn-heading text-white" x="242.5" y="35" text-anchor="middle" font-size="15">进入广场凭证</text>
+        <text class="ppt-font-cn-body text-white" x="242.5" y="55" text-anchor="middle" font-size="11" fill-opacity="0.8">非升旗时段有效</text>
+      </g>
+      
+      <text class="ppt-font-cn-body text-gray" x="30" y="175" font-size="14">
+        <tspan x="30" dy="0">无需重复预约广场，凭预约记录即可</tspan>
+        <tspan x="30" dy="24">通过安检，极大简化行程流程。</tspan>
+      </text>
+    </g>
+
+    <!-- Module 4: Tips (Right Bottom) -->
+    <g transform="translate(880, 360)">
+      <rect width="360" height="320" rx="16" fill="#2A2A2A"></rect>
+      <rect x="24" y="24" width="4" height="20" rx="2" fill="#B0352F"></rect>
+      <text class="ppt-font-cn-theme-heritage text-white" x="36" y="42" font-size="22">升旗占位与抢票锦囊</text>
+      
+      <g transform="translate(24, 75)">
+        <circle cx="8" cy="8" r="4" fill="#B0352F"></circle>
+        <text class="ppt-font-cn-heading text-white" x="24" y="14" font-size="15">选口攻略</text>
+        <text class="ppt-font-cn-body text-white" x="24" y="38" font-size="13" fill-opacity="0.7">1/2号口离城楼近；3/4号口离旗杆近</text>
+      </g>
+      
+      <g transform="translate(24, 145)">
+        <circle cx="8" cy="8" r="4" fill="#B0352F"></circle>
+        <text class="ppt-font-cn-heading text-white" x="24" y="14" font-size="15">深夜捡漏</text>
+        <text class="ppt-font-cn-body text-white" x="24" y="38" font-size="13" fill-opacity="0.7">每日22:00-24:00关注“回流票”释放</text>
+      </g>
+
+      <g transform="translate(24, 215)">
+        <circle cx="8" cy="8" r="4" fill="#B0352F"></circle>
+        <text class="ppt-font-cn-heading text-white" x="24" y="14" font-size="15">身份必备</text>
+        <text class="ppt-font-cn-body text-white" x="24" y="38" font-size="13" fill-opacity="0.7">必须携带身份证原件，提前录入随行信息</text>
+      </g>
+      
+      <rect x="24" y="270" width="312" height="30" rx="6" fill="#B0352F" fill-opacity="0.2"></rect>
+      <text class="ppt-font-cn-heading text-imperial" x="180" y="290" text-anchor="middle" font-size="13">NO.1 胜率技巧：多账号同时操作</text>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <rect x="40" y="48" width="4" height="24" rx="2" fill="#B0352F"></rect>
+    <text class="ppt-font-cn-heading" x="58" y="66" font-size="26" fill="#1A1A1A">时间管理：故宫、国博及升旗仪式的分时预约技巧</text>
+    <line x1="40" y1="85" x2="120" y2="85" stroke="#B0352F" stroke-width="1" stroke-opacity="0.3"></line>
+  </g>
+
+  <g id="ai-image-layer">
+    <clipPath id="clip-ai-image-img-1">
+      <rect x="24.00" y="360.00" width="432.00" height="185.00" rx="12"></rect>
+    </clipPath>
+    
+  </g>
+</svg>

@@ -20,7 +20,11 @@ import sys
 import zipfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-F = lambda *p: os.path.join(HERE, *p)
+
+
+def F(*p: str) -> str:
+    """拼本目录下的相对路径。"""
+    return os.path.join(HERE, *p)
 
 results: list[tuple[str, bool, str]] = []
 
@@ -65,7 +69,7 @@ def verify_xlsx() -> None:
     from openpyxl import load_workbook
 
     wb = load_workbook(F("财务数据.xlsx"))
-    check("XLSX 工作表齐全", set(["财务数据", "分部门", "图表数据"]) <= set(wb.sheetnames),
+    check("XLSX 工作表齐全", {"财务数据", "分部门", "图表数据"} <= set(wb.sheetnames),
           str(wb.sheetnames))
 
     ws = wb["财务数据"]
@@ -169,7 +173,8 @@ def verify_pptx() -> None:
 
 # --- 5. 字体清单 -------------------------------------------------------------
 def verify_fonts() -> None:
-    data = json.load(open(F("fonts-manifest.json"), encoding="utf-8"))
+    with open(F("fonts-manifest.json"), encoding="utf-8") as fh:
+        data = json.load(fh)
     entries = data["entries"]
     check("字体清单含 OFL 开源条目", any(e["kind"] == "open" for e in entries))
     check("字体清单含宿主专有条目", any(e["kind"] == "host-only" for e in entries))
@@ -184,22 +189,28 @@ def verify_fonts() -> None:
 def verify_hashes() -> None:
     import hashlib
 
-    rec = json.load(open(F("fixtures-hashes.json"), encoding="utf-8"))
+    with open(F("fixtures-hashes.json"), encoding="utf-8") as fh:
+        rec = json.load(fh)
     bad = []
     for a in rec["artifacts"]:
         p = F(a["file"])
         if not os.path.exists(p):
             bad.append(a["file"] + ":missing")
             continue
-        h = hashlib.sha256(open(p, "rb").read()).hexdigest()
+        with open(p, "rb") as fh:
+            h = hashlib.sha256(fh.read()).hexdigest()
         if h != a["sha256"] or os.path.getsize(p) != a["bytes"]:
             bad.append(a["file"] + ":mismatch")
     check("fixtures-hashes.json 与实物一致", not bad, str(bad))
 
 
 def main() -> int:
-    verify_docx(); verify_xlsx(); verify_pdf(); verify_pptx()
-    verify_fonts(); verify_hashes()
+    verify_docx()
+    verify_xlsx()
+    verify_pdf()
+    verify_pptx()
+    verify_fonts()
+    verify_hashes()
 
     ok = sum(1 for _, o, _ in results if o)
     fail = [(n, d) for n, o, d in results if not o]

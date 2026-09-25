@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+    ]]></style>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.05"/>
+    </filter>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6700"/>
+      <stop offset="100%" stop-color="#FF8533"/>
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="0.5"/>
+      </pattern>
+      <radialGradient id="glow" cx="90%" cy="90%" r="50%">
+        <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"/>
+        <stop offset="100%" stop-color="#FF6700" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="#F8F9FA"/>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <rect width="100%" height="100%" fill="url(#glow)"/>
+  </g>
+
+  <!-- LAYER 2: Content Layer -->
+  <g id="content_layer">
+    <!-- Bento Grid - Card 1: Strategic Reserve (Top Left) -->
+    <g transform="translate(40, 100)">
+      <rect width="780" height="300" rx="16" fill="#FFFFFF" filter="url(#cardShadow)"/>
+      <rect x="30" y="30" width="4" height="18" rx="2" fill="#FF6700"/>
+      <text class="ppt-font-cn-heading" x="42" y="46" font-size="20" fill="#1A1A1A">战略储备与资本开支</text>
+      
+      <!-- Big Number Area -->
+      <g transform="translate(30, 80)">
+        <text class="ppt-font-cn-body" x="0" y="20" font-size="16" fill="#666666">两千亿级“战略弹药库”</text>
+        <text class="ppt-font-cn-heading" x="0" y="85" font-size="68" fill="#1A1A1A">2,367 <tspan font-size="24" dy="-10">亿元</tspan></text>
+        <text class="ppt-font-cn-body" x="0" y="120" font-size="14" fill="#999999">截至2025年9月30日总现金储备</text>
+        <rect x="0" y="145" width="300" height="1" fill="#EEEEEE"/>
+        <text class="ppt-font-cn-body" x="0" y="175" font-size="15" fill="#444444">其中现金及等价物：<tspan font-weight="700" fill="#1A1A1A">355 亿元</tspan></text>
+      </g>
+
+      <!-- Vertical Divider -->
+      <rect x="370" y="70" width="1" height="200" fill="#F0F0F0"/>
+
+      <!-- CapEx Chart Slot -->
+      <g transform="translate(400, 70)">
+        <text class="ppt-font-cn-body" x="0" y="20" font-size="16" fill="#666666">资本开支 (CapEx) 增长情况</text>
+        <text class="ppt-font-cn-heading" x="0" y="52" font-size="28" fill="#FF6700">+86.7% <tspan font-size="14" fill="#999999" class="ppt-font-cn-body">YoY</tspan></text>
+        <!-- Locked Slot: chart-1 -->
+        <g data-chart-slot-id="chart-1" data-chart-type="bar" transform="translate(0, 65)"><rect x="0.5" y="0.5" width="349" height="129" rx="7.5" fill="none" stroke="#E5E5E5" stroke-width="1"/><line x1="50" y1="90" x2="330" y2="90" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="94" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">0</text><line x1="50" y1="78" x2="330" y2="78" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="82" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">50</text><line x1="50" y1="66" x2="330" y2="66" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="70" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">100</text><line x1="50" y1="54" x2="330" y2="54" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="58" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">150</text><line x1="50" y1="42" x2="330" y2="42" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="46" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">200</text><line x1="50" y1="30" x2="330" y2="30" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="34" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">250</text><path d="M 56 90 L 56 77.29599999999999 A 4 4 0 0 1 60 73.29599999999999 L 180 73.29599999999999 A 4 4 0 0 1 184 77.29599999999999 L 184 90 Z" fill="#FF6700"/><text x="120" y="65.29599999999999" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">69.6亿元</text><text x="120" y="114" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">2024 Q1-Q3</text><path d="M 196 90 L 196 62.8 A 4 4 0 0 1 200 58.8 L 320 58.8 A 4 4 0 0 1 324 62.8 L 324 90 Z" fill="#333333"/><text x="260" y="50.8" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">130亿元</text><text x="260" y="114" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">2025 Q1-Q3</text><line x1="42" y1="90" x2="330" y2="90" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/><line x1="50" y1="30" x2="50" y2="98" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/></g>
+      </g>
+    </g>
+
+    <!-- Bento Grid - Card 2: Visual Metaphor (Top Right) -->
+    <g transform="translate(840, 100)">
+      <rect width="400" height="300" rx="16" fill="#FFFFFF" filter="url(#cardShadow)"/>
+      <!-- Locked Slot: img-1 -->
+      <image id="ai-image-img-1" data-ai-slot-id="img-1" x="0" y="0" width="400" height="300" href="https://images.unsplash.com/photo-1714601344981-75e003bc5d18?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBmaW5hbmNpYWwlMjBkaXN0cmljdCUyMHNreXNjcmFwZXIlMjBnbGFzcyUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NzQzMzIyNTd8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" data-source-url="https://unsplash.com/photos/a-very-tall-building-next-to-a-very-tall-building-ABWk3C1tyMY?utm_medium=referral&amp;utm_source=superppt+agent" preserveAspectRatio="xMidYMid slice"><title>https://unsplash.com/photos/a-very-tall-building-next-to-a-very-tall-building-ABWk3C1tyMY?utm_medium=referral&amp;utm_source=superppt+agent</title></image>
+    </g>
+
+    <!-- Bento Grid - Card 3: Shareholder Returns (Bottom Left) -->
+    <g transform="translate(40, 420)">
+      <rect width="400" height="260" rx="16" fill="#FFFFFF" filter="url(#cardShadow)"/>
+      <rect x="30" y="30" width="4" height="18" rx="2" fill="#FF6700"/>
+      <text class="ppt-font-cn-heading" x="42" y="46" font-size="20" fill="#1A1A1A">股东回馈</text>
+      
+      <circle cx="65" cy="105" r="32" fill="#FFF0E6"/>
+      <path d="M55 105L62 112L75 99" stroke="#FF6700" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <text class="ppt-font-cn-heading" x="30" y="185" font-size="40" fill="#1A1A1A">15.4 <tspan font-size="20" dy="-8">亿港元</tspan></text>
+      <text class="ppt-font-cn-body" x="30" y="215" font-size="15" fill="#666666">累计购回超 <tspan font-weight="700" fill="#1A1A1A">3,412 万股</tspan> 股份</text>
+      <text class="ppt-font-cn-body" x="30" y="238" font-size="14" fill="#FF6700">重金回购彰显长期发展信心</text>
+    </g>
+
+    <!-- Bento Grid - Card 4: Funding Sources (Bottom Right) -->
+    <g transform="translate(460, 420)">
+      <rect width="780" height="260" rx="16" fill="#FFFFFF" filter="url(#cardShadow)"/>
+      <rect x="30" y="30" width="4" height="18" rx="2" fill="#FF6700"/>
+      <text class="ppt-font-cn-heading" x="42" y="46" font-size="20" fill="#1A1A1A">多元化、稳健的资金供应体系</text>
+      
+      <!-- Source Grid -->
+      <g transform="translate(30, 85)">
+        <!-- Item 1 -->
+        <g transform="translate(0, 0)">
+          <rect width="350" height="65" rx="12" fill="#FBFBFB" stroke="#F0F0F0" stroke-width="1"/>
+          <circle cx="30" cy="32" r="4" fill="#FF6700"/>
+          <text class="ppt-font-cn-heading" x="50" y="28" font-size="16" fill="#1A1A1A">内生造血</text>
+          <text class="ppt-font-cn-body" x="50" y="48" font-size="13" fill="#666666">经营活动产生的持续现金净流入</text>
+        </g>
+        <!-- Item 2 -->
+        <g transform="translate(370, 0)">
+          <rect width="350" height="65" rx="12" fill="#FBFBFB" stroke="#F0F0F0" stroke-width="1"/>
+          <circle cx="30" cy="32" r="4" fill="#FF6700"/>
+          <text class="ppt-font-cn-heading" x="50" y="28" font-size="16" fill="#1A1A1A">资本市场</text>
+          <text class="ppt-font-cn-body" x="50" y="48" font-size="13" fill="#666666">全球发售、配售认购及股权融资</text>
+        </g>
+        <!-- Item 3 -->
+        <g transform="translate(0, 85)">
+          <rect width="350" height="65" rx="12" fill="#FBFBFB" stroke="#F0F0F0" stroke-width="1"/>
+          <circle cx="30" cy="32" r="4" fill="#FF6700"/>
+          <text class="ppt-font-cn-heading" x="50" y="28" font-size="16" fill="#1A1A1A">债权融资</text>
+          <text class="ppt-font-cn-body" x="50" y="48" font-size="13" fill="#666666">公司债券发行与灵活的银行借款</text>
+        </g>
+        <!-- Item 4 -->
+        <g transform="translate(370, 85)">
+          <rect width="350" height="65" rx="12" fill="#FBFBFB" stroke="#F0F0F0" stroke-width="1"/>
+          <circle cx="30" cy="32" r="4" fill="#FF6700"/>
+          <text class="ppt-font-cn-heading" x="50" y="28" font-size="16" fill="#1A1A1A">韧性保障</text>
+          <text class="ppt-font-cn-body" x="50" y="48" font-size="13" fill="#666666">全渠道供应体系，极强抗风险能力</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header Layer -->
+  <g id="header">
+    <rect x="40" y="46" width="6" height="26" rx="3" fill="#FF6700"/>
+    <text class="ppt-font-cn-heading" x="58" y="66" font-size="26" fill="#1A1A1A">资金储备：充沛现金流支撑新十年目标</text>
+  </g>
+
+  <g id="ai-image-layer">
+    <clipPath id="clip-ai-image-img-1">
+      <rect x="0.00" y="0.00" width="400.00" height="300.00" rx="12"/>
+    </clipPath>
+    
+  </g>
+</svg>

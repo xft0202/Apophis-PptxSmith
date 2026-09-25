@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+      .fill-theme { fill: #B0352F; }
+      .stroke-theme { stroke: #B0352F; }
+      .text-main { fill: #1A1A1A; }
+      .text-sub { fill: #666666; }
+    ]]></style>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#B0352F" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id='bg'>
+    <defs>
+      <pattern id='grid' width='40' height='40' patternUnits='userSpaceOnUse'>
+        <path d='M 40 0 L 0 0 0 40' fill='none' stroke='#B0352F' stroke-width='0.5' stroke-opacity='0.05'/>
+      </pattern>
+      <filter id='noise'>
+        <feTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='3' stitchTiles='stitch'/>
+        <feColorMatrix type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.02 0'/>
+      </filter>
+    </defs>
+    <rect width='100%' height='100%' fill='#FDFCFB'/>
+    <rect width='100%' height='100%' fill='url(#grid)'/>
+    <rect width='100%' height='100%' filter='url(#noise)'/>
+    <circle cx='90%' cy='10%' r='300' fill='#B0352F' fill-opacity='0.03'/>
+  </g>
+
+  <!-- LAYER 2: Content (End Page Layout) -->
+  <g id="content_layer">
+    <!-- Background Decorative Element -->
+    <text class="ppt-font-cn-theme-heritage" x="640" y="440" font-size="320" fill="#B0352F" fill-opacity="0.04" text-anchor="middle">2026</text>
+
+    <!-- Main Title Group (Centered for End Page) -->
+    <g transform="translate(640, 140)">
+      <text class="ppt-font-cn-theme-heritage fill-theme" x="0" y="0" font-size="64" text-anchor="middle">总结与展望</text>
+      <text class="ppt-font-cn-heading text-main" x="0" y="70" font-size="32" text-anchor="middle">开启您的2026京城圆梦之旅</text>
+      <path d="M-120 95 L120 95" stroke="#B0352F" stroke-width="2" stroke-opacity="0.3"/>
+    </g>
+
+    <!-- Module 1: Four Cornerstones (Bento Grid) -->
+    <g transform="translate(50, 260)">
+      <!-- Card 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="285" height="210" rx="12" fill="#FFFFFF" filter="url(#cardShadow)"/>
+        <rect width="4" height="24" x="24" y="24" rx="2" class="fill-theme"/>
+        <text class="ppt-font-cn-heading fill-theme" x="38" y="43" font-size="18">01</text>
+        <text class="ppt-font-cn-heading text-main" x="24" y="85" font-size="24">预约前置</text>
+        <text class="ppt-font-cn-body text-sub" x="24" y="125" font-size="16">
+          <tspan x="24" dy="0">掌握核心景点抢票逻辑</tspan>
+          <tspan x="24" dy="28">确保100%准入率</tspan>
+        </text>
+      </g>
+      <!-- Card 2 -->
+      <g transform="translate(305, 0)">
+        <rect width="285" height="210" rx="12" fill="#FFFFFF" filter="url(#cardShadow)"/>
+        <rect width="4" height="24" x="24" y="24" rx="2" class="fill-theme"/>
+        <text class="ppt-font-cn-heading fill-theme" x="38" y="43" font-size="18">02</text>
+        <text class="ppt-font-cn-heading text-main" x="24" y="85" font-size="24">逻辑行程</text>
+        <text class="ppt-font-cn-body text-sub" x="24" y="125" font-size="16">
+          <tspan x="24" dy="0">分时预约与动线拆解</tspan>
+          <tspan x="24" dy="28">告别低效走马观花</tspan>
+        </text>
+      </g>
+      <!-- Card 3 -->
+      <g transform="translate(610, 0)">
+        <rect width="285" height="210" rx="12" fill="#FFFFFF" filter="url(#cardShadow)"/>
+        <rect width="4" height="24" x="24" y="24" rx="2" class="fill-theme"/>
+        <text class="ppt-font-cn-heading fill-theme" x="38" y="43" font-size="18">03</text>
+        <text class="ppt-font-cn-heading text-main" x="24" y="85" font-size="24">智慧旅居</text>
+        <text class="ppt-font-cn-body text-sub" x="24" y="125" font-size="16">
+          <tspan x="24" dy="0">大数据支撑职住选择</tspan>
+          <tspan x="24" dy="28">显著提升旅行舒适度</tspan>
+        </text>
+      </g>
+      <!-- Card 4 -->
+      <g transform="translate(915, 0)">
+        <rect width="285" height="210" rx="12" fill="#FFFFFF" filter="url(#cardShadow)"/>
+        <rect width="4" height="24" x="24" y="24" rx="2" class="fill-theme"/>
+        <text class="ppt-font-cn-heading fill-theme" x="38" y="43" font-size="18">04</text>
+        <text class="ppt-font-cn-heading text-main" x="24" y="85" font-size="24">精细预算</text>
+        <text class="ppt-font-cn-body text-sub" x="24" y="125" font-size="16">
+          <tspan x="24" dy="0">人均1500元科学配置</tspan>
+          <tspan x="24" dy="28">实现高品质平替体验</tspan>
+        </text>
+      </g>
+    </g>
+
+    <!-- Module 2: Vision Quote -->
+    <g transform="translate(640, 540)">
+      <text class="ppt-font-cn-theme-heritage text-main" x="0" y="0" font-size="28" text-anchor="middle">“不止是一次旅行，更是一场文化沉淀”</text>
+      <text class="ppt-font-cn-body text-sub" x="0" y="45" font-size="18" text-anchor="middle">在智慧预约中掌控节奏，在古今交织中感受京韵。2026年的北京，等待每一位有备而来的旅人。</text>
+    </g>
+
+    <!-- Module 3: Footer Action & Thank You -->
+    <g transform="translate(640, 650)">
+      <text class="ppt-font-cn-theme-heritage fill-theme" x="0" y="0" font-size="36" text-anchor="middle">祝您旅途愉快！</text>
+      <text class="ppt-font-cn-body text-sub" x="0" y="38" font-size="16" text-anchor="middle">感谢聆听，期待在2026年的京城与您相遇</text>
+    </g>
+
+    <!-- QR Code Placeholder -->
+    <g transform="translate(1140, 580)">
+      <rect width="90" height="90" rx="8" fill="#FFFFFF" stroke="#B0352F" stroke-width="1" stroke-dasharray="4 2"/>
+      <path d="M25 25h12v12H25zM53 25h12v12H53zM25 53h12v12H25zM42 42h6v6h-6z" class="fill-theme" opacity="0.6"/>
+      <text class="ppt-font-cn-body fill-theme" x="45" y="108" font-size="12" text-anchor="middle" font-weight="700">获取预算模板</text>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header (Not used for End Page as per instructions) -->
+</svg>

@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720"><style data-img-radius="1">image{clip-path:inset(0 round 8px)}</style>
+  <defs>
+    <style>
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+    </style>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"></feGaussianBlur>
+      <feOffset dx="0" dy="4" result="offsetblur"></feOffset>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.06"></feFuncA>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"></stop>
+      <stop offset="100%" stop-color="#FDFDFD"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="0.5"></path>
+      </pattern>
+      <radialGradient id="glow" cx="90%" cy="90%" r="50%">
+        <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"></stop>
+        <stop offset="100%" stop-color="#FF6700" stop-opacity="0"></stop>
+      </radialGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="#F8F9FA"></rect>
+    <rect width="100%" height="100%" fill="url(#grid)"></rect>
+    <rect width="100%" height="100%" fill="url(#glow)"></rect>
+  </g>
+
+  <!-- LAYER 2: Content -->
+  <g id="content_layer">
+    <!-- Module 1: 底层重构 -->
+    <g transform="translate(40, 100)">
+      <rect width="590" height="280" rx="20" fill="url(#cardGrad)" stroke="#E5E5E5" stroke-width="1" filter="url(#cardShadow)"></rect>
+      <rect x="30" y="32" width="4" height="18" rx="2" fill="#FF6700"></rect>
+      <text class="ppt-font-cn-heading" x="42" y="48" font-size="22" fill="#1A1A1A">底层重构：极致丝滑</text>
+      <text class="ppt-font-cn-body" x="42" y="78" font-size="15" fill="#666666">优化内核调度，实现多端协作下的毫秒级反馈</text>
+      
+      <!-- Chart Slot -->
+      <g data-chart-slot-id="chart-performance" data-chart-type="bar" transform="translate(30, 105)"><rect x="0.5" y="0.5" width="528" height="143" rx="7.5" fill="none" stroke="#E5E5E5" stroke-width="1"></rect><line x1="50" y1="104" x2="509" y2="104" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="108" text-anchor="end" font-size="11" fill="#64748B" opacity="0.8" font-weight="500">0</text><line x1="50" y1="89.2" x2="509" y2="89.2" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="93.2" text-anchor="end" font-size="11" fill="#64748B" opacity="0.8" font-weight="500">50</text><line x1="50" y1="74.4" x2="509" y2="74.4" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="78.4" text-anchor="end" font-size="11" fill="#64748B" opacity="0.8" font-weight="500">100</text><line x1="50" y1="59.6" x2="509" y2="59.6" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="63.6" text-anchor="end" font-size="11" fill="#64748B" opacity="0.8" font-weight="500">150</text><line x1="50" y1="44.8" x2="509" y2="44.8" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="48.8" text-anchor="end" font-size="11" fill="#64748B" opacity="0.8" font-weight="500">200</text><line x1="50" y1="30" x2="509" y2="30" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="34" text-anchor="end" font-size="11" fill="#64748B" opacity="0.8" font-weight="500">250</text><path d="M 56 104 L 56 78.4 A 4 4 0 0 1 60 74.4 L 269.5 74.4 A 4 4 0 0 1 273.5 78.4 L 273.5 104 Z" fill="#FF6700"></path><text x="164.75" y="66.4" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">100%</text><text x="164.75" y="128" text-anchor="middle" font-size="13" fill="#64748B" font-weight="500">上一代 OS</text><path d="M 285.5 104 L 285.5 67.15199999999999 A 4 4 0 0 1 289.5 63.151999999999994 L 499 63.151999999999994 A 4 4 0 0 1 503 67.15199999999999 L 503 104 Z" fill="#333333"></path><text x="394.25" y="55.151999999999994" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">138%</text><text x="394.25" y="128" text-anchor="middle" font-size="13" fill="#64748B" font-weight="500">澎湃 OS 3</text><line x1="42" y1="104" x2="509" y2="104" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"></line><line x1="50" y1="30" x2="50" y2="112" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"></line></g>
+    </g>
+
+    <!-- Module 2: 交互革新 -->
+    <g transform="translate(650, 100)">
+      <rect width="590" height="280" rx="20" fill="url(#cardGrad)" stroke="#E5E5E5" stroke-width="1" filter="url(#cardShadow)"></rect>
+      <rect x="30" y="32" width="4" height="18" rx="2" fill="#FF6700"></rect>
+      <text class="ppt-font-cn-heading" x="42" y="48" font-size="22" fill="#1A1A1A">交互革新：超级岛</text>
+      <text class="ppt-font-cn-body" x="42" y="78" font-size="15" fill="#666666">打破应用边界，信息流转灵动直观</text>
+      
+      <!-- Image Slot -->
+      <image id="ai-image-img-super-island" data-ai-slot-id="img-super-island" x="0" y="0" width="530" height="145" href="https://aiphoto.sandunppt.com/public/uploads/superppt/replace/2026/03/24/aedeab4b-9658-b6b1-d33b-55c1895bed09/manual_bed95d10b590.webp" data-source-url="https://images.unsplash.com/photo-1762769189106-cc314711e4ed?crop=entropy&amp;amp;amp;amp;cs=tinysrgb&amp;amp;amp;amp;fit=max&amp;amp;amp;amp;fm=jpg&amp;amp;amp;amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBzbWFydHBob25lJTIwZHluYW1pYyUyMGludGVyZmFjZSUyMG5vdGlmaWNhdGlvbnxlbnwwfHx8fDE3NzQzMzIyNTJ8MA&amp;amp;amp;amp;ixlib=rb-4.1.0&amp;amp;amp;amp;q=80&amp;amp;amp;amp;w=1080" preserveAspectRatio="xMidYMid slice" transform="translate(30, 105)"><title>https://images.unsplash.com/photo-1762769189106-cc314711e4ed?crop=entropy&amp;amp;cs=tinysrgb&amp;amp;fit=max&amp;amp;fm=jpg&amp;amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBzbWFydHBob25lJTIwZHluYW1pYyUyMGludGVyZmFjZSUyMG5vdGlmaWNhdGlvbnxlbnwwfHx8fDE3NzQzMzIyNTJ8MA&amp;amp;ixlib=rb-4.1.0&amp;amp;q=80&amp;amp;w=1080</title></image>
+    </g>
+
+    <!-- Module 3: AI 进化 -->
+    <g transform="translate(40, 400)">
+      <rect width="590" height="280" rx="20" fill="url(#cardGrad)" stroke="#E5E5E5" stroke-width="1" filter="url(#cardShadow)"></rect>
+      <rect x="30" y="32" width="4" height="18" rx="2" fill="#FF6700"></rect>
+      <text class="ppt-font-cn-heading" x="42" y="48" font-size="22" fill="#1A1A1A">AI 进化：超级小爱</text>
+      <text class="ppt-font-cn-body" x="42" y="78" font-size="15" fill="#666666">从被动指令到主动感知，全生态数字管家</text>
+      
+      <g transform="translate(30, 115)">
+        <rect width="255" height="135" rx="16" fill="#FFF9F5" stroke="#FFE0CC" stroke-width="1"></rect>
+        <circle cx="127" cy="45" r="12" fill="#FF6700" opacity="0.1"></circle>
+        <text class="ppt-font-cn-heading" x="127" y="65" text-anchor="middle" font-size="22" fill="#FF6700">主动感知</text>
+        <text class="ppt-font-cn-body" x="127" y="95" text-anchor="middle" font-size="14" fill="#8C5B3E">根据场景自动提供建议</text>
+        
+        <rect x="275" width="255" height="135" rx="16" fill="#F5F7FA" stroke="#E5E7EB" stroke-width="1"></rect>
+        <circle cx="402" cy="45" r="12" fill="#4B5563" opacity="0.1"></circle>
+        <text class="ppt-font-cn-heading" x="402" y="65" text-anchor="middle" font-size="22" fill="#374151">圈屏识别</text>
+        <text class="ppt-font-cn-body" x="402" y="95" text-anchor="middle" font-size="14" fill="#6B7280">深度融入 OS 底层能力</text>
+      </g>
+    </g>
+
+    <!-- Module 4: 安全屏障 -->
+    <g transform="translate(650, 400)">
+      <rect width="590" height="280" rx="20" fill="url(#cardGrad)" stroke="#E5E5E5" stroke-width="1" filter="url(#cardShadow)"></rect>
+      <rect x="30" y="32" width="4" height="18" rx="2" fill="#FF6700"></rect>
+      <text class="ppt-font-cn-heading" x="42" y="48" font-size="22" fill="#1A1A1A">安全屏障：全场景保护</text>
+      <text class="ppt-font-cn-body" x="42" y="78" font-size="15" fill="#666666">隐私安全全面升级，守护用户资产与数据</text>
+
+      <g transform="translate(40, 125)">
+        <g>
+          <rect width="32" height="32" rx="8" fill="#FF6700" opacity="0.1"></rect>
+          <circle cx="16" cy="16" r="4" fill="#FF6700"></circle>
+          <text class="ppt-font-cn-heading" x="48" y="16" font-size="18" fill="#1A1A1A">离线关机查找</text>
+          <text class="ppt-font-cn-body" x="48" y="40" font-size="14" fill="#666666">极端情况下依然可定位，首创硬核安全功能</text>
+        </g>
+
+        <g transform="translate(0, 75)">
+          <rect width="32" height="32" rx="8" fill="#FF6700" opacity="0.1"></rect>
+          <circle cx="16" cy="16" r="4" fill="#FF6700"></circle>
+          <text class="ppt-font-cn-heading" x="48" y="16" font-size="18" fill="#1A1A1A">双重认证登录</text>
+          <text class="ppt-font-cn-body" x="48" y="40" font-size="14" fill="#666666">跨端访问安全控件，确保数据仅本人可用</text>
+        </g>
+      </g>
+      
+      <!-- Security Decoration -->
+      <path d="M520 40 L520 75 L495 90 L470 75 L470 40 Z" fill="#F8F9FA" stroke="#FF6700" stroke-width="1.5" stroke-opacity="0.3" transform="translate(30, 140)"></path>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <rect x="40" y="46" width="6" height="26" rx="3" fill="#FF6700"></rect>
+    <text class="ppt-font-cn-heading" x="58" y="66" font-size="26" fill="#1A1A1A">小米澎湃 OS 3：人车家全生态的灵魂</text>
+  </g>
+
+  <g id="ai-image-layer">
+    <clipPath id="clip-ai-image-img-super-island">
+      <rect x="30.00" y="100.00" width="530.00" height="150.00" rx="12"></rect>
+    </clipPath>
+    
+  </g>
+</svg>

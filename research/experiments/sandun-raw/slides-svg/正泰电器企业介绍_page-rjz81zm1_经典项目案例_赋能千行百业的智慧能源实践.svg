@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+    ]]></style>
+    <filter id="card_shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#064E3B" flood-opacity="0.05"/>
+    </filter>
+    <linearGradient id="card_grad_green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <defs>
+      <linearGradient id="eco_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F0FDF4"/>
+        <stop offset="100%" stop-color="#FFFFFF"/>
+      </linearGradient>
+      <filter id="blur_blob">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="60" result="blur"/>
+      </filter>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#eco_grad)"/>
+    <circle cx="10%" cy="20%" r="300" fill="#DCFCE7" filter="url(#blur_blob)" opacity="0.6"/>
+    <circle cx="90%" cy="80%" r="400" fill="#F0FDFA" filter="url(#blur_blob)" opacity="0.8"/>
+    <path d="M0 0 Q480 20 960 0 T1920 0" fill="none" stroke="#10B981" stroke-width="1" stroke-opacity="0.2"/>
+  </g>
+
+  <!-- LAYER 2: Content -->
+  <g id="content_layer">
+    <!-- Card 1: Core Capability -->
+    <g transform="translate(40, 100)">
+      <rect width="580" height="280" rx="20" fill="#FFFFFF" filter="url(#card_shadow)"/>
+      <rect x="0" y="25" width="4" height="24" rx="2" fill="#10B981"/>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="22" fill="#064E3B">全产业链一体化能力</text>
+      <text class="ppt-font-cn-body" x="30" y="75" font-size="15" fill="#374151">构建“绿源、智网、降荷、新储”四大核心系统</text>
+      
+      <g transform="translate(30, 140)">
+        <line x1="10" y1="40" x2="510" y2="40" stroke="#DCFCE7" stroke-width="3" stroke-dasharray="6 4"/>
+        <!-- Nodes -->
+        <g transform="translate(10, 40)">
+          <circle r="20" fill="#10B981"/>
+          <text class="ppt-font-cn-heading" y="5" font-size="11" text-anchor="middle" fill="#FFFFFF">Gen</text>
+          <text class="ppt-font-cn-body" y="35" font-size="13" text-anchor="middle" fill="#064E3B">发</text>
+        </g>
+        <g transform="translate(93, 40)">
+          <circle r="20" fill="#10B981"/>
+          <text class="ppt-font-cn-heading" y="5" font-size="11" text-anchor="middle" fill="#FFFFFF">Store</text>
+          <text class="ppt-font-cn-body" y="35" font-size="13" text-anchor="middle" fill="#064E3B">储</text>
+        </g>
+        <g transform="translate(176, 40)">
+          <circle r="20" fill="#10B981"/>
+          <text class="ppt-font-cn-heading" y="5" font-size="11" text-anchor="middle" fill="#FFFFFF">Trans</text>
+          <text class="ppt-font-cn-body" y="35" font-size="13" text-anchor="middle" fill="#064E3B">输</text>
+        </g>
+        <g transform="translate(259, 40)">
+          <circle r="20" fill="#10B981"/>
+          <text class="ppt-font-cn-heading" y="5" font-size="11" text-anchor="middle" fill="#FFFFFF">Conv</text>
+          <text class="ppt-font-cn-body" y="35" font-size="13" text-anchor="middle" fill="#064E3B">变</text>
+        </g>
+        <g transform="translate(342, 40)">
+          <circle r="20" fill="#10B981"/>
+          <text class="ppt-font-cn-heading" y="5" font-size="11" text-anchor="middle" fill="#FFFFFF">Dist</text>
+          <text class="ppt-font-cn-body" y="35" font-size="13" text-anchor="middle" fill="#064E3B">配</text>
+        </g>
+        <g transform="translate(425, 40)">
+          <circle r="20" fill="#10B981"/>
+          <text class="ppt-font-cn-heading" y="5" font-size="11" text-anchor="middle" fill="#FFFFFF">Sell</text>
+          <text class="ppt-font-cn-body" y="35" font-size="13" text-anchor="middle" fill="#064E3B">售</text>
+        </g>
+        <g transform="translate(508, 40)">
+          <circle r="20" fill="#10B981"/>
+          <text class="ppt-font-cn-heading" y="5" font-size="11" text-anchor="middle" fill="#FFFFFF">Use</text>
+          <text class="ppt-font-cn-body" y="35" font-size="13" text-anchor="middle" fill="#064E3B">用</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Card 2: Green Energy -->
+    <g transform="translate(640, 100)">
+      <rect width="600" height="280" rx="20" fill="#FFFFFF" filter="url(#card_shadow)"/>
+      <rect x="0" y="25" width="4" height="24" rx="2" fill="#10B981"/>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="22" fill="#064E3B">绿色能源：世界级电站标杆</text>
+      <image id="ai-image-img-1" data-ai-slot-id="img-1" x="0" y="0" width="300" height="180" href="https://images.unsplash.com/photo-1771406117564-576c20e6ae5c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHxzb2xhciUyMHBhbmVscyUyMGZpc2hlcnklMjBzeW5lcmd5JTIwY29hc3RhbHxlbnwwfHx8fDE3NzQzMzA2MDR8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" data-source-url="https://unsplash.com/photos/blue-tiled-roofs-overlook-the-calm-blue-ocean-x2eC1t9rNEo?utm_medium=referral&amp;utm_source=superppt+agent" preserveAspectRatio="xMidYMid slice" transform="translate(30, 70)"><title>https://unsplash.com/photos/blue-tiled-roofs-overlook-the-calm-blue-ocean-x2eC1t9rNEo?utm_medium=referral&amp;utm_source=superppt+agent</title></image>
+      <g transform="translate(350, 70)">
+        <text class="ppt-font-cn-heading" x="0" y="35" font-size="32" fill="#10B981">550MW</text>
+        <text class="ppt-font-cn-body" x="0" y="65" font-size="15" fill="#6B7280">亚洲最大滩涂渔光互补</text>
+        <rect x="0" y="90" width="220" height="1" fill="#F0FDF4"/>
+        <text class="ppt-font-cn-body" x="0" y="125" font-size="15" fill="#374151">● 首创“上可发电，下可养鱼”</text>
+        <text class="ppt-font-cn-body" x="0" y="155" font-size="15" fill="#374151">● 并网获《新闻联播》专题报道</text>
+      </g>
+    </g>
+
+    <!-- Card 3: Smart Park -->
+    <g transform="translate(40, 400)">
+      <rect width="380" height="280" rx="20" fill="#FFFFFF" filter="url(#card_shadow)"/>
+      <rect x="0" y="25" width="4" height="24" rx="2" fill="#10B981"/>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="22" fill="#064E3B">智慧园区：零碳转型范式</text>
+      <text class="ppt-font-cn-body" x="30" y="75" font-size="14" fill="#6B7280">中建国际智慧谷能效模式</text>
+      <g data-chart-slot-id="chart-1" data-chart-type="bar" transform="translate(30, 100)"><rect x="0" y="0" width="320" height="140" rx="20" fill="#FFFFFF"/><rect x="0.75" y="0.75" width="318.5" height="138.5" rx="19.25" fill="none" stroke="#DCFCE7" stroke-width="1.5"/><line x1="50" y1="100" x2="300" y2="100" stroke="#F0FDF4" stroke-width="1" stroke-dasharray="4 4"/><text x="38" y="104" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">0</text><line x1="50" y1="86" x2="300" y2="86" stroke="#F0FDF4" stroke-width="1" stroke-dasharray="4 4"/><text x="38" y="90" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">10</text><line x1="50" y1="72" x2="300" y2="72" stroke="#F0FDF4" stroke-width="1" stroke-dasharray="4 4"/><text x="38" y="76" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">20</text><line x1="50" y1="58" x2="300" y2="58" stroke="#F0FDF4" stroke-width="1" stroke-dasharray="4 4"/><text x="38" y="62" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">30</text><line x1="50" y1="44" x2="300" y2="44" stroke="#F0FDF4" stroke-width="1" stroke-dasharray="4 4"/><text x="38" y="48" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">40</text><line x1="50" y1="30" x2="300" y2="30" stroke="#F0FDF4" stroke-width="1" stroke-dasharray="4 4"/><text x="38" y="34" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">50</text><path d="M 56 100 L 56 68 A 10 10 0 0 1 66 58 L 159 58 A 10 10 0 0 1 169 68 L 169 100 Z" fill="#10B981"/><text x="112.5" y="50" text-anchor="middle" font-size="14" fill="#064E3B" font-weight="600">30%</text><text x="112.5" y="124" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">平均节能</text><path d="M 181 100 L 181 40 A 10 10 0 0 1 191 30 L 284 30 A 10 10 0 0 1 294 40 L 294 100 Z" fill="#34D399"/><text x="237.5" y="22" text-anchor="middle" font-size="14" fill="#064E3B" font-weight="600">50%</text><text x="237.5" y="124" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">碳减排率</text><line x1="42" y1="100" x2="300" y2="100" stroke="#A7F3D0" stroke-width="1.2" stroke-linecap="round"/><line x1="50" y1="30" x2="50" y2="108" stroke="#A7F3D0" stroke-width="1.2" stroke-linecap="round"/></g>
+    </g>
+
+    <!-- Card 4: Digital Industry -->
+    <g transform="translate(440, 400)">
+      <rect width="400" height="280" rx="20" fill="#FFFFFF" filter="url(#card_shadow)"/>
+      <rect x="0" y="25" width="4" height="24" rx="2" fill="#10B981"/>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="22" fill="#064E3B">数智工业：赋能头部企业</text>
+      <g transform="translate(30, 80)">
+        <rect width="340" height="54" rx="12" fill="#F9FAFB"/>
+        <text class="ppt-font-cn-heading" x="15" y="33" font-size="16" fill="#064E3B">国家电网</text>
+        <text class="ppt-font-cn-body" x="100" y="33" font-size="14" fill="#4B5563">全国首个智能量测开关</text>
+      </g>
+      <g transform="translate(30, 144)">
+        <rect width="340" height="54" rx="12" fill="#F9FAFB"/>
+        <text class="ppt-font-cn-heading" x="15" y="33" font-size="16" fill="#064E3B">阿里巴巴</text>
+        <text class="ppt-font-cn-body" x="100" y="33" font-size="14" fill="#4B5563">千年古镇智慧配电方案</text>
+      </g>
+      <g transform="translate(30, 208)">
+        <rect width="340" height="54" rx="12" fill="#F9FAFB"/>
+        <text class="ppt-font-cn-heading" x="15" y="33" font-size="16" fill="#064E3B">远景能源</text>
+        <text class="ppt-font-cn-body" x="100" y="33" font-size="14" fill="#4B5563">风电变桨柜系统解决方案</text>
+      </g>
+    </g>
+
+    <!-- Card 5: Global Footprint -->
+    <g transform="translate(860, 400)">
+      <rect width="380" height="280" rx="20" fill="url(#card_grad_green)" filter="url(#card_shadow)"/>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="22" fill="#FFFFFF">全球足迹与民生</text>
+      <g transform="translate(30, 85)">
+        <text class="ppt-font-cn-heading" x="0" y="45" font-size="52" fill="#FFFFFF">140+</text>
+        <text class="ppt-font-cn-body" x="0" y="75" font-size="16" fill="#DCFCE7" opacity="0.9">业务覆盖国家</text>
+      </g>
+      <g transform="translate(30, 185)">
+        <text class="ppt-font-cn-heading" x="0" y="45" font-size="52" fill="#FFFFFF">50GW+</text>
+        <text class="ppt-font-cn-body" x="0" y="75" font-size="16" fill="#DCFCE7" opacity="0.9">全球运维装机容量</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <circle cx="44" cy="60" r="6" fill="#10B981"/>
+    <text x="58" y="66" class="ppt-font-cn-heading" font-size="26" fill="#064E3B">经典项目案例：赋能千行百业的智慧能源实践</text>
+  </g>
+
+  <g id="ai-image-layer">
+    <clipPath id="clip-ai-image-img-1">
+      <rect x="30.00" y="70.00" width="300.00" height="180.00" rx="12"/>
+    </clipPath>
+    
+  </g>
+</svg>

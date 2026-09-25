@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .card-shadow { filter: drop-shadow(0 4px 12px rgba(0,0,0,0.05)); }
+    ]]></style>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#FDFDFD"/>
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="0.5"/>
+      </pattern>
+      <radialGradient id="glow" cx="90%" cy="90%" r="50%">
+        <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"/>
+        <stop offset="100%" stop-color="#FF6700" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="#F8F9FA"/>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <rect width="100%" height="100%" fill="url(#glow)"/>
+  </g>
+
+  <!-- LAYER 2: Content -->
+  <g id="content_layer">
+    <!-- Main Title Section (End Page Style) -->
+    <text x="640" y="140" text-anchor="middle" class="ppt-font-cn-heading" font-size="48" fill="#1A1A1A">总结：稳健进取，共创人车家全生态未来</text>
+    <rect x="600" y="165" width="80" height="4" rx="2" fill="#FF6700"/>
+    <text x="640" y="205" text-anchor="middle" class="ppt-font-cn-body" font-size="22" fill="#4B5563">业绩亮点回顾：跨越式增长的一季</text>
+
+    <!-- Four Pillars Cards -->
+    <!-- Card 1: Financial -->
+    <g class="card-shadow" transform="translate(100, 260)">
+      <rect width="250" height="190" rx="16" fill="url(#card-grad)" stroke="#EEEEEE" stroke-width="1"/>
+      <rect width="6" height="40" x="0" y="30" fill="#FF6700"/>
+      <text x="25" y="55" class="ppt-font-cn-heading" font-size="24" fill="#1A1A1A">财务稳健</text>
+      <text x="25" y="95" class="ppt-font-cn-body" font-size="16" fill="#4B5563">
+        <tspan x="25" dy="0">营收利润双创历史新高</tspan>
+        <tspan x="25" dy="28">规模效应与利润结构</tspan>
+        <tspan x="25" dy="28">持续双优化</tspan>
+      </text>
+    </g>
+
+    <!-- Card 2: Core Business -->
+    <g class="card-shadow" transform="translate(380, 260)">
+      <rect width="250" height="190" rx="16" fill="url(#card-grad)" stroke="#EEEEEE" stroke-width="1"/>
+      <rect width="6" height="40" x="0" y="30" fill="#FF6700"/>
+      <text x="25" y="55" class="ppt-font-cn-heading" font-size="24" fill="#1A1A1A">核心基本盘</text>
+      <text x="25" y="95" class="ppt-font-cn-body" font-size="16" fill="#4B5563">
+        <tspan x="25" dy="0">手机稳居全球前三</tspan>
+        <tspan x="25" dy="28">IoT 连接数突破 10 亿</tspan>
+        <tspan x="25" dy="28">生态护城河持续加深</tspan>
+      </text>
+    </g>
+
+    <!-- Card 3: New Growth -->
+    <g class="card-shadow" transform="translate(660, 260)">
+      <rect width="250" height="190" rx="16" fill="url(#card-grad)" stroke="#EEEEEE" stroke-width="1"/>
+      <rect width="6" height="40" x="0" y="30" fill="#FF6700"/>
+      <text x="25" y="55" class="ppt-font-cn-heading" font-size="24" fill="#1A1A1A">新增长极</text>
+      <text x="25" y="95" class="ppt-font-cn-body" font-size="16" fill="#4B5563">
+        <tspan x="25" dy="0">汽车业务实现单季盈利</tspan>
+        <tspan x="25" dy="28">Xiaomi YU7 成功领跑</tspan>
+        <tspan x="25" dy="28">智能驾驶快速迭代</tspan>
+      </text>
+    </g>
+
+    <!-- Card 4: Technology -->
+    <g class="card-shadow" transform="translate(940, 260)">
+      <rect width="250" height="190" rx="16" fill="url(#card-grad)" stroke="#EEEEEE" stroke-width="1"/>
+      <rect width="6" height="40" x="0" y="30" fill="#FF6700"/>
+      <text x="25" y="55" class="ppt-font-cn-heading" font-size="24" fill="#1A1A1A">技术底座</text>
+      <text x="25" y="95" class="ppt-font-cn-body" font-size="16" fill="#4B5563">
+        <tspan x="25" dy="0">研发投入持续加大</tspan>
+        <tspan x="25" dy="28">小米澎湃 OS 3</tspan>
+        <tspan x="25" dy="28">构建全生态灵魂</tspan>
+      </text>
+    </g>
+
+    <!-- Strategic Vision Quote -->
+    <g transform="translate(100, 500)">
+      <rect width="1080" height="70" rx="35" fill="#FF6700" fill-opacity="0.05"/>
+      <text x="540" y="42" text-anchor="middle" class="ppt-font-cn-heading" font-size="20" fill="#FF6700">“坚持底层技术大投入，以 AI 赋能全场景。我们不仅在创造纪录，更在定义未来智能生活的新范式。”</text>
+    </g>
+
+    <!-- Footer / End Message -->
+    <g transform="translate(640, 625)">
+      <text text-anchor="middle" class="ppt-font-cn-heading" font-size="32" fill="#1A1A1A">感谢您的关注与支持</text>
+      <text y="42" text-anchor="middle" class="ppt-font-cn-body" font-size="16" fill="#64748B">投资者关系邮箱：ir@xiaomi.com  |  官方网站：www.mi.com</text>
+    </g>
+
+    <!-- Disclaimer -->
+    <text x="640" y="700" text-anchor="middle" class="ppt-font-cn-body" font-size="12" fill="#94A3B8">[ 免责声明：本报告仅供参考，不构成投资建议 ]</text>
+  </g>
+</svg>

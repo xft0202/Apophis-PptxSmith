@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720"><style data-img-radius="1">image{clip-path:inset(0 round 8px)}</style>
+  <defs>
+    <style>
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .card-shadow { filter: drop-shadow(0 4px 12px rgba(16, 185, 129, 0.08)); }
+    </style>
+    <linearGradient id="card_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"></stop>
+      <stop offset="100%" stop-color="#F0FDF4" stop-opacity="0.9"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <defs>
+      <linearGradient id="eco_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F0FDF4"></stop>
+        <stop offset="100%" stop-color="#FFFFFF"></stop>
+      </linearGradient>
+      <filter id="blur_blob">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="60" result="blur"></feGaussianBlur>
+      </filter>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#eco_grad)"></rect>
+    <circle cx="10%" cy="20%" r="300" fill="#DCFCE7" filter="url(#blur_blob)" opacity="0.6"></circle>
+    <circle cx="90%" cy="80%" r="400" fill="#F0FDFA" filter="url(#blur_blob)" opacity="0.8"></circle>
+    <path d="M0 0 Q480 20 960 0 T1920 0" fill="none" stroke="#10B981" stroke-width="1" stroke-opacity="0.2"></path>
+  </g>
+
+  <!-- LAYER 2: Content Layer -->
+  <g id="content_layer">
+    <!-- Module 1: 旗舰标杆：昆仑系列 -->
+    <g transform="translate(40, 100)" class="card-shadow">
+      <rect width="380" height="580" rx="24" fill="url(#card_grad)" stroke="#DCFCE7" stroke-width="1.5"></rect>
+      <rect x="24" y="24" width="4" height="24" rx="2" fill="#10B981"></rect>
+      <text class="ppt-font-cn-heading" x="40" y="44" font-size="22" fill="#064E3B">旗舰标杆：昆仑系列</text>
+      
+      <!-- 图片槽位 (img-1) -->
+      <image id="ai-image-img-1" data-ai-slot-id="img-1" x="0" y="0" width="332" height="200" href="https://aiphoto.sandunppt.com/public/uploads/superppt/replace/2026/03/24/77b1bdb8-b2ee-a87f-9184-ba41ab5aff14/manual_177a395caa0d.png" data-source-url="https://unsplash.com/photos/close-up-of-a-vintage-electronic-circuit-board-AcfqIEfjMEo?utm_medium=referral&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;utm_source=superppt+agent" preserveAspectRatio="xMidYMid slice" transform="translate(24, 70)"><title>https://unsplash.com/photos/close-up-of-a-vintage-electronic-circuit-board-AcfqIEfjMEo?utm_medium=referral&amp;utm_source=superppt+agent</title></image>
+
+      <!-- 核心数据 -->
+      <text class="ppt-font-cn-body" x="24" y="305" font-size="16" fill="#065F46">全球累计销量</text>
+      <text class="ppt-font-cn-heading" x="24" y="355" font-size="52" fill="#10B981">12亿台</text>
+      
+      <line x1="24" y1="385" x2="356" y2="385" stroke="#D1FAE5" stroke-width="1"></line>
+
+      <g transform="translate(24, 415)">
+        <text class="ppt-font-cn-heading" x="0" y="20" font-size="20" fill="#064E3B">2亿元+</text>
+        <text class="ppt-font-cn-body" x="0" y="45" font-size="14" fill="#374151">专项研发投入</text>
+        
+        <text class="ppt-font-cn-heading" x="170" y="20" font-size="20" fill="#064E3B">360+项</text>
+        <text class="ppt-font-cn-body" x="170" y="45" font-size="14" fill="#374151">核心专利技术</text>
+
+        <text class="ppt-font-cn-heading" x="0" y="95" font-size="20" fill="#064E3B">7860项</text>
+        <text class="ppt-font-cn-body" x="0" y="120" font-size="14" fill="#374151">严苛可靠性实验</text>
+        
+        <text class="ppt-font-cn-heading" x="170" y="95" font-size="20" fill="#064E3B">-35至70℃</text>
+        <text class="ppt-font-cn-body" x="170" y="120" font-size="14" fill="#374151">极端耐候运行</text>
+      </g>
+    </g>
+
+    <!-- Module 2: 全谱系产品覆盖 -->
+    <g transform="translate(440, 100)" class="card-shadow">
+      <rect width="420" height="280" rx="24" fill="url(#card_grad)" stroke="#DCFCE7" stroke-width="1.5"></rect>
+      <rect x="24" y="24" width="4" height="24" rx="2" fill="#10B981"></rect>
+      <text class="ppt-font-cn-heading" x="40" y="44" font-size="22" fill="#064E3B">全谱系产品覆盖</text>
+      <text class="ppt-font-cn-heading" x="396" y="44" font-size="18" fill="#10B981" text-anchor="end">10,000+ 规格型号</text>
+
+      <g transform="translate(24, 85)">
+        <rect width="175" height="75" rx="12" fill="#F0FDF4" stroke="#D1FAE5" stroke-width="1"></rect>
+        <text class="ppt-font-cn-heading" x="15" y="32" font-size="16" fill="#059669">配电电器</text>
+        <text class="ppt-font-cn-body" x="15" y="56" font-size="13" fill="#374151">万能式/塑壳断路器</text>
+
+        <rect x="195" y="0" width="175" height="75" rx="12" fill="#F0FDF4" stroke="#D1FAE5" stroke-width="1"></rect>
+        <text class="ppt-font-cn-heading" x="210" y="32" font-size="16" fill="#059669">控制电器</text>
+        <text class="ppt-font-cn-body" x="210" y="56" font-size="13" fill="#374151">交流接触器/继电器</text>
+
+        <rect y="95" width="175" height="75" rx="12" fill="#F0FDF4" stroke="#D1FAE5" stroke-width="1"></rect>
+        <text class="ppt-font-cn-heading" x="15" y="127" font-size="16" fill="#059669">终端电器</text>
+        <text class="ppt-font-cn-body" x="15" y="151" font-size="13" fill="#374151">小型断路器/开关插座</text>
+
+        <rect x="195" y="95" width="175" height="75" rx="12" fill="#F0FDF4" stroke="#D1FAE5" stroke-width="1"></rect>
+        <text class="ppt-font-cn-heading" x="210" y="127" font-size="16" fill="#059669">仪表计量</text>
+        <text class="ppt-font-cn-body" x="210" y="151" font-size="13" fill="#374151">智能电表/工控仪表</text>
+      </g>
+    </g>
+
+    <!-- Module 3: 全场景电力保障 -->
+    <g transform="translate(440, 400)" class="card-shadow">
+      <rect width="420" height="280" rx="24" fill="url(#card_grad)" stroke="#DCFCE7" stroke-width="1.5"></rect>
+      <rect x="24" y="24" width="4" height="24" rx="2" fill="#10B981"></rect>
+      <text class="ppt-font-cn-heading" x="40" y="44" font-size="22" fill="#064E3B">全场景电力保障</text>
+      <text class="ppt-font-cn-body" x="24" y="75" font-size="14" fill="#065F46" opacity="0.8">业务覆盖全球 140+ 国家及地区</text>
+
+      <g transform="translate(24, 105)">
+        <circle cx="15" cy="15" r="5" fill="#10B981" fill-opacity="0.3"></circle>
+        <circle cx="15" cy="15" r="2.5" fill="#10B981"></circle>
+        <text class="ppt-font-cn-heading" x="35" y="21" font-size="16" fill="#064E3B">大国重器</text>
+        <text class="ppt-font-cn-body" x="35" y="46" font-size="14" fill="#374151">三峡电站、秦山核电站、大型发电厂</text>
+
+        <circle cx="15" cy="75" r="5" fill="#10B981" fill-opacity="0.3"></circle>
+        <circle cx="15" cy="75" r="2.5" fill="#10B981"></circle>
+        <text class="ppt-font-cn-heading" x="35" y="81" font-size="16" fill="#064E3B">工业配套</text>
+        <text class="ppt-font-cn-body" x="35" y="106" font-size="14" fill="#374151">自动化生产线、机械配套、通讯基站</text>
+
+        <circle cx="15" cy="135" r="5" fill="#10B981" fill-opacity="0.3"></circle>
+        <circle cx="15" cy="135" r="2.5" fill="#10B981"></circle>
+        <text class="ppt-font-cn-heading" x="35" y="141" font-size="16" fill="#064E3B">民生建筑</text>
+        <text class="ppt-font-cn-body" x="35" y="166" font-size="14" fill="#374151">住宅建筑、商业综合体、智能家居</text>
+      </g>
+    </g>
+
+    <!-- Module 4: 核心竞争力 -->
+    <g transform="translate(880, 100)" class="card-shadow">
+      <rect width="360" height="580" rx="24" fill="url(#card_grad)" stroke="#DCFCE7" stroke-width="1.5"></rect>
+      <rect x="24" y="24" width="4" height="24" rx="2" fill="#10B981"></rect>
+      <text class="ppt-font-cn-heading" x="40" y="44" font-size="22" fill="#064E3B">核心竞争力</text>
+      
+      <!-- 排名勋章 -->
+      <g transform="translate(24, 80)">
+        <rect width="312" height="100" rx="16" fill="#DCFCE7" opacity="0.5"></rect>
+        <text class="ppt-font-cn-heading" x="20" y="48" font-size="40" fill="#059669">NO.1</text>
+        <text class="ppt-font-cn-body" x="20" y="78" font-size="16" fill="#064E3B">低压电器产值国内第一</text>
+      </g>
+
+      <!-- 图表槽位 (chart-1) -->
+      <text class="ppt-font-cn-body" x="24" y="220" font-size="14" fill="#065F46">研发投入增长趋势 (单位：亿元)</text>
+      <g data-chart-slot-id="chart-1" data-chart-type="bar" transform="translate(24, 235)"><rect x="0.75" y="0.75" width="310.5" height="148.5" rx="19.25" fill="none" stroke="#DCFCE7" stroke-width="1.5"></rect><line x1="50" y1="110" x2="292" y2="110" stroke="#F0FDF4" stroke-width="1" stroke-dasharray="4 4"></line><text x="38" y="114" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">0</text><line x1="50" y1="94" x2="292" y2="94" stroke="#F0FDF4" stroke-width="1" stroke-dasharray="4 4"></line><text x="38" y="98" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">0.5</text><line x1="50" y1="78" x2="292" y2="78" stroke="#F0FDF4" stroke-width="1" stroke-dasharray="4 4"></line><text x="38" y="82" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">1</text><line x1="50" y1="62" x2="292" y2="62" stroke="#F0FDF4" stroke-width="1" stroke-dasharray="4 4"></line><text x="38" y="66" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">1.5</text><line x1="50" y1="46" x2="292" y2="46" stroke="#F0FDF4" stroke-width="1" stroke-dasharray="4 4"></line><text x="38" y="50" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">2</text><line x1="50" y1="30" x2="292" y2="30" stroke="#F0FDF4" stroke-width="1" stroke-dasharray="4 4"></line><text x="38" y="34" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">2.5</text><path d="M 56 110 L 56 72 A 10 10 0 0 1 66 62 L 114.66666666666667 62 A 10 10 0 0 1 124.66666666666667 72 L 124.66666666666667 110 Z" fill="#10B981"></path><text x="90.33333333333334" y="54" text-anchor="middle" font-size="14" fill="#064E3B" font-weight="600">1.5亿</text><text x="90.33333333333334" y="134" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">2021</text><path d="M 136.66666666666669 110 L 136.66666666666669 62.400000000000006 A 10 10 0 0 1 146.66666666666669 52.400000000000006 L 195.33333333333337 52.400000000000006 A 10 10 0 0 1 205.33333333333337 62.400000000000006 L 205.33333333333337 110 Z" fill="#34D399"></path><text x="171.00000000000003" y="44.400000000000006" text-anchor="middle" font-size="14" fill="#064E3B" font-weight="600">1.8亿</text><text x="171.00000000000003" y="134" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">2022</text><path d="M 217.33333333333334 110 L 217.33333333333334 52.8 A 10 10 0 0 1 227.33333333333334 42.8 L 276 42.8 A 10 10 0 0 1 286 52.8 L 286 110 Z" fill="#059669"></path><text x="251.66666666666669" y="34.8" text-anchor="middle" font-size="14" fill="#064E3B" font-weight="600">2.1亿</text><text x="251.66666666666669" y="134" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">2023</text><line x1="42" y1="110" x2="292" y2="110" stroke="#A7F3D0" stroke-width="1.2" stroke-linecap="round"></line><line x1="50" y1="30" x2="50" y2="118" stroke="#A7F3D0" stroke-width="1.2" stroke-linecap="round"></line></g>
+
+      <!-- 优势标签 -->
+      <g transform="translate(24, 410)">
+        <g>
+          <g data-ai-group-id="grp-mm2cypr9" transform="matrix(1 0 0 1 -0.626312 -15.8227)"><rect width="70" height="26" rx="6" fill="#10B981" fill-opacity="0.1" transform="matrix(1 0 0 1 0 0)"></rect><text class="ppt-font-cn-heading" x="35" y="18" text-anchor="middle" font-size="13" fill="#059669" transform="matrix(1 0 0 1 0 0)">数字化</text><text class="ppt-font-cn-body" x="0" y="48" font-size="14" fill="#374151" transform="matrix(1 0 0 1 0 0)">全线产品支持二维码数字平台</text></g>
+          
+          
+        </g>
+        <g transform="translate(0, 75)">
+          <g data-ai-group-id="grp-xu9p0nvr" transform="matrix(1 0 0 1 -0.626343 -30.3547)"><rect width="70" height="26" rx="6" fill="#10B981" fill-opacity="0.1" transform="matrix(1 0 0 1 0 0)"></rect><text class="ppt-font-cn-heading" x="35" y="18" text-anchor="middle" font-size="13" fill="#059669" transform="matrix(1 0 0 1 0 0)">智能化</text><text class="ppt-font-cn-body" x="0" y="48" font-size="14" fill="#374151" transform="matrix(1 0 0 1 0 0)">集成物联网联接与远程监控</text></g>
+          
+          
+        </g>
+        <g transform="translate(0, 150)">
+          <g data-ai-group-id="grp-emb0wmyx" transform="matrix(1 0 0 1 0.749944 -43.3226)"><rect width="70" height="26" rx="6" fill="#10B981" fill-opacity="0.1" transform="matrix(1 0 0 1 0 0)"></rect><text class="ppt-font-cn-heading" x="35" y="18" text-anchor="middle" font-size="13" fill="#059669" transform="matrix(1 0 0 1 0 0)">人性化</text><text class="ppt-font-cn-body" x="0" y="48" font-size="14" fill="#374151" transform="matrix(1 0 0 1 0 0)">无螺钉接线、宽电压控制范围</text></g>
+          
+          
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <circle cx="44" cy="60" r="6" fill="#10B981"></circle>
+    <text x="58" y="66" class="ppt-font-cn-heading" font-size="26" fill="#064E3B">低压电器产品矩阵：覆盖全场景的电力保障</text>
+  </g>
+
+  <g id="ai-image-layer">
+    <clipPath id="clip-ai-image-img-1">
+      <rect x="24.00" y="70.00" width="332.00" height="200.00" rx="12"></rect>
+    </clipPath>
+    
+  </g>
+</svg>

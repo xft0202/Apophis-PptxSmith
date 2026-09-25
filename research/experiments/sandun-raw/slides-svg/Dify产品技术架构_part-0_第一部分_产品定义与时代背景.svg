@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+      .en-impact { font-family: 'Impact', sans-serif; }
+      .en-header { font-family: 'Arial', sans-serif; font-weight: 700; letter-spacing: 6px; }
+      .text-glow { filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.5)); }
+    ]]></style>
+    <!-- Background Defs (Strictly Reused) -->
+    <linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' style='stop-color:#05070A;stop-opacity:1' />
+      <stop offset='100%' style='stop-color:#0C121E;stop-opacity:1' />
+    </linearGradient>
+    <pattern id='microGrid' width='40' height='40' patternUnits='userSpaceOnUse'>
+      <path d='M 40 0 L 0 0 0 40' fill='none' stroke='#344256' stroke-width='0.5' stroke-opacity='0.3'/>
+    </pattern>
+    <filter id='glow'>
+      <feGaussianBlur stdDeviation='50' result='blur'/>
+      <feComposite in='SourceGraphic' in2='blur' operator='over'/>
+    </filter>
+  </defs>
+
+  <!-- LAYER 1: Global Background (Strictly Reused) -->
+  <g id='bg'>
+    <rect width='100%' height='100%' fill='url(#grad1)'/>
+    <rect width='100%' height='100%' fill='url(#microGrid)'/>
+    <circle cx='90%' cy='10%' r='300' fill='#1E40AF' fill-opacity='0.15' filter='url(#glow)'/>
+    <circle cx='10%' cy='90%' r='250' fill='#4F46E5' fill-opacity='0.1' filter='url(#glow)'/>
+    <!-- Transition Page Overlay for Focus -->
+    <rect width="100%" height="100%" fill="#000000" fill-opacity="0.2"/>
+  </g>
+
+  <!-- LAYER 2: Content (Transition Page Layout) -->
+  <g id="content_layer">
+    <!-- Decorative Center Accent (Aurora Style) -->
+    <rect x="637" y="80" width="6" height="40" rx="3" fill="#3B82F6" class="text-glow"/>
+    
+    <!-- Chapter Label -->
+    <text class="en-header" x="640" y="150" text-anchor="middle" font-size="22" fill="#3B82F6">PART ONE</text>
+    
+    <!-- Large Index Number (Background Layer of Content) -->
+    <text class="en-impact" x="640" y="320" text-anchor="middle" font-size="220" fill="#3B82F6" fill-opacity="0.08">01</text>
+    
+    <!-- Main Title -->
+    <text class="ppt-font-cn-heading text-glow" x="640" y="380" text-anchor="middle" font-size="64" fill="#FFFFFF">第一部分：产品定义与时代背景</text>
+    
+    <!-- Core Insight -->
+    <text class="ppt-font-cn-body" x="640" y="440" text-anchor="middle" font-size="26" fill="#94A3B8">
+      在模型爆发的时代，Dify 不仅是工具，更是下一代 AI 应用的“基础设施”。
+    </text>
+
+    <!-- Divider Line -->
+    <line x1="440" y1="495" x2="840" y2="495" stroke="#3B82F6" stroke-width="2" stroke-opacity="0.3"/>
+
+    <!-- Golden Quote Section -->
+    <g transform="translate(640, 550)">
+      <!-- Quote Marks -->
+      <text font-family="serif" font-size="60" fill="#3B82F6" fill-opacity="0.4" x="-320" y="20">“</text>
+      <text class="ppt-font-cn-body" x="0" y="0" text-anchor="middle" font-size="24" fill="#E2E8F0">
+        <tspan x="0" dy="0">连接模型与应用——在 AI 生产力变革的浪潮中，</tspan>
+        <tspan x="0" dy="36" font-weight="700" fill="#FFFFFF">定义 LLM 应用开发的“黄金标准”。</tspan>
+      </text>
+      <text font-family="serif" font-size="60" fill="#3B82F6" fill-opacity="0.4" x="300" y="50">”</text>
+    </g>
+
+    <!-- Chapter Points (Bottom Navigation) -->
+    <g transform="translate(640, 650)">
+      <rect x="-340" y="0" width="680" height="46" rx="23" fill="#FFFFFF" fill-opacity="0.03" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.2"/>
+      <text class="ppt-font-cn-body" x="0" y="29" text-anchor="middle" font-size="20" fill="#94A3B8">
+        <tspan fill="#3B82F6" font-weight="700">01</tspan> Dify：开源 LLM 应用开发领航者
+        <tspan fill="#334155" dx="20" font-weight="100">|</tspan>
+        <tspan fill="#3B82F6" font-weight="700" dx="20">02</tspan> 行业痛点与时代机遇
+      </text>
+    </g>
+    
+    <!-- Corner Decoration -->
+    <path d="M1200 680 L1240 680 L1240 640" fill="none" stroke="#3B82F6" stroke-width="2" stroke-opacity="0.4"/>
+    <path d="M80 40 L40 40 L40 80" fill="none" stroke="#3B82F6" stroke-width="2" stroke-opacity="0.4"/>
+  </g>
+
+  <!-- LAYER 3: Header (Not used for Transition Page per Rendering Logic Step 2) -->
+</svg>

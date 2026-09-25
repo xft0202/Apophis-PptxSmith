@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720"><style data-img-radius="1">image{clip-path:inset(0 round 8px)}</style>
+  <defs>
+    <style>
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+    </style>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#000000" flood-opacity="0.04"></feDropShadow>
+    </filter>
+    <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6700"></stop>
+      <stop offset="100%" stop-color="#FF8533"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="0.5"></path>
+    </pattern>
+    <radialGradient id="glow" cx="90%" cy="90%" r="50%">
+      <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"></stop>
+      <stop offset="100%" stop-color="#FF6700" stop-opacity="0"></stop>
+    </radialGradient>
+    <rect width="100%" height="100%" fill="#F8F9FA"></rect>
+    <rect width="100%" height="100%" fill="url(#grid)"></rect>
+    <rect width="100%" height="100%" fill="url(#glow)"></rect>
+  </g>
+
+  <!-- LAYER 2: Content -->
+  <g id="content_layer">
+    <!-- Module 1: Full-Modal Matrix -->
+    <g transform="translate(40, 100)">
+      <rect width="590" height="280" rx="16" fill="#FFFFFF" filter="url(#cardShadow)"></rect>
+      <text x="24" y="42" class="ppt-font-cn-heading" font-size="22" fill="#1A1A1A">全模态基座模型矩阵</text>
+      <rect x="230" y="24" width="130" height="24" rx="12" fill="#FFF0E6"></rect>
+      <text x="240" y="41" class="ppt-font-cn-heading" font-size="13" fill="#FF6700">100% 完整战略布局</text>
+      
+      <g transform="translate(24, 85)">
+        <!-- Language -->
+        <rect x="0" y="0" width="170" height="160" rx="12" fill="#F9FAFB" stroke="#F1F5F9" stroke-width="1"></rect>
+        <circle cx="35" cy="35" r="18" fill="#FF6700" opacity="0.1"></circle>
+        <path d="M30 35h10M32 31h6M32 39h6" stroke="#FF6700" stroke-width="2" fill="none" stroke-linecap="round"></path>
+        <text x="20" y="85" class="ppt-font-cn-heading" font-size="18" fill="#1A1A1A">语言模型</text>
+        <text x="20" y="115" class="ppt-font-cn-body" font-size="14" fill="#666666">核心认知中枢</text>
+        <text x="20" y="135" class="ppt-font-cn-body" font-size="12" fill="#999999">Language Model</text>
+        
+        <!-- VL -->
+        <rect x="186" y="0" width="170" height="160" rx="12" fill="#F9FAFB" stroke="#F1F5F9" stroke-width="1"></rect>
+        <circle cx="221" cy="35" r="18" fill="#FF6700" opacity="0.1"></circle>
+        <rect x="214" y="28" width="14" height="14" rx="2" stroke="#FF6700" stroke-width="2" fill="none"></rect>
+        <text x="206" y="85" class="ppt-font-cn-heading" font-size="18" fill="#1A1A1A">多模态模型</text>
+        <text x="206" y="115" class="ppt-font-cn-body" font-size="14" fill="#666666">跨模态理解对齐</text>
+        <text x="206" y="135" class="ppt-font-cn-body" font-size="12" fill="#999999">Vision-Language</text>
+        
+        <!-- Audio -->
+        <rect x="372" y="0" width="170" height="160" rx="12" fill="#F9FAFB" stroke="#F1F5F9" stroke-width="1"></rect>
+        <circle cx="407" cy="35" r="18" fill="#FF6700" opacity="0.1"></circle>
+        <path d="M400 35c0-4 3-7 7-7s7 3 7 7" stroke="#FF6700" stroke-width="2" fill="none" stroke-linecap="round"></path>
+        <text x="392" y="85" class="ppt-font-cn-heading" font-size="18" fill="#1A1A1A">语音模型</text>
+        <text x="392" y="115" class="ppt-font-cn-body" font-size="14" fill="#666666">高拟人情感交互</text>
+        <text x="392" y="135" class="ppt-font-cn-body" font-size="12" fill="#999999">Audio Intelligence</text>
+      </g>
+    </g>
+
+    <!-- Module 2: Audio Highlights -->
+    <g transform="translate(650, 100)">
+      <rect width="590" height="280" rx="16" fill="#FFFFFF" filter="url(#cardShadow)"></rect>
+      <text x="24" y="42" class="ppt-font-cn-heading" font-size="22" fill="#1A1A1A">Xiaomi-MiMo-Audio：语音交互新高地</text>
+      <text x="24" y="72" class="ppt-font-cn-body" font-size="15" fill="#FF6700">行业首创 ICL 少样本泛化技术</text>
+      
+      <g transform="translate(24, 100)">
+        <rect width="542" height="50" rx="8" fill="#F9FAFB"></rect>
+        <text x="15" y="31" class="ppt-font-cn-heading" font-size="16" fill="#333333">性能涌现</text>
+        <text x="100" y="31" class="ppt-font-cn-body" font-size="15" fill="#666666">预训练阶段观察到显著智能跃迁，理解力大幅提升</text>
+        
+        <rect y="60" width="542" height="50" rx="8" fill="#F9FAFB"></rect>
+        <text x="15" y="91" class="ppt-font-cn-heading" font-size="16" fill="#333333">四维对齐</text>
+        <text x="100" y="91" class="ppt-font-cn-body" font-size="15" fill="#666666">涵盖智商、情商、表现力与安全性，全方位进化</text>
+        
+        <rect y="120" width="542" height="50" rx="8" fill="#F9FAFB"></rect>
+        <text x="15" y="151" class="ppt-font-cn-heading" font-size="16" fill="#333333">极致拟人</text>
+        <text x="100" y="151" class="ppt-font-cn-body" font-size="15" fill="#666666">实现自然度与交互适配性的跨越式提升，真假难辨</text>
+      </g>
+    </g>
+
+    <!-- Module 3: Miloco (Image & Content) -->
+    <g transform="translate(40, 400)">
+      <rect width="840" height="280" rx="16" fill="#FFFFFF" filter="url(#cardShadow)"></rect>
+      <text x="24" y="42" class="ppt-font-cn-heading" font-size="22" fill="#1A1A1A" style="">Xiaomi Miloco：大模型驱动的全屋智能</text>
+      
+      <g transform="translate(24, 85)">
+        <g transform="translate(0, 0)">
+          <rect width="4" height="40" rx="2" fill="#FF6700" opacity="0.4"></rect>
+          <text x="16" y="16" class="ppt-font-cn-heading" font-size="18" fill="#1A1A1A">核心引擎：MiMo-VL-Miloco</text>
+          <text x="16" y="40" class="ppt-font-cn-body" font-size="15" fill="#666666">端侧视觉大模型，实现本地化高效推理</text>
+        </g>
+        <g transform="translate(0, 75)">
+          <rect width="4" height="40" rx="2" fill="#FF6700" opacity="0.4"></rect>
+          <text x="16" y="16" class="ppt-font-cn-heading" font-size="18" fill="#1A1A1A">交互革命：自然语言推理</text>
+          <text x="16" y="40" class="ppt-font-cn-body" font-size="15" fill="#666666">由“预设规则”转向“意图理解”，真正懂你所想</text>
+        </g>
+        <g transform="translate(0, 150)">
+          <rect width="4" height="40" rx="2" fill="#FF6700" opacity="0.4"></rect>
+          <text x="16" y="16" class="ppt-font-cn-heading" font-size="18" fill="#1A1A1A">智能联动：自动识别需求</text>
+          <text x="16" y="40" class="ppt-font-cn-body" font-size="15" fill="#666666">复杂生活场景自动感知与跨设备协同执行</text>
+        </g>
+      </g>
+
+      <!-- Image Slot Right -->
+      <image id="ai-image-img-1" data-ai-slot-id="img-1" x="0" y="0" width="390" height="210" href="https://aiphoto.sandunppt.com/public/uploads/superppt/replace/2026/03/24/aedeab4b-9658-b6b1-d33b-55c1895bed09/manual_5153a8d58adf.jpg" data-source-url="/default-image.png" preserveAspectRatio="xMidYMid slice" transform="translate(420, 40)"><title>/default-image.png</title></image>
+    </g>
+
+    <!-- Module 4: Strategy Timeline -->
+    <g transform="translate(900, 400)">
+      <rect width="340" height="280" rx="16" fill="#FFFFFF" filter="url(#cardShadow)"></rect>
+      <text x="24" y="42" class="ppt-font-cn-heading" font-size="22" fill="#1A1A1A">2025 战略加速期</text>
+      
+      <g transform="translate(30, 85)">
+        <line x1="10" y1="0" x2="10" y2="140" stroke="#F1F5F9" stroke-width="2"></line>
+        
+        <circle cx="10" cy="20" r="6" fill="#FF6700"></circle>
+        <text x="30" y="24" class="ppt-font-cn-heading" font-size="18" fill="#FF6700">2025.09</text>
+        <text x="30" y="48" class="ppt-font-cn-heading" font-size="16" fill="#1A1A1A">MiMo-Audio 开源</text>
+        <text x="30" y="68" class="ppt-font-cn-body" font-size="13" fill="#666666">语音大模型全量开放</text>
+        
+        <circle cx="10" cy="110" r="6" fill="#FF6700"></circle>
+        <text x="30" y="114" class="ppt-font-cn-heading" font-size="18" fill="#FF6700">2025.11</text>
+        <text x="30" y="138" class="ppt-font-cn-heading" font-size="16" fill="#1A1A1A">Miloco 方案发布</text>
+        <text x="30" y="158" class="ppt-font-cn-body" font-size="13" fill="#666666">未来探索方案正式亮相</text>
+      </g>
+      
+      <rect x="24" y="230" width="292" height="32" rx="16" fill="#FFF0E6"></rect>
+      <text x="170" y="251" text-anchor="middle" class="ppt-font-cn-heading" font-size="13" fill="#FF6700">战略执行力：双月连发，高频产出</text>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <rect x="40" y="46" width="6" height="26" rx="3" fill="#FF6700"></rect>
+    <text x="58" y="66" class="ppt-font-cn-heading" font-size="26" fill="#1A1A1A">AI 大模型：全系列矩阵实现完整布局</text>
+  </g>
+
+  <g id="ai-image-layer">
+    <clipPath id="clip-ai-image-img-1">
+      <rect x="420.00" y="40.00" width="390.00" height="210.00" rx="12"></rect>
+    </clipPath>
+    
+  </g>
+
+  <g id="ai-image-gen-progress-layer">
+  </g>
+</svg>

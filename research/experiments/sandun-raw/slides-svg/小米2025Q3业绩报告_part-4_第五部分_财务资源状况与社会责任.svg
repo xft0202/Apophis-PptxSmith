@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+    ]]></style>
+    <linearGradient id="num_grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E5E5E5" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#E5E5E5" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="0.5"/>
+    </pattern>
+    <radialGradient id="glow" cx="90%" cy="90%" r="50%">
+      <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FF6700" stop-opacity="0"/>
+    </radialGradient>
+    <rect width="100%" height="100%" fill="#F8F9FA"/>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <rect width="100%" height="100%" fill="url(#glow)"/>
+  </g>
+
+  <!-- LAYER 2: Content (Transition Page Design) -->
+  <g id="content_layer">
+    <!-- Large Decorative Chapter Number (Xiaomi Momentum Style) -->
+    <text x="1220" y="640" font-size="380" text-anchor="end" fill="url(#num_grad)" class="ppt-font-cn-heading">05</text>
+    
+    <!-- Accent Decorative Bar -->
+    <rect x="80" y="240" width="10" height="260" rx="5" fill="#FF6700"/>
+    
+    <!-- Content Module -->
+    <g transform="translate(130, 240)">
+      <!-- Part Label -->
+      <text x="0" y="30" font-size="28" fill="#FF6700" class="ppt-font-cn-heading" letter-spacing="4">PART 05</text>
+      
+      <!-- Main Title -->
+      <text x="0" y="130" font-size="82" fill="#1A1A1A" class="ppt-font-cn-heading">财务资源状况与社会责任</text>
+      
+      <!-- Subtitle -->
+      <text x="0" y="200" font-size="32" fill="#4A4A4A" class="ppt-font-cn-body">充沛现金流护航长期主义，践行可持续发展企业承诺</text>
+      
+      <!-- Description Line -->
+      <line x1="0" y1="250" x2="480" y2="250" stroke="#FF6700" stroke-width="3" opacity="0.3"/>
+      
+      <!-- Description Text -->
+      <text x="0" y="300" font-size="22" fill="#888888" class="ppt-font-cn-body">
+        <tspan x="0" dy="0">评估资产负债健康度，并分享在环境保护、公益慈善及 ESG 领域的实践成果。</tspan>
+      </text>
+    </g>
+
+    <!-- Decorative Elements (Xiaomi Pure Style) -->
+    <circle cx="1180" cy="100" r="60" fill="none" stroke="#FF6700" stroke-width="1.5" opacity="0.15"/>
+    <circle cx="1140" cy="140" r="30" fill="#FF6700" opacity="0.05"/>
+    <path d="M1080 80 L1120 80" stroke="#FF6700" stroke-width="4" opacity="0.2"/>
+  </g>
+
+  <!-- LAYER 3: Header (Omitted for Transition Page as per Step 3 instructions) -->
+</svg>

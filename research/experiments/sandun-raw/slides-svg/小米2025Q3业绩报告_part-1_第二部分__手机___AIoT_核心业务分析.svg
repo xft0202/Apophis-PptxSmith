@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+    ]]></style>
+    <linearGradient id="orange_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6700" />
+      <stop offset="100%" stop-color="#FF8533" />
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background (Xiaomi Pure Momentum) -->
+  <g id="bg">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="0.5"/>
+      </pattern>
+      <radialGradient id="glow" cx="90%" cy="90%" r="50%">
+        <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"/>
+        <stop offset="100%" stop-color="#FF6700" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="#F8F9FA"/>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <rect width="100%" height="100%" fill="url(#glow)"/>
+  </g>
+
+  <!-- LAYER 2: Content (Transition Page Enhancement) -->
+  <g id="content_layer">
+    <!-- Large Decorative Chapter Number (Watermark) -->
+    <text x="1220" y="620" font-size="320" text-anchor="end" fill="#FF6700" class="ppt-font-cn-heading" opacity="0.05">02</text>
+    
+    <!-- Vertical Branding Bar (Xiaomi Style) -->
+    <rect x="80" y="260" width="8" height="240" rx="4" fill="url(#orange_grad)"/>
+    
+    <!-- Part Label -->
+    <text x="120" y="285" font-size="24" fill="#FF6700" class="ppt-font-cn-heading" letter-spacing="4">PART 02</text>
+    
+    <!-- Main Title: Second Part -->
+    <text x="120" y="375" font-size="72" fill="#1A1A1A" class="ppt-font-cn-heading">“手机 × AIoT”核心业务分析</text>
+    
+    <!-- Subtitle -->
+    <text x="120" y="445" font-size="32" fill="#4B5563" class="ppt-font-cn-body">高端化战略成效显著，互联互通构建生态护城河</text>
+    
+    <!-- Decorative Line -->
+    <rect x="120" y="495" width="480" height="1" fill="#E5E5E5"/>
+    
+    <!-- Description Text -->
+    <text x="120" y="545" font-size="20" fill="#94A3B8" class="ppt-font-cn-body">
+      <tspan x="120" dy="0">探讨手机市场地位与高端化进程，以及 AIoT 生态在万物互联时代的协同进化。</tspan>
+    </text>
+
+    <!-- Bottom Accent Elements -->
+    <g opacity="0.4">
+      <circle cx="1180" cy="100" r="40" fill="none" stroke="#FF6700" stroke-width="1.5"/>
+      <circle cx="1140" cy="140" r="15" fill="#FF6700" opacity="0.2"/>
+    </g>
+  </g>
+</svg>

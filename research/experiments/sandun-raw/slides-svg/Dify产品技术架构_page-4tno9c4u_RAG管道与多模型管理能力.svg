@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+      .card-bg { fill: #FFFFFF; fill-opacity: 0.03; stroke: #FFFFFF; stroke-opacity: 0.1; stroke-width: 1; }
+      .chip-bg { fill: #3B82F6; fill-opacity: 0.1; stroke: #3B82F6; stroke-opacity: 0.3; stroke-width: 1; }
+      .accent-blue { fill: #3B82F6; }
+      .text-secondary { fill: #94A3B8; }
+      .line-connector { stroke: #3B82F6; stroke-width: 1.5; fill: none; stroke-dasharray: 4 2; opacity: 0.5; }
+    ]]></style>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#05070A;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0C121E;stop-opacity:1"/>
+    </linearGradient>
+    <pattern id="microGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#344256" stroke-width="0.5" stroke-opacity="0.3"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="50" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3B82F6" opacity="0.5"/>
+    </marker>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <rect width="100%" height="100%" fill="url(#grad1)"/>
+    <rect width="100%" height="100%" fill="url(#microGrid)"/>
+    <circle cx="90%" cy="10%" r="300" fill="#1E40AF" fill-opacity="0.15" filter="url(#glow)"/>
+    <circle cx="10%" cy="90%" r="250" fill="#4F46E5" fill-opacity="0.1" filter="url(#glow)"/>
+  </g>
+
+  <!-- LAYER 2: Content -->
+  <g id="content_layer">
+    <!-- Module 1: Industrial RAG Pipeline (Top Left) -->
+    <g id="card-pipeline" transform="translate(40, 100)">
+      <rect width="850" height="280" rx="12" class="card-bg"/>
+      <text class="ppt-font-cn-heading" x="24" y="40" font-size="22" fill="#FFFFFF">全链路 RAG 管道：工业级知识生产线</text>
+      
+      <g transform="translate(40, 85)">
+        <!-- Step 1 -->
+        <g transform="translate(0, 0)">
+          <circle cx="45" cy="45" r="40" fill="#3B82F6" fill-opacity="0.1" stroke="#3B82F6" stroke-width="1"/>
+          <path d="M38 45h14M45 38v14" stroke="#3B82F6" stroke-width="2" fill="none"/>
+          <text class="ppt-font-cn-heading" x="45" y="115" font-size="16" text-anchor="middle" fill="#FFFFFF">数据清洗</text>
+          <text class="ppt-font-cn-body" x="45" y="138" font-size="13" text-anchor="middle" fill="#94A3B8">PDF/Notion/网页</text>
+        </g>
+        <line x1="95" y1="45" x2="165" y2="45" class="line-connector" marker-end="url(#arrowhead)"/>
+
+        <!-- Step 2 -->
+        <g transform="translate(200, 0)">
+          <circle cx="45" cy="45" r="40" fill="#3B82F6" fill-opacity="0.1" stroke="#3B82F6" stroke-width="1"/>
+          <rect x="35" y="35" width="20" height="20" rx="2" stroke="#3B82F6" stroke-width="2" fill="none"/>
+          <text class="ppt-font-cn-heading" x="45" y="115" font-size="16" text-anchor="middle" fill="#FFFFFF">精细分块</text>
+          <text class="ppt-font-cn-body" x="45" y="138" font-size="13" text-anchor="middle" fill="#94A3B8">父子层级/语义段落</text>
+        </g>
+        <line x1="295" y1="45" x2="365" y2="45" class="line-connector" marker-end="url(#arrowhead)"/>
+
+        <!-- Step 3 -->
+        <g transform="translate(400, 0)">
+          <circle cx="45" cy="45" r="40" fill="#3B82F6" fill-opacity="0.1" stroke="#3B82F6" stroke-width="1"/>
+          <circle cx="45" cy="45" r="8" stroke="#3B82F6" stroke-width="2" fill="none"/>
+          <text class="ppt-font-cn-heading" x="45" y="115" font-size="16" text-anchor="middle" fill="#FFFFFF">混合检索</text>
+          <text class="ppt-font-cn-body" x="45" y="138" font-size="13" text-anchor="middle" fill="#94A3B8">关键词 + 向量 (RRF)</text>
+        </g>
+        <line x1="495" y1="45" x2="565" y2="45" class="line-connector" marker-end="url(#arrowhead)"/>
+
+        <!-- Step 4 -->
+        <g transform="translate(600, 0)">
+          <circle cx="45" cy="45" r="40" fill="#3B82F6" fill-opacity="0.2" stroke="#3B82F6" stroke-width="2"/>
+          <path d="M38 45l5 5 10-10" stroke="#FFFFFF" stroke-width="3" fill="none"/>
+          <text class="ppt-font-cn-heading" x="45" y="115" font-size="16" text-anchor="middle" fill="#FFFFFF">重排 (Rerank)</text>
+          <text class="ppt-font-cn-body" x="45" y="138" font-size="13" text-anchor="middle" fill="#94A3B8">Top-K 核心召回</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Module 3: Agentic RAG Evolution (Top Right) -->
+    <g id="card-agentic" transform="translate(910, 100)">
+      <rect width="330" height="280" rx="12" class="card-bg"/>
+      <text class="ppt-font-cn-heading" x="20" y="40" font-size="20" fill="#FFFFFF">Agentic RAG 进化</text>
+      <text class="ppt-font-cn-body" x="20" y="68" font-size="14" fill="#3B82F6">减少 90% 模型幻觉</text>
+      
+      <!-- Chart Slot -->
+      <g data-chart-slot-id="chart-hallucination" data-chart-type="horizontal-bar" transform="translate(20, 90)"><rect x="0" y="0" width="290" height="160" rx="12" fill="#0C121E"/><rect x="0.5" y="0.5" width="289" height="159" rx="11.5" fill="none" stroke="#1E293B" stroke-width="1"/><line x1="80" y1="30" x2="80" y2="140" stroke="#1E293B" stroke-width="1" stroke-dasharray="2 4"/><text x="80" y="20" text-anchor="middle" font-size="10" fill="#94A3B8" opacity="0.8">0</text><line x1="114" y1="30" x2="114" y2="140" stroke="#1E293B" stroke-width="1" stroke-dasharray="2 4"/><text x="114" y="20" text-anchor="middle" font-size="10" fill="#94A3B8" opacity="0.8">20</text><line x1="148" y1="30" x2="148" y2="140" stroke="#1E293B" stroke-width="1" stroke-dasharray="2 4"/><text x="148" y="20" text-anchor="middle" font-size="10" fill="#94A3B8" opacity="0.8">40</text><line x1="182" y1="30" x2="182" y2="140" stroke="#1E293B" stroke-width="1" stroke-dasharray="2 4"/><text x="182" y="20" text-anchor="middle" font-size="10" fill="#94A3B8" opacity="0.8">60</text><line x1="216" y1="30" x2="216" y2="140" stroke="#1E293B" stroke-width="1" stroke-dasharray="2 4"/><text x="216" y="20" text-anchor="middle" font-size="10" fill="#94A3B8" opacity="0.8">80</text><line x1="250" y1="30" x2="250" y2="140" stroke="#1E293B" stroke-width="1" stroke-dasharray="2 4"/><text x="250" y="20" text-anchor="middle" font-size="10" fill="#94A3B8" opacity="0.8">100</text><path d="M 80 36 L 246 36 A 4 4 0 0 1 250 40 L 250 75 A 4 4 0 0 1 246 79 L 80 79 Z" fill="#3B82F6"/><text x="258" y="61.5" text-anchor="start" font-size="12" fill="#F8FAFC" font-weight="600">100</text><text x="68" y="61.5" text-anchor="end" font-size="12" fill="#94A3B8" font-weight="500">传统 RAG</text><path d="M 80 91 L 93 91 A 4 4 0 0 1 97 95 L 97 130 A 4 4 0 0 1 93 134 L 80 134 Z" fill="#8B5CF6"/><text x="105" y="116.5" text-anchor="start" font-size="12" fill="#F8FAFC" font-weight="600">10</text><text x="68" y="116.5" text-anchor="end" font-size="12" fill="#94A3B8" font-weight="500">Agentic RAG</text><line x1="80" y1="30" x2="80" y2="148" stroke="#475569" stroke-width="1" stroke-linecap="round"/><line x1="72" y1="140" x2="250" y2="140" stroke="#475569" stroke-width="1" stroke-linecap="round"/></g>
+    </g>
+
+    <!-- Module 2: Multi-model Matrix (Bottom Left) -->
+    <g id="card-models" transform="translate(40, 400)">
+      <rect width="600" height="280" rx="12" class="card-bg"/>
+      <text class="ppt-font-cn-heading" x="24" y="40" font-size="22" fill="#FFFFFF">极致的模型适配能力</text>
+      
+      <!-- LLM Row -->
+      <g transform="translate(24, 75)">
+        <text class="ppt-font-cn-heading" x="0" y="22" font-size="15" fill="#94A3B8">生成模型 (LLM)</text>
+        <rect x="130" y="0" width="85" height="32" rx="16" class="chip-bg"/>
+        <text class="ppt-font-cn-body" x="172.5" y="21" font-size="13" text-anchor="middle" fill="#FFFFFF">OpenAI</text>
+        <rect x="225" y="0" width="100" height="32" rx="16" class="chip-bg"/>
+        <text class="ppt-font-cn-body" x="275" y="21" font-size="13" text-anchor="middle" fill="#FFFFFF">DeepSeek</text>
+        <rect x="335" y="0" width="85" height="32" rx="16" class="chip-bg"/>
+        <text class="ppt-font-cn-body" x="377.5" y="21" font-size="13" text-anchor="middle" fill="#FFFFFF">Claude</text>
+        <rect x="430" y="0" width="85" height="32" rx="16" class="chip-bg"/>
+        <text class="ppt-font-cn-body" x="472.5" y="21" font-size="13" text-anchor="middle" fill="#FFFFFF">Llama 3</text>
+      </g>
+
+      <!-- Embedding Row -->
+      <g transform="translate(24, 130)">
+        <text class="ppt-font-cn-heading" x="0" y="22" font-size="15" fill="#94A3B8">嵌入模型</text>
+        <rect x="130" y="0" width="100" height="32" rx="16" class="chip-bg"/>
+        <text class="ppt-font-cn-body" x="180" y="21" font-size="13" text-anchor="middle" fill="#FFFFFF">BGE-M3</text>
+        <rect x="240" y="0" width="130" height="32" rx="16" class="chip-bg"/>
+        <text class="ppt-font-cn-body" x="305" y="21" font-size="13" text-anchor="middle" fill="#FFFFFF">OpenAI Embed</text>
+      </g>
+
+      <!-- Rerank Row -->
+      <g transform="translate(24, 185)">
+        <text class="ppt-font-cn-heading" x="0" y="22" font-size="15" fill="#94A3B8">重排模型</text>
+        <rect x="130" y="0" width="85" height="32" rx="16" class="chip-bg"/>
+        <text class="ppt-font-cn-body" x="172.5" y="21" font-size="13" text-anchor="middle" fill="#FFFFFF">Cohere</text>
+        <rect x="225" y="0" width="85" height="32" rx="16" class="chip-bg"/>
+        <text class="ppt-font-cn-body" x="267.5" y="21" font-size="13" text-anchor="middle" fill="#FFFFFF">Jina</text>
+      </g>
+      
+      <text class="ppt-font-cn-body" x="24" y="255" font-size="14" fill="#3B82F6">100+ 模型即插即用，组件化灵活切换</text>
+    </g>
+
+    <!-- Module 4: Vector DB Compatibility (Bottom Right) -->
+    <g id="card-vectordb" transform="translate(660, 400)">
+      <rect width="580" height="280" rx="12" class="card-bg"/>
+      <text class="ppt-font-cn-heading" x="24" y="40" font-size="22" fill="#FFFFFF">企业级存储适配</text>
+      
+      <!-- Image Slot -->
+      <image id="ai-image-img-infrastructure" data-ai-slot-id="img-infrastructure" x="0" y="0" width="240" height="180" href="https://images.unsplash.com/photo-1761270635735-2526a20eb881?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBkYXRhJTIwY2VudGVyJTIwc2VydmVyJTIwcmFja3MlMjBibHVlJTIwbGlnaHRpbmd8ZW58MHx8fHwxNzczMjk4NDU4fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" data-source-url="https://unsplash.com/photos/abstract-blue-and-pink-light-streaks-on-dark-background-LD6EkZ0pjG0?utm_medium=referral&amp;utm_source=superppt+agent" preserveAspectRatio="xMidYMid slice" transform="translate(24, 65)"><title>https://unsplash.com/photos/abstract-blue-and-pink-light-streaks-on-dark-background-LD6EkZ0pjG0?utm_medium=referral&amp;utm_source=superppt+agent</title></image>
+
+      <!-- DB Chips -->
+      <g transform="translate(285, 65)">
+        <text class="ppt-font-cn-body" x="0" y="18" font-size="14" fill="#94A3B8">全主流数据库覆盖</text>
+        
+        <rect x="0" y="40" width="120" height="36" rx="6" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.1"/>
+        <text class="ppt-font-cn-heading" x="60" y="63" font-size="14" text-anchor="middle" fill="#FFFFFF">Milvus</text>
+        
+        <rect x="135" y="40" width="120" height="36" rx="6" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.1"/>
+        <text class="ppt-font-cn-heading" x="195" y="63" font-size="14" text-anchor="middle" fill="#FFFFFF">Pinecone</text>
+        
+        <rect x="0" y="90" width="120" height="36" rx="6" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.1"/>
+        <text class="ppt-font-cn-heading" x="60" y="113" font-size="14" text-anchor="middle" fill="#FFFFFF">Weaviate</text>
+        
+        <rect x="135" y="90" width="120" height="36" rx="6" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.1"/>
+        <text class="ppt-font-cn-heading" x="195" y="113" font-size="14" text-anchor="middle" fill="#FFFFFF">Elasticsearch</text>
+        
+        <rect x="0" y="140" width="255" height="36" rx="6" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.1"/>
+        <text class="ppt-font-cn-heading" x="127.5" y="163" font-size="14" text-anchor="middle" fill="#FFFFFF">Aliyun Tablestore</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <rect x="40" y="46" width="4" height="26" rx="2" fill="#3B82F6"/>
+    <text x="58" y="66" class="ppt-font-cn-heading" font-size="26" fill="#FFFFFF" style="letter-spacing:1px">RAG管道与多模型管理能力</text>
+    <line x1="40" y1="80" x2="1240" y2="80" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1"/>
+  </g>
+
+  <g id="ai-image-layer">
+    <clipPath id="clip-ai-image-img-infrastructure">
+      <rect x="24.00" y="65.00" width="240.00" height="180.00" rx="12"/>
+    </clipPath>
+    
+  </g>
+</svg>

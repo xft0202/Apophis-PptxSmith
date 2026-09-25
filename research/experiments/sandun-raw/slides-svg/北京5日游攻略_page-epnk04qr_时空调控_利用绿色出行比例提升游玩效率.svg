@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720"><style data-img-radius="1">image{clip-path:inset(0 round 8px)}</style>
+  <defs>
+    <style>
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+      .fill-theme { fill: #B0352F; }
+      .stroke-theme { stroke: #B0352F; }
+      .text-main { fill: #1A1A1A; }
+      .text-secondary { fill: #666666; }
+      .card-bg { fill: #FFFFFF; stroke: #E8E2DF; stroke-width: 1; }
+    </style>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#B0352F" flood-opacity="0.05"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.05"></path>
+      </pattern>
+      <filter id="noise">
+        <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" stitchTiles="stitch"></feTurbulence>
+        <feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.02 0"></feColorMatrix>
+      </filter>
+    </defs>
+    <rect width="100%" height="100%" fill="#FDFCFB"></rect>
+    <rect width="100%" height="100%" fill="url(#grid)"></rect>
+    <rect width="100%" height="100%" filter="url(#noise)"></rect>
+    <circle cx="90%" cy="10%" r="300" fill="#B0352F" fill-opacity="0.03"></circle>
+  </g>
+
+  <!-- LAYER 2: Content -->
+  <g id="content_layer">
+    <!-- Module 1: Congestion Dashboard -->
+    <g id="module-1" transform="translate(40, 100)">
+      <rect class="card-bg" width="386" height="280" rx="4" filter="url(#card-shadow)"></rect>
+      <rect x="0" y="0" width="4" height="30" class="fill-theme" transform="translate(20, 24)"></rect>
+      <text class="ppt-font-cn-theme-heritage fill-theme" x="32" y="46" font-size="22">避开“红色禁区”</text>
+      
+      <!-- Warning Display -->
+      <rect x="20" y="70" width="346" height="90" rx="4" fill="#FDF2F1"></rect>
+      <text class="ppt-font-cn-body fill-theme" x="40" y="100" font-size="14">实时拥堵指数 (TPI)</text>
+      <text class="ppt-font-cn-heading fill-theme" x="40" y="145" font-size="56">8.1</text>
+      <text class="ppt-font-cn-heading fill-theme" x="135" y="145" font-size="20">严重拥堵</text>
+
+      <!-- Bullet Points -->
+      <g transform="translate(20, 180)">
+        <circle cx="6" cy="10" r="3" class="fill-theme"></circle>
+        <text class="ppt-font-cn-body text-main" x="20" y="15" font-size="15">锁定峰值：17:30—18:45</text>
+        
+        <circle cx="6" cy="40" r="3" class="fill-theme"></circle>
+        <text class="ppt-font-cn-body text-main" x="20" y="45" font-size="15">规避：二三环、长安街、高速</text>
+        
+        <circle cx="6" cy="70" r="3" class="fill-theme"></circle>
+        <text class="ppt-font-cn-body text-main" x="20" y="75" font-size="15">痛点：地面高峰航速 &lt; 15km/h</text>
+      </g>
+    </g>
+
+    <!-- Module 2: Smart Tools Matrix -->
+    <g id="module-2" transform="translate(446, 100)">
+      <rect class="card-bg" width="794" height="280" rx="4" filter="url(#card-shadow)"></rect>
+      <rect x="0" y="0" width="4" height="30" class="fill-theme" transform="translate(24, 24)"></rect>
+      <text class="ppt-font-cn-theme-heritage fill-theme" x="36" y="46" font-size="22">智慧大脑：全流程透明出行</text>
+      
+      <g transform="translate(24, 75)">
+        <!-- Col 1: MaaS -->
+        <rect width="240" height="180" rx="4" fill="#F9F5F4" stroke="#E8E2DF" stroke-width="1"></rect>
+        <text class="ppt-font-cn-heading fill-theme" x="20" y="35" font-size="18">MaaS 综合平台</text>
+        <text class="ppt-font-cn-body text-main" x="20" y="70" font-size="14">● 高德/百度实时公交位置</text>
+        <text class="ppt-font-cn-body text-main" x="20" y="95" font-size="14">● 地铁满载率分节查询</text>
+        <rect x="20" y="130" width="80" height="26" rx="13" class="fill-theme" fill-opacity="0.1"></rect>
+        <text class="ppt-font-cn-heading fill-theme" x="32" y="148" font-size="12">实时透明</text>
+
+        <!-- Col 2: Scenic -->
+        <g transform="translate(253, 0)">
+          <rect width="240" height="180" rx="4" fill="#F9F5F4" stroke="#E8E2DF" stroke-width="1"></rect>
+          <text class="ppt-font-cn-heading fill-theme" x="20" y="35" font-size="18">景区流量助手</text>
+          <text class="ppt-font-cn-body text-main" x="20" y="70" font-size="14">● 故宫/八达岭实时监控</text>
+          <text class="ppt-font-cn-body text-main" x="20" y="95" font-size="14">● 热点区域拥堵精准避让</text>
+          <rect x="20" y="130" width="80" height="26" rx="13" class="fill-theme" fill-opacity="0.1"></rect>
+          <text class="ppt-font-cn-heading fill-theme" x="32" y="148" font-size="12">动态预警</text>
+        </g>
+
+        <!-- Col 3: Efficiency -->
+        <g transform="translate(506, 0)">
+          <rect width="240" height="180" rx="4" fill="#FDF2F1" stroke="#B0352F" stroke-width="1" stroke-opacity="0.2"></rect>
+          <text class="ppt-font-cn-heading fill-theme" x="20" y="35" font-size="18">精准控时收益</text>
+          <text class="ppt-font-cn-body text-main" x="20" y="70" font-size="14">单次出行平均节约时间</text>
+          <text class="ppt-font-cn-heading fill-theme" x="20" y="110" font-size="32">15-20 min</text>
+          <text class="ppt-font-cn-body text-secondary" x="20" y="145" font-size="13">显著减少景区入口无效等待</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Module 3: Efficiency Comparison -->
+    <g id="module-3" transform="translate(40, 400)">
+      <rect class="card-bg" width="590" height="280" rx="4" filter="url(#card-shadow)"></rect>
+      <rect x="0" y="0" width="4" height="30" class="fill-theme" transform="translate(24, 24)"></rect>
+      <text class="ppt-font-cn-theme-heritage fill-theme" x="36" y="46" font-size="22">绿色出行：效率与路权的博弈</text>
+      <text class="ppt-font-cn-body text-secondary" x="24" y="75" font-size="14">高峰期平均行驶速度对比：轨道交通 vs 地面自驾</text>
+
+      <!-- Chart Slot -->
+      <g data-chart-slot-id="chart-efficiency" data-chart-type="horizontal-bar" transform="translate(24, 90)"><rect x="0" y="0" width="542" height="150" rx="4" fill="#FDFCFB"></rect><rect x="0.5" y="0.5" width="541" height="149" rx="3.5" fill="none" stroke="#E8E2D9" stroke-width="1"></rect><line x1="80" y1="30" x2="80" y2="130" stroke="#F2EDE4" stroke-width="1" stroke-dasharray="0"></line><text x="80" y="20" text-anchor="middle" font-size="12" fill="#5D524F" opacity="0.8">0</text><line x1="164.4" y1="30" x2="164.4" y2="130" stroke="#F2EDE4" stroke-width="1" stroke-dasharray="0"></line><text x="164.4" y="20" text-anchor="middle" font-size="12" fill="#5D524F" opacity="0.8">10</text><line x1="248.8" y1="30" x2="248.8" y2="130" stroke="#F2EDE4" stroke-width="1" stroke-dasharray="0"></line><text x="248.8" y="20" text-anchor="middle" font-size="12" fill="#5D524F" opacity="0.8">20</text><line x1="333.2" y1="30" x2="333.2" y2="130" stroke="#F2EDE4" stroke-width="1" stroke-dasharray="0"></line><text x="333.2" y="20" text-anchor="middle" font-size="12" fill="#5D524F" opacity="0.8">30</text><line x1="417.6" y1="30" x2="417.6" y2="130" stroke="#F2EDE4" stroke-width="1" stroke-dasharray="0"></line><text x="417.6" y="20" text-anchor="middle" font-size="12" fill="#5D524F" opacity="0.8">40</text><line x1="502" y1="30" x2="502" y2="130" stroke="#F2EDE4" stroke-width="1" stroke-dasharray="0"></line><text x="502" y="20" text-anchor="middle" font-size="12" fill="#5D524F" opacity="0.8">50</text><path d="M 80 36 L 457.8 36 A 2 2 0 0 1 459.8 38 L 459.8 72 A 2 2 0 0 1 457.8 74 L 80 74 Z" fill="#B0352F"></path><text x="467.8" y="59" text-anchor="start" font-size="14" fill="#1A1A1A" font-weight="600">45</text><text x="68" y="59" text-anchor="end" font-size="14" fill="#5D524F" font-weight="500">轨道交通 (Subway)</text><path d="M 80 86 L 204.6 86 A 2 2 0 0 1 206.6 88 L 206.6 122 A 2 2 0 0 1 204.6 124 L 80 124 Z" fill="#D4AF37"></path><text x="214.6" y="109" text-anchor="start" font-size="14" fill="#1A1A1A" font-weight="600">15</text><text x="68" y="109" text-anchor="end" font-size="14" fill="#5D524F" font-weight="500">地面自驾 (Car - Peak)</text><line x1="80" y1="30" x2="80" y2="138" stroke="#8C7355" stroke-width="1" stroke-linecap="round"></line><line x1="72" y1="130" x2="502" y2="130" stroke="#8C7355" stroke-width="1" stroke-linecap="round"></line></g>
+    </g>
+
+    <!-- Module 4: Carbon Credits -->
+    <g id="module-4" transform="translate(650, 400)">
+      <rect class="card-bg" width="590" height="280" rx="4" filter="url(#card-shadow)"></rect>
+      <rect x="0" y="0" width="4" height="30" class="fill-theme" transform="translate(24, 24)"></rect>
+      <text class="ppt-font-cn-theme-heritage fill-theme" x="36" y="46" font-size="22">碳普惠：把路费“走”回来</text>
+      
+      <g transform="translate(24, 75)">
+        <text class="ppt-font-cn-heading fill-theme" x="0" y="20" font-size="18">绿色能量 = 游玩福利</text>
+        
+        <g transform="translate(0, 45)">
+          <text class="ppt-font-cn-body text-main" x="0" y="15" font-size="14">● 变现：里程自动转化为“碳能量”</text>
+          <text class="ppt-font-cn-body text-main" x="0" y="45" font-size="14">● 兑换：一卡通充值、景区餐饮券</text>
+          <text class="ppt-font-cn-body text-main" x="0" y="75" font-size="14">● 规模：北京已有超 100 万人参与</text>
+        </g>
+        
+        <rect x="0" y="140" width="280" height="45" rx="4" fill="#FDF2F1"></rect>
+        <text class="ppt-font-cn-heading fill-theme" x="15" y="168" font-size="18">累计减排：100,000 吨</text>
+      </g>
+
+      <!-- Image Slot -->
+      <image id="ai-image-img-carbon-reward" data-ai-slot-id="img-carbon-reward" x="0" y="0" width="220" height="200" href="https://aiphoto.sandunppt.com/public/uploads/superppt/replace/2026/03/24/f6d9a058-1734-081e-7170-612b34e1dce9/manual_614a3fd1b94b.png" data-source-url="https://aiphoto.sandunppt.com/public/uploads/superppt/slot-gen/2026/03/11/img-carbon-reward_864ed4839927.png" preserveAspectRatio="xMidYMid slice" transform="translate(340, 60)"><title>https://aiphoto.sandunppt.com/public/uploads/superppt/slot-gen/2026/03/11/img-carbon-reward_864ed4839927.png</title></image>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <rect x="40" y="48" width="4" height="24" rx="2" fill="#B0352F"></rect>
+    <text class="ppt-font-cn-heading" x="58" y="66" font-size="26" fill="#1A1A1A">时空调控：利用绿色出行比例提升游玩效率</text>
+    <line x1="40" y1="85" x2="120" y2="85" stroke="#B0352F" stroke-width="1" stroke-opacity="0.3"></line>
+  </g>
+
+  <g id="ai-image-layer">
+    <clipPath id="clip-ai-image-img-carbon-reward">
+      <rect x="340.00" y="60.00" width="220.00" height="200.00" rx="12"></rect>
+    </clipPath>
+    
+  </g>
+</svg>

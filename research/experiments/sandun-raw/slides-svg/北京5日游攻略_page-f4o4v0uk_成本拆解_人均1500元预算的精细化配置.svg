@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+      .text-accent { fill: #B0352F; }
+      .text-main { fill: #1A1A1A; }
+      .text-sub { fill: #666666; }
+      .card-bg { fill: #FFFFFF; stroke: #B0352F; stroke-width: 0.5; stroke-opacity: 0.2; }
+      .warning-bg { fill: #FFF9F9; stroke: #B0352F; stroke-width: 1; stroke-opacity: 0.3; }
+    ]]></style>
+    <linearGradient id="gradHeritage" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B0352F;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#8A2621;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#B0352F" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <!-- LAYER 1: Global Background -->
+  <g id="bg">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.05"/>
+      </pattern>
+      <filter id="noise">
+        <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" stitchTiles="stitch"/>
+        <feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.02 0"/>
+      </filter>
+    </defs>
+    <rect width="100%" height="100%" fill="#FDFCFB"/>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <rect width="100%" height="100%" filter="url(#noise)"/>
+    <circle cx="90%" cy="10%" r="300" fill="#B0352F" fill-opacity="0.03"/>
+  </g>
+
+  <!-- LAYER 2: Content Layer -->
+  <g id="body_content">
+    <!-- Module 1: Budget Composition (Donut Chart Slot) -->
+    <g transform="translate(40, 100)">
+      <rect width="590" height="290" rx="4" class="card-bg" filter="url(#shadow)"/>
+      <text class="ppt-font-cn-theme-heritage text-accent" x="24" y="36" font-size="22">1500元预算构成模型</text>
+      <text class="ppt-font-cn-body text-sub" x="24" y="60" font-size="14">单位：元/人 (核心占比分布)</text>
+      
+      <!-- Chart Slot: chart-1 (Strictly preserved) -->
+      <g data-chart-slot-id="chart-1" data-chart-type="donut" transform="translate(24, 75)"><rect x="0" y="0" width="280" height="190" rx="4" fill="#FDFCFB"/><rect x="0.5" y="0.5" width="279" height="189" rx="3.5" fill="none" stroke="#E8E2D9" stroke-width="1"/><path d="M 140.41189435757974 36.00143778838171 A 59 59 0 0 1 175.01171430961838 142.48873404399893 L 164.50820001673287 128.24211383079924 A 41.3 41.3 0 0 0 140.2883260503058 53.7010064518672 Z" fill="#B0352F" stroke="#FDFCFB" stroke-width="1"/><text x="211.3292387221365" y="71.82372542187895" text-anchor="middle" dominant-baseline="central" font-size="14" fill="#1A1A1A" font-weight="600">40.0%</text><path d="M 174.34525523928008 142.97294490177464 A 59 59 0 0 1 89.11169351677181 124.85599208314866 L 104.37818546174026 115.89919445820406 A 41.3 41.3 0 0 0 164.04167866749606 128.58106143124223 Z" fill="#D4AF37" stroke="#FDFCFB" stroke-width="1"/><text x="124.40662318866806" y="168.36107005503544" text-anchor="middle" dominant-baseline="central" font-size="14" fill="#1A1A1A" font-weight="600">26.7%</text><path d="M 88.69979915919208 124.14257012846963 A 59 59 0 0 1 88.69979915919208 65.85742987153037 L 104.08985941143446 74.60020091007125 A 41.3 41.3 0 0 0 104.08985941143446 115.39979908992873 Z" fill="#4A5E59" stroke="#FDFCFB" stroke-width="1"/><text x="65" y="95.00000000000001" text-anchor="middle" dominant-baseline="central" font-size="14" fill="#1A1A1A" font-weight="600">16.7%</text><path d="M 89.1116935167718 65.14400791685136 A 59 59 0 0 1 139.5881056424203 36.00143778838171 L 139.7116739496942 53.7010064518672 A 41.3 41.3 0 0 0 104.37818546174026 74.10080554179596 Z" fill="#8C7355" stroke="#FDFCFB" stroke-width="1"/><text x="102.49999999999997" y="30.048094716167128" text-anchor="middle" dominant-baseline="central" font-size="14" fill="#1A1A1A" font-weight="600">16.7%</text></g>
+
+      <!-- Legend -->
+      <g transform="translate(320, 85)">
+        <g transform="translate(0, 0)">
+          <rect width="10" height="10" fill="#B0352F" rx="2"/>
+          <text class="ppt-font-cn-heading text-main" x="20" y="10" font-size="16">住宿 (￥600)</text>
+          <text class="ppt-font-cn-body text-sub" x="20" y="30" font-size="13">品牌连锁协议价 | 40%</text>
+        </g>
+        <g transform="translate(0, 50)">
+          <rect width="10" height="10" fill="#D44D47" rx="2"/>
+          <text class="ppt-font-cn-heading text-main" x="20" y="10" font-size="16">餐饮 (￥400)</text>
+          <text class="ppt-font-cn-body text-sub" x="20" y="30" font-size="13">烤鸭/涮肉特色餐 | 27%</text>
+        </g>
+        <g transform="translate(0, 100)">
+          <rect width="10" height="10" fill="#E88F8B" rx="2"/>
+          <text class="ppt-font-cn-heading text-main" x="20" y="10" font-size="16">门票 (￥250)</text>
+          <text class="ppt-font-cn-body text-sub" x="20" y="30" font-size="13">故宫/长城/颐和园 | 16%</text>
+        </g>
+        <g transform="translate(0, 150)">
+          <rect width="10" height="10" fill="#F2C1BF" rx="2"/>
+          <text class="ppt-font-cn-heading text-main" x="20" y="10" font-size="16">交通/服 (￥250)</text>
+          <text class="ppt-font-cn-body text-sub" x="20" y="30" font-size="13">24h接送+旅游大巴 | 17%</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Module 2: Contrast Board -->
+    <g transform="translate(650, 100)">
+      <rect width="590" height="290" rx="4" class="card-bg" filter="url(#shadow)"/>
+      <text class="ppt-font-cn-theme-heritage text-accent" x="24" y="36" font-size="22">预算效能对比：精细配置 VS 自由行</text>
+      
+      <g transform="translate(24, 75)">
+        <!-- Individual -->
+        <rect width="280" height="85" rx="4" fill="#F9F9F9" stroke="#E0E0E0" stroke-width="1"/>
+        <text class="ppt-font-cn-body text-sub" x="16" y="30" font-size="14">自由行散客预估价</text>
+        <text x="16" y="65" font-family="Source Han Serif CN" font-weight="800" font-size="36" fill="#666666">￥2600+</text>
+        
+        <!-- Refined -->
+        <rect y="105" width="280" height="85" rx="4" fill="#FFF9F9" stroke="#B0352F" stroke-width="1.5"/>
+        <text class="ppt-font-cn-heading text-accent" x="16" y="135" font-size="14">精细化配置价</text>
+        <text x="16" y="170" font-family="Source Han Serif CN" font-weight="800" font-size="40" fill="#B0352F">￥1500</text>
+        
+        <!-- Impact Badge -->
+        <g transform="translate(320, 15)">
+          <circle cx="100" cy="80" r="75" fill="url(#gradHeritage)" opacity="0.1"/>
+          <circle cx="100" cy="80" r="65" fill="url(#gradHeritage)"/>
+          <text class="ppt-font-cn-heading" x="100" y="65" text-anchor="middle" font-size="18" fill="#FFFFFF">综合节省</text>
+          <text x="100" y="110" text-anchor="middle" font-family="Source Han Serif CN" font-weight="800" font-size="48" fill="#FFFFFF">42%</text>
+        </g>
+        <text class="ppt-font-cn-body text-sub" x="0" y="210" font-size="12">※ 资源整合 + 团队协议价 + 错峰预约带来的成本优化优势</text>
+      </g>
+    </g>
+
+    <!-- Module 3: Step Logic -->
+    <g transform="translate(40, 410)">
+      <rect width="590" height="270" rx="4" class="card-bg" filter="url(#shadow)"/>
+      <text class="ppt-font-cn-theme-heritage text-accent" x="24" y="36" font-size="22">精细化配置的“省钱逻辑”</text>
+      
+      <g transform="translate(24, 70)">
+        <!-- Step 1 -->
+        <g transform="translate(0, 0)">
+          <rect width="542" height="58" rx="4" fill="#FDFCFB" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.1"/>
+          <rect width="40" height="58" rx="4" fill="#B0352F"/>
+          <text x="20" y="36" text-anchor="middle" font-family="Source Han Serif CN" font-weight="800" font-size="18" fill="#FFFFFF">01</text>
+          <text class="ppt-font-cn-heading text-main" x="55" y="24" font-size="16">住宿降本：避开王府井高价区</text>
+          <text class="ppt-font-cn-body text-sub" x="55" y="46" font-size="13">选地铁沿线品牌连锁，利用协议价直降30%</text>
+        </g>
+        <!-- Step 2 -->
+        <g transform="translate(0, 68)">
+          <rect width="542" height="58" rx="4" fill="#FDFCFB" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.1"/>
+          <rect width="40" height="58" rx="4" fill="#B0352F"/>
+          <text x="20" y="36" text-anchor="middle" font-family="Source Han Serif CN" font-weight="800" font-size="18" fill="#FFFFFF">02</text>
+          <text class="ppt-font-cn-heading text-main" x="55" y="24" font-size="16">门票优化：提前7天精准预约</text>
+          <text class="ppt-font-cn-body text-sub" x="55" y="46" font-size="13">穿插国博、清北、军博等优质免费学术资源</text>
+        </g>
+        <!-- Step 3 -->
+        <g transform="translate(0, 136)">
+          <rect width="542" height="58" rx="4" fill="#FDFCFB" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.1"/>
+          <rect width="40" height="58" rx="4" fill="#B0352F"/>
+          <text x="20" y="36" text-anchor="middle" font-family="Source Han Serif CN" font-weight="800" font-size="18" fill="#FFFFFF">03</text>
+          <text class="ppt-font-cn-heading text-main" x="55" y="24" font-size="16">餐饮组合：1顿大牌定标+胡同深度寻味</text>
+          <text class="ppt-font-cn-body text-sub" x="55" y="46" font-size="13">全聚德/便宜坊定标，其余餐食深入胡同寻找老字号</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Module 4: Warning/Red Lines -->
+    <g transform="translate(650, 410)">
+      <rect width="590" height="270" rx="4" class="warning-bg" filter="url(#shadow)"/>
+      <rect width="6" height="270" fill="#B0352F" rx="3"/>
+      <text class="ppt-font-cn-theme-heritage text-accent" x="24" y="36" font-size="22">预算执行的“避坑红线”</text>
+      
+      <g transform="translate(24, 80)">
+        <g transform="translate(0, 0)">
+          <circle cx="10" cy="10" r="8" fill="none" stroke="#B0352F" stroke-width="2"/>
+          <line x1="6" y1="6" x2="14" y2="14" stroke="#B0352F" stroke-width="2"/>
+          <line x1="14" y1="6" x2="6" y2="14" stroke="#B0352F" stroke-width="2"/>
+          <text class="ppt-font-cn-heading text-accent" x="28" y="16" font-size="16">低价黑团：警惕低于1000元的“购物团”</text>
+          <text class="ppt-font-cn-body text-main" x="28" y="38" font-size="14">此类团费无法覆盖基本成本，后续强制消费极多。</text>
+        </g>
+        
+        <g transform="translate(0, 65)">
+          <circle cx="10" cy="10" r="8" fill="none" stroke="#B0352F" stroke-width="2"/>
+          <line x1="6" y1="6" x2="14" y2="14" stroke="#B0352F" stroke-width="2"/>
+          <line x1="14" y1="6" x2="6" y2="14" stroke="#B0352F" stroke-width="2"/>
+          <text class="ppt-font-cn-heading text-accent" x="28" y="16" font-size="16">交通刺客：避开景区周边黑车/非法揽客</text>
+          <text class="ppt-font-cn-body text-main" x="28" y="38" font-size="14">坚持使用“地铁+正规旅游大巴”，避免加价与绕路。</text>
+        </g>
+
+        <g transform="translate(0, 130)">
+          <circle cx="10" cy="10" r="8" fill="none" stroke="#B0352F" stroke-width="2"/>
+          <line x1="6" y1="6" x2="14" y2="14" stroke="#B0352F" stroke-width="2"/>
+          <line x1="14" y1="6" x2="6" y2="14" stroke="#B0352F" stroke-width="2"/>
+          <text class="ppt-font-cn-heading text-accent" x="28" y="16" font-size="16">餐饮溢价：核心景区内餐厅性价比极低</text>
+          <text class="ppt-font-cn-body text-main" x="28" y="38" font-size="14">建议自带能量包，正餐回市区享用，避开高额溢价。</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Global Header -->
+  <g id="header">
+    <rect x="40" y="48" width="4" height="24" rx="2" fill="#B0352F"/>
+    <text class="ppt-font-cn-heading" x="58" y="66" font-size="26" fill="#1A1A1A">成本拆解：人均1500元预算的精细化配置</text>
+    <line x1="40" y1="85" x2="120" y2="85" stroke="#B0352F" stroke-width="1" stroke-opacity="0.3"/>
+  </g>
+</svg>

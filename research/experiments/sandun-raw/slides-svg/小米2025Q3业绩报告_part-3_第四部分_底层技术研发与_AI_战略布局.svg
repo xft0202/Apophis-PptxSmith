@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+    ]]></style>
+    <pattern id="grid_pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="0.5"/>
+    </pattern>
+    <radialGradient id="glow_gradient" cx="90%" cy="90%" r="50%">
+      <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FF6700" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bar_gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF6700"/>
+      <stop offset="100%" stop-color="#FF4500"/>
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background (Design System) -->
+  <g id="bg">
+    <rect width="1280" height="720" fill="#F8F9FA"/>
+    <rect width="1280" height="720" fill="url(#grid_pattern)"/>
+    <rect width="1280" height="720" fill="url(#glow_gradient)"/>
+  </g>
+
+  <!-- LAYER 2: Content (Transition Page Layout) -->
+  <g id="content_layer">
+    <!-- Large Decorative Chapter Number (Visual Enhancement) -->
+    <text x="1220" y="650" font-size="420" text-anchor="end" fill="#E5E5E5" opacity="0.4" class="ppt-font-cn-heading">04</text>
+    
+    <!-- Vertical Accent Bar (Xiaomi Style Alignment) -->
+    <rect x="80" y="260" width="8" height="180" rx="4" fill="url(#bar_gradient)"/>
+    
+    <!-- Part Label -->
+    <text x="120" y="255" font-size="28" fill="#FF6700" class="ppt-font-cn-heading" letter-spacing="4">PART 04</text>
+    
+    <!-- Main Title (Extracted from Draft) -->
+    <text x="120" y="360" font-size="72" fill="#1A1A1A" class="ppt-font-cn-heading">底层技术研发与 AI 战略布局</text>
+    
+    <!-- Subtitle (Extracted from Draft) -->
+    <text x="120" y="425" font-size="30" fill="#4B5563" class="ppt-font-cn-body">坚持技术立业之本，以 AI 深度赋能全场景智能生活</text>
+    
+    <!-- Decorative Separator -->
+    <line x1="120" y1="480" x2="320" y2="480" stroke="#FF6700" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    
+    <!-- Description Text (Extracted from Draft) -->
+    <text x="120" y="535" font-size="22" fill="#6B7280" class="ppt-font-cn-body">
+      <tspan x="120" dy="0">展示自研技术储备、专利成果以及人工智能在全线产品中的深度融合与前瞻布局。</tspan>
+    </text>
+
+    <!-- Subtle Tech Motifs (Xiaomi Pure Momentum Aesthetics) -->
+    <circle cx="1150" cy="120" r="60" fill="none" stroke="#FF6700" stroke-width="1" opacity="0.15"/>
+    <circle cx="1150" cy="120" r="30" fill="#FF6700" opacity="0.05"/>
+    <rect x="1100" y="150" width="100" height="2" fill="#FF6700" opacity="0.1"/>
+  </g>
+
+  <!-- Note: Global Header is omitted for Transition Page per Contract 6 -->
+</svg>

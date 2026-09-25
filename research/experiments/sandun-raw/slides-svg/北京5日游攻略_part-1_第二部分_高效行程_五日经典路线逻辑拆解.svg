@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+      .en-accent { font-family: 'Impact', 'Arial Black', sans-serif; }
+      .text-imperial { fill: #B0352F; }
+      .text-main { fill: #1A1A1A; }
+      .text-secondary { fill: #64748B; }
+    ]]></style>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id='bg'>
+    <defs>
+      <pattern id='grid' width='40' height='40' patternUnits='userSpaceOnUse'>
+        <path d='M 40 0 L 0 0 0 40' fill='none' stroke='#B0352F' stroke-width='0.5' stroke-opacity='0.05'/>
+      </pattern>
+      <filter id='noise'>
+        <feTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='3' stitchTiles='stitch'/>
+        <feColorMatrix type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.02 0'/>
+      </filter>
+    </defs>
+    <rect width='100%' height='100%' fill='#FDFCFB'/>
+    <rect width='100%' height='100%' fill='url(#grid)'/>
+    <rect width='100%' height='100%' filter='url(#noise)'/>
+    <circle cx='90%' cy='10%' r='300' fill='#B0352F' fill-opacity='0.03'/>
+  </g>
+
+  <!-- LAYER 2: Content (Transition Page Layout) -->
+  <g id="content_layer">
+    <!-- Background Decorative Element -->
+    <text x="640" y="260" text-anchor="middle" font-size="180" fill="#B0352F" opacity="0.06" class="en-accent">PART 02</text>
+    
+    <!-- Central Content Group -->
+    <g transform="translate(640, 360)">
+      <!-- Chapter Label -->
+      <rect x="-70" y="-140" width="140" height="36" rx="18" class="text-imperial"/>
+      <text x="0" y="-115" text-anchor="middle" font-size="20" fill="#FFFFFF" class="en-accent">CHAPTER TWO</text>
+
+      <!-- Main Title -->
+      <text class="ppt-font-cn-theme-heritage text-main" x="0" y="0" text-anchor="middle" font-size="48">第二部分：高效行程：五日经典路线逻辑拆解</text>
+      
+      <!-- Insight Quote -->
+      <text class="ppt-font-cn-body text-secondary" x="0" y="65" text-anchor="middle" font-size="24">“最好的行程不是走完所有景点，而是在对的时间出现在对的地方”</text>
+
+      <!-- Divider -->
+      <g transform="translate(-300, 110)">
+        <rect width="600" height="1" class="text-imperial" opacity="0.2"/>
+        <rect x="270" y="-2" width="60" height="5" rx="2" class="text-imperial"/>
+      </g>
+
+      <!-- Chapter Summary Points -->
+      <g transform="translate(0, 170)">
+        <!-- Point 1 -->
+        <g transform="translate(0, 0)">
+          <circle cx="-320" cy="-2" r="4" class="text-imperial"/>
+          <text class="ppt-font-cn-body text-main" x="0" y="8" text-anchor="middle" font-size="22">
+            <tspan class="ppt-font-cn-heading text-imperial">Day 1-2：</tspan>中轴线沉浸，感受从现代地标到皇城根的历史回响
+          </text>
+        </g>
+        <!-- Point 2 -->
+        <g transform="translate(0, 50)">
+          <circle cx="-320" cy="-2" r="4" class="text-imperial"/>
+          <text class="ppt-font-cn-body text-main" x="0" y="8" text-anchor="middle" font-size="22">
+            <tspan class="ppt-font-cn-heading text-imperial">Day 3-5：</tspan>时空转换，完成长城壮歌与皇家园林的文化巡礼
+          </text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Bottom Decorative Anchor -->
+    <path d="M 610 680 L 670 680" stroke="#B0352F" stroke-width="4" stroke-linecap="round" opacity="0.3"/>
+  </g>
+
+  <!-- LAYER 3: Header (Omitted for Transition Page as per Step 2) -->
+</svg>

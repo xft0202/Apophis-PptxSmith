@@ -1,0 +1,517 @@
+{
+ "source": "public SANDUN endpoints (read-only, anonymous)",
+ "fetchedAt": null,
+ "fileCount": 102,
+ "files": [
+  {
+   "path": "quickstart.txt",
+   "bytes": 24060,
+   "sha256": "3ac2ec582acc5d0a3ab871b65e4605b49ed74e5d1dca41ab24bf7911e46d217a"
+  },
+  {
+   "path": "workflow__outline.txt",
+   "bytes": 19177,
+   "sha256": "5274347500492a4029b1a094b8d42bb67f1f02846043e99322c03d862af21402"
+  },
+  {
+   "path": "workflow__research.txt",
+   "bytes": 17975,
+   "sha256": "7a11207b554e236ab879bd219031305852431b765ac2768a8466ae8a5d451819"
+  },
+  {
+   "path": "workflow__planning.txt",
+   "bytes": 17945,
+   "sha256": "b1bae26cd3571fbacf93527442b73694fcdd3ec02be79adebe4989dcdb1f2dc6"
+  },
+  {
+   "path": "workflow__draft.txt",
+   "bytes": 18362,
+   "sha256": "4393b59fc0665541fb1de0e050f368ac6a4f7d26e1aa537df412d67674fd1e28"
+  },
+  {
+   "path": "workflow__final-design.txt",
+   "bytes": 20043,
+   "sha256": "2c09dda72b655a37fe09b0a732de0de96abe9511e5dc36bbde3e499feb1c1151"
+  },
+  {
+   "path": "workflow__chat.txt",
+   "bytes": 22459,
+   "sha256": "2c9b8c8f63c0d363654b9a3704acf80c53386fd834508a21cfd1630665139a86"
+  },
+  {
+   "path": "create__one-sentence.txt",
+   "bytes": 22379,
+   "sha256": "dcaf922a45ad0604983e62b586bbcf0169775dc823cfd48842a8216189ca985a"
+  },
+  {
+   "path": "create__requirement-doc.txt",
+   "bytes": 27685,
+   "sha256": "c85e76476cc524d2d181e2dc006f759c41e8f4e554e14f7cd2bdf5028b7612df"
+  },
+  {
+   "path": "create__reference-pdf.txt",
+   "bytes": 20844,
+   "sha256": "4fade58b2f14d449e50ce8ba0bc3086e52663cff7cc696842aa22326c82bde7a"
+  },
+  {
+   "path": "create__beautify.txt",
+   "bytes": 21485,
+   "sha256": "b852f45f5dc7d54de29ce462599ed1b023277a0cbd2a5ef0bfa1a56e6d47fb55"
+  },
+  {
+   "path": "design__render-modes.txt",
+   "bytes": 24865,
+   "sha256": "ecaf2872e39aca77604584c20a5ac2390384a0a9ec4319b617316be4bda7b4d2"
+  },
+  {
+   "path": "design__style-selection.txt",
+   "bytes": 20750,
+   "sha256": "bcefacb90f38fbabd83a07923d59d1369bf84daa0a1e75db387834defb1e5834"
+  },
+  {
+   "path": "design__style-library.txt",
+   "bytes": 19652,
+   "sha256": "f839887d28b65e4419fdd525a36f87b359cd4c320d5ca60df3f4a71a0849e58a"
+  },
+  {
+   "path": "editing__canvas.txt",
+   "bytes": 19908,
+   "sha256": "db64c76624711590e47b2626f54238124f57450608d055b1737a134c5d3164e0"
+  },
+  {
+   "path": "editing__page-editor.txt",
+   "bytes": 20430,
+   "sha256": "cd8cea91e755e43cc22ea57f1a4cefed13f1b952985e1bb95964cbf35a132cf4"
+  },
+  {
+   "path": "editing__images-charts.txt",
+   "bytes": 19145,
+   "sha256": "bca0f2d2ce1ceabc0157e6bf1a96c8316b0deddfdb5f56a3da2d2be617061a91"
+  },
+  {
+   "path": "editing__layers.txt",
+   "bytes": 19473,
+   "sha256": "5796dc436f9b23097f33f542ab32d0d36972c84b94bcdba0e0f81e6970c6d9c9"
+  },
+  {
+   "path": "editing__history.txt",
+   "bytes": 19678,
+   "sha256": "db1e5666b70993edc424c54be5296ea449c2161e443d94207df9b267956f2aeb"
+  },
+  {
+   "path": "editing__animation.txt",
+   "bytes": 19805,
+   "sha256": "14739b6fb16f393bfa383a89df4b25ee1e916b00ee9ae7c08b223351b37fc4ab"
+  },
+  {
+   "path": "export__export.txt",
+   "bytes": 20374,
+   "sha256": "06ceeb9020aa8c4d1ea005e3e2bb83717b67ff9d1265d585e0274b7c71efe459"
+  },
+  {
+   "path": "export__fonts.txt",
+   "bytes": 17649,
+   "sha256": "3f032508ffc800466b7787bd203077ded671b962f1ac7d6894953f36af334c65"
+  },
+  {
+   "path": "export__replay.txt",
+   "bytes": 19571,
+   "sha256": "55a2f40564b6e2e1a7a3a0c4a3cc9cd6ae8f5cb501bf27f6aeddae85412f5b84"
+  },
+  {
+   "path": "account__profile.txt",
+   "bytes": 18588,
+   "sha256": "302ba5e85bccbbad44560727a27c480755556a776fb573407eace8ea31fcd2b6"
+  },
+  {
+   "path": "account__billing.txt",
+   "bytes": 19673,
+   "sha256": "4b25dbf2e4f4cadf7f103e021d2da2a21fc55b2565630b304c367e89f08f5ca8"
+  },
+  {
+   "path": "account__invite.txt",
+   "bytes": 18064,
+   "sha256": "6b53c49a83f47e648102ce5b36ff906adc63b8232a1d99449e9c49dcf982b086"
+  },
+  {
+   "path": "help__faq.txt",
+   "bytes": 27181,
+   "sha256": "6415bcba10c551efa495bafa8b2413e24de4f1d3b0bd120de941f2dd5496a0a1"
+  },
+  {
+   "path": "help__contact.txt",
+   "bytes": 14777,
+   "sha256": "a92019c69a3e895570ba7a58f8b76bbe4d082fbdb68410edf0b806d3e5dd88de"
+  },
+  {
+   "path": "replay-data/北京5日游攻略.json",
+   "bytes": 862477,
+   "sha256": "c51d14569c755d727a534e338d97f609a63f631d15fb73f6c78af9a288c3b414"
+  },
+  {
+   "path": "slides-svg/北京5日游攻略_part-1_第二部分_高效行程_五日经典路线逻辑拆解.svg",
+   "bytes": 4049,
+   "sha256": "197718115191c8b86b5480dd632a2683ea9700fd7d1b98093c584846985ce6fb"
+  },
+  {
+   "path": "slides-svg/北京5日游攻略_cover_2026年北京五日深度游全攻略.svg",
+   "bytes": 4913,
+   "sha256": "b80559efbd52681a733f62002dd34dbd5b11f6e277c9e9dc48fa33d902b0513b"
+  },
+  {
+   "path": "slides-svg/北京5日游攻略_part-2_第三部分_智慧旅居_基于大数据的住宿与交通策略.svg",
+   "bytes": 4790,
+   "sha256": "1818cd46814a904915b4b0482925ae708a72eab5c1749132ede1903d8b984196"
+  },
+  {
+   "path": "slides-svg/北京5日游攻略_part-0_第一部分_核心前置_2026北京旅游_预约制_生存指南.svg",
+   "bytes": 6096,
+   "sha256": "3f34231bce0526bbe4b37d46d97171d8f9ef6d5c84a98526df149484c7dd7de5"
+  },
+  {
+   "path": "slides-svg/北京5日游攻略_toc_目录.svg",
+   "bytes": 5901,
+   "sha256": "03dbb4bb1fe4eb91c1cf543eab5a4ec336da633b3ddb14fb4ce96c98a793dcb6"
+  },
+  {
+   "path": "slides-svg/北京5日游攻略_part-3_第四部分_预算模型_高性价比的消费方案与避坑建议.svg",
+   "bytes": 5383,
+   "sha256": "b633c818a7fad9ac18255f8ec0f11ca62e2b0c5f8514091dd9182ec942cff218"
+  },
+  {
+   "path": "slides-svg/北京5日游攻略_end_总结与展望_开启您的2026京城圆梦之旅.svg",
+   "bytes": 6705,
+   "sha256": "2da6eddc851db4964c0da8eed2f921beede6c6ace7333867e00ef8015f6867c6"
+  },
+  {
+   "path": "slides-svg/北京5日游攻略_page-k04bonxl_Day_1-2_从现代地标到皇城根下的历史回响.svg",
+   "bytes": 11018,
+   "sha256": "e919f4bdd99544d7a607d2476ddd0c4edfbaf7480a24dfc5fd1ae9f5cbe872e7"
+  },
+  {
+   "path": "slides-svg/北京5日游攻略_page-f4wccmgi_Day_3-5_长城壮歌与皇家园林的文化巡礼.svg",
+   "bytes": 10153,
+   "sha256": "e3190d9757c054bbe21312f52a5d8338b1baea4a88f39f5dd8785b35410b57c1"
+  },
+  {
+   "path": "slides-svg/北京5日游攻略_page-f4o4v0uk_成本拆解_人均1500元预算的精细化配置.svg",
+   "bytes": 12863,
+   "sha256": "391a151ec9817d23d17ac23add90fcacdce17b564891981d1571623c39569863"
+  },
+  {
+   "path": "slides-svg/北京5日游攻略_page-45rs2wsv_空间布局_三环内酒店选择与交通接驳逻辑.svg",
+   "bytes": 12155,
+   "sha256": "1fef757e8bc86d3aa6ca2df2a05bf40d705e52b8a276d8d3097a5a6dd779d966"
+  },
+  {
+   "path": "slides-svg/北京5日游攻略_page-qj6vahef_预约能力即旅行成功率_核心景点抢票逻辑.svg",
+   "bytes": 12355,
+   "sha256": "0abb0eb53656c763f527e24a6a1efd289839e5736f0cb77e5fbd723d29ead0a9"
+  },
+  {
+   "path": "slides-svg/北京5日游攻略_page-epnk04qr_时空调控_利用绿色出行比例提升游玩效率.svg",
+   "bytes": 11715,
+   "sha256": "a14455a949a8131786d633c6d21ca83d901758508cf5bb36eb019cb45862fafa"
+  },
+  {
+   "path": "slides-svg/北京5日游攻略_page-7pptob7m_时间管理_故宫_国博及升旗仪式的分时预约技巧.svg",
+   "bytes": 12220,
+   "sha256": "336ca3336c93cff1f0f25cc41b1787ec9c577e3d747eddc08364ce8d12490497"
+  },
+  {
+   "path": "replays/北京5日游攻略.txt",
+   "bytes": 10535,
+   "sha256": "0570555425f673007ad97987cd382280a02ac83a40bd9b99e3dff5e48a3c4025"
+  },
+  {
+   "path": "replay-data/小米2025Q3业绩报告.json",
+   "bytes": 808803,
+   "sha256": "0b947143c0b74fc0c7367c82e95f649a5a67edc112e2450d6fbb252703beb4db"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_part-0_第一部分_整体财务表现回顾.svg",
+   "bytes": 3311,
+   "sha256": "0e090b8a46588aeae24bb4265049514b6f049bdc0232c23b6d7daba40817b248"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_part-1_第二部分__手机___AIoT_核心业务分析.svg",
+   "bytes": 2900,
+   "sha256": "843440dd421a85ee47e47d4ace1c7abdeea9cbfcc9daa4f1635d833625aea4c6"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_toc_目录.svg",
+   "bytes": 5925,
+   "sha256": "2052d3cc51b86efe5f8867371ba46cd842de1ee151843c8edf3d89b38a41d09c"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_part-2_第三部分_智能电动汽车与创新业务突破.svg",
+   "bytes": 3422,
+   "sha256": "691709aeadf414a178f241a5efd18bb96b0ba9089f8b840514648ef37ed6cc2b"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_part-3_第四部分_底层技术研发与_AI_战略布局.svg",
+   "bytes": 3187,
+   "sha256": "6a6b87c0d5c75f2f1323f62ff85140a876c9d1b0e42a853ea187e7c5f0f5c207"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_part-4_第五部分_财务资源状况与社会责任.svg",
+   "bytes": 3125,
+   "sha256": "65ab33e842fd5edf0f7405c7a15b3b81518807fb6e09155ce60a978eb2729ee6"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_end_总结_稳健进取_共创人车家全生态未来.svg",
+   "bytes": 5605,
+   "sha256": "4483721a44b92f6a28405b5e68af7ee5640b95c287e9cf1bda9af7a611580340"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_page-qnhm2b3t_九个月累计表现_规模化效应持续释放.svg",
+   "bytes": 11966,
+   "sha256": "88dc870ceb9aebad68a2013d9a97e30dfc4651f79292ffa296c6aa60bb64f7e9"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_page-55ca8lvp_利润结构优化_毛利与毛利率显著提升.svg",
+   "bytes": 12061,
+   "sha256": "675403fde73ec2708b6b320670280f018f07a536f7fe8e4070ef403de6763edf"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_page-p2lj1arf_IoT_平台_连接设备数首破_10_亿大关.svg",
+   "bytes": 11075,
+   "sha256": "ba2250f21219438d723650d44d7b19989966335fa03de8506fd34677328dc74d"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_page-0iy4t4w5_互联网服务_营收创纪录_境外贡献度提升.svg",
+   "bytes": 8320,
+   "sha256": "1c33c99d2b58248451287807ebb8f29317e8bf4ca4828d738aab103393bdc35c"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_page-dje5yjsl_研发投入_大规模投入底层核心技术.svg",
+   "bytes": 8270,
+   "sha256": "084731f0b4575c82864ecec5dc36e03c3e76738fbeb2a755a8e3f93af1f47a44"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_page-xwevvsbv_ESG_与社会责任_评级上调至_A_级.svg",
+   "bytes": 11965,
+   "sha256": "79d208aac4e167892b0b01ac9757b776e16bfafd70b4b8a650bd7c6bc1533b4f"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_page-vrt0sf7p_资金储备_充沛现金流支撑新十年目标.svg",
+   "bytes": 10495,
+   "sha256": "aa98de16bc448c30319e5d47e3eaa46f7bf9139af2087719970b103f21cf8cbe"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_page-cqrz2zac_核心业绩摘要_多项指标创历史新高.svg",
+   "bytes": 9782,
+   "sha256": "5e95e9383353f297c12d9d7976e59ca767a456ee03b8efa3128018090662cf8f"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_page-v3hqm2qx_大家电与可穿戴_智能制造驱动增长.svg",
+   "bytes": 9305,
+   "sha256": "c82966cfe1b7ac1b4560b0d32bf8fdae0357a7c189336ee7b6fa445f321d9f27"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_page-ty2ntmp4_汽车业务里程碑_首次实现单季度经营盈利.svg",
+   "bytes": 10452,
+   "sha256": "02e1c0c60ab895e633559a7d33c096b1b6f0af124d4ee7bb0d87906799e02d20"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_page-2yus6voe_交付与产品_Xiaomi_YU7_领跑_SUV_市场.svg",
+   "bytes": 9675,
+   "sha256": "3295d0c98bfe2603048dfd559ea3847eaeace94ef959e95a618a722d2bbd392c"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_page-osa3f5ov_销售网络扩张_覆盖全国_服务升级.svg",
+   "bytes": 9379,
+   "sha256": "4247d570c2564324d40d95908da7f3e2305d71b8e7e7d59eb41e25866995775c"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_page-kvbyhyrk_AI_大模型_全系列矩阵实现完整布局.svg",
+   "bytes": 9889,
+   "sha256": "4b8f9b7980347ef8fdeb810579de148f89f0e23b9adaa60f6cfac460aeb217b8"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_page-4ovmm0in_小米澎湃_OS_3_人车家全生态的灵魂.svg",
+   "bytes": 10462,
+   "sha256": "1f7008d7d559ce53ca768f1226de29d7daf202ffe595c67cf84fd43437e9d2a0"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_cover_封面.svg",
+   "bytes": 4265,
+   "sha256": "c13de483b3102dcca89ce7f3f401ea4751ab8ba9ad4b0b7e079bc3282ae5cb50"
+  },
+  {
+   "path": "slides-svg/小米2025Q3业绩报告_page-eb8nz5ol_智能手机_稳居全球前三_高端化成效斐然.svg",
+   "bytes": 12009,
+   "sha256": "1c0f10e8f10d7b55dcf17af04c4f98010914d493e9880c4d07c3ded96f9c3b90"
+  },
+  {
+   "path": "replays/小米2025Q3业绩报告.txt",
+   "bytes": 10535,
+   "sha256": "2ed049a07c48ef36306c95931328f42c991299b59814e750852e278497db2899"
+  },
+  {
+   "path": "replay-data/Dify产品技术架构.json",
+   "bytes": 785020,
+   "sha256": "fd30eb37276f99a11dc4423e6f1b7fdd694c102be139bec58c4d073e72c23e6d"
+  },
+  {
+   "path": "slides-svg/Dify产品技术架构_part-0_第一部分_产品定义与时代背景.svg",
+   "bytes": 4873,
+   "sha256": "29ec2562a4e7c83ad084f195968bd7184f9b32088cf1cbc3e699ca4735b276bb"
+  },
+  {
+   "path": "slides-svg/Dify产品技术架构_cover_2026年Dify产品路演汇报.svg",
+   "bytes": 4954,
+   "sha256": "78f3e38b54b6114874bad947416e9024a6cbf20c422b6a16efd024ec9389ed73"
+  },
+  {
+   "path": "slides-svg/Dify产品技术架构_part-2_第三部分_企业实践与降本增效.svg",
+   "bytes": 4979,
+   "sha256": "9bb2d05b3b03d2294a5257019ce00eada125494374edaa2c6352651f5c15a086"
+  },
+  {
+   "path": "slides-svg/Dify产品技术架构_part-1_第二部分_核心功能与技术优势.svg",
+   "bytes": 4611,
+   "sha256": "8784e776af65ad7246568ed3dd2d2121ae4c23e9f1be5b224fe31012d11931f4"
+  },
+  {
+   "path": "slides-svg/Dify产品技术架构_end_总结与展望_共建AI应用新生态.svg",
+   "bytes": 5980,
+   "sha256": "eb887aa7dccd40ef1953a57d39c68025e4c0b91d6e4812c77e03d47088cff0e7"
+  },
+  {
+   "path": "slides-svg/Dify产品技术架构_page-ssrvbrxi_四大核心引擎_从编排到智能体.svg",
+   "bytes": 8445,
+   "sha256": "5bff48c768a525b231668f9dfc47fb615ef7976f80db69e42c222107e878fdf8"
+  },
+  {
+   "path": "slides-svg/Dify产品技术架构_toc_目录.svg",
+   "bytes": 6428,
+   "sha256": "d925a1123d8d1a66052668c6af716e226ca69285ad9126d13d4999681797e001"
+  },
+  {
+   "path": "slides-svg/Dify产品技术架构_page-79td3e5w_技术架构_高性能后端与私有化部署.svg",
+   "bytes": 11128,
+   "sha256": "b95bb2a7e8890b8cb898cc4c0bbfe15546fbc26c15bd89bd88c23a9c8ce35c67"
+  },
+  {
+   "path": "slides-svg/Dify产品技术架构_page-4tno9c4u_RAG管道与多模型管理能力.svg",
+   "bytes": 13829,
+   "sha256": "b3266921dd3efe219475c554f054aef5e7e16a38e61ec61946645f21fd5e030b"
+  },
+  {
+   "path": "slides-svg/Dify产品技术架构_page-4lmivani_企业案例_知识库驱动的办公提效实践.svg",
+   "bytes": 12162,
+   "sha256": "1c34886e8b26066c0d284f78098224b48fd50a63a194f910ae0a535d7c007780"
+  },
+  {
+   "path": "slides-svg/Dify产品技术架构_page-44kvozao_Dify_开源LLM应用开发领航者.svg",
+   "bytes": 10250,
+   "sha256": "8214bdd0c0ce047f7ae5f0b2073badce5a086f0d3b5095887abaacf8b3e86ac8"
+  },
+  {
+   "path": "slides-svg/Dify产品技术架构_page-nbs5g3or_市场生态_开源影响力与同类产品对比.svg",
+   "bytes": 11400,
+   "sha256": "8d8c776edbe5d4b5bd8565dc17d56d600dfb52a8cc65a197c552568abd9d7998"
+  },
+  {
+   "path": "replays/Dify产品技术架构.txt",
+   "bytes": 10535,
+   "sha256": "6c1c06ace24e3168dedede67705b568c4861059e63d0c23ca32966cd7517f6bf"
+  },
+  {
+   "path": "replay-data/正泰电器企业介绍.json",
+   "bytes": 796009,
+   "sha256": "0de0de6422e26696b04f62d9db653014298de64bf7558321645647d59b67cf2f"
+  },
+  {
+   "path": "slides-svg/正泰电器企业介绍_part-0_第一部分_走进正泰__行业领航者.svg",
+   "bytes": 3600,
+   "sha256": "b5a60041a83ea4e0f795e2b7ebe13d9a1cf7d45209d8a53c0cbe01bbb91d13fb"
+  },
+  {
+   "path": "slides-svg/正泰电器企业介绍_toc_目录.svg",
+   "bytes": 4772,
+   "sha256": "71fd5b373eb58efba3a692ace4051fd77e24fcf87d596aad521571dc4b052a86"
+  },
+  {
+   "path": "slides-svg/正泰电器企业介绍_cover_2026年正泰电器企业介绍.svg",
+   "bytes": 5162,
+   "sha256": "cbfb9b173a161d516c1917bec1c80e52f1faecf5c21385dc503d1b15b9a89f24"
+  },
+  {
+   "path": "slides-svg/正泰电器企业介绍_part-1_第二部分_核心业务__低压电器全产业链.svg",
+   "bytes": 3251,
+   "sha256": "2461057567b18fdcf320be0c1c0044a23a9d4b30db95e480a0c305e40a3286fc"
+  },
+  {
+   "path": "slides-svg/正泰电器企业介绍_part-3_第四部分_全球布局与经典案例实践.svg",
+   "bytes": 3566,
+   "sha256": "c06ddd993c95330b604534ac79a9a38e786b60b7f9f1833cc9cf7300ce2e95f9"
+  },
+  {
+   "path": "slides-svg/正泰电器企业介绍_part-2_第三部分_协同发展__光伏新能源板块.svg",
+   "bytes": 3849,
+   "sha256": "927726e48b2902a5583b1cc6a3e643649ff06a7fdaecae24f431d7de2ff3ae1a"
+  },
+  {
+   "path": "slides-svg/正泰电器企业介绍_end_2026_构建A_H双平台_共创智慧能源新格局.svg",
+   "bytes": 5380,
+   "sha256": "67771faffb6419ae1ad8b118c299c160163100cb61dba9d1d485d836f3404c43"
+  },
+  {
+   "path": "slides-svg/正泰电器企业介绍_page-tnhh80y6_技术优势与市场表现_驱动工业与数据中心升级.svg",
+   "bytes": 11561,
+   "sha256": "af3e9ebb63e63db279cb539b4bc5c42ef22e3db79e07efe46668b1f4c07081e3"
+  },
+  {
+   "path": "slides-svg/正泰电器企业介绍_page-wnm6p79q_企业概况与资本实力_稳健增长的行业巨头.svg",
+   "bytes": 10689,
+   "sha256": "f5f406af1eb95d1cd516fe0b3e61de562df3ec35128d3b9fb0e71571765c841e"
+  },
+  {
+   "path": "slides-svg/正泰电器企业介绍_page-rjz81zm1_经典项目案例_赋能千行百业的智慧能源实践.svg",
+   "bytes": 11976,
+   "sha256": "88a1b837f0d45a1df7be79ea76ee41358cc85637955a5985f55c5afec5c005dd"
+  },
+  {
+   "path": "slides-svg/正泰电器企业介绍_page-1lo45pde_全球化战略_本土化智造与海外市场领跑.svg",
+   "bytes": 11868,
+   "sha256": "76dd3bf2263c8126ca10d0cf23b0a7195a1e797f4f23b9274a4344fed083d729"
+  },
+  {
+   "path": "slides-svg/正泰电器企业介绍_page-frq7s2km_低压电器产品矩阵_覆盖全场景的电力保障.svg",
+   "bytes": 14177,
+   "sha256": "b7244b593b0db015848fb3bb0b52f3f3d858db867c95c876b7306e3ad489cb41"
+  },
+  {
+   "path": "slides-svg/正泰电器企业介绍_page-37uoyisp_光伏全生命周期管理_正泰安能的领军地位.svg",
+   "bytes": 13084,
+   "sha256": "48a948ff1464a1112bd43ae775ff40adc1a8dfc8f7f8722ed898f6dd08382469"
+  },
+  {
+   "path": "replays/正泰电器企业介绍.txt",
+   "bytes": 10535,
+   "sha256": "e86df0a40d02245bf357b28e635b72302ae08fc9eede83edc655bd6768bd01b6"
+  },
+  {
+   "path": "covers/cover01-mqp8lfzp.png",
+   "bytes": 514393,
+   "sha256": "ad7b2afc5cceb35bcfee2fdfa481742db58a3577e72427e52a0f66b8b4aca488"
+  },
+  {
+   "path": "covers/cover02-mqp8ll6m.png",
+   "bytes": 359928,
+   "sha256": "a8a8a5f9b9cd9f30a4b9a54f090f647a763dced6974ac73cf711f89c5058d4c4"
+  },
+  {
+   "path": "covers/cover03-mqp8lolo.png",
+   "bytes": 300824,
+   "sha256": "62ffb13e37bc823a17aff2bdcc43e2a4f9afde0edabac033b06617a167ef1d34"
+  },
+  {
+   "path": "covers/replay-cover-mqp8lrlm.png",
+   "bytes": 144903,
+   "sha256": "6f05b2e86ff18bd486b35550e9172a721efdc749fc71d61e3251ec2bfe28efdb"
+  }
+ ]
+}

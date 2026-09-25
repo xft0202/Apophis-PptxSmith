@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+    ]]></style>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.05"/>
+    </filter>
+    <linearGradient id="grad-orange-soft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FF6700" stop-opacity="0.01"/>
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="0.5"/>
+      </pattern>
+      <radialGradient id="glow" cx="90%" cy="90%" r="50%">
+        <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"/>
+        <stop offset="100%" stop-color="#FF6700" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="#F8F9FA"/>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <rect width="100%" height="100%" fill="url(#glow)"/>
+  </g>
+
+  <!-- LAYER 2: Content Layer -->
+  <g id="content_layer">
+    <!-- Module 1: Overall Growth -->
+    <g transform="translate(40, 100)">
+      <rect width="580" height="360" rx="16" fill="#FFFFFF" filter="url(#card-shadow)"/>
+      <rect x="0" y="25" width="4" height="24" fill="#FF6700" rx="2"/>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="20" fill="#1A1A1A">整体盈利规模与效率双增</text>
+      
+      <!-- Big Growth Number -->
+      <text class="ppt-font-cn-heading" x="30" y="110" font-size="54" fill="#FF6700">+37.4%</text>
+      <text class="ppt-font-cn-body" x="230" y="105" font-size="16" fill="#666666">毛利总额年度增速</text>
+      
+      <!-- Sub Stats -->
+      <g transform="translate(30, 135)">
+        <text class="ppt-font-cn-body" x="0" y="15" font-size="16" fill="#666666">毛利总额：189亿 → </text>
+        <text class="ppt-font-cn-heading" x="145" y="15" font-size="18" fill="#1A1A1A">259亿元</text>
+        
+        <text class="ppt-font-cn-body" x="280" y="15" font-size="16" fill="#666666">整体毛利率：20.4% → </text>
+        <text class="ppt-font-cn-heading" x="430" y="15" font-size="18" fill="#1A1A1A">22.9%</text>
+      </g>
+
+      <!-- Chart Slot 1 -->
+      <g data-chart-slot-id="chart-1" data-chart-type="line" transform="translate(30, 190)"><rect x="0" y="0" width="520" height="140" rx="8" fill="#F8F9FA"/><rect x="0.5" y="0.5" width="519" height="139" rx="7.5" fill="none" stroke="#E5E5E5" stroke-width="1"/><defs><linearGradient id="lg-4sax4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FF6700" stop-opacity="0.1"/><stop offset="100%" stop-color="#FF6700" stop-opacity="0.0"/></linearGradient></defs><line x1="50" y1="100" x2="500" y2="100" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="104" text-anchor="end" font-size="10" fill="#666666" opacity="0.8" font-weight="500">0</text><line x1="50" y1="86" x2="500" y2="86" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="90" text-anchor="end" font-size="10" fill="#666666" opacity="0.8" font-weight="500">100</text><line x1="50" y1="72" x2="500" y2="72" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="76" text-anchor="end" font-size="10" fill="#666666" opacity="0.8" font-weight="500">200</text><line x1="50" y1="58" x2="500" y2="58" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="62" text-anchor="end" font-size="10" fill="#666666" opacity="0.8" font-weight="500">300</text><line x1="50" y1="44" x2="500" y2="44" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="48" text-anchor="end" font-size="10" fill="#666666" opacity="0.8" font-weight="500">400</text><line x1="50" y1="30" x2="500" y2="30" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="34" text-anchor="end" font-size="10" fill="#666666" opacity="0.8" font-weight="500">500</text><polygon points="50,100 50,73.53999999999999 500,63.74 500,100" fill="url(#lg-4sax4)"/><polyline points="50,73.53999999999999 500,63.74" fill="none" stroke="#FF6700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="50" cy="73.53999999999999" r="5" fill="#FFFFFF" stroke="#FF6700" stroke-width="2.5"/><text x="50" y="61.53999999999999" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">189亿元</text><text x="50" y="124" text-anchor="middle" font-size="12" fill="#666666" font-weight="500">上年度</text><circle cx="500" cy="63.74" r="5" fill="#FFFFFF" stroke="#FF6700" stroke-width="2.5"/><text x="500" y="51.74" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">259亿元</text><text x="500" y="124" text-anchor="middle" font-size="12" fill="#666666" font-weight="500">本年度</text><line x1="42" y1="100" x2="500" y2="100" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/><line x1="50" y1="30" x2="50" y2="108" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/></g>
+    </g>
+
+    <!-- Module 2: Business Structure -->
+    <g transform="translate(640, 100)">
+      <rect width="600" height="580" rx="16" fill="#FFFFFF" filter="url(#card-shadow)"/>
+      <rect x="0" y="25" width="4" height="24" fill="#FF6700" rx="2"/>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="20" fill="#1A1A1A">业务结构：双引擎协同发力</text>
+      
+      <!-- Segment 1: Mobile -->
+      <g transform="translate(30, 80)">
+        <rect width="540" height="80" rx="12" fill="url(#grad-orange-soft)"/>
+        <rect width="4" height="40" x="0" y="20" fill="#FF6700" rx="2"/>
+        <text class="ppt-font-cn-heading" x="25" y="35" font-size="18" fill="#1A1A1A">手机与 AIoT (基石业务)</text>
+        <text class="ppt-font-cn-body" x="25" y="62" font-size="14" fill="#666666">毛利：185.5亿</text>
+        <text class="ppt-font-cn-body" x="300" y="62" font-size="14" fill="#666666">毛利率：</text>
+        <text class="ppt-font-cn-heading" x="360" y="62" font-size="18" fill="#FF6700">22.1%</text>
+      </g>
+
+      <!-- Segment 2: Auto -->
+      <g transform="translate(30, 175)">
+        <rect width="540" height="80" rx="12" fill="url(#grad-orange-soft)"/>
+        <rect width="4" height="40" x="0" y="20" fill="#FF6700" rx="2"/>
+        <text class="ppt-font-cn-heading" x="25" y="35" font-size="18" fill="#1A1A1A">汽车及 AI (新增长极)</text>
+        <text class="ppt-font-cn-body" x="25" y="62" font-size="14" fill="#666666">毛利：16.6亿 → 73.8亿</text>
+        <text class="ppt-font-cn-body" x="300" y="62" font-size="14" fill="#666666">毛利率：</text>
+        <text class="ppt-font-cn-heading" x="360" y="62" font-size="18" fill="#FF6700">25.5% (+8.4pts)</text>
+      </g>
+
+      <!-- Chart Slot 2 -->
+      <g data-chart-slot-id="chart-2" data-chart-type="bar" transform="translate(30, 280)"><rect x="0" y="0" width="540" height="270" rx="8" fill="#F8F9FA"/><rect x="0.5" y="0.5" width="539" height="269" rx="7.5" fill="none" stroke="#E5E5E5" stroke-width="1"/><line x1="50" y1="230" x2="520" y2="230" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="234" text-anchor="end" font-size="10" fill="#666666" opacity="0.8" font-weight="500">0</text><line x1="50" y1="190" x2="520" y2="190" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="194" text-anchor="end" font-size="10" fill="#666666" opacity="0.8" font-weight="500">50</text><line x1="50" y1="150" x2="520" y2="150" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="154" text-anchor="end" font-size="10" fill="#666666" opacity="0.8" font-weight="500">100</text><line x1="50" y1="110" x2="520" y2="110" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="114" text-anchor="end" font-size="10" fill="#666666" opacity="0.8" font-weight="500">150</text><line x1="50" y1="70" x2="520" y2="70" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="74" text-anchor="end" font-size="10" fill="#666666" opacity="0.8" font-weight="500">200</text><line x1="50" y1="30" x2="520" y2="30" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="34" text-anchor="end" font-size="10" fill="#666666" opacity="0.8" font-weight="500">250</text><path d="M 56 230 L 56 99.44 A 4 4 0 0 1 60 95.44 L 157.5 95.44 A 4 4 0 0 1 161.5 99.44 L 161.5 230 Z" fill="#FF6700"/><text x="108.75" y="87.44" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">168.2亿元</text><text x="108.75" y="254" text-anchor="middle" font-size="12" fill="#666666" font-weight="500">手机AIoT(上年)</text><path d="M 173.5 230 L 173.5 85.6 A 4 4 0 0 1 177.5 81.6 L 275 81.6 A 4 4 0 0 1 279 85.6 L 279 230 Z" fill="#333333"/><text x="226.25" y="73.6" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">185.5亿元</text><text x="226.25" y="254" text-anchor="middle" font-size="12" fill="#666666" font-weight="500">手机AIoT(本年)</text><path d="M 291 230 L 291 220.72 A 4 4 0 0 1 295 216.72 L 392.5 216.72 A 4 4 0 0 1 396.5 220.72 L 396.5 230 Z" fill="#808080"/><text x="343.75" y="208.72" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">16.6亿元</text><text x="343.75" y="254" text-anchor="middle" font-size="12" fill="#666666" font-weight="500">汽车AI(上年)</text><path d="M 408.5 230 L 408.5 174.96 A 4 4 0 0 1 412.5 170.96 L 510 170.96 A 4 4 0 0 1 514 174.96 L 514 230 Z" fill="#FF9E59"/><text x="461.25" y="162.96" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">73.8亿元</text><text x="461.25" y="254" text-anchor="middle" font-size="12" fill="#666666" font-weight="500">汽车AI(本年)</text><line x1="42" y1="230" x2="520" y2="230" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/><line x1="50" y1="30" x2="50" y2="238" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/></g>
+    </g>
+
+    <!-- Module 3: Strategic Conclusion -->
+    <g transform="translate(40, 480)">
+      <rect width="580" height="200" rx="16" fill="#FFFFFF" filter="url(#card-shadow)"/>
+      <rect x="0" y="25" width="4" height="24" fill="#FF6700" rx="2"/>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="20" fill="#1A1A1A">利润增长逻辑总结</text>
+      
+      <!-- Stock Optimization -->
+      <circle cx="45" cy="90" r="5" fill="#FF6700"/>
+      <text class="ppt-font-cn-heading" x="65" y="96" font-size="18" fill="#1A1A1A">存量优化</text>
+      <text class="ppt-font-cn-body" x="65" y="122" font-size="15" fill="#666666">传统业务通过高端化战略持续榨取利润空间，稳固底盘。</text>
+
+      <!-- Incremental Explosion -->
+      <circle cx="45" cy="150" r="5" fill="#FF6700"/>
+      <text class="ppt-font-cn-heading" x="65" y="156" font-size="18" fill="#1A1A1A">增量爆发</text>
+      <text class="ppt-font-cn-body" x="65" y="182" font-size="15" fill="#666666">汽车业务跨过盈亏平衡点，规模效应带动毛利跨越式增长。</text>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <rect x="40" y="46" width="6" height="26" rx="3" fill="#FF6700"/>
+    <text x="58" y="66" class="ppt-font-cn-heading" font-size="26" fill="#1A1A1A">利润结构优化：毛利与毛利率显著提升</text>
+  </g>
+</svg>

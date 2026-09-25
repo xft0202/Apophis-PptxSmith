@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" xmlns:xlink="http://www.w3.org/1999/xlink"><style data-img-radius="1">image{clip-path:inset(0 round 8px)}</style>
+  <defs>
+    <style>
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC', sans-serif; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC', sans-serif; font-weight: 400; }
+    </style>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"></feGaussianBlur>
+      <feOffset dx="0" dy="4" result="offsetblur"></feOffset>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.05"></feFuncA>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- LAYER 1: Background (Design System) -->
+  <g id="bg">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="0.5"></path>
+      </pattern>
+      <radialGradient id="glow" cx="90%" cy="90%" r="50%">
+        <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"></stop>
+        <stop offset="100%" stop-color="#FF6700" stop-opacity="0"></stop>
+      </radialGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="#F8F9FA"></rect>
+    <rect width="100%" height="100%" fill="url(#grid)"></rect>
+    <rect width="100%" height="100%" fill="url(#glow)"></rect>
+  </g>
+
+  <!-- LAYER 2: Content (Cover Page Composition) -->
+  <g id="content_layer">
+    <!-- Brand Identity (Xiaomi Logo Style) -->
+    <g transform="translate(100, 80)">
+      <rect width="64" height="64" rx="18" fill="#FF6700"></rect>
+      
+      
+    </g>
+
+    <!-- Main Title Group -->
+    <g transform="translate(100, 260)">
+      <rect x="0" y="-10" width="8" height="80" rx="4" fill="#FF6700"></rect>
+      <text x="30" y="55" font-size="68" fill="#1A1A1A" class="ppt-font-cn-heading">小米集团 2025 年第三季度业绩报告</text>
+      <text x="30" y="125" font-size="44" fill="#FF6700" class="ppt-font-cn-heading">稳健进取，全生态爆发</text>
+    </g>
+
+    <!-- Highlights Section (Enhanced Visuals) -->
+    <g transform="translate(130, 460)">
+      <!-- Highlight 1 -->
+      <g>
+        <rect width="420" height="100" rx="12" fill="#FFFFFF" filter="url(#cardShadow)"></rect>
+        <rect x="20" y="30" width="4" height="24" rx="2" fill="#FF6700"></rect>
+        <text x="40" y="50" font-size="24" fill="#1A1A1A" class="ppt-font-cn-heading">营收利润双创历史新高</text>
+        <text x="40" y="82" font-size="18" fill="#666666" class="ppt-font-cn-body">规模化效应持续释放，盈利能力显著增强</text>
+      </g>
+      
+      <!-- Highlight 2 -->
+      <g transform="translate(460, 0)">
+        <rect width="420" height="100" rx="12" fill="#FFFFFF" filter="url(#cardShadow)"></rect>
+        <rect x="20" y="30" width="4" height="24" rx="2" fill="#FF6700"></rect>
+        <text x="40" y="50" font-size="24" fill="#1A1A1A" class="ppt-font-cn-heading">智能电动汽车业务首现单季盈利</text>
+        <text x="40" y="82" font-size="18" fill="#666666" class="ppt-font-cn-body">Xiaomi YU7 领跑，开启第二增长曲线</text>
+      </g>
+    </g>
+
+    <!-- Decorative Element (Momentum Line) -->
+    <path d="M100 620 L1180 620" stroke="#E5E5E5" stroke-width="1"></path>
+    <circle cx="100" cy="620" r="4" fill="#FF6700"></circle>
+
+    <!-- Footer Info -->
+    <g transform="translate(100, 665)">
+      <text x="0" y="0" font-size="16" fill="#888888" class="ppt-font-cn-body">汇报周期：2025年第三季度 (Q3 2025)</text>
+      <text x="400" y="0" font-size="16" fill="#888888" class="ppt-font-cn-body">汇报主体：小米集团 (Xiaomi Corporation)</text>
+      <text x="1080" y="0" font-size="16" fill="#888888" text-anchor="end" class="ppt-font-cn-body">2025年11月</text>
+    </g>
+  </g>
+</svg>

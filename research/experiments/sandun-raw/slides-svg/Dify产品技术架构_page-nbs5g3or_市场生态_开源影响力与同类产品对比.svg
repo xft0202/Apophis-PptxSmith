@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" xmlns:xlink="http://www.w3.org/1999/xlink"><style data-img-radius="1">image{clip-path:inset(0 round 8px)}</style>
+  <defs>
+    <style>
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .number-impact { font-family: 'Impact', 'Arial Black', sans-serif; }
+      .text-white { fill: #FFFFFF; }
+      .text-blue { fill: #3B82F6; }
+      .text-dim { fill: #94A3B8; }
+      .card-bg { fill: #111827; fill-opacity: 0.6; stroke: #344256; stroke-width: 1; }
+      .accent-blue { fill: #3B82F6; }
+    </style>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E293B;stop-opacity:0.8"></stop>
+      <stop offset="100%" style="stop-color:#0F172A;stop-opacity:0.9"></stop>
+    </linearGradient>
+    <marker id="arrow-head" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#4B5563"></path>
+    </marker>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#05070A;stop-opacity:1"></stop>
+        <stop offset="100%" style="stop-color:#0C121E;stop-opacity:1"></stop>
+      </linearGradient>
+      <pattern id="microGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#344256" stroke-width="0.5" stroke-opacity="0.3"></path>
+      </pattern>
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="50" result="blur"></feGaussianBlur>
+        <feComposite in="SourceGraphic" in2="blur" operator="over"></feComposite>
+      </filter>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grad1)"></rect>
+    <rect width="100%" height="100%" fill="url(#microGrid)"></rect>
+    <circle cx="90%" cy="10%" r="300" fill="#1E40AF" fill-opacity="0.15" filter="url(#glow)"></circle>
+    <circle cx="10%" cy="90%" r="250" fill="#4F46E5" fill-opacity="0.1" filter="url(#glow)"></circle>
+  </g>
+
+  <!-- LAYER 2: Content -->
+  <g id="content_layer">
+    <!-- Module 1: GitHub Impact (Top Left) -->
+    <g transform="translate(40, 100)">
+      <rect width="590" height="260" rx="16" class="card-bg"></rect>
+      <text class="ppt-font-cn-heading text-white" x="24" y="40" font-size="22">全球开发者的一致选择</text>
+      
+      <g transform="translate(24, 80)">
+        <!-- Stars -->
+        <g>
+          <text class="number-impact text-blue" x="0" y="45" font-size="52">80,000+</text>
+          <text class="ppt-font-cn-body text-dim" x="0" y="72" font-size="16">GitHub Stars</text>
+          <rect x="0" y="88" width="160" height="4" rx="2" fill="#1E293B"></rect>
+          <rect x="0" y="88" width="140" height="4" rx="2" class="accent-blue"></rect>
+        </g>
+        <!-- Ranking -->
+        <g transform="translate(200, 0)">
+          <text class="number-impact text-blue" x="0" y="45" font-size="52">NO.2</text>
+          <text class="ppt-font-cn-body text-dim" x="0" y="72" font-size="16">全球最受欢迎开源 LLM 工具</text>
+          <path d="M0 88 H160" stroke="#344256" stroke-width="1" stroke-dasharray="4 2"></path>
+        </g>
+        <!-- Deployment -->
+        <g transform="translate(400, 0)">
+          <text class="number-impact text-blue" x="0" y="45" font-size="52">4M+</text>
+          <text class="ppt-font-cn-body text-dim" x="0" y="72" font-size="16">社区版部署量</text>
+          <circle cx="8" cy="88" r="4" fill="#10B981"></circle>
+          <text class="ppt-font-cn-body" x="20" y="93" font-size="14" fill="#10B981">OSS Insight 霸榜</text>
+        </g>
+      </g>
+      
+      <rect x="24" y="195" width="542" height="42" rx="8" fill="#FFFFFF" fill-opacity="0.05"></rect>
+      <text class="ppt-font-cn-heading text-dim" x="295" y="222" font-size="16" text-anchor="middle">跻身 GitHub 全球开源项目百强榜单 (Top 100 Worldwide)</text>
+    </g>
+
+    <!-- Module 4: Tech Tags (Top Right) -->
+    <g transform="translate(650, 100)">
+      <rect width="590" height="260" rx="16" class="card-bg"></rect>
+      <text class="ppt-font-cn-heading text-white" x="24" y="40" font-size="22">社区公认的领先特性</text>
+      
+      <circle cx="295" cy="145" r="50" fill="#3B82F6" fill-opacity="0.1" stroke="#3B82F6" stroke-width="1" stroke-dasharray="4 2"></circle>
+      <text class="ppt-font-cn-heading text-blue" x="295" y="153" font-size="26" text-anchor="middle">Dify</text>
+      
+      <!-- Tags around Dify -->
+      <g transform="translate(80, 85)">
+        <rect width="140" height="36" rx="18" fill="#1E40AF" fill-opacity="0.3" stroke="#3B82F6"></rect>
+        <text class="ppt-font-cn-body text-white" x="70" y="23" font-size="14" text-anchor="middle">100+ 模型集成</text>
+      </g>
+      <g transform="translate(370, 85)">
+        <rect width="140" height="36" rx="18" fill="#065F46" fill-opacity="0.3" stroke="#10B981"></rect>
+        <text class="ppt-font-cn-body text-white" x="70" y="23" font-size="14" text-anchor="middle">RAG 检索引擎</text>
+      </g>
+      <g transform="translate(80, 180)">
+        <rect width="140" height="36" rx="18" fill="#5B21B6" fill-opacity="0.3" stroke="#8B5CF6"></rect>
+        <text class="ppt-font-cn-body text-white" x="70" y="23" font-size="14" text-anchor="middle">Agent 智能体编排</text>
+      </g>
+      <g transform="translate(370, 180)">
+        <rect width="140" height="36" rx="18" fill="#92400E" fill-opacity="0.3" stroke="#F59E0B"></rect>
+        <text class="ppt-font-cn-body text-white" x="70" y="23" font-size="14" text-anchor="middle">模型中立架构</text>
+      </g>
+    </g>
+
+    <!-- Module 2: Comparison Matrix (Bottom Left) -->
+    <g transform="translate(40, 380)">
+      <rect width="590" height="310" rx="16" class="card-bg"></rect>
+      <text class="ppt-font-cn-heading text-white" x="24" y="40" font-size="22">差异化生态位：从工具到平台</text>
+      
+      <g transform="translate(24, 75)">
+        <rect width="542" height="40" fill="#FFFFFF" fill-opacity="0.05" rx="4"></rect>
+        <text class="ppt-font-cn-heading text-dim" x="15" y="26" font-size="15">对比维度</text>
+        <text class="ppt-font-cn-heading text-dim" x="180" y="26" font-size="15">竞品局限</text>
+        <text class="ppt-font-cn-heading text-blue" x="380" y="26" font-size="15">Dify 优势</text>
+        
+        <!-- Row 1 -->
+        <g transform="translate(0, 55)">
+          <text class="ppt-font-cn-heading text-white" x="15" y="20" font-size="15">VS LangChain</text>
+          <text class="ppt-font-cn-body text-dim" x="180" y="20" font-size="14">代码积木，开发门槛极高</text>
+          <rect x="370" y="-5" width="165" height="34" rx="6" fill="#3B82F6" fill-opacity="0.15"></rect>
+          <text class="ppt-font-cn-heading text-blue" x="380" y="18" font-size="14">可视化流，效率提 10 倍</text>
+        </g>
+        <!-- Row 2 -->
+        <g transform="translate(0, 105)">
+          <text class="ppt-font-cn-heading text-white" x="15" y="20" font-size="15">VS FastGPT</text>
+          <text class="ppt-font-cn-body text-dim" x="180" y="20" font-size="14">侧重垂直知识库场景</text>
+          <rect x="370" y="-5" width="165" height="34" rx="6" fill="#3B82F6" fill-opacity="0.15"></rect>
+          <text class="ppt-font-cn-heading text-blue" x="380" y="18" font-size="14">全栈生产级 LLMOps</text>
+        </g>
+        <!-- Row 3 -->
+        <g transform="translate(0, 155)">
+          <text class="ppt-font-cn-heading text-white" x="15" y="20" font-size="15">VS Coze (字节)</text>
+          <text class="ppt-font-cn-body text-dim" x="180" y="20" font-size="14">闭源云端，数据主权存疑</text>
+          <rect x="370" y="-5" width="165" height="34" rx="6" fill="#3B82F6" fill-opacity="0.15"></rect>
+          <text class="ppt-font-cn-heading text-blue" x="380" y="18" font-size="14">开源中立，私有化部署</text>
+        </g>
+        <line x1="0" y1="95" x2="542" y2="95" stroke="#344256" stroke-width="1"></line>
+        <line x1="0" y1="145" x2="542" y2="145" stroke="#344256" stroke-width="1"></line>
+      </g>
+    </g>
+
+    <!-- Module 3: Quadrant (Bottom Right) -->
+    <g transform="translate(650, 380)">
+      <rect width="590" height="310" rx="16" class="card-bg"></rect>
+      <text class="ppt-font-cn-heading text-white" x="24" y="40" font-size="22">生产级 AI 应用的最佳平衡点</text>
+      
+      <g transform="translate(80, 85)">
+        <line x1="0" y1="180" x2="440" y2="180" stroke="#4B5563" stroke-width="2" marker-end="url(#arrow-head)"></line>
+        <line x1="0" y1="180" x2="0" y2="10" stroke="#4B5563" stroke-width="2" marker-end="url(#arrow-head)"></line>
+        <text class="ppt-font-cn-body text-dim" x="440" y="200" font-size="12" text-anchor="end">易用性 (Ease of Use) →</text>
+        <text class="ppt-font-cn-body text-dim" x="-180.9892578125" y="-5.63525390625" font-size="12" transform="rotate(-90, -10, 10)">应用深度 (Production Grade) →</text>
+        
+        <rect x="220" y="0" width="220" height="90" fill="#3B82F6" fill-opacity="0.08" rx="4"></rect>
+        <text class="ppt-font-cn-body" x="330" y="25" font-size="12" fill="#3B82F6" text-anchor="middle" fill-opacity="0.6">生产级领先区</text>
+
+        <!-- Dify Node -->
+        <g transform="translate(340, 45)">
+          <circle cx="0" cy="0" r="12" fill="#3B82F6">
+            <animate attributeName="r" values="10;14;10" dur="3s" repeatCount="indefinite"></animate>
+          </circle>
+          <text class="ppt-font-cn-heading text-white" x="18" y="5" font-size="20">Dify</text>
+          <text class="ppt-font-cn-body text-blue" x="18" y="24" font-size="12">Global Leader</text>
+        </g>
+
+        <!-- Competitors Nodes -->
+        <g transform="translate(60, 60)">
+          <circle cx="0" cy="0" r="6" fill="#4B5563"></circle>
+          <text class="ppt-font-cn-body text-dim" x="10" y="5" font-size="14">LangChain</text>
+        </g>
+        <g transform="translate(360, 140)">
+          <circle cx="0" cy="0" r="6" fill="#4B5563"></circle>
+          <text class="ppt-font-cn-body text-dim" x="-10" y="-10" font-size="14" text-anchor="end">Coze</text>
+        </g>
+        <g transform="translate(180, 110)">
+          <circle cx="0" cy="0" r="6" fill="#4B5563"></circle>
+          <text class="ppt-font-cn-body text-dim" x="10" y="5" font-size="14">FastGPT</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <rect x="40" y="46" width="4" height="26" rx="2" fill="#3B82F6"></rect>
+    <text class="ppt-font-cn-heading" x="58" y="66" font-size="26" fill="#FFFFFF" style="letter-spacing:1px">市场生态：开源影响力与同类产品对比</text>
+    <line x1="40" y1="80" x2="1240" y2="80" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1"></line>
+  </g>
+</svg>

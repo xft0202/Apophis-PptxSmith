@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+    ]]></style>
+    
+    <!-- Eco-Fluid Background Defs -->
+    <linearGradient id='eco_grad' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' stop-color='#F0FDF4'/>
+      <stop offset='100%' stop-color='#FFFFFF'/>
+    </linearGradient>
+    <filter id='blur_blob'>
+      <feGaussianBlur in='SourceGraphic' stdDeviation='60' result='blur'/>
+    </filter>
+    
+    <!-- Content Specific Defs -->
+    <linearGradient id="accent_grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="text_shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" />
+      <feOffset dx="0" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.1" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- LAYER 1: Background (Eco-Fluid) -->
+  <g id='bg'>
+    <rect width='100%' height='100%' fill='url(#eco_grad)'/>
+    <circle cx='10%' cy='20%' r='300' fill='#DCFCE7' filter='url(#blur_blob)' opacity='0.6'/>
+    <circle cx='90%' cy='80%' r='400' fill='#F0FDFA' filter='url(#blur_blob)' opacity='0.8'/>
+    <path d='M0 0 Q480 20 960 0 T1920 0' fill='none' stroke='#10B981' stroke-width='1' stroke-opacity='0.2'/>
+  </g>
+
+  <!-- LAYER 2: Content (Visual Enhancement of Draft) -->
+  <g id="content_layer">
+    <!-- Decorative Abstract Elements (Eco-Fluid Themed) -->
+    <g opacity="0.6">
+      <circle cx="1100" cy="180" r="180" fill="none" stroke="#10B981" stroke-width="0.5" stroke-dasharray="4 4"/>
+      <circle cx="1100" cy="180" r="140" fill="none" stroke="#10B981" stroke-width="0.5"/>
+      <circle cx="1100" cy="180" r="100" fill="none" stroke="#10B981" stroke-width="1" stroke-opacity="0.3"/>
+      <circle cx="1100" cy="180" r="10" fill="#10B981"/>
+      
+      <!-- Dot Matrix -->
+      <g transform="translate(1050, 520)">
+        <circle cx="0" cy="0" r="3" fill="#A7F3D0"/>
+        <circle cx="30" cy="0" r="3" fill="#A7F3D0"/>
+        <circle cx="60" cy="0" r="3" fill="#A7F3D0"/>
+        <circle cx="0" cy="30" r="3" fill="#A7F3D0"/>
+        <circle cx="30" cy="30" r="4" fill="#10B981"/>
+        <circle cx="60" cy="30" r="3" fill="#A7F3D0"/>
+        <circle cx="0" cy="60" r="3" fill="#A7F3D0"/>
+        <circle cx="30" cy="60" r="3" fill="#A7F3D0"/>
+        <circle cx="60" cy="60" r="3" fill="#A7F3D0"/>
+      </g>
+    </g>
+
+    <!-- Top Brand Area -->
+    <g transform="translate(80, 60)">
+      <rect width="42" height="42" rx="8" fill="#10B981"/>
+      <path d="M12 21 L21 12 L30 21 L21 30 Z" fill="#FFFFFF" opacity="0.9"/>
+      <text x="58" y="32" class="ppt-font-cn-heading" font-size="28" fill="#064E3B">CHINT 正泰电器</text>
+    </g>
+
+    <!-- Main Content Area (Cover Style) -->
+    <g transform="translate(80, 300)">
+      <!-- Vertical Accent Line -->
+      <rect x="0" y="0" width="10" height="140" fill="url(#accent_grad)" rx="5"/>
+      
+      <!-- Title -->
+      <text x="45" y="65" class="ppt-font-cn-heading" font-size="82" fill="#064E3B" filter="url(#text_shadow)">2026年正泰电器企业介绍</text>
+      
+      <!-- Subtitle -->
+      <text x="45" y="135" class="ppt-font-cn-body" font-size="34" fill="#374151">
+        <tspan fill="#059669" class="ppt-font-cn-heading">智慧能源系统解决方案提供商</tspan>
+        <tspan fill="#4B5563">：赋能绿色能源新未来</tspan>
+      </text>
+    </g>
+
+    <!-- Footer Info Area -->
+    <g transform="translate(125, 560)">
+      <line x1="0" y1="0" x2="360" y2="0" stroke="#10B981" stroke-width="2" stroke-opacity="0.3"/>
+      
+      <g transform="translate(0, 45)">
+        <rect width="4" height="18" x="-15" y="-14" fill="#10B981" rx="2" opacity="0.6"/>
+        <text x="0" y="0" class="ppt-font-cn-body" font-size="22" fill="#4B5563">
+          <tspan class="ppt-font-cn-heading" fill="#064E3B">汇报人：</tspan>[演示者姓名/部门]
+        </text>
+      </g>
+      
+      <g transform="translate(0, 85)">
+        <rect width="4" height="18" x="-15" y="-14" fill="#10B981" rx="2" opacity="0.6"/>
+        <text x="0" y="0" class="ppt-font-cn-body" font-size="22" fill="#4B5563">
+          <tspan class="ppt-font-cn-heading" fill="#064E3B">日期：</tspan>2026年 [月/日]
+        </text>
+      </g>
+    </g>
+
+    <!-- Bottom Accent Stripe (Eco-Fluid Style) -->
+    <rect x="0" y="708" width="1280" height="12" fill="#10B981" fill-opacity="0.1"/>
+    <rect x="0" y="714" width="400" height="6" fill="#10B981" rx="3"/>
+  </g>
+</svg>

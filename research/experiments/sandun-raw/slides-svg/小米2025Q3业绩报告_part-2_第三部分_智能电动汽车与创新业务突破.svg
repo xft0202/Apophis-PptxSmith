@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+    ]]></style>
+    <linearGradient id="grad_orange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6700" />
+      <stop offset="100%" stop-color="#FF8F40" />
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background (Xiaomi Pure Momentum) -->
+  <g id='bg'>
+    <defs>
+      <pattern id='grid' width='40' height='40' patternUnits='userSpaceOnUse'>
+        <path d='M 40 0 L 0 0 0 40' fill='none' stroke='#E5E5E5' stroke-width='0.5'/>
+      </pattern>
+      <radialGradient id='glow' cx='90%' cy='90%' r='50%'>
+        <stop offset='0%' stop-color='#FF6700' stop-opacity='0.08'/>
+        <stop offset='100%' stop-color='#FF6700' stop-opacity='0'/>
+      </radialGradient>
+    </defs>
+    <rect width='100%' height='100%' fill='#F8F9FA'/>
+    <rect width='100%' height='100%' fill='url(#grid)'/>
+    <rect width='100%' height='100%' fill='url(#glow)'/>
+  </g>
+
+  <!-- LAYER 2: Content (Transition Page Enhancement) -->
+  <g id="content_layer">
+    <!-- Large Background Decorative Number -->
+    <text x="1220" y="640" font-size="420" text-anchor="end" fill="#FF6700" class="ppt-font-cn-heading" opacity="0.04">03</text>
+    
+    <!-- Vertical Momentum Bar -->
+    <rect x="80" y="280" width="8" height="160" rx="4" fill="url(#grad_orange)"/>
+    
+    <!-- Part Label -->
+    <text x="120" y="275" font-size="28" fill="#FF6700" class="ppt-font-cn-heading" letter-spacing="4">PART 03</text>
+    
+    <!-- Main Title: Dynamic Typography -->
+    <text x="120" y="375" font-size="82" fill="#1A1A1A" class="ppt-font-cn-heading">智能电动汽车与</text>
+    <text x="120" y="475" font-size="82" fill="#1A1A1A" class="ppt-font-cn-heading">创新业务突破</text>
+    
+    <!-- Subtitle with Accent -->
+    <text x="120" y="540" font-size="30" fill="#4B4B4B" class="ppt-font-cn-body">从零到一实现跨越式发展，开启第二增长曲线新篇章</text>
+    
+    <!-- Decorative Separator Line -->
+    <line x1="120" y1="580" x2="480" y2="580" stroke="#FF6700" stroke-width="2" opacity="0.3"/>
+    
+    <!-- Description Body -->
+    <text x="120" y="630" font-size="22" fill="#888888" class="ppt-font-cn-body">
+      <tspan x="120" dy="0">聚焦汽车量产进度、市场反馈及创新业务在多元化赛道的</tspan>
+      <tspan x="120" dy="32">最新探索与突破性成就。</tspan>
+    </text>
+
+    <!-- Momentum Circles -->
+    <circle cx="1150" cy="120" r="60" fill="none" stroke="#FF6700" stroke-width="1" opacity="0.1"/>
+    <circle cx="1180" cy="90" r="30" fill="#FF6700" opacity="0.05"/>
+    <path d="M1100 80 L1200 180" stroke="#FF6700" stroke-width="0.5" opacity="0.2"/>
+  </g>
+
+  <!-- Note: Transition Page skips Global Header as per Step 3 instructions -->
+</svg>

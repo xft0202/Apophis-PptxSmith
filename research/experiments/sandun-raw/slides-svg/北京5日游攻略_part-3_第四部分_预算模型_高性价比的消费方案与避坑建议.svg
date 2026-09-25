@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+      .en-impact { font-family: 'Impact', sans-serif; }
+      .card-shadow { filter: drop-shadow(0 4px 12px rgba(176, 53, 47, 0.08)); }
+    ]]></style>
+    <filter id="card-inner-glow">
+      <feFlood flood-color="#B0352F" flood-opacity="0.05" result="flood"/>
+      <feComposite in="flood" in2="SourceGraphic" operator="in" result="mask"/>
+    </filter>
+  </defs>
+
+  <!-- LAYER 1: Background (Strictly Reused) -->
+  <g id='bg'>
+    <defs>
+      <pattern id='grid' width='40' height='40' patternUnits='userSpaceOnUse'>
+        <path d='M 40 0 L 0 0 0 40' fill='none' stroke='#B0352F' stroke-width='0.5' stroke-opacity='0.05'/>
+      </pattern>
+      <filter id='noise'>
+        <feTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='3' stitchTiles='stitch'/>
+        <feColorMatrix type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.02 0'/>
+      </filter>
+    </defs>
+    <rect width='100%' height='100%' fill='#FDFCFB'/>
+    <rect width='100%' height='100%' fill='url(#grid)'/>
+    <rect width='100%' height='100%' filter='url(#noise)'/>
+    <circle cx='90%' cy='10%' r='300' fill='#B0352F' fill-opacity='0.03'/>
+    <!-- Transition Page Overlay -->
+    <rect width="100%" height="100%" fill="#B0352F" fill-opacity="0.01"/>
+  </g>
+
+  <!-- LAYER 2: Content (Transition Page Layout) -->
+  <g id="content_layer" transform="translate(640, 360)">
+    
+    <!-- Chapter Number & Watermark -->
+    <text class="en-impact" x="0" y="-140" text-anchor="middle" font-size="160" fill="#B0352F" fill-opacity="0.06">04</text>
+    <text class="en-impact" x="0" y="-145" text-anchor="middle" font-size="40" fill="#B0352F" letter-spacing="8">PART FOUR</text>
+    
+    <!-- Title Section -->
+    <g class="ppt-font-cn-theme-heritage">
+      <text x="0" y="-45" text-anchor="middle" font-size="52" fill="#1A1A1A">预算模型：高性价比的消费方案与避坑建议</text>
+    </g>
+    
+    <!-- Decorative Divider -->
+    <g transform="translate(-100, 0)">
+      <line x1="0" y1="5" x2="200" y2="5" stroke="#B0352F" stroke-width="2" stroke-dasharray="4 2"/>
+      <rect x="90" y="0" width="20" height="10" fill="#B0352F" rx="2"/>
+    </g>
+    
+    <!-- Insight Text -->
+    <g class="ppt-font-cn-body">
+      <text x="0" y="65" text-anchor="middle" font-size="22" fill="#4A4A4A" line-height="1.6">
+        <tspan x="0" dy="0">预算管理不是盲目省钱，而是“取舍的艺术”。</tspan>
+        <tspan x="0" dy="35">通过精细化的成本拆解与风险预判，实现文化体验与旅行品质的最大化。</tspan>
+      </text>
+    </g>
+    
+    <!-- Key Points Cards (3-Column Layout Reference) -->
+    <g transform="translate(-465, 180)" class="card-shadow">
+      <!-- Card 1: 精细化配置 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="300" height="120" rx="8" fill="#FFFFFF" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.2"/>
+        <rect x="0" y="0" width="6" height="120" rx="3" fill="#B0352F"/>
+        <text class="ppt-font-cn-heading" x="25" y="45" font-size="20" fill="#B0352F">精细化配置</text>
+        <text class="ppt-font-cn-body" x="25" y="80" font-size="16" fill="#666666">人均1500元预算逻辑拆解</text>
+      </g>
+      
+      <!-- Card 2: 消费陷阱预警 -->
+      <g transform="translate(315, 0)">
+        <rect x="0" y="0" width="300" height="120" rx="8" fill="#FFFFFF" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.2"/>
+        <rect x="0" y="0" width="6" height="120" rx="3" fill="#B0352F"/>
+        <text class="ppt-font-cn-heading" x="25" y="45" font-size="20" fill="#B0352F">消费陷阱预警</text>
+        <text class="ppt-font-cn-body" x="25" y="80" font-size="16" fill="#666666">2026市场环境深度洞察</text>
+      </g>
+      
+      <!-- Card 3: 进阶消费建议 -->
+      <g transform="translate(630, 0)">
+        <rect x="0" y="0" width="300" height="120" rx="8" fill="#FFFFFF" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.2"/>
+        <rect x="0" y="0" width="6" height="120" rx="3" fill="#B0352F"/>
+        <text class="ppt-font-cn-heading" x="25" y="45" font-size="20" fill="#B0352F">进阶消费建议</text>
+        <text class="ppt-font-cn-body" x="25" y="80" font-size="16" fill="#666666">确保每一分钱都花在刀刃上</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Footer Decoration -->
+  <g transform="translate(640, 680)">
+    <line x1="-150" y1="0" x2="150" y2="0" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.3"/>
+    <text class="ppt-font-cn-body" x="0" y="20" text-anchor="middle" font-size="14" fill="#999999" letter-spacing="1">© 2026 TRAVEL STRATEGY | IMPERIAL HERITAGE STYLE</text>
+  </g>
+  
+</svg>

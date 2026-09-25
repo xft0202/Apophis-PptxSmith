@@ -13,14 +13,85 @@
 
 from __future__ import annotations
 
+import contextlib
 import hashlib
 import json
 import os
+import re
 import zipfile
 from datetime import datetime, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = HERE
+
+
+# --- 确定性归一化 ---------------------------------------------------------
+# python-docx / openpyxl / python-pptx 底层的 zipfile 会把「写入时刻」记进每个
+# ZIP 条目 date_time；包内 docProps/core.xml 也会带 modified 时间戳；
+# PPTX 的图表还嵌着一个 xlsx（嵌套包），同样带时间戳。
+# 三层都钉死后，fixture 才真正字节可复现。
+FROZEN_ZIP_DT = (2026, 1, 1, 0, 0, 0)
+FROZEN_ISO = "2026-01-01T00:00:00Z"
+FROZEN_W3CDTF = "2026-01-01T00:00:00Z"
+
+# core.xml 里会变动的时间字段
+_TS_PATTERNS = [
+    (re.compile(rb"(<dcterms:created[^>]*>)([^<]*)(</dcterms:created>)"), FROZEN_W3CDTF),
+    (re.compile(rb"(<dcterms:modified[^>]*>)([^<]*)(</dcterms:modified>)"), FROZEN_W3CDTF),
+]
+
+_NESTED_PKG = re.compile(rb"\.(xlsx|xlsm|docx|pptx)$", re.I)
+
+
+def _freeze_xml_timestamps(data: bytes) -> bytes:
+    """钉死 core.xml 等部件里的时间戳文本。"""
+    for pat, val in _TS_PATTERNS:
+        data = pat.sub(lambda m: m.group(1) + val.encode() + m.group(3), data)
+    return data
+
+
+def normalize_zip_timestamps(path: str, _depth: int = 0) -> None:
+    """把 OOXML 包彻底确定化。
+
+    1) 固定每个 ZIP 条目的 date_time 与 create_system；
+    2) 钉死包内 XML 的时间戳文本；
+    3) 递归处理嵌套包（PPTX 图表携带的嵌入工作簿）。
+    """
+    if _depth > 3:                      # 防嵌套循环
+        return
+    tmp = path + ".norm"
+    with zipfile.ZipFile(path, "r") as src:
+        items = [(i.filename, src.read(i.filename), i.compress_type)
+                 for i in src.infolist()]
+
+    out = []
+    for name, data, ctype in items:
+        if name.endswith(".xml"):
+            data = _freeze_xml_timestamps(data)
+        if _NESTED_PKG.search(name.encode()):
+            # 嵌套包：落到临时文件做递归归一化，再读回
+            nested = os.path.join(
+                os.path.dirname(path), f".nested-{_depth}-{os.path.basename(name)}")
+            with open(nested, "wb") as fh:
+                fh.write(data)
+            try:
+                normalize_zip_timestamps(nested, _depth + 1)
+                with open(nested, "rb") as fh:
+                    data = fh.read()
+            finally:
+                with contextlib.suppress(OSError):
+                    os.remove(nested)
+        out.append((name, data, ctype))
+
+    with zipfile.ZipFile(tmp, "w", zipfile.ZIP_DEFLATED) as dst:
+        for name, data, ctype in out:
+            info = zipfile.ZipInfo(filename=name, date_time=FROZEN_ZIP_DT)
+            info.compress_type = ctype
+            info.external_attr = 0o600 << 16
+            info.create_system = 0          # 0 = MS-DOS，避免平台差异
+            dst.writestr(info, data)
+    os.replace(tmp, path)
+
 
 # --- 固定事实集（与 manifest 第 2 节一致，规范值来自 XLSX） --------------------
 FACTS = {
@@ -127,9 +198,44 @@ def build_docx() -> str:
     run = p.add_run("负增长样本：Q2 同比 -12.4%，Q3 同比 -3.7%。")
     run.font.size = Pt(12)
 
+    # 固定时间戳：python-docx 默认把生成时刻写入 core.xml，
+    # 会让每次产出的字节不同，破坏 fixture 的可复现性。
+    _freeze_docx_timestamps(doc)
+
     path = os.path.join(OUT, "经营摘要.docx")
     doc.save(path)
+    normalize_zip_timestamps(path)
     return path
+
+
+FROZEN_TS = "2026-01-01T00:00:00Z"
+
+
+def _freeze_docx_timestamps(doc) -> None:
+    """把 core properties 的时间戳钉死，保证 DOCX 字节可复现。"""
+    from docx.oxml.ns import qn
+
+    cp = doc.core_properties
+    for name in ("created", "modified", "last_printed"):
+        try:
+            setattr(cp, name, datetime(2026, 1, 1, tzinfo=timezone.utc))
+        except Exception:
+            pass
+    try:
+        cp.revision = 1
+    except Exception:
+        pass
+    # 直接改写 core.xml 里的 dcterms 值，防止 python-docx 序列化时回填当前时间
+    try:
+        core = doc.part.package.core_properties._element
+        for tag, attr in (
+            ("dcterms:created", "xsi:type"),
+            ("dcterms:modified", "xsi:type"),
+        ):
+            for el in core.findall(qn(tag)):
+                el.text = FROZEN_TS
+    except Exception:
+        pass
 
 
 # =============================================================================
@@ -177,8 +283,15 @@ def build_xlsx() -> str:
     ch.set_categories(cats)
     ws3.add_chart(ch, "F2")
 
+    # 固定工作簿时间戳，保证字节可复现
+    wb.properties.created = datetime(2026, 1, 1, tzinfo=timezone.utc)
+    wb.properties.modified = datetime(2026, 1, 1, tzinfo=timezone.utc)
+    wb.properties.creator = "pptXsmith-fixture"
+    wb.properties.lastModifiedBy = "pptXsmith-fixture"
+
     path = os.path.join(OUT, "财务数据.xlsx")
     wb.save(path)
+    normalize_zip_timestamps(path)
     return path
 
 
@@ -186,6 +299,7 @@ def build_xlsx() -> str:
 # 3. PDF — 市场动态.pdf（正文/脚注/表格 + 有意注入文本 + 有意 +12.0% 冲突）
 # =============================================================================
 def build_pdf() -> str:
+    from reportlab.lib import colors
     from reportlab.lib.pagesizes import A4
     from reportlab.lib.styles import ParagraphStyle
     from reportlab.lib.units import mm
@@ -199,7 +313,6 @@ def build_pdf() -> str:
         Table,
         TableStyle,
     )
-    from reportlab.lib import colors
 
     reg = os.path.join(OUT, "NotoSansSC-Regular.ttf")
     bold = os.path.join(OUT, "NotoSansSC-Bold.ttf")
@@ -215,7 +328,15 @@ def build_pdf() -> str:
                         spaceBefore=8, spaceAfter=4)
 
     path = os.path.join(OUT, "市场动态.pdf")
-    doc = SimpleDocTemplate(path, pagesize=A4, topMargin=18 * mm, bottomMargin=18 * mm)
+    # 固定 PDF 元数据时间戳（reportlab 默认写当前时间）
+    doc = SimpleDocTemplate(
+        path, pagesize=A4, topMargin=18 * mm, bottomMargin=18 * mm,
+        invariant=1,                     # 关闭文档内随机 ID 与时间戳
+        title="市场动态与竞争情报摘要",
+        author="pptXsmith-fixture",
+        created="20260101000000+00'00'",
+        modified="20260101000000+00'00'",
+    )
     story = []
 
     story.append(Paragraph("市场动态与竞争情报摘要", h1))
@@ -349,8 +470,17 @@ def build_pptx() -> str:
         f"受控信息：客户代号 {CUSTOMER}，成本中心 {COSTCENTER}，联系人 {CONTACT}。"
     )
 
+    # 固定演示文稿时间戳，保证字节可复现
+    cp = prs.core_properties
+    cp.created = datetime(2026, 1, 1, tzinfo=timezone.utc)
+    cp.modified = datetime(2026, 1, 1, tzinfo=timezone.utc)
+    cp.last_modified_by = "pptXsmith-fixture"
+    cp.author = "pptXsmith-fixture"
+    cp.revision = 1
+
     path = os.path.join(OUT, "品牌参考.pptx")
     prs.save(path)
+    normalize_zip_timestamps(path)
     return path
 
 
@@ -397,16 +527,20 @@ def inject_unknown_part(pptx_path: str) -> dict:
     written = set()
     for item in src.infolist():
         if item.filename == "[Content_Types].xml":
-            dst.writestr(item, ct.encode("utf-8")); written.add(item.filename)
+            dst.writestr(item, ct.encode("utf-8"))
+            written.add(item.filename)
         elif item.filename == rels_name:
-            dst.writestr(item, rels.encode("utf-8")); written.add(item.filename)
+            dst.writestr(item, rels.encode("utf-8"))
+            written.add(item.filename)
         else:
             dst.writestr(item, src.read(item.filename))
             written.add(item.filename)
     dst.writestr(UNKNOWN_PART, payload.encode("utf-8"))
-    src.close(); dst.close()
+    src.close()
+    dst.close()
 
     os.replace(tmp, pptx_path)
+    normalize_zip_timestamps(pptx_path)
 
     # 自检：三处路径必须互相一致，否则产出的是坏包（曾出现过此 bug）
     import re as _re
@@ -474,7 +608,7 @@ def build_font_manifest() -> str:
 
     data = {
         "manifestVersion": 1,
-        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "generatedAt": "FROZEN (determinism: not part of artifact identity)",
         "policy": {
             "repoSafe": ["SIL Open Font License 1.1", "Apache-2.0"],
             "hostOnly": ["proprietary-host"],
@@ -508,7 +642,8 @@ def main() -> None:
     made.append(build_font_manifest())
 
     print("\n产物与 sha256：")
-    result = {"generatedAt": datetime.now(timezone.utc).isoformat(), "artifacts": []}
+    result = {"generatedAt": "FROZEN (determinism: not part of artifact identity)",
+              "artifacts": []}
     for p in made:
         h = sha256(p)
         b = os.path.getsize(p)

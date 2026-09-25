@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720"><style data-img-radius="1">image{clip-path:inset(0 round 8px)}</style>
+  <defs>
+    <style>
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+    </style>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"></feGaussianBlur>
+      <feOffset dx="0" dy="4" result="offsetblur"></feOffset>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.05"></feFuncA>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+    <linearGradient id="grad-orange-soft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6700" stop-opacity="0.1"></stop>
+      <stop offset="100%" stop-color="#FF6700" stop-opacity="0.02"></stop>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="0.5"></path>
+    </pattern>
+    <radialGradient id="glow" cx="90%" cy="90%" r="50%">
+      <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"></stop>
+      <stop offset="100%" stop-color="#FF6700" stop-opacity="0"></stop>
+    </radialGradient>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <rect width="100%" height="100%" fill="#F8F9FA"></rect>
+    <rect width="100%" height="100%" fill="url(#grid)"></rect>
+    <rect width="100%" height="100%" fill="url(#glow)"></rect>
+  </g>
+
+  <!-- LAYER 2: Content -->
+  <g id="content_layer">
+    <!-- Module 1: Core Financial Milestone Card -->
+    <g transform="translate(40, 110)" filter="url(#cardShadow)">
+      <rect width="760" height="280" rx="16" fill="#FFFFFF"></rect>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="20" fill="#4B5563">营收规模与经营效益</text>
+      
+      <!-- Big Number 1: Revenue -->
+      <g transform="translate(30, 80)">
+        <text class="ppt-font-cn-body" x="0" y="20" font-size="16" fill="#6B7280">2025 Q3 创新业务总收入</text>
+        <text class="ppt-font-cn-heading" x="0" y="85" font-size="72" fill="#1A1A1A">290<tspan font-size="24" dy="-20" fill="#1A1A1A"> 亿元</tspan></text>
+        <rect x="0" y="105" width="320" height="40" rx="8" fill="url(#grad-orange-soft)"></rect>
+        <text class="ppt-font-cn-body" x="12" y="130" font-size="14" fill="#FF6700">其中智能电动汽车贡献 283 亿元</text>
+      </g>
+
+      <!-- Divider -->
+      <line x1="380" y1="80" x2="380" y2="240" stroke="#F3F4F6" stroke-width="2" stroke-dasharray="4 4"></line>
+
+      <!-- Big Number 2: Profit (The Milestone) -->
+      <g transform="translate(410, 80)">
+        <text class="ppt-font-cn-body" x="0" y="20" font-size="16" fill="#6B7280">首次实现单季度经营盈利</text>
+        <text class="ppt-font-cn-heading" x="0" y="85" font-size="72" fill="#FF6700">7<tspan font-size="24" dy="-20" fill="#FF6700"> 亿元</tspan></text>
+        <text class="ppt-font-cn-body" x="0" y="130" font-size="14" fill="#6B7280">跨越盈亏平衡点，进入可持续增长阶段</text>
+        <!-- Milestone Badge -->
+        <rect x="0" y="150" width="100" height="28" rx="4" fill="#FF6700"></rect>
+        <text class="ppt-font-cn-heading" x="50" y="169" font-size="12" fill="#FFFFFF" text-anchor="middle">HISTORIC</text>
+      </g>
+    </g>
+
+    <!-- Module 2: Margin Contrast Card -->
+    <g transform="translate(40, 410)" filter="url(#cardShadow)">
+      <rect width="760" height="270" rx="16" fill="#FFFFFF"></rect>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="20" fill="#4B5563">毛利率实现跨越式增长</text>
+      <text class="ppt-font-cn-body" x="30" y="75" font-size="14" fill="#9CA3AF">对比 2024 Q3 vs 2025 Q3 (单位: %)</text>
+      
+      <!-- Chart Slot -->
+      <g data-chart-slot-id="chart-1" data-chart-type="bar" transform="translate(30, 100)"><rect x="0.5" y="0.5" width="698" height="138" rx="7.5" fill="none" stroke="#E5E5E5" stroke-width="1"></rect><line x1="50" y1="99" x2="679" y2="99" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="103" text-anchor="end" font-size="12" fill="#64748B" opacity="0.8" font-weight="500">0</text><line x1="50" y1="85.2" x2="679" y2="85.2" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="89.2" text-anchor="end" font-size="12" fill="#64748B" opacity="0.8" font-weight="500">10</text><line x1="50" y1="71.4" x2="679" y2="71.4" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="75.4" text-anchor="end" font-size="12" fill="#64748B" opacity="0.8" font-weight="500">20</text><line x1="50" y1="57.6" x2="679" y2="57.6" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="61.6" text-anchor="end" font-size="12" fill="#64748B" opacity="0.8" font-weight="500">30</text><line x1="50" y1="43.8" x2="679" y2="43.8" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="47.8" text-anchor="end" font-size="12" fill="#64748B" opacity="0.8" font-weight="500">40</text><line x1="50" y1="30" x2="679" y2="30" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="34" text-anchor="end" font-size="12" fill="#64748B" opacity="0.8" font-weight="500">50</text><path d="M 56 99 L 56 79.402 A 4 4 0 0 1 60 75.402 L 354.5 75.402 A 4 4 0 0 1 358.5 79.402 L 358.5 99 Z" fill="#FF6700"></path><text x="207.25" y="67.402" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">17.1%</text><text x="207.25" y="123" text-anchor="middle" font-size="14" fill="#64748B" font-weight="500">2024 Q3</text><path d="M 370.5 99 L 370.5 67.81 A 4 4 0 0 1 374.5 63.81 L 669 63.81 A 4 4 0 0 1 673 67.81 L 673 99 Z" fill="#333333"></path><text x="521.75" y="55.81" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">25.5%</text><text x="521.75" y="123" text-anchor="middle" font-size="14" fill="#64748B" font-weight="500">2025 Q3</text><line x1="42" y1="99" x2="679" y2="99" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"></line><line x1="50" y1="30" x2="50" y2="107" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"></line></g>
+    </g>
+
+    <!-- Module 3: Drivers Card -->
+    <g transform="translate(820, 110)" filter="url(#cardShadow)">
+      <rect width="420" height="400" rx="16" fill="#FFFFFF"></rect>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="20" fill="#4B5563">盈利能力爆发三大动能</text>
+      
+      <g transform="translate(30, 85)">
+        <!-- Driver 1 -->
+        <rect width="24" height="24" rx="12" fill="#FF6700" fill-opacity="0.1"></rect>
+        <text class="ppt-font-cn-heading" x="12" y="17" font-size="12" fill="#FF6700" text-anchor="middle">1</text>
+        <text class="ppt-font-cn-heading" x="35" y="18" font-size="16" fill="#1A1A1A">降本增效：规模效应显现</text>
+        <text class="ppt-font-cn-body" x="35" y="42" font-size="14" fill="#6B7280">核心零部件与单位制造成本显著下降</text>
+        
+        <!-- Driver 2 -->
+        <g transform="translate(0, 80)">
+          <rect width="24" height="24" rx="12" fill="#FF6700" fill-opacity="0.1"></rect>
+          <text class="ppt-font-cn-heading" x="12" y="17" font-size="12" fill="#FF6700" text-anchor="middle">2</text>
+          <text class="ppt-font-cn-heading" x="35" y="18" font-size="16" fill="#1A1A1A">高端突破：SU7 Ultra 助力</text>
+          <text class="ppt-font-cn-body" x="35" y="42" font-size="14" fill="#6B7280">高端车型交付拉动单车平均利润</text>
+        </g>
+
+        <!-- Driver 3 -->
+        <g transform="translate(0, 160)">
+          <rect width="24" height="24" rx="12" fill="#FF6700" fill-opacity="0.1"></rect>
+          <text class="ppt-font-cn-heading" x="12" y="17" font-size="12" fill="#FF6700" text-anchor="middle">3</text>
+          <text class="ppt-font-cn-heading" x="35" y="18" font-size="16" fill="#1A1A1A">生态协同：周边业务增长</text>
+          <text class="ppt-font-cn-body" x="35" y="42" font-size="14" fill="#6B7280">汽车周边及相关业务毛利同步上升</text>
+        </g>
+      </g>
+      
+      <!-- Summary Tag -->
+      <rect x="30" y="330" width="360" height="40" rx="8" fill="#FFF7ED"></rect>
+      <text class="ppt-font-cn-heading" x="210" y="355" font-size="14" fill="#C2410C" text-anchor="middle">盈利韧性与成本管控力远超行业平均</text>
+    </g>
+
+    <!-- Visual Image Slot -->
+    <image id="ai-image-img-1" data-ai-slot-id="img-1" x="0" y="0" width="420" height="150" href="https://aiphoto.sandunppt.com/public/uploads/superppt/replace/2026/03/24/aedeab4b-9658-b6b1-d33b-55c1895bed09/manual_d23fe2600d55.webp" data-source-url="https://images.unsplash.com/photo-1761028352268-a17514c5c1ac?crop=entropy&amp;amp;amp;amp;cs=tinysrgb&amp;amp;amp;amp;fit=max&amp;amp;amp;amp;fm=jpg&amp;amp;amp;amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBlbGVjdHJpYyUyMHBlcmZvcm1hbmNlJTIwY2FyJTIwc3BlZWR8ZW58MHx8fHwxNzc0MzMyMjQ2fDA&amp;amp;amp;amp;ixlib=rb-4.1.0&amp;amp;amp;amp;q=80&amp;amp;amp;amp;w=1080" preserveAspectRatio="xMidYMid slice" transform="translate(820, 530)"><title>https://images.unsplash.com/photo-1761028352268-a17514c5c1ac?crop=entropy&amp;amp;cs=tinysrgb&amp;amp;fit=max&amp;amp;fm=jpg&amp;amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBlbGVjdHJpYyUyMHBlcmZvcm1hbmNlJTIwY2FyJTIwc3BlZWR8ZW58MHx8fHwxNzc0MzMyMjQ2fDA&amp;amp;ixlib=rb-4.1.0&amp;amp;q=80&amp;amp;w=1080</title></image>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <rect x="40" y="46" width="6" height="26" rx="3" fill="#FF6700"></rect>
+    <text x="58" y="66" class="ppt-font-cn-heading" font-size="26" fill="#1A1A1A">汽车业务里程碑：首次实现单季度经营盈利</text>
+  </g>
+
+  <g id="ai-image-layer">
+    <clipPath id="clip-ai-image-img-1">
+      <rect x="820.00" y="530.00" width="420.00" height="150.00" rx="12"></rect>
+    </clipPath>
+    
+  </g>
+</svg>

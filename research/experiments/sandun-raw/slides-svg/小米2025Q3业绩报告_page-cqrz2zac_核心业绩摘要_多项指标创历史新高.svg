@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720"><style data-img-radius="1">image{clip-path:inset(0 round 8px)}</style>
+  <defs>
+    <style>
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC', sans-serif; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC', sans-serif; font-weight: 400; }
+    </style>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"></feGaussianBlur>
+      <feOffset dx="0" dy="4" result="offsetblur"></feOffset>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.06"></feFuncA>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+    <linearGradient id="grad_orange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6700"></stop>
+      <stop offset="100%" stop-color="#FF8533"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="0.5"></path>
+      </pattern>
+      <radialGradient id="glow" cx="90%" cy="90%" r="50%">
+        <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"></stop>
+        <stop offset="100%" stop-color="#FF6700" stop-opacity="0"></stop>
+      </radialGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="#F8F9FA"></rect>
+    <rect width="100%" height="100%" fill="url(#grid)"></rect>
+    <rect width="100%" height="100%" fill="url(#glow)"></rect>
+  </g>
+
+  <!-- LAYER 2: Content -->
+  <g id="content_layer">
+    <!-- Card 1: 核心财务指标 -->
+    <g transform="translate(40, 110)" filter="url(#cardShadow)">
+      <rect width="590" height="280" rx="20" fill="#FFFFFF"></rect>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="22" fill="#1A1A1A">核心财务指标：双创历史新高</text>
+      
+      <!-- 总收入 -->
+      <text class="ppt-font-cn-body" x="30" y="90" font-size="16" fill="#666666">总收入</text>
+      <text class="ppt-font-cn-heading" x="30" y="145" font-size="52" fill="#111111">1,131.2<tspan font-size="24" fill="#111111"> 亿元</tspan></text>
+      <rect x="30" y="160" width="110" height="30" rx="6" fill="#FFF0E6"></rect>
+      <text class="ppt-font-cn-heading" x="38" y="181" font-size="15" fill="#FF6700">同比 +22.3%</text>
+
+      <!-- 净利润 -->
+      <text class="ppt-font-cn-body" x="320" y="90" font-size="16" fill="#666666">经调整净利润</text>
+      <text class="ppt-font-cn-heading" x="320" y="145" font-size="52" fill="#111111">113.1<tspan font-size="24" fill="#111111"> 亿元</tspan></text>
+      <rect x="320" y="160" width="110" height="30" rx="6" fill="#FFF0E6"></rect>
+      <text class="ppt-font-cn-heading" x="328" y="181" font-size="15" fill="#FF6700">同比 +80.9%</text>
+
+      <!-- 装饰标签 -->
+      <rect x="430" y="220" width="130" height="32" rx="16" fill="#FF6700" opacity="0.1"></rect>
+      <text class="ppt-font-cn-heading" x="495" y="242" font-size="13" fill="#FF6700" text-anchor="middle">HISTORICAL HIGH</text>
+    </g>
+
+    <!-- Card 2: 业务结构 -->
+    <g transform="translate(650, 110)" filter="url(#cardShadow)">
+      <rect width="590" height="280" rx="20" fill="#FFFFFF"></rect>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="22" fill="#1A1A1A">业务结构：双引擎驱动格局确立</text>
+      
+      <!-- 手机xAIoT -->
+      <rect x="30" y="80" width="255" height="170" rx="16" fill="#F9FAFB" stroke="#F1F1F1" stroke-width="1"></rect>
+      <text class="ppt-font-cn-heading" x="50" y="120" font-size="18" fill="#4B5563">手机 × AIoT (压舱石)</text>
+      <text class="ppt-font-cn-heading" x="50" y="170" font-size="38" fill="#111111">841<tspan font-size="18"> 亿元</tspan></text>
+      <text class="ppt-font-cn-body" x="50" y="205" font-size="14" fill="#9CA3AF">保持稳健韧性，大盘基石</text>
+
+      <!-- 创新业务 -->
+      <rect x="305" y="80" width="255" height="170" rx="16" fill="#FFF9F5" stroke="#FFE4D1" stroke-width="1"></rect>
+      <text class="ppt-font-cn-heading" x="325" y="120" font-size="18" fill="#FF6700">创新业务 (新引擎)</text>
+      <text class="ppt-font-cn-heading" x="325" y="170" font-size="38" fill="#FF6700">290<tspan font-size="18"> 亿元</tspan></text>
+      <text class="ppt-font-cn-heading" x="325" y="205" font-size="14" fill="#FF6700">同比 +199.2% 爆发增长</text>
+    </g>
+
+    <!-- Card 3: 盈利质量 -->
+    <g transform="translate(40, 410)" filter="url(#cardShadow)">
+      <rect width="750" height="280" rx="20" fill="#FFFFFF"></rect>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="22" fill="#1A1A1A">盈利质量：经营利润爆发式增长</text>
+      <text class="ppt-font-cn-body" x="30" y="75" font-size="14" fill="#94A3B8">2024 Q3 vs 2025 Q3 经营利润对比 (单位：亿元)</text>
+      
+      <!-- Chart Slot -->
+      <g data-chart-slot-id="chart-1" data-chart-type="bar" transform="translate(30, 100)"><rect x="0.5" y="0.5" width="689" height="149" rx="7.5" fill="none" stroke="#E5E5E5" stroke-width="1"></rect><line x1="50" y1="110" x2="670" y2="110" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="114" text-anchor="end" font-size="12" fill="#64748B" opacity="0.8" font-weight="500">0</text><line x1="50" y1="94" x2="670" y2="94" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="98" text-anchor="end" font-size="12" fill="#64748B" opacity="0.8" font-weight="500">50</text><line x1="50" y1="78" x2="670" y2="78" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="82" text-anchor="end" font-size="12" fill="#64748B" opacity="0.8" font-weight="500">100</text><line x1="50" y1="62" x2="670" y2="62" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="66" text-anchor="end" font-size="12" fill="#64748B" opacity="0.8" font-weight="500">150</text><line x1="50" y1="46" x2="670" y2="46" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="50" text-anchor="end" font-size="12" fill="#64748B" opacity="0.8" font-weight="500">200</text><line x1="50" y1="30" x2="670" y2="30" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="34" text-anchor="end" font-size="12" fill="#64748B" opacity="0.8" font-weight="500">250</text><path d="M 56 110 L 56 94.672 A 4 4 0 0 1 60 90.672 L 350 90.672 A 4 4 0 0 1 354 94.672 L 354 110 Z" fill="#FF6700"></path><text x="205" y="82.672" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">60.4亿元</text><text x="205" y="134" text-anchor="middle" font-size="14" fill="#64748B" font-weight="500">2024 Q3</text><path d="M 366 110 L 366 65.648 A 4 4 0 0 1 370 61.648 L 660 61.648 A 4 4 0 0 1 664 65.648 L 664 110 Z" fill="#333333"></path><text x="515" y="53.648" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">151.1亿元</text><text x="515" y="134" text-anchor="middle" font-size="14" fill="#64748B" font-weight="500">2025 Q3</text><line x1="42" y1="110" x2="670" y2="110" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"></line><line x1="50" y1="30" x2="50" y2="118" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"></line></g>
+    </g>
+
+    <!-- Card 4: 策略与形象 -->
+    <g transform="translate(810, 410)" filter="url(#cardShadow)">
+      <rect width="430" height="280" rx="20" fill="#FFFFFF"></rect>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="22" fill="#1A1A1A">经营策略执行力</text>
+      
+      <text class="ppt-font-cn-body" x="30" y="85" font-size="16" fill="#4B5563">
+        <tspan x="30" dy="0">持续高效执行“稳健进取”核心策略，</tspan>
+        <tspan x="30" dy="28">在保持主营业务韧性的同时，实现</tspan>
+        <tspan x="30" dy="28" fill="#FF6700" font-weight="700" class="ppt-font-cn-heading">创新业务的跨越式突破。</tspan>
+      </text>
+
+      <!-- Image Slot -->
+      <image id="ai-image-img-1" data-ai-slot-id="img-1" x="0" y="0" width="370" height="80" href="https://images.unsplash.com/photo-1702451462735-3f0ba7679641?crop=entropy&amp;amp;amp;cs=tinysrgb&amp;amp;amp;fit=max&amp;amp;amp;fm=jpg&amp;amp;amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHw1fHxtb2Rlcm4lMjBlbGVjdHJpYyUyMGNhciUyMGZ1dHVyaXN0aWMlMjB4aWFvbWklMjBzdTd8ZW58MHx8fHwxNzc0MzMyMjQxfDA&amp;amp;amp;ixlib=rb-4.1.0&amp;amp;amp;q=80&amp;amp;amp;w=1080" data-source-url="https://unsplash.com/photos/white-smartphone-with-a-triple-camera-system-8Nk4PqNzK70?utm_medium=referral&amp;amp;amp;amp;utm_source=superppt+agent" preserveAspectRatio="xMidYMid slice" transform="translate(30, 175)"><title>https://unsplash.com/photos/white-smartphone-with-a-triple-camera-system-8Nk4PqNzK70?utm_medium=referral&amp;utm_source=superppt+agent</title></image>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <rect x="40" y="46" width="6" height="26" rx="3" fill="#FF6700"></rect>
+    <text x="58" y="66" class="ppt-font-cn-heading" font-size="26" fill="#1A1A1A">核心业绩摘要：多项指标创历史新高</text>
+  </g>
+
+  <g id="ai-image-layer">
+    <clipPath id="clip-ai-image-img-1">
+      <rect x="30.00" y="175.00" width="370.00" height="80.00" rx="12"></rect>
+    </clipPath>
+    
+  </g>
+</svg>

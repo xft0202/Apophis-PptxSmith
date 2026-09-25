@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+    ]]></style>
+    <filter id="soft_shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.08"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="eco_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0FDF4"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <filter id="blur_blob">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="60" result="blur"/>
+    </filter>
+  </defs>
+
+  <!-- LAYER 1: Background (Eco-Fluid Design System) -->
+  <g id="bg">
+    <rect width="100%" height="100%" fill="url(#eco_grad)"/>
+    <circle cx="10%" cy="20%" r="300" fill="#DCFCE7" filter="url(#blur_blob)" opacity="0.6"/>
+    <circle cx="90%" cy="80%" r="400" fill="#F0FDFA" filter="url(#blur_blob)" opacity="0.8"/>
+    <path d="M0 0 Q480 20 960 0 T1920 0" fill="none" stroke="#10B981" stroke-width="1" stroke-opacity="0.2"/>
+  </g>
+
+  <!-- LAYER 2: Content Layer -->
+  <g id="content_layer">
+    <!-- Module 1: Global Network -->
+    <g transform="translate(40, 100)">
+      <rect width="760" height="320" rx="20" fill="#FFFFFF" fill-opacity="0.9" filter="url(#soft_shadow)"/>
+      <path d="M24 20 L24 45" stroke="#10B981" stroke-width="4" stroke-linecap="round"/>
+      <text class="ppt-font-cn-heading" x="36" y="42" font-size="22" fill="#064E3B">全球资源协同网络</text>
+      <text class="ppt-font-cn-body" x="36" y="72" font-size="15" fill="#374151">覆盖 140+ 国家，构建“研发-制造-人才”三位一体布局</text>
+      
+      <!-- Image Slot: img-1 -->
+      <image id="ai-image-img-1" data-ai-slot-id="img-1" x="0" y="0" width="420" height="200" href="https://aiphoto.sandunppt.com/public/uploads/superppt/slot-gen/2026/03/24/img-1_8b533038530f.png" data-source-url="https://aiphoto.sandunppt.com/public/uploads/superppt/slot-gen/2026/03/24/img-1_8b533038530f.png" preserveAspectRatio="xMidYMid slice" transform="translate(24, 90)"><title>https://aiphoto.sandunppt.com/public/uploads/superppt/slot-gen/2026/03/24/img-1_8b533038530f.png</title></image>
+
+      <!-- Detailed Info -->
+      <g transform="translate(460, 90)">
+        <rect width="276" height="60" rx="10" fill="#DCFCE7" fill-opacity="0.5"/>
+        <text class="ppt-font-cn-heading" x="16" y="28" font-size="18" fill="#065F46">4 大海外研发中心</text>
+        <text class="ppt-font-cn-body" x="16" y="48" font-size="13" fill="#047857">北美、欧洲、亚太、北非</text>
+        
+        <rect y="70" width="276" height="60" rx="10" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+        <text class="ppt-font-cn-heading" x="16" y="98" font-size="18" fill="#065F46">8 大海外制造基地</text>
+        <text class="ppt-font-cn-body" x="16" y="118" font-size="13" fill="#047857">东南亚、埃及等多国布局</text>
+
+        <rect y="140" width="276" height="60" rx="10" fill="#F9FAFB"/>
+        <text class="ppt-font-cn-heading" x="16" y="168" font-size="18" fill="#4B5563">筹建中基地</text>
+        <text class="ppt-font-cn-body" x="16" y="188" font-size="13" fill="#6B7280">沙特、巴西、墨西哥</text>
+      </g>
+    </g>
+
+    <!-- Module 2: Localization Metrics -->
+    <g transform="translate(820, 100)">
+      <rect width="420" height="320" rx="20" fill="#FFFFFF" fill-opacity="0.9" filter="url(#soft_shadow)"/>
+      <path d="M24 20 L24 45" stroke="#10B981" stroke-width="4" stroke-linecap="round"/>
+      <text class="ppt-font-cn-heading" x="36" y="42" font-size="22" fill="#064E3B">深度本土化经营指标</text>
+      <text class="ppt-font-cn-body" x="24" y="80" font-size="15" fill="#4B5563">海外人才本土化率</text>
+      <text class="ppt-font-cn-heading" x="24" y="115" font-size="42" fill="#10B981">66%</text>
+
+      <!-- Chart Slot: chart-1 -->
+      <g data-chart-slot-id="chart-1" data-chart-type="bar" transform="translate(24, 130)"><rect x="0" y="0" width="372" height="160" rx="20" fill="#FFFFFF"/><rect x="0.75" y="0.75" width="370.5" height="158.5" rx="19.25" fill="none" stroke="#DCFCE7" stroke-width="1.5"/><line x1="50" y1="120" x2="352" y2="120" stroke="#F0FDF4" stroke-width="1" stroke-dasharray="4 4"/><text x="38" y="124" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">0</text><line x1="50" y1="102" x2="352" y2="102" stroke="#F0FDF4" stroke-width="1" stroke-dasharray="4 4"/><text x="38" y="106" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">20</text><line x1="50" y1="84" x2="352" y2="84" stroke="#F0FDF4" stroke-width="1" stroke-dasharray="4 4"/><text x="38" y="88" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">40</text><line x1="50" y1="66" x2="352" y2="66" stroke="#F0FDF4" stroke-width="1" stroke-dasharray="4 4"/><text x="38" y="70" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">60</text><line x1="50" y1="48" x2="352" y2="48" stroke="#F0FDF4" stroke-width="1" stroke-dasharray="4 4"/><text x="38" y="52" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">80</text><line x1="50" y1="30" x2="352" y2="30" stroke="#F0FDF4" stroke-width="1" stroke-dasharray="4 4"/><text x="38" y="34" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">100</text><path d="M 56 120 L 56 70.6 A 10 10 0 0 1 66 60.599999999999994 L 134.66666666666669 60.599999999999994 A 10 10 0 0 1 144.66666666666669 70.6 L 144.66666666666669 120 Z" fill="#10B981"/><text x="100.33333333333334" y="52.599999999999994" text-anchor="middle" font-size="14" fill="#064E3B" font-weight="600">66%</text><text x="100.33333333333334" y="144" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">人才本土化</text><path d="M 156.66666666666669 120 L 156.66666666666669 53.5 A 10 10 0 0 1 166.66666666666669 43.5 L 235.33333333333337 43.5 A 10 10 0 0 1 245.33333333333337 53.5 L 245.33333333333337 120 Z" fill="#34D399"/><text x="201.00000000000003" y="35.5" text-anchor="middle" font-size="14" fill="#064E3B" font-weight="600">85%</text><text x="201.00000000000003" y="144" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">智造本土化</text><path d="M 257.33333333333337 120 L 257.33333333333337 76 A 10 10 0 0 1 267.33333333333337 66 L 336.00000000000006 66 A 10 10 0 0 1 346.00000000000006 76 L 346.00000000000006 120 Z" fill="#059669"/><text x="301.6666666666667" y="58" text-anchor="middle" font-size="14" fill="#064E3B" font-weight="600">60%</text><text x="301.6666666666667" y="144" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">研发本土化</text><line x1="42" y1="120" x2="352" y2="120" stroke="#A7F3D0" stroke-width="1.2" stroke-linecap="round"/><line x1="50" y1="30" x2="50" y2="128" stroke="#A7F3D0" stroke-width="1.2" stroke-linecap="round"/></g>
+    </g>
+
+    <!-- Module 3: Market Leadership -->
+    <g transform="translate(40, 440)">
+      <rect width="760" height="240" rx="20" fill="#FFFFFF" fill-opacity="0.9" filter="url(#soft_shadow)"/>
+      <path d="M24 20 L24 45" stroke="#10B981" stroke-width="4" stroke-linecap="round"/>
+      <text class="ppt-font-cn-heading" x="36" y="42" font-size="22" fill="#064E3B">市场领跑与权威认可</text>
+      
+      <g transform="translate(24, 75)">
+        <!-- Norway Case -->
+        <rect width="225" height="145" rx="12" fill="#F0FDF4"/>
+        <text class="ppt-font-cn-heading" x="20" y="35" font-size="17" fill="#065F46">挪威市场</text>
+        <text class="ppt-font-cn-body" x="20" y="65" font-size="14" fill="#047857">民用占有率</text>
+        <text class="ppt-font-cn-heading" x="20" y="100" font-size="32" fill="#10B981">13%</text>
+        <text class="ppt-font-cn-body" x="20" y="125" font-size="12" fill="#059669">针对性研发漏电保护产品</text>
+
+        <!-- North America Case -->
+        <rect x="243" width="225" height="145" rx="12" fill="#ECFDF5" stroke="#D1FAE5" stroke-width="1"/>
+        <text class="ppt-font-cn-heading" x="263" y="35" font-size="17" fill="#065F46">北美/韩国</text>
+        <text class="ppt-font-cn-body" x="263" y="65" font-size="14" fill="#047857">三相组串逆变器</text>
+        <text class="ppt-font-cn-heading" x="263" y="100" font-size="24" fill="#10B981">NO.1 领先地位</text>
+        <text class="ppt-font-cn-body" x="263" y="125" font-size="12" fill="#059669">细分市场占有率持续保持</text>
+
+        <!-- Certifications -->
+        <rect x="486" width="225" height="145" rx="12" fill="#F9FAFB"/>
+        <text class="ppt-font-cn-heading" x="506" y="35" font-size="17" fill="#374151">全球权威准入</text>
+        <g transform="translate(506, 55)">
+          <circle cx="4" cy="20" r="3" fill="#10B981"/>
+          <text class="ppt-font-cn-body" x="15" y="25" font-size="13" fill="#4B5563">美国 UL 认证</text>
+          <circle cx="4" cy="45" r="3" fill="#10B981"/>
+          <text class="ppt-font-cn-body" x="15" y="50" font-size="13" fill="#4B5563">德国 VDE 认证</text>
+          <circle cx="4" cy="70" r="3" fill="#10B981"/>
+          <text class="ppt-font-cn-body" x="15" y="75" font-size="13" fill="#4B5563">欧盟 CE/RoHS</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Module 4: Brand Reputation -->
+    <g transform="translate(820, 440)">
+      <rect width="420" height="240" rx="20" fill="#064E3B" filter="url(#soft_shadow)"/>
+      <path d="M24 20 L24 45" stroke="#34D399" stroke-width="4" stroke-linecap="round"/>
+      <text class="ppt-font-cn-heading" x="36" y="42" font-size="22" fill="#F0FDF4">全球品牌声望</text>
+      
+      <g transform="translate(24, 85)">
+        <circle cx="30" cy="30" r="30" fill="#F0FDF4" fill-opacity="0.1"/>
+        <path d="M22 30 L28 36 L38 24" stroke="#34D399" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text class="ppt-font-cn-heading" x="80" y="25" font-size="19" fill="#F0FDF4">波士顿咨询 (BCG)</text>
+        <text class="ppt-font-cn-body" x="80" y="52" font-size="15" fill="#D1FAE5">“全球挑战者”称号</text>
+      </g>
+
+      <g transform="translate(24, 165)">
+        <circle cx="30" cy="30" r="30" fill="#F0FDF4" fill-opacity="0.1"/>
+        <path d="M30 15 L33 24 L42 24 L35 30 L38 39 L30 33 L22 39 L25 30 L18 24 L27 24 Z" fill="#34D399"/>
+        <text class="ppt-font-cn-heading" x="80" y="25" font-size="19" fill="#F0FDF4">福布斯中国</text>
+        <text class="ppt-font-cn-body" x="80" y="52" font-size="15" fill="#D1FAE5">出海全球化品牌 TOP30</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Global Header -->
+  <g id="header">
+    <circle cx="44" cy="60" r="6" fill="#10B981"/>
+    <text class="ppt-font-cn-heading" x="58" y="68" font-size="26" fill="#064E3B">全球化战略：本土化智造与海外市场领跑</text>
+  </g>
+
+  <g id="ai-image-layer">
+    <clipPath id="clip-ai-image-img-1">
+      <rect x="24.00" y="90.00" width="420.00" height="200.00" rx="12"/>
+    </clipPath>
+    
+  </g>
+</svg>

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+      .en-num { font-family: 'Georgia', serif; font-weight: bold; font-style: italic; }
+      .en-sub { font-family: 'Arial', sans-serif; letter-spacing: 2px; }
+      .card-shadow { filter: drop-shadow(0 8px 24px rgba(176, 53, 47, 0.08)); }
+    ]]></style>
+    <pattern id='grid' width='40' height='40' patternUnits='userSpaceOnUse'>
+      <path d='M 40 0 L 0 0 0 40' fill='none' stroke='#B0352F' stroke-width='0.5' stroke-opacity='0.05'/>
+    </pattern>
+    <filter id='noise'>
+      <feTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='3' stitchTiles='stitch'/>
+      <feColorMatrix type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.02 0'/>
+    </filter>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FFF9F8" />
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id='bg'>
+    <rect width='100%' height='100%' fill='#FDFCFB'/>
+    <rect width='100%' height='100%' fill='url(#grid)'/>
+    <rect width='100%' height='100%' filter='url(#noise)'/>
+    <circle cx='90%' cy='10%' r='300' fill='#B0352F' fill-opacity='0.03'/>
+    <!-- Decorative Corner Element -->
+    <path d="M0 0 L120 0 L0 120 Z" fill="#B0352F" fill-opacity="0.05"/>
+  </g>
+
+  <!-- LAYER 2: Content (Directory Grid) -->
+  <g id="content_layer">
+    <!-- Section Title (Custom for Directory Page) -->
+    <g transform="translate(80, 60)">
+      <rect width="4" height="40" fill="#B0352F" rx="2"/>
+      <text class="ppt-font-cn-theme-heritage" x="20" y="32" font-size="42" fill="#1A1A1A">目录</text>
+      <text class="en-sub" x="115" y="30" font-size="18" fill="#B0352F" fill-opacity="0.6">/ CONTENTS</text>
+      <line x1="0" y1="55" x2="240" y2="55" stroke="#B0352F" stroke-width="1" stroke-opacity="0.2"/>
+    </g>
+
+    <!-- Chapter 01 -->
+    <g transform="translate(80, 160)" class="card-shadow">
+      <rect x="0" y="0" width="540" height="240" rx="4" fill="url(#cardGrad)" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.2"/>
+      <text class="en-num" x="30" y="80" font-size="72" fill="#B0352F" opacity="0.1">01</text>
+      <text class="ppt-font-cn-theme-heritage" x="40" y="125" font-size="32" fill="#B0352F">核心前置</text>
+      <line x1="40" y1="145" x2="100" y2="145" stroke="#B0352F" stroke-width="2" stroke-opacity="0.6"/>
+      <text class="ppt-font-cn-body" x="40" y="185" font-size="20" fill="#4A4A4A">2026北京旅游“预约制”生存指南</text>
+      <!-- Decorative Motif -->
+      <rect x="510" y="20" width="10" height="10" fill="#B0352F" fill-opacity="0.1"/>
+    </g>
+
+    <!-- Chapter 02 -->
+    <g transform="translate(660, 160)" class="card-shadow">
+      <rect x="0" y="0" width="540" height="240" rx="4" fill="url(#cardGrad)" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.2"/>
+      <text class="en-num" x="30" y="80" font-size="72" fill="#B0352F" opacity="0.1">02</text>
+      <text class="ppt-font-cn-theme-heritage" x="40" y="125" font-size="32" fill="#B0352F">高效行程</text>
+      <line x1="40" y1="145" x2="100" y2="145" stroke="#B0352F" stroke-width="2" stroke-opacity="0.6"/>
+      <text class="ppt-font-cn-body" x="40" y="185" font-size="20" fill="#4A4A4A">五日经典路线逻辑拆解</text>
+      <rect x="510" y="20" width="10" height="10" fill="#B0352F" fill-opacity="0.1"/>
+    </g>
+
+    <!-- Chapter 03 -->
+    <g transform="translate(80, 430)" class="card-shadow">
+      <rect x="0" y="0" width="540" height="240" rx="4" fill="url(#cardGrad)" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.2"/>
+      <text class="en-num" x="30" y="80" font-size="72" fill="#B0352F" opacity="0.1">03</text>
+      <text class="ppt-font-cn-theme-heritage" x="40" y="125" font-size="32" fill="#B0352F">智慧旅居</text>
+      <line x1="40" y1="145" x2="100" y2="145" stroke="#B0352F" stroke-width="2" stroke-opacity="0.6"/>
+      <text class="ppt-font-cn-body" x="40" y="185" font-size="20" fill="#4A4A4A">基于大数据的住宿与交通策略</text>
+      <rect x="510" y="20" width="10" height="10" fill="#B0352F" fill-opacity="0.1"/>
+    </g>
+
+    <!-- Chapter 04 -->
+    <g transform="translate(660, 430)" class="card-shadow">
+      <rect x="0" y="0" width="540" height="240" rx="4" fill="url(#cardGrad)" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.2"/>
+      <text class="en-num" x="30" y="80" font-size="72" fill="#B0352F" opacity="0.1">04</text>
+      <text class="ppt-font-cn-theme-heritage" x="40" y="125" font-size="32" fill="#B0352F">预算模型</text>
+      <line x1="40" y1="145" x2="100" y2="145" stroke="#B0352F" stroke-width="2" stroke-opacity="0.6"/>
+      <text class="ppt-font-cn-body" x="40" y="185" font-size="20" fill="#4A4A4A">高性价比的消费方案与避坑建议</text>
+      <rect x="510" y="20" width="10" height="10" fill="#B0352F" fill-opacity="0.1"/>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Footer (Pagination) -->
+  <g transform="translate(1180, 680)">
+    <text class="en-sub" x="60" y="0" text-anchor="end" font-size="14" fill="#B0352F" fill-opacity="0.4">PAGE 02</text>
+    <rect x="65" y="-12" width="2" height="14" fill="#B0352F" fill-opacity="0.2"/>
+  </g>
+</svg>

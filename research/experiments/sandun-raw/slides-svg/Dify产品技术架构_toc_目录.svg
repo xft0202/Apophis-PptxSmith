@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .en-num { font-family: 'Impact', 'Arial Black', sans-serif; }
+      .text-glow { filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.5)); }
+    ]]></style>
+    
+    <!-- Card Gradient for Aurora Logic -->
+    <linearGradient id="auroraCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E293B;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#0F172A;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <!-- Reusing background defs -->
+    <linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' style='stop-color:#05070A;stop-opacity:1' />
+      <stop offset='100%' style='stop-color:#0C121E;stop-opacity:1' />
+    </linearGradient>
+    <pattern id='microGrid' width='40' height='40' patternUnits='userSpaceOnUse'>
+      <path d='M 40 0 L 0 0 0 40' fill='none' stroke='#344256' stroke-width='0.5' stroke-opacity='0.3'/>
+    </pattern>
+    <filter id='glow'>
+      <feGaussianBlur stdDeviation='50' result='blur'/>
+      <feComposite in='SourceGraphic' in2='blur' operator='over'/>
+    </filter>
+  </defs>
+
+  <!-- LAYER 1: Background (Strictly Reused) -->
+  <g id='bg'>
+    <rect width='100%' height='100%' fill='url(#grad1)'/>
+    <rect width='100%' height='100%' fill='url(#microGrid)'/>
+    <circle cx='90%' cy='10%' r='300' fill='#1E40AF' fill-opacity='0.15' filter='url(#glow)'/>
+    <circle cx='10%' cy='90%' r='250' fill='#4F46E5' fill-opacity='0.1' filter='url(#glow)'/>
+  </g>
+
+  <!-- LAYER 2: Content (Strictly Reusing Layout Reference Geometry) -->
+  <g id="content_layer">
+    <!-- Section 01 -->
+    <g transform="translate(40, 140)">
+      <rect width="384" height="500" rx="16" fill="url(#auroraCardGrad)" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.3"/>
+      <rect x="32" y="40" width="48" height="4" rx="2" fill="#3B82F6"/>
+      <text class="en-num text-glow" x="32" y="110" font-size="72" fill="#3B82F6" opacity="0.4">01</text>
+      <g class="ppt-font-cn-heading">
+        <text x="32" y="170" font-size="24" fill="#FFFFFF">第一部分：</text>
+        <text x="32" y="205" font-size="24" fill="#FFFFFF">产品定义与时代背景</text>
+      </g>
+      <line x1="32" y1="240" x2="80" y2="240" stroke="#3B82F6" stroke-width="2" stroke-opacity="0.6"/>
+      <g class="ppt-font-cn-body">
+        <text x="32" y="285" font-size="18" fill="#94A3B8">核心导向：</text>
+        <text x="32" y="320" font-size="16" fill="#CBD5E1">Dify 如何定义开源 LLM</text>
+        <text x="32" y="348" font-size="16" fill="#CBD5E1">应用开发的领航者地位。</text>
+      </g>
+      <!-- Decoration -->
+      <circle cx="340" cy="450" r="60" fill="#3B82F6" opacity="0.05"/>
+    </g>
+
+    <!-- Section 02 -->
+    <g transform="translate(448, 140)">
+      <rect width="384" height="500" rx="16" fill="url(#auroraCardGrad)" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.3"/>
+      <rect x="32" y="40" width="48" height="4" rx="2" fill="#3B82F6"/>
+      <text class="en-num text-glow" x="32" y="110" font-size="72" fill="#3B82F6" opacity="0.4">02</text>
+      <g class="ppt-font-cn-heading">
+        <text x="32" y="170" font-size="24" fill="#FFFFFF">第二部分：</text>
+        <text x="32" y="205" font-size="24" fill="#FFFFFF">核心功能与技术优势</text>
+      </g>
+      <line x1="32" y1="240" x2="80" y2="240" stroke="#3B82F6" stroke-width="2" stroke-opacity="0.6"/>
+      <g class="ppt-font-cn-body">
+        <text x="32" y="285" font-size="18" fill="#94A3B8">核心导向：</text>
+        <text x="32" y="320" font-size="16" fill="#CBD5E1">深度解析一站式 LLMOps</text>
+        <text x="32" y="348" font-size="16" fill="#CBD5E1">平台的技术护城河与核心引擎。</text>
+      </g>
+      <circle cx="340" cy="450" r="60" fill="#3B82F6" opacity="0.05"/>
+    </g>
+
+    <!-- Section 03 -->
+    <g transform="translate(856, 140)">
+      <rect width="384" height="500" rx="16" fill="url(#auroraCardGrad)" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.3"/>
+      <rect x="32" y="40" width="48" height="4" rx="2" fill="#3B82F6"/>
+      <text class="en-num text-glow" x="32" y="110" font-size="72" fill="#3B82F6" opacity="0.4">03</text>
+      <g class="ppt-font-cn-heading">
+        <text x="32" y="170" font-size="24" fill="#FFFFFF">第三部分：</text>
+        <text x="32" y="205" font-size="24" fill="#FFFFFF">企业实践与降本增效</text>
+      </g>
+      <line x1="32" y1="240" x2="80" y2="240" stroke="#3B82F6" stroke-width="2" stroke-opacity="0.6"/>
+      <g class="ppt-font-cn-body">
+        <text x="32" y="285" font-size="18" fill="#94A3B8">核心导向：</text>
+        <text x="32" y="320" font-size="16" fill="#CBD5E1">展示真实落地案例、生态</text>
+        <text x="32" y="348" font-size="16" fill="#CBD5E1">影响力及商业化价值对比。</text>
+      </g>
+      <circle cx="340" cy="450" r="60" fill="#3B82F6" opacity="0.05"/>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Specialized Header for Directory Page -->
+  <g id="custom_directory_header">
+    <text class="ppt-font-cn-heading" x="40" y="70" font-size="42" fill="#FFFFFF" style="letter-spacing: 4px;">目录</text>
+    <text x="145" y="70" font-family="Arial, sans-serif" font-size="24" fill="#3B82F6" font-weight="bold" opacity="0.8">/ CONTENTS</text>
+    <rect x="40" y="90" width="1200" height="1" fill="#FFFFFF" fill-opacity="0.1"/>
+    <rect x="40" y="90" width="100" height="2" fill="#3B82F6"/>
+  </g>
+
+  <!-- Footer Branding -->
+  <g id="footer">
+    <line x1="40" y1="680" x2="1240" y2="680" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1"/>
+    <text class="ppt-font-cn-body" x="40" y="705" font-size="14" fill="#64748B">Dify 路演演示文稿 | 内部机密</text>
+    <text class="en-num" x="1210" y="705" font-size="14" fill="#3B82F6">02</text>
+  </g>
+</svg>

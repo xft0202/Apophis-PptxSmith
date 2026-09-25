@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720"><style data-img-radius="1">image{clip-path:inset(0 round 8px)}</style>
+  <defs>
+    <style>
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .card-shadow { filter: drop-shadow(0 4px 12px rgba(0,0,0,0.05)); }
+    </style>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="0.5"></path>
+    </pattern>
+    <radialGradient id="glow" cx="90%" cy="90%" r="50%">
+      <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"></stop>
+      <stop offset="100%" stop-color="#FF6700" stop-opacity="0"></stop>
+    </radialGradient>
+    <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6700"></stop>
+      <stop offset="100%" stop-color="#FF8E42"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <rect width="100%" height="100%" fill="#F8F9FA"></rect>
+    <rect width="100%" height="100%" fill="url(#grid)"></rect>
+    <rect width="100%" height="100%" fill="url(#glow)"></rect>
+  </g>
+
+  <!-- LAYER 2: Content -->
+  <g id="content_layer">
+    <!-- Card 1: Sales & Service Network -->
+    <g transform="translate(40, 110)" class="card-shadow">
+      <rect width="780" height="280" rx="16" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1"></rect>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="22" fill="#1A1A1A">全国网点规模：销售与服务双轴并行</text>
+      
+      <!-- Sales Column -->
+      <g transform="translate(30, 80)">
+        <rect width="345" height="170" rx="12" fill="#FFF9F5" stroke="#FFE0CC" stroke-width="1"></rect>
+        <text class="ppt-font-cn-body" x="20" y="40" font-size="16" fill="#FF6700">销售网点 (截至2025 Q3)</text>
+        <text class="ppt-font-cn-heading" x="20" y="105" font-size="60" fill="#FF6700">402<tspan font-size="20" dy="-24" fill="#FF6700">家</tspan></text>
+        <rect x="20" y="125" width="30" height="3" rx="1.5" fill="#FF6700" opacity="0.3"></rect>
+        <text class="ppt-font-cn-body" x="20" y="150" font-size="15" fill="#666666">覆盖中国大陆 119 个城市</text>
+      </g>
+      
+      <!-- Service Column -->
+      <g transform="translate(405, 80)">
+        <rect width="345" height="170" rx="12" fill="#FBFBFB" stroke="#EEEEEE" stroke-width="1"></rect>
+        <text class="ppt-font-cn-body" x="20" y="40" font-size="16" fill="#4D4D4D">服务网点 (售后保障)</text>
+        <text class="ppt-font-cn-heading" x="20" y="105" font-size="60" fill="#1A1A1A">209<tspan font-size="20" dy="-24" fill="#1A1A1A">家</tspan></text>
+        <rect x="20" y="125" width="30" height="3" rx="1.5" fill="#1A1A1A" opacity="0.1"></rect>
+        <text class="ppt-font-cn-body" x="20" y="150" font-size="15" fill="#666666">覆盖全国 125 个城市，渗透率更高</text>
+      </g>
+    </g>
+
+    <!-- Card 2: Strategic Momentum -->
+    <g transform="translate(840, 110)" class="card-shadow">
+      <rect width="400" height="280" rx="16" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1"></rect>
+      <text class="ppt-font-cn-heading" x="30" y="45" font-size="22" fill="#1A1A1A">品牌高端化势能</text>
+      
+      <!-- Chart Slot -->
+      <g data-chart-slot-id="chart-premium" data-chart-type="bar" transform="translate(30, 70)"><rect x="0.5" y="0.5" width="338" height="138" rx="7.5" fill="none" stroke="#E5E5E5" stroke-width="1"></rect><line x1="50" y1="99" x2="319" y2="99" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="103" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">0</text><line x1="50" y1="85.2" x2="319" y2="85.2" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="89.2" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">5</text><line x1="50" y1="71.4" x2="319" y2="71.4" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="75.4" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">10</text><line x1="50" y1="57.6" x2="319" y2="57.6" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="61.6" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">15</text><line x1="50" y1="43.8" x2="319" y2="43.8" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="47.8" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">20</text><line x1="50" y1="30" x2="319" y2="30" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"></line><text x="38" y="34" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">25</text><path d="M 56 99 L 56 50.836000000000006 A 4 4 0 0 1 60 46.836000000000006 L 174.5 46.836000000000006 A 4 4 0 0 1 178.5 50.836000000000006 L 178.5 99 Z" fill="#FF6700"></path><text x="117.25" y="38.836000000000006" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">18.9%</text><text x="117.25" y="123" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">手机高端份额</text><path d="M 190.5 99 L 190.5 36.483999999999995 A 4 4 0 0 1 194.5 32.483999999999995 L 309 32.483999999999995 A 4 4 0 0 1 313 36.483999999999995 L 313 99 Z" fill="#333333"></path><text x="251.75" y="24.483999999999995" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">24.1%</text><text x="251.75" y="123" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">汽车高端占比</text><line x1="42" y1="99" x2="319" y2="99" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"></line><line x1="50" y1="30" x2="50" y2="107" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"></line></g>
+      
+      <g transform="translate(30, 230)">
+        <circle cx="0" cy="-5" r="3" fill="#FF6700"></circle>
+        <text class="ppt-font-cn-body" x="12" y="0" font-size="14" fill="#4D4D4D">小米汽车高端车型占比达 <tspan fill="#FF6700" font-weight="700">24.1%</tspan></text>
+        <text class="ppt-font-cn-body" x="12" y="24" font-size="14" fill="#666666">成功复刻手机业务高端化逻辑 (18.9% 份额)</text>
+      </g>
+    </g>
+
+    <!-- Card 3: Service Upgrade -->
+    <g transform="translate(40, 410)" class="card-shadow">
+      <rect width="1200" height="270" rx="16" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1"></rect>
+      
+      <!-- Text Side -->
+      <g transform="translate(40, 45)">
+        <text class="ppt-font-cn-heading" x="0" y="5" font-size="26" fill="#1A1A1A">服务升级：开启“深度定制”时代</text>
+        
+        <g transform="translate(0, 55)">
+          <rect x="0" y="0" width="4" height="20" rx="2" fill="#FF6700"></rect>
+          <text class="ppt-font-cn-heading" x="15" y="17" font-size="18" fill="#1A1A1A">高端化定制中心</text>
+          
+          <text class="ppt-font-cn-body" x="15" y="50" font-size="16" fill="#4D4D4D">
+            <tspan x="15" dy="0">· 2025年9月推出，涵盖专属外观颜色、内饰及轮毂选配</tspan>
+            <tspan x="15" dy="32">· 北京超级工厂店设立首个定制中心，提供沉浸式选配体验</tspan>
+            <tspan x="15" dy="32">· 将服务从“标准化交付”向“个性化定制”全面转型</tspan>
+          </text>
+        </g>
+      </g>
+
+      <!-- Image Slot Side -->
+      <image id="ai-image-img-factory" data-ai-slot-id="img-factory" x="0" y="0" width="480" height="200" href="https://aiphoto.sandunppt.com/public/uploads/superppt/replace/2026/03/24/aedeab4b-9658-b6b1-d33b-55c1895bed09/manual_b046673d68b9.jpg" data-source-url="https://images.unsplash.com/photo-1761846788715-f2a62a2069f2?crop=entropy&amp;amp;amp;amp;cs=tinysrgb&amp;amp;amp;amp;fit=max&amp;amp;amp;amp;fm=jpg&amp;amp;amp;amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsdXh1cnklMjBjYXIlMjBjdXN0b21pemF0aW9uJTIwY2VudGVyJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzc0MzMyMjQ5fDA&amp;amp;amp;amp;ixlib=rb-4.1.0&amp;amp;amp;amp;q=80&amp;amp;amp;amp;w=1080" preserveAspectRatio="xMidYMid slice" transform="translate(680, 35)"><title>https://images.unsplash.com/photo-1761846788715-f2a62a2069f2?crop=entropy&amp;amp;cs=tinysrgb&amp;amp;fit=max&amp;amp;fm=jpg&amp;amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsdXh1cnklMjBjYXIlMjBjdXN0b21pemF0aW9uJTIwY2VudGVyJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzc0MzMyMjQ5fDA&amp;amp;ixlib=rb-4.1.0&amp;amp;q=80&amp;amp;w=1080</title></image>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <rect x="40" y="46" width="6" height="26" rx="3" fill="#FF6700"></rect>
+    <text x="58" y="66" class="ppt-font-cn-heading" font-size="26" fill="#1A1A1A">销售网络扩张：覆盖全国，服务升级</text>
+  </g>
+
+  <g id="ai-image-layer">
+    <clipPath id="clip-ai-image-img-factory">
+      <rect x="680.00" y="35.00" width="480.00" height="200.00" rx="12"></rect>
+    </clipPath>
+    
+  </g>
+</svg>

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+    ]]></style>
+  </defs>
+
+  <!-- LAYER 1: Background (Strictly Reused) -->
+  <g id='bg'>
+    <defs>
+      <pattern id='grid' width='40' height='40' patternUnits='userSpaceOnUse'>
+        <path d='M 40 0 L 0 0 0 40' fill='none' stroke='#B0352F' stroke-width='0.5' stroke-opacity='0.05'/>
+      </pattern>
+      <filter id='noise'>
+        <feTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='3' stitchTiles='stitch'/>
+        <feColorMatrix type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.02 0'/>
+      </filter>
+    </defs>
+    <rect width='100%' height='100%' fill='#FDFCFB'/>
+    <rect width='100%' height='100%' fill='url(#grid)'/>
+    <rect width='100%' height='100%' filter='url(#noise)'/>
+    <circle cx='90%' cy='10%' r='300' fill='#B0352F' fill-opacity='0.03'/>
+  </g>
+
+  <!-- LAYER 2: Content (Cover Page Styling) -->
+  <g id="content_layer">
+    <!-- Background Watermark Decoration -->
+    <text class="ppt-font-cn-heading" x="1200" y="660" font-size="280" fill="#B0352F" fill-opacity="0.04" text-anchor="end">2026</text>
+
+    <!-- Right Side Geometric Abstraction (Adapted to Heritage Theme) -->
+    <g transform="translate(850, 100)">
+      <rect x="0" y="0" width="120" height="520" fill="#B0352F" fill-opacity="0.05" rx="4"/>
+      <rect x="140" y="80" width="80" height="440" fill="#B0352F" fill-opacity="0.08" rx="4"/>
+      <rect x="240" y="200" width="40" height="320" fill="#B0352F" fill-opacity="0.12" rx="4"/>
+      <!-- Accent line matching theme -->
+      <rect x="0" y="500" width="280" height="4" fill="#B0352F"/>
+    </g>
+
+    <!-- Main Content Area -->
+    <g transform="translate(80, 200)">
+      <!-- Version Tag -->
+      <g>
+        <rect x="0" y="-40" width="180" height="32" rx="2" fill="#B0352F"/>
+        <text class="ppt-font-cn-heading" x="90" y="-18" font-size="16" fill="#FFFFFF" text-anchor="middle">2026年度权威更新版</text>
+      </g>
+
+      <!-- Main Title (Using Theme Heritage Font) -->
+      <text class="ppt-font-cn-theme-heritage" x="0" y="70" font-size="76" fill="#1A1A1A">2026年北京五日深度游全攻略</text>
+      
+      <!-- Subtitle -->
+      <text class="ppt-font-cn-body" x="0" y="135" font-size="28" fill="#4A4A4A">智慧预约、时空避峰与文化沉淀的完美旅行方案</text>
+
+      <!-- Horizontal Divider -->
+      <line x1="0" y1="175" x2="600" y2="175" stroke="#B0352F" stroke-width="1" stroke-opacity="0.2"/>
+
+      <!-- Key Value Points -->
+      <g transform="translate(0, 240)">
+        <!-- Point 1 -->
+        <g>
+          <rect x="0" y="-15" width="4" height="45" fill="#B0352F" fill-opacity="0.6"/>
+          <text class="ppt-font-cn-heading" x="15" y="5" font-size="22" fill="#1A1A1A">预约制深度解析</text>
+          <text class="ppt-font-cn-body" x="15" y="35" font-size="15" fill="#666666">全景点预约全流程覆盖</text>
+        </g>
+        <!-- Point 2 -->
+        <g transform="translate(260, 0)">
+          <rect x="0" y="-15" width="4" height="45" fill="#B0352F" fill-opacity="0.6"/>
+          <text class="ppt-font-cn-heading" x="15" y="5" font-size="22" fill="#1A1A1A">大数据避峰策略</text>
+          <text class="ppt-font-cn-body" x="15" y="35" font-size="15" fill="#666666">科学规划最优游览路径</text>
+        </g>
+        <!-- Point 3 -->
+        <g transform="translate(520, 0)">
+          <rect x="0" y="-15" width="4" height="45" fill="#B0352F" fill-opacity="0.6"/>
+          <text class="ppt-font-cn-heading" x="15" y="5" font-size="22" fill="#1A1A1A">1500元性价比模型</text>
+          <text class="ppt-font-cn-body" x="15" y="35" font-size="15" fill="#666666">精细化预算与品质平衡</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Footer Information -->
+    <g transform="translate(80, 640)">
+      <rect x="0" y="-20" width="2" height="30" fill="#B0352F" fill-opacity="0.3"/>
+      <text class="ppt-font-cn-body" x="15" y="5" font-size="18" fill="#4A4A4A">演讲人：[您的姓名/团队名称]</text>
+      <text class="ppt-font-cn-body" x="420" y="5" font-size="18" fill="#999999">日期：202X年X月X日</text>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header (Omitted for Cover Page as per Rendering Logic Step 2) -->
+</svg>

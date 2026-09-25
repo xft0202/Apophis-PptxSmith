@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720"><style data-img-radius="1">image{clip-path:inset(0 round 8px)}</style>
+  <defs>
+    <style>
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .card-shadow { filter: drop-shadow(0 4px 12px rgba(0,0,0,0.05)); }
+    </style>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="0.5"></path>
+    </pattern>
+    <radialGradient id="glow" cx="90%" cy="90%" r="50%">
+      <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"></stop>
+      <stop offset="100%" stop-color="#FF6700" stop-opacity="0"></stop>
+    </radialGradient>
+    <marker id="arrowhead-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#FF6700"></path>
+    </marker>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <rect width="100%" height="100%" fill="#F8F9FA"></rect>
+    <rect width="100%" height="100%" fill="url(#grid)"></rect>
+    <rect width="100%" height="100%" fill="url(#glow)"></rect>
+  </g>
+
+  <!-- LAYER 2: Content -->
+  <g id="content_layer">
+    <!-- Module 1: Smart Factory (Top Left) -->
+    <g transform="translate(40, 110)" class="card-shadow">
+      <rect width="760" height="340" rx="16" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1"></rect>
+      <text x="30" y="45" class="ppt-font-cn-heading" font-size="22" fill="#1A1A1A">智造新里程：全产业链闭环</text>
+      
+      <!-- Data Points -->
+      <g transform="translate(30, 90)">
+        <text x="0" y="0" class="ppt-font-cn-body" font-size="14" fill="#666666">小米第三座大型智能工厂</text>
+        <text x="0" y="45" class="ppt-font-cn-heading" font-size="36" fill="#FF6700">25亿+</text>
+        <text x="0" y="70" class="ppt-font-cn-body" font-size="14" fill="#999999">一期总投资额</text>
+        
+        <text x="220" y="45" class="ppt-font-cn-heading" font-size="36" fill="#FF6700">700万台</text>
+        <text x="220" y="70" class="ppt-font-cn-body" font-size="14" fill="#999999">规划峰值年产能 (空调)</text>
+      </g>
+
+      <!-- Process Loop Diagram -->
+      <g transform="translate(40, 200)">
+        <rect x="250" y="85" width="180" height="36" rx="18" fill="#FFF4ED"></rect>
+        <text x="340" y="109" text-anchor="middle" class="ppt-font-cn-heading" font-size="15" fill="#FF6700">小米智能家电工厂</text>
+        
+        <!-- Nodes -->
+        <g transform="translate(0, 0)">
+          <circle cx="60" cy="40" r="38" fill="#F8F9FA" stroke="#E5E5E5" stroke-width="1.5"></circle>
+          <text x="60" y="46" text-anchor="middle" class="ppt-font-cn-heading" font-size="16" fill="#1A1A1A">设计</text>
+        </g>
+        <g transform="translate(180, 0)">
+          <circle cx="60" cy="40" r="38" fill="#F8F9FA" stroke="#E5E5E5" stroke-width="1.5"></circle>
+          <text x="60" y="46" text-anchor="middle" class="ppt-font-cn-heading" font-size="16" fill="#1A1A1A">研发</text>
+        </g>
+        <g transform="translate(360, 0)">
+          <circle cx="60" cy="40" r="38" fill="#FFF4ED" stroke="#FF6700" stroke-width="2"></circle>
+          <text x="60" y="46" text-anchor="middle" class="ppt-font-cn-heading" font-size="16" fill="#FF6700">生产</text>
+        </g>
+        <g transform="translate(540, 0)">
+          <circle cx="60" cy="40" r="38" fill="#F8F9FA" stroke="#E5E5E5" stroke-width="1.5"></circle>
+          <text x="60" y="46" text-anchor="middle" class="ppt-font-cn-heading" font-size="16" fill="#1A1A1A">验证</text>
+        </g>
+        
+        <!-- Connectors -->
+        <line x1="105" y1="40" x2="170" y2="40" stroke="#DDDDDD" stroke-width="2" marker-end="url(#arrowhead-orange)"></line>
+        <line x1="285" y1="40" x2="350" y2="40" stroke="#DDDDDD" stroke-width="2" marker-end="url(#arrowhead-orange)"></line>
+        <line x1="465" y1="40" x2="530" y2="40" stroke="#DDDDDD" stroke-width="2" marker-end="url(#arrowhead-orange)"></line>
+      </g>
+    </g>
+
+    <!-- Module 2: Products (Bottom Left) -->
+    <g transform="translate(40, 470)" class="card-shadow">
+      <rect width="760" height="210" rx="16" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1"></rect>
+      <text x="30" y="45" class="ppt-font-cn-heading" font-size="22" fill="#1A1A1A">科技家电：高端化体验升级</text>
+      
+      <g transform="translate(30, 80)">
+        <rect width="280" height="100" rx="12" fill="#FBFBFB" stroke="#F0F0F0" stroke-width="1"></rect>
+        <text x="20" y="38" class="ppt-font-cn-heading" font-size="18" fill="#1A1A1A" style="">米家三区洗衣机 Pro</text>
+        <text x="20" y="68" class="ppt-font-cn-body" font-size="14" fill="#666666">滚筒10kg · 分类洗护新标准</text>
+        
+        <rect x="300" y="0" width="280" height="100" rx="12" fill="#FBFBFB" stroke="#F0F0F0" stroke-width="1"></rect>
+        <text x="320" y="38" class="ppt-font-cn-heading" font-size="18" fill="#1A1A1A">米家冰箱 Pro 560L</text>
+        <text x="320" y="68" class="ppt-font-cn-body" font-size="14" fill="#666666">微冰鲜双系统 · 法式平嵌设计</text>
+      </g>
+      
+      <!-- Image Slot -->
+      <image id="ai-image-img-factory" data-ai-slot-id="img-factory" x="0" y="0" width="110" height="150" href="https://aiphoto.sandunppt.com/public/uploads/superppt/replace/2026/03/24/aedeab4b-9658-b6b1-d33b-55c1895bed09/manual_75ea899d1854.webp" data-source-url="https://images.unsplash.com/photo-1773414422120-3a8b1c07fee6?crop=entropy&amp;amp;amp;amp;cs=tinysrgb&amp;amp;amp;amp;fit=max&amp;amp;amp;amp;fm=jpg&amp;amp;amp;amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHx4aWFvbWklMjBzbWFydCUyMGhvbWUlMjBhcHBsaWFuY2VzJTIwcmVmcmlnZXJhdG9yJTIwd2FzaGluZyUyMG1hY2hpbmV8ZW58MHx8fHwxNzc0MzMyMjQ0fDA&amp;amp;amp;amp;ixlib=rb-4.1.0&amp;amp;amp;amp;q=80&amp;amp;amp;amp;w=1080" preserveAspectRatio="xMidYMid slice" transform="translate(620, 30)"><title>https://images.unsplash.com/photo-1773414422120-3a8b1c07fee6?crop=entropy&amp;amp;cs=tinysrgb&amp;amp;fit=max&amp;amp;fm=jpg&amp;amp;ixid=M3w4ODI2MTl8MHwxfHNlYXJjaHwxfHx4aWFvbWklMjBzbWFydCUyMGhvbWUlMjBhcHBsaWFuY2VzJTIwcmVmcmlnZXJhdG9yJTIwd2FzaGluZyUyMG1hY2hpbmV8ZW58MHx8fHwxNzc0MzMyMjQ0fDA&amp;amp;ixlib=rb-4.1.0&amp;amp;q=80&amp;amp;w=1080</title></image>
+    </g>
+
+    <!-- Module 3: Wearables (Right Tall Card) -->
+    <g transform="translate(820, 110)" class="card-shadow">
+      <rect width="420" height="570" rx="16" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1"></rect>
+      <text x="30" y="45" class="ppt-font-cn-heading" font-size="22" fill="#1A1A1A">穿戴业务：全球领先地位</text>
+      <text x="30" y="75" class="ppt-font-cn-body" font-size="13" fill="#999999">数据来源: Omdia 2025 Q3报告</text>
+
+      <!-- Rank 1: Wristbands -->
+      <g transform="translate(30, 110)">
+        <rect width="360" height="200" rx="12" fill="#FFF9F5" stroke="#FFE4D1" stroke-width="1"></rect>
+        <text x="24" y="40" class="ppt-font-cn-heading" font-size="18" fill="#FF6700">可穿戴腕带设备</text>
+        <text x="24" y="115" class="ppt-font-cn-heading" font-size="72" fill="#FF6700">NO.1</text>
+        <text x="200" y="110" class="ppt-font-cn-body" font-size="18" fill="#4D4D4D">全球出货量</text>
+        
+        <line x1="24" y1="145" x2="336" y2="145" stroke="#FFE4D1" stroke-width="1"></line>
+        <text x="24" y="175" class="ppt-font-cn-body" font-size="16" fill="#666666">中国大陆市场排名：</text>
+        <text x="175" y="175" class="ppt-font-cn-heading" font-size="20" fill="#1A1A1A">第 2</text>
+      </g>
+
+      <!-- Rank 2: TWS -->
+      <g transform="translate(30, 340)">
+        <rect width="360" height="200" rx="12" fill="#F8F9FA" stroke="#E5E5E5" stroke-width="1"></rect>
+        <text x="24" y="40" class="ppt-font-cn-heading" font-size="18" fill="#4D4D4D">TWS 耳机</text>
+        <text x="24" y="115" class="ppt-font-cn-heading" font-size="72" fill="#1A1A1A">NO.2</text>
+        <text x="200" y="110" class="ppt-font-cn-body" font-size="18" fill="#4D4D4D">全球出货量</text>
+        
+        <line x1="24" y1="145" x2="336" y2="145" stroke="#E5E5E5" stroke-width="1"></line>
+        <text x="24" y="175" class="ppt-font-cn-body" font-size="16" fill="#666666">中国大陆市场排名：</text>
+        <text x="175" y="175" class="ppt-font-cn-heading" font-size="20" fill="#FF6700">第 1</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <rect x="40" y="46" width="6" height="26" rx="3" fill="#FF6700"></rect>
+    <text x="58" y="66" class="ppt-font-cn-heading" font-size="26" fill="#1A1A1A">大家电与可穿戴：智能制造驱动增长</text>
+  </g>
+
+  <g id="ai-image-layer">
+    <clipPath id="clip-ai-image-img-factory">
+      <rect x="620.00" y="30.00" width="110.00" height="150.00" rx="12"></rect>
+    </clipPath>
+    
+  </g>
+</svg>

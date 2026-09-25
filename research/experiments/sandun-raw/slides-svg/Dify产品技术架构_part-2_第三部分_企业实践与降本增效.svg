@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .en-impact { font-family: 'Arial Black', sans-serif; font-weight: 900; }
+      .glass-box { fill: #FFFFFF; fill-opacity: 0.03; stroke: #FFFFFF; stroke-opacity: 0.1; stroke-width: 1; }
+      .accent-blue { fill: #3B82F6; }
+      .text-white { fill: #FFFFFF; }
+      .text-muted { fill: #94A3B8; }
+      .text-highlight { fill: #60A5FA; }
+    ]]></style>
+    
+    <!-- Reuse Background Gradients/Filters from Design System -->
+    <linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' style='stop-color:#05070A;stop-opacity:1' />
+      <stop offset='100%' style='stop-color:#0C121E;stop-opacity:1' />
+    </linearGradient>
+    <pattern id='microGrid' width='40' height='40' patternUnits='userSpaceOnUse'>
+      <path d='M 40 0 L 0 0 0 40' fill='none' stroke='#344256' stroke-width='0.5' stroke-opacity='0.3'/>
+    </pattern>
+    <filter id='glow'>
+      <feGaussianBlur stdDeviation='50' result='blur'/>
+      <feComposite in='SourceGraphic' in2='blur' operator='over'/>
+    </filter>
+    <filter id="boxGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- LAYER 1: Background (Strictly Reused) -->
+  <g id='bg'>
+    <rect width='100%' height='100%' fill='url(#grad1)'/>
+    <rect width='100%' height='100%' fill='url(#microGrid)'/>
+    <circle cx='90%' cy='10%' r='300' fill='#1E40AF' fill-opacity='0.15' filter='url(#glow)'/>
+    <circle cx='10%' cy='90%' r='250' fill='#4F46E5' fill-opacity='0.1' filter='url(#glow)'/>
+  </g>
+
+  <!-- LAYER 2: Transition Page Content -->
+  
+  <!-- Large Background Number (Decorative) -->
+  <text x="640" y="420" font-size="380" fill="#3B82F6" fill-opacity="0.04" text-anchor="middle" class="en-impact">03</text>
+
+  <!-- Center Content Group -->
+  <g transform="translate(640, 360)">
+    
+    <!-- Part Label -->
+    <g transform="translate(0, -180)">
+      <rect x="-60" y="-20" width="120" height="40" rx="20" class="accent-blue" filter="url(#boxGlow)"/>
+      <text x="0" y="7" text-anchor="middle" font-size="22" class="en-impact text-white">PART 03</text>
+    </g>
+    
+    <!-- Main Section Title -->
+    <text x="0" y="-60" text-anchor="middle" font-size="64" class="ppt-font-cn-heading text-white">第三部分：企业实践与降本增效</text>
+    
+    <!-- Insight Statement -->
+    <text x="0" y="20" text-anchor="middle" font-size="28" class="ppt-font-cn-body text-muted">
+      <tspan class="ppt-font-cn-heading text-highlight">核心洞察：</tspan>AI 的价值不在于参数规模，而在于业务闭环。
+    </text>
+    
+    <!-- Golden Sentence Block -->
+    <g transform="translate(0, 80)">
+      <rect x="-420" y="0" width="840" height="64" rx="12" class="glass-box"/>
+      <path d="M -420 20 L -420 44" stroke="#3B82F6" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 420 20 L 420 44" stroke="#3B82F6" stroke-width="4" stroke-linecap="round"/>
+      <text x="0" y="40" text-anchor="middle" font-size="22" class="ppt-font-cn-body text-highlight">“从实验室原型到生产级应用，Dify 助力企业将 AI 转化为可量化的生产力”</text>
+    </g>
+
+    <!-- Content Preview Items -->
+    <g transform="translate(0, 220)">
+      <!-- Divider Line -->
+      <line x1="-200" y1="-30" x2="200" y2="-30" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1"/>
+      
+      <!-- Item 1 -->
+      <g transform="translate(-280, 20)">
+        <circle cx="0" cy="0" r="5" class="accent-blue"/>
+        <text x="20" y="8" font-size="20" class="ppt-font-cn-body text-muted">企业案例：知识库驱动的办公提效实践</text>
+      </g>
+      
+      <!-- Item 2 -->
+      <g transform="translate(60, 20)">
+        <circle cx="0" cy="0" r="5" class="accent-blue"/>
+        <text x="20" y="8" font-size="20" class="ppt-font-cn-body text-muted">市场生态：开源影响力与同类产品对比</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Line -->
+  <rect x="0" y="714" width="1280" height="6" class="accent-blue"/>
+  
+  <!-- Decorative Tech Elements -->
+  <g opacity="0.4">
+    <path d="M 40 680 L 140 680" stroke="#3B82F6" stroke-width="1"/>
+    <rect x="40" y="675" width="4" height="10" fill="#3B82F6"/>
+    <text x="150" y="685" font-size="12" class="en-impact text-muted">ENTERPRISE SOLUTIONS v2.0</text>
+  </g>
+</svg>

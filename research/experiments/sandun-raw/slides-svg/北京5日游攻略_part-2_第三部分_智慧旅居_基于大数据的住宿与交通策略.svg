@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/SourceHanSerifCN-Bold/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+      .ppt-font-cn-theme-heritage { font-family: 'Source Han Serif CN'; font-weight: 700; }
+      .en-impact { font-family: 'Impact', sans-serif; }
+      .shadow-card { filter: drop-shadow(0 4px 12px rgba(176, 53, 47, 0.08)); }
+    ]]></style>
+  </defs>
+
+  <!-- LAYER 1: Global Background -->
+  <g id='bg'>
+    <defs>
+      <pattern id='grid' width='40' height='40' patternUnits='userSpaceOnUse'>
+        <path d='M 40 0 L 0 0 0 40' fill='none' stroke='#B0352F' stroke-width='0.5' stroke-opacity='0.05'/>
+      </pattern>
+      <filter id='noise'>
+        <feTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='3' stitchTiles='stitch'/>
+        <feColorMatrix type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.02 0'/>
+      </filter>
+    </defs>
+    <rect width='100%' height='100%' fill='#FDFCFB'/>
+    <rect width='100%' height='100%' fill='url(#grid)'/>
+    <rect width='100%' height='100%' filter='url(#noise)'/>
+    <circle cx='90%' cy='10%' r='300' fill='#B0352F' fill-opacity='0.03'/>
+  </g>
+
+  <!-- Decorative Layer: Large Background Number -->
+  <text x="640" y="440" text-anchor="middle" font-size="480" fill="#B0352F" opacity="0.04" class="en-impact">03</text>
+
+  <!-- LAYER 2: Content (Transition Page Layout) -->
+  <g id="content_layer">
+    <!-- Part Label -->
+    <g transform="translate(580, 160)">
+      <rect x="0" y="0" width="120" height="34" rx="17" fill="#B0352F"/>
+      <text x="60" y="24" text-anchor="middle" font-size="20" fill="#FFFFFF" class="en-impact">PART 03</text>
+    </g>
+
+    <!-- Main Section Title -->
+    <g transform="translate(640, 270)">
+      <text class="ppt-font-cn-theme-heritage" x="0" y="0" text-anchor="middle" font-size="58" fill="#1A1A1A">第三部分：智慧旅居</text>
+      <text class="ppt-font-cn-heading" x="0" y="65" text-anchor="middle" font-size="32" fill="#B0352F" fill-opacity="0.9">基于大数据的住宿与交通策略</text>
+    </g>
+
+    <!-- Accent Line -->
+    <g transform="translate(540, 385)">
+      <rect x="0" y="0" width="200" height="3" rx="1.5" fill="#B0352F" fill-opacity="0.4"/>
+      <circle cx="100" cy="1.5" r="4" fill="#B0352F"/>
+    </g>
+
+    <!-- Core Insight Section -->
+    <g transform="translate(640, 460)">
+      <text class="ppt-font-cn-body" x="0" y="0" text-anchor="middle" font-size="24" fill="#4A4A4A">
+        <tspan x="0" dy="0">核心洞察：旅行的质量不取决于你走了多少公里</tspan>
+        <tspan x="0" dy="38">而取决于你如何避开无效的位移</tspan>
+      </text>
+    </g>
+
+    <!-- Key Points Cards (Bottom) -->
+    <g transform="translate(250, 560)">
+      <!-- Point Card 1 -->
+      <g transform="translate(0, 0)" class="shadow-card">
+        <rect x="0" y="0" width="370" height="90" rx="4" fill="#FFFFFF" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.2"/>
+        <rect x="0" y="25" width="4" height="40" fill="#B0352F"/>
+        <text class="ppt-font-cn-heading" x="24" y="38" font-size="20" fill="#1A1A1A">空间布局</text>
+        <text class="ppt-font-cn-body" x="24" y="66" font-size="16" fill="#666666">以三环为核心的“酒店+地铁”最优解模型</text>
+      </g>
+      
+      <!-- Point Card 2 -->
+      <g transform="translate(410, 0)" class="shadow-card">
+        <rect x="0" y="0" width="370" height="90" rx="4" fill="#FFFFFF" stroke="#B0352F" stroke-width="0.5" stroke-opacity="0.2"/>
+        <rect x="0" y="25" width="4" height="40" fill="#B0352F"/>
+        <text class="ppt-font-cn-heading" x="24" y="38" font-size="20" fill="#1A1A1A">时空调控</text>
+        <text class="ppt-font-cn-body" x="24" y="66" font-size="16" fill="#666666">利用大数据避开拥堵，提升绿色出行效率</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- LAYER 3: Header (Transition pages usually omit Global Header, but we maintain visual consistency) -->
+  <!-- Note: Following "Special Page" rule from instructions: No Global Header, custom large title used above. -->
+  
+  <!-- Subtle Bottom Branding -->
+  <g transform="translate(1100, 680)">
+    <text class="ppt-font-cn-body" font-size="12" fill="#B0352F" fill-opacity="0.4" text-anchor="end">IMPERIAL HERITAGE DESIGN SYSTEM</text>
+  </g>
+</svg>

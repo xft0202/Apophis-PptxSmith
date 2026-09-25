@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <style><![CDATA[
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Bold/result.css");
+      @import url("https://content-sandunppt.oss-cn-guangzhou.aliyuncs.com/fonts/HarmonyOS_Sans_SC_Regular/result.css");
+      .ppt-font-cn-heading { font-family: 'HarmonyOS Sans SC'; font-weight: 700; }
+      .ppt-font-cn-body { font-family: 'HarmonyOS Sans SC'; font-weight: 400; }
+    ]]></style>
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.05"/>
+    </filter>
+    <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6700"/>
+      <stop offset="100%" stop-color="#FF8533"/>
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: Background -->
+  <g id="bg">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="0.5"/>
+      </pattern>
+      <radialGradient id="glow" cx="90%" cy="90%" r="50%">
+        <stop offset="0%" stop-color="#FF6700" stop-opacity="0.08"/>
+        <stop offset="100%" stop-color="#FF6700" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="#F8F9FA"/>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+    <rect width="100%" height="100%" fill="url(#glow)"/>
+  </g>
+
+  <!-- LAYER 2: Content Layer -->
+  <g id="content_layer">
+    <!-- Module 1: MSCI Rating (Left) -->
+    <g transform="translate(40, 110)">
+      <rect width="386" height="480" rx="16" fill="#FFFFFF" filter="url(#card-shadow)"/>
+      <text class="ppt-font-cn-heading" x="24" y="40" font-size="20" fill="#1A1A1A">MSCI 评级实现“三连跳”</text>
+      
+      <!-- Rating Badge -->
+      <rect x="24" y="70" width="80" height="40" rx="8" fill="#FFF2E8"/>
+      <text class="ppt-font-cn-heading" x="64" y="100" text-anchor="middle" font-size="24" fill="#FF6700">A 级</text>
+      <text class="ppt-font-cn-body" x="115" y="96" font-size="14" fill="#666666">2025年10月正式上调</text>
+
+      <!-- Chart Slot 1 -->
+      <g data-chart-slot-id="chart-1" data-chart-type="line" transform="translate(24, 150)"><rect x="0.5" y="0.5" width="337" height="239" rx="7.5" fill="none" stroke="#E5E5E5" stroke-width="1"/><defs><linearGradient id="lg-z0d8t" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FF6700" stop-opacity="0.1"/><stop offset="100%" stop-color="#FF6700" stop-opacity="0.0"/></linearGradient></defs><line x1="50" y1="200" x2="318" y2="200" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="204" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">0</text><line x1="50" y1="166" x2="318" y2="166" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="170" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">1</text><line x1="50" y1="132" x2="318" y2="132" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="136" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">2</text><line x1="50" y1="98" x2="318" y2="98" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="102" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">3</text><line x1="50" y1="64" x2="318" y2="64" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="68" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">4</text><line x1="50" y1="30" x2="318" y2="30" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="34" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">5</text><polygon points="50,200 50,166 139.33333333333331,132 228.66666666666666,115 318,98 318,200" fill="url(#lg-z0d8t)"/><polyline points="50,166 139.33333333333331,132 228.66666666666666,115 318,98" fill="none" stroke="#FF6700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="50" cy="166" r="5" fill="#FFFFFF" stroke="#FF6700" stroke-width="2.5"/><text x="50" y="154" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">1级(1:BBB, 3:A)</text><text x="50" y="224" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">2022</text><circle cx="139.33333333333331" cy="132" r="5" fill="#FFFFFF" stroke="#FF6700" stroke-width="2.5"/><text x="139.33333333333331" y="120" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">2级(1:BBB, 3:A)</text><text x="139.33333333333331" y="224" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">2023</text><circle cx="228.66666666666666" cy="115" r="5" fill="#FFFFFF" stroke="#FF6700" stroke-width="2.5"/><text x="228.66666666666666" y="103" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">2.5级(1:BBB, 3:A)</text><text x="228.66666666666666" y="224" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">2024</text><circle cx="318" cy="98" r="5" fill="#FFFFFF" stroke="#FF6700" stroke-width="2.5"/><text x="318" y="86" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">3级(1:BBB, 3:A)</text><text x="318" y="224" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">2025</text><line x1="42" y1="200" x2="318" y2="200" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/><line x1="50" y1="30" x2="50" y2="208" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/></g>
+      
+      <text class="ppt-font-cn-body" x="24" y="425" font-size="15" fill="#444444">
+        <tspan x="24" dy="0">自2022年起连续三年实现评级上调，</tspan>
+        <tspan x="24" dy="26">展现出极强的治理韧性与发展潜力。</tspan>
+      </text>
+    </g>
+
+    <!-- Module 2: S&P CSA Score (Middle) -->
+    <g transform="translate(446, 110)">
+      <rect width="386" height="480" rx="16" fill="#FFFFFF" filter="url(#card-shadow)"/>
+      <text class="ppt-font-cn-heading" x="24" y="40" font-size="20" fill="#1A1A1A">标普 CSA 得分远超行业均值</text>
+      
+      <!-- Score Comparison -->
+      <text class="ppt-font-cn-heading" x="24" y="95" font-size="48" fill="#FF6700">63</text>
+      <text class="ppt-font-cn-body" x="85" y="90" font-size="14" fill="#666666">分 (本司)</text>
+      <text class="ppt-font-cn-heading" x="165" y="95" font-size="28" fill="#BDBDBD">vs 38</text>
+      <text class="ppt-font-cn-body" x="250" y="90" font-size="14" fill="#666666">分 (行业均值)</text>
+
+      <!-- Chart Slot 2 -->
+      <g data-chart-slot-id="chart-2" data-chart-type="bar" transform="translate(24, 150)"><rect x="0.5" y="0.5" width="337" height="239" rx="7.5" fill="none" stroke="#E5E5E5" stroke-width="1"/><line x1="50" y1="200" x2="318" y2="200" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="204" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">0</text><line x1="50" y1="166" x2="318" y2="166" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="170" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">20</text><line x1="50" y1="132" x2="318" y2="132" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="136" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">40</text><line x1="50" y1="98" x2="318" y2="98" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="102" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">60</text><line x1="50" y1="64" x2="318" y2="64" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="68" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">80</text><line x1="50" y1="30" x2="318" y2="30" stroke="#EEEEEE" stroke-width="1" stroke-dasharray="0"/><text x="38" y="34" text-anchor="end" font-size="10" fill="#64748B" opacity="0.8" font-weight="500">100</text><path d="M 56 200 L 56 139.4 A 4 4 0 0 1 60 135.4 L 174 135.4 A 4 4 0 0 1 178 139.4 L 178 200 Z" fill="#FF6700"/><text x="117" y="127.4" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">38分</text><text x="117" y="224" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">行业平均</text><path d="M 190 200 L 190 96.9 A 4 4 0 0 1 194 92.9 L 308 92.9 A 4 4 0 0 1 312 96.9 L 312 200 Z" fill="#333333"/><text x="251" y="84.9" text-anchor="middle" font-size="14" fill="#1A1A1A" font-weight="600">63分</text><text x="251" y="224" text-anchor="middle" font-size="12" fill="#64748B" font-weight="500">本公司</text><line x1="42" y1="200" x2="318" y2="200" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/><line x1="50" y1="30" x2="50" y2="208" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/></g>
+
+      <text class="ppt-font-cn-body" x="24" y="425" font-size="15" fill="#444444">
+        <tspan x="24" dy="0">得分较行业平均水平高出 66%，</tspan>
+        <tspan x="24" dy="26">稳居全球行业领先梯队。</tspan>
+      </text>
+    </g>
+
+    <!-- Module 3: Honors (Right) -->
+    <g transform="translate(852, 110)">
+      <rect width="388" height="480" rx="16" fill="#FFFFFF" filter="url(#card-shadow)"/>
+      <text class="ppt-font-cn-heading" x="24" y="40" font-size="20" fill="#1A1A1A">蝉联福布斯全球权威榜单</text>
+
+      <!-- Honor Item 1 -->
+      <g transform="translate(24, 70)">
+        <rect width="340" height="185" rx="12" fill="#F9F9F9"/>
+        <circle cx="50" cy="50" r="28" fill="url(#grad-orange)" opacity="0.1"/>
+        <path d="M42 50 L48 56 L58 44" stroke="#FF6700" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text class="ppt-font-cn-heading" x="90" y="45" font-size="18" fill="#1A1A1A">2025 中国 ESG 50</text>
+        <text class="ppt-font-cn-body" x="90" y="70" font-size="14" fill="#FF6700">入选福布斯中国年度榜单</text>
+        <text class="ppt-font-cn-body" x="30" y="115" font-size="13" fill="#666666">
+          <tspan x="30" dy="0">作为行业标杆，凭借在环境治理与</tspan>
+          <tspan x="30" dy="22">社会贡献方面的卓越表现入选。</tspan>
+        </text>
+      </g>
+
+      <!-- Honor Item 2 -->
+      <g transform="translate(24, 275)">
+        <rect width="340" height="185" rx="12" fill="#F9F9F9"/>
+        <circle cx="50" cy="50" r="28" fill="#FFB800" opacity="0.1"/>
+        <path d="M50 36 L53 45 L62 45 L55 51 L58 60 L50 54 L42 60 L45 51 L38 45 L47 45 Z" fill="#FFB800"/>
+        <text class="ppt-font-cn-heading" x="90" y="45" font-size="18" fill="#1A1A1A">3 次入选最佳雇主</text>
+        <text class="ppt-font-cn-body" x="90" y="70" font-size="14" fill="#FFB800">蝉联福布斯“全球最佳雇主”</text>
+        <text class="ppt-font-cn-body" x="30" y="115" font-size="13" fill="#666666">
+          <tspan x="30" dy="0">三度蝉联，体现了公司在人才培养、</tspan>
+          <tspan x="30" dy="22">福利保障及职场文化上的领先地位。</tspan>
+        </text>
+      </g>
+    </g>
+
+    <!-- Bottom Line -->
+    <rect x="40" y="620" width="1200" height="60" rx="12" fill="#FFFFFF" filter="url(#card-shadow)"/>
+    <rect x="40" y="620" width="4" height="60" fill="#FF6700" rx="2"/>
+    <text class="ppt-font-cn-heading" x="640" y="656" text-anchor="middle" font-size="20" fill="#333333">“从行业追随者到可持续发展引领者：全方位构建全球化负责任企业典范。”</text>
+  </g>
+
+  <!-- LAYER 3: Header -->
+  <g id="header">
+    <rect x="40" y="46" width="6" height="26" rx="3" fill="#FF6700"/>
+    <text x="58" y="66" class="ppt-font-cn-heading" font-size="26" fill="#1A1A1A">ESG 与社会责任：评级上调至 A 级</text>
+  </g>
+</svg>
