@@ -1,0 +1,29 @@
+{
+ "file": "sandun_generated.pptx",
+ "bytes": 69830,
+ "slides": 15,
+ "charts": [],
+ "embeddings": [],
+ "media": [],
+ "svg": [],
+ "notesSlides": [],
+ "fonts": [],
+ "theme": [
+  "ppt/theme/theme1.xml"
+ ],
+ "totalParts": 66,
+ "hasChartXml": false,
+ "hasEmbeddedWorkbook": false,
+ "mediaExt": {},
+ "graphicTypes": {},
+ "tables": 0,
+ "chartRefs": 0,
+ "pictures": 0,
+ "shapes": 411,
+ "textRuns": 307,
+ "typefaces": {
+  "HarmonyOS Sans SC": 648,
+  "Calibri": 228,
+  "system-ui": 45
+ }
+}

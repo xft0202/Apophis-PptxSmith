@@ -78,6 +78,15 @@ Thumbs.db
 desktop.ini
 .DS_Store
 
+# --- 凭据（严禁入库） -------------------------------------------------------
+# 实测 SANDUN 等服务时使用的会话 token / cookie 快照
+research/experiments/sandun-live/session.json
+research/experiments/sandun-live/**/session.json
+**/session.json
+
+# 凭据文件（明文账号密码，仅本机）
+**/credentials.json
+
 # --- 本地临时 ---------------------------------------------------------------
 *.log
 tmp/
