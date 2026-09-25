@@ -1,0 +1,63 @@
+{
+  "generatedAt": "2026-09-25T15:48:35.970597+00:00",
+  "artifacts": [
+    {
+      "file": "经营摘要.docx",
+      "bytes": 38235,
+      "sha256": "d55c7a2ad3c15f3f27d11aaa68425c48f761569d3e63df5c7ef68fb89a4695b5"
+    },
+    {
+      "file": "财务数据.xlsx",
+      "bytes": 8269,
+      "sha256": "17bdf5a497b0bbe43fe5dc6124ba42b1adade795038c38a6371feb47313e8ead"
+    },
+    {
+      "file": "市场动态.pdf",
+      "bytes": 81769,
+      "sha256": "9a804463e0ef99aa82d687d3850115d3e857f2ef650dae5a1ec790c26c8064bf"
+    },
+    {
+      "file": "品牌参考.pptx",
+      "bytes": 45164,
+      "sha256": "2dd11e58f3c8e760a6eeb1d3770e4f930898bde2508379d0b0b0fdabe7a16e94"
+    },
+    {
+      "file": "fonts-manifest.json",
+      "bytes": 3544,
+      "sha256": "f88ba3a6664917051352f6911aeeeec972eabd3208b83e5ef4cd51f0a5171677"
+    }
+  ],
+  "pptxUnknownPart": {
+    "unknownPart": "ppt/unknown/pptXsmithFixture.xml",
+    "relsType": "http://example.invalid/relationships/pptXsmith-unknown-fixture",
+    "contentTypeOverride": "/ppt/unknown/pptXsmithFixture.xml",
+    "relsTarget": "unknown/pptXsmithFixture.xml",
+    "selfCheck": "paths consistent"
+  },
+  "facts": {
+    "fact-revenue-q2": {
+      "canonical": "15.1",
+      "unit": "亿元",
+      "source": "XLSX 主表 B2",
+      "conflict": "DOCX 写成 15.0"
+    },
+    "fact-budget-q2": {
+      "canonical": "18.6",
+      "unit": "亿元",
+      "source": "XLSX 预算列 E2",
+      "conflict": null
+    },
+    "fact-yoy-q2": {
+      "canonical": "+12.4",
+      "unit": "%",
+      "source": "XLSX 同比列 C2",
+      "conflict": "PDF 写成 +12.0%"
+    },
+    "fact-margin-q2": {
+      "canonical": "21.3",
+      "unit": "%",
+      "source": "XLSX 毛利列 D2",
+      "conflict": null
+    }
+  }
+}

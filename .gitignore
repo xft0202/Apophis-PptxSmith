@@ -5,16 +5,14 @@
 # ---------------------------------------------------------------------------
 
 # --- Spike / 实验产物 -------------------------------------------------------
-# 二进制 fixture 只由 manifest 的 sha256 锚定，不入库（见
-# research/experiments/2026-09-25_spike-D_fixture-manifest_季度经营汇报.md）
-research/experiments/spike-D-fixtures/
-research/experiments/**/*.docx
-research/experiments/**/*.xlsx
-research/experiments/**/*.pptx
-research/experiments/**/*.pdf
-research/experiments/**/*.ttf
-research/experiments/**/*.otf
-research/experiments/**/*.ttc
+# 只忽略二进制与产物；生成器/校验器脚本与 hash 清单必须入库（可复现性依赖它们）
+research/experiments/spike-D-fixtures/*.docx
+research/experiments/spike-D-fixtures/*.xlsx
+research/experiments/spike-D-fixtures/*.pptx
+research/experiments/spike-D-fixtures/*.pdf
+research/experiments/spike-D-fixtures/*.ttf
+research/experiments/spike-D-fixtures/*.otf
+research/experiments/spike-D-fixtures/*.ttc
 
 # --- 用户材料与交付物 -------------------------------------------------------
 # 用 /* 而非整体目录模式：整体忽略后 Git 不会下降进目录，! 例外将失效

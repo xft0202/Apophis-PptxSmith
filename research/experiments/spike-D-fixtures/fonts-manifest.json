@@ -1,0 +1,101 @@
+{
+  "manifestVersion": 1,
+  "generatedAt": "2026-09-25T15:48:35.970597+00:00",
+  "policy": {
+    "repoSafe": [
+      "SIL Open Font License 1.1",
+      "Apache-2.0"
+    ],
+    "hostOnly": [
+      "proprietary-host"
+    ],
+    "rule": "proprietary-host 字体只用于本机校准与验收，不得入库、不得随发行分发；任何商用字体上传路径必须单独处理授权（票 04 已冻结）。"
+  },
+  "targetSoftware": {
+    "name": "WPS Presentation",
+    "version": "11.8.2.8411",
+    "exe": "F:\\WPS Office\\11.8.2.8411\\office6\\wpp.exe",
+    "unverified": [
+      "Microsoft PowerPoint"
+    ]
+  },
+  "entries": [
+    {
+      "family": "Noto Sans SC Regular",
+      "file": "NotoSansSC-Regular.ttf",
+      "sha256": "740067329b5cc6684a8dd2333b76056d12a77575bfa674e2aa09e5a2549d6912",
+      "bytes": 10596388,
+      "license": "SIL Open Font License 1.1",
+      "kind": "open",
+      "embeddable": true,
+      "location": "research/experiments/spike-D-fixtures/",
+      "note": "OFL 允许嵌入与再分发；随发行需携带许可证文本与保留字体名。"
+    },
+    {
+      "family": "Noto Sans SC Bold",
+      "file": "NotoSansSC-Bold.ttf",
+      "sha256": "f4a52a8ae0a3073b2ead50322606c84feab2141db76a05c45acf1bfd821b6a6d",
+      "bytes": 10585904,
+      "license": "SIL Open Font License 1.1",
+      "kind": "open",
+      "embeddable": true,
+      "location": "research/experiments/spike-D-fixtures/",
+      "note": "OFL 允许嵌入与再分发；随发行需携带许可证文本与保留字体名。"
+    },
+    {
+      "family": "Microsoft YaHei",
+      "file": "msyh.ttc",
+      "sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f",
+      "bytes": 19704352,
+      "license": "proprietary-host",
+      "kind": "host-only",
+      "embeddable": false,
+      "location": "C:\\Windows\\Fonts\\msyh.ttc",
+      "note": "Spike B 实测 lineFactor=1.3198"
+    },
+    {
+      "family": "SimSun",
+      "file": "simsun.ttc",
+      "sha256": "1526ac24375f51f6eb73bc2d3f8072dbe4a80a3a65217677c9d9a84f67dab2ab",
+      "bytes": 18316748,
+      "license": "proprietary-host",
+      "kind": "host-only",
+      "embeddable": false,
+      "location": "C:\\Windows\\Fonts\\simsun.ttc",
+      "note": "Spike B 实测 lineFactor=1.1406"
+    },
+    {
+      "family": "SimHei",
+      "file": "simhei.ttf",
+      "sha256": "9b1959db3b3abeb7efdaec26edf7dfe871a6039de8d614af7248575207be629e",
+      "bytes": 9745792,
+      "license": "proprietary-host",
+      "kind": "host-only",
+      "embeddable": false,
+      "location": "C:\\Windows\\Fonts\\simhei.ttf",
+      "note": "仅宿主机存在，禁止入库或再分发。"
+    },
+    {
+      "family": "KaiTi",
+      "file": "simkai.ttf",
+      "sha256": "95b3e69321f4e55f6ecf36b29d1e31a0c1205acfde0117df6472a17494c3cbd2",
+      "bytes": 11779732,
+      "license": "proprietary-host",
+      "kind": "host-only",
+      "embeddable": false,
+      "location": "C:\\Windows\\Fonts\\simkai.ttf",
+      "note": "仅宿主机存在，禁止入库或再分发。"
+    },
+    {
+      "family": "FangSong",
+      "file": "simfang.ttf",
+      "sha256": "fb8fd25dd5ffb09951f54d2038b7a44405659dcf7db059f502a34d62e4d689ee",
+      "bytes": 10570564,
+      "license": "proprietary-host",
+      "kind": "host-only",
+      "embeddable": false,
+      "location": "C:\\Windows\\Fonts\\simfang.ttf",
+      "note": "仅宿主机存在，禁止入库或再分发。"
+    }
+  ]
+}

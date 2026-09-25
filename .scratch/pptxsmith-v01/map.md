@@ -30,7 +30,7 @@
 - [SANDUN 与竞品体验基准调查](../../research/2026-09-25_SANDUN与竞品体验基准.md)：汇总 SANDUN、Gamma、Plus AI、Gemini in Slides 的官方/实测交互证据和首次十分钟指标。
 - [跨项目长期架构全景证据与取舍矩阵](../../research/2026-09-25_跨项目长期架构全景证据与取舍矩阵.md)：记录 durable workflow、数据库/对象、身份、模型网关、PPTX、解析和完整架构组合的证据边界。
 - [Spike D 长期架构全景验证规格](../../research/experiments/2026-09-25_spike-D_长期架构全景验证规格.md)：统一四套架构的恢复、备份、权限、provider、PPTX、目标软件和 SANDUN 体验 fixture，未执行。
-- [Spike D Fixture Manifest：季度经营汇报](../../research/experiments/2026-09-25_spike-D_fixture-manifest_季度经营汇报.md)：固定事实、冲突、排版、安全、角色和输出 manifest；二进制材料与 hash 尚未生成。
+- [Spike D Fixture Manifest：季度经营汇报](../../research/experiments/2026-09-25_spike-D_fixture-manifest_季度经营汇报.md)：固定事实、冲突、排版、安全、角色和输出 manifest；**二进制材料已生成并通过 49/49 输入契约自检**（五件、hash 已回填），但四套架构一次未跑。
 - [冻结架构决策驱动与质量属性](issues/13-冻结架构决策驱动与质量属性.md)：质量属性、证据等级和硬淘汰条件已冻结；长期生产基础原则已明确要求第一天使用经评审的长期数据/文件/权限基础。
 - [冻结长期架构形态](issues/22-冻结长期架构形态.md)：家族级形态冻结为「控制面 + durable workflow + 专用文档流水线 + PostgreSQL 事实库 + S3-compatible 对象合同 + 长期身份/审计/观测边界」；列出 9 条不可逆合同、7 类可延后但契约形状固定的实现、5 类明确排除的形态；不预判任何实现语言。
 - [验收宿主与部署宿主分离](../../docs/adr/0013-验收宿主与部署宿主分离.md)：Linux Docker 是唯一部署形态，Windows 只是维护者侧质检与测量仪器；当前唯一验收宿主是 WPS 演示 11.8.2.8411，本机无 Microsoft PowerPoint，已按方案 A 接受为未验证并以保守余量与审计明示补强。

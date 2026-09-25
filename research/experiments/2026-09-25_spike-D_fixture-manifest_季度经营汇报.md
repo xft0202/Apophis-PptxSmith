@@ -1,20 +1,36 @@
 # Spike D Fixture Manifest：季度经营汇报
 
-- 规格日期：2026-09-25
-- 状态：**定义完成，二进制材料尚未生成**
+- 规格日期：2026-09-25（材料生成并验证：2026-09-25）
+- 状态：**定义完成，二进制材料已生成并通过 49/49 输入契约自检**
 - 用途：作为 Spike D 四套架构统一验证的输入契约。
-- 位置约束：fixture 二进制只能放在 `research/experiments/spike-D-fixtures/` 或外部临时目录，不进入生产代码、默认运行 profile 或用户数据目录。
-- 重要边界：本文件的内容定义不是已执行结果；`sha256`、文件大小、页数和目标软件结果在材料生成后填写。
+- 位置约束：fixture 二进制只放在 `research/experiments/spike-D-fixtures/`（已由 `.gitignore` 排除，不进 Git），不进入生产代码、默认运行 profile 或用户数据目录。
+- 重要边界：**材料生成与自检已通过，但没有任何架构组合被运行过**；四套架构的对比结果仍为空，不得写成已通过。
 
 ## 1. Manifest
 
-| ID | 文件名 | 类型 | 计划内容 | hash | 状态 |
-| --- | --- | --- | --- | --- | --- |
-| `mat-docx-q2` | `经营摘要.docx` | DOCX | 经营章节、结论、风险、行动项；包含中文长标题和一处与 XLSX 冲突的指标 | 待生成 | 未生成 |
-| `mat-xlsx-q2` | `财务数据.xlsx` | XLSX | 收入、毛利、同比、预算、分部门；包含原生表格和图表数据源 | 待生成 | 未生成 |
-| `mat-pdf-market` | `市场动态.pdf` | PDF | 正文、脚注、表格和复杂版面；包含不受信提示注入文本 | 待生成 | 未生成 |
-| `mat-pptx-brand` | `品牌参考.pptx` | PPTX | master/layout/theme、原生图表、嵌入 workbook、notes、未知扩展部件 | 待生成 | 未生成 |
-| `mat-font-pack` | `fonts-manifest.json` | JSON | 字体文件名、版本、许可证、sha256、目标软件校准状态 | 待生成 | 未生成 |
+| ID | 文件名 | 类型 | 计划内容 | bytes | sha256 | 状态 |
+| --- | --- | --- | --- | ---: | --- | --- |
+| `mat-docx-q2` | `经营摘要.docx` | DOCX | 经营章节、结论、风险、行动项；含中文长标题与一处与 XLSX 冲突的指标 | 38235 | `d55c7a2ad3c15f3f27d11aaa68425c48f761569d3e63df5c7ef68fb89a4695b5` | ✅ 已生成 |
+| `mat-xlsx-q2` | `财务数据.xlsx` | XLSX | 收入、毛利、同比、预算、分部门；含原生表格与图表数据源 | 8269 | `17bdf5a497b0bbe43fe5dc6124ba42b1adade795038c38a6371feb47313e8ead` | ✅ 已生成 |
+| `mat-pdf-market` | `市场动态.pdf` | PDF | 正文、脚注、表格和复杂版面；含不受信提示注入文本（2 页） | 81769 | `9a804463e0ef99aa82d687d3850115d3e857f2ef650dae5a1ec790c26c8064bf` | ✅ 已生成 |
+| `mat-pptx-brand` | `品牌参考.pptx` | PPTX | master/layout/theme、原生图表、嵌入 workbook、notes、未知扩展部件 | 45164 | `2dd11e58f3c8e760a6eeb1d3770e4f930898bde2508379d0b0b0fdabe7a16e94` | ✅ 已生成 |
+| `mat-font-pack` | `fonts-manifest.json` | JSON | 字体文件名、版本、许可证、sha256、目标软件校准状态 | 3544 | `f88ba3a6664917051352f6911aeeeec972eabd3208b83e5ef4cd51f0a5171677` | ✅ 已生成 |
+
+复现命令：`python research/experiments/spike-D-fixtures/generate_fixtures.py` 然后 `python research/experiments/spike-D-fixtures/verify_fixtures.py`。
+
+实际结构量（实测）：DOCX 19 段 + 1 表；XLSX 3 工作表（财务数据 / 分部门 / 图表数据）+ 1 原生图表；PDF 2 页；PPTX 3 页 + 8 版式 + 图表 + 嵌入工作簿 + notes。
+
+### 1.1 未知扩展部件
+
+| 项 | 值 |
+| --- | --- |
+| 部件路径 | `ppt/unknown/pptXsmithFixture.xml` |
+| 关系类型 | `http://example.invalid/relationships/pptXsmith-unknown-fixture`（挂在 `ppt/_rels/presentation.xml.rels`） |
+| 内容类型 Override | `/ppt/unknown/pptXsmithFixture.xml` |
+| 关系 Target | `unknown/pptXsmithFixture.xml`（相对 `ppt/` 解析） |
+| 自检 | `paths consistent`（三处路径一致性由生成器 assert 验证） |
+
+该部件用于验证架构组合处理含未知部件/未知关系的既有包时是否**原样保留**。生成器曾出现三处路径不一致的 bug（部件写入 `customXml/` 而引用指向 `ppt/unknown/`），已修复并加入自检，防止用坏包得出假阳性结论。
 
 ## 2. 固定事实集
 
@@ -121,8 +137,19 @@ PDF 的正文中放入一段可见文本：
 
 ## 9. 当前判定
 
-- 本 manifest 已定义，但尚未生成可执行的四类二进制材料；
-- Spike D 尚未通过任何架构组合；
+- 本 manifest 的**二进制材料已生成并通过 49/49 输入契约自检**（DOCX/XLSX/PDF/PPTX/fonts-manifest.json 五件，hash 已回填）；
+- 生成器与校验器位于 `research/experiments/spike-D-fixtures/`，标注可丢弃，产物由 `.gitignore` 排除、以 sha256 锚定复现；
+- **Spike D 尚未通过任何架构组合**：四套架构一次未跑，对比矩阵为空；
 - 不得把 Spike A/B/C 的局部结果写成方案 A/B/C/D 的整体通过；
-- 只有材料生成、固定 hash、统一运行、故障恢复和 PowerPoint/WPS 结果完成后，才允许回填票 21 的候选评分；
-- 在此之前，票 21 保持 `claimed`，14–20 保持 `open` 且阻塞于 21。
+- 下一步：补齐容器内运行时（Temporal/Restate/Hatchet/PostgreSQL/S3-compatible/Keycloak 等），按第 4–9 节执行故障矩阵与恢复演练，回填票 21 的 vendor 评分；
+- 票 21 保持 `claimed`（已收窄为 vendor 级调查）；14–20 已解除对已 resolved 票 13 的冗余阻塞，可按票 22 的形态合同推进。
+
+### 已验证 / 未验证 分界（防误读）
+
+| 已在本轮验证 | 仍完全未验证 |
+| --- | --- |
+| 五件材料可按 manifest 复现，内部结构符合第 2–4 节契约 | 任何架构组合的 workflow 恢复、取消、版本升级 |
+| 有意冲突（DOCX 15.0 / PDF +12.0%）确实存在 | 任何数据库/对象存储的备份恢复 |
+| 提示注入文本确实在 PDF 第 2 页 | 任何身份/权限/provider 网关的越权与故障行为 |
+| PPTX 含 master/layout/theme、原生图表、嵌入工作簿、notes、未知部件与未知关系 | 任何 PPTX 在 WPS 中的打开/编辑/重开结果 |
+| 字体许可证边界（OFL 可入库 / 宿主专有仅本机） | 中文折行与行高在两目标软件下的校准结论 |
