@@ -5,7 +5,12 @@
 # ---------------------------------------------------------------------------
 
 # --- Spike / 实验产物 -------------------------------------------------------
-# 只忽略二进制与产物；生成器/校验器脚本与 hash 清单必须入库（可复现性依赖它们）
+# 两类产物，处理方式不同：
+#   A) 可由脚本一条命令重建的 → 不入库，只留脚本 + hash 清单
+#   B) 作为证据被报告直接引用的 → 入库（体积小且是结论的支撑）
+#
+# A 类：spike-D fixture 五件材料（generate_fixtures.py 可确定性重建，
+# 已实测三轮 hash 一致）。manifest 记录 sha256，见 spike-D-fixtures/README.md。
 research/experiments/spike-D-fixtures/*.docx
 research/experiments/spike-D-fixtures/*.xlsx
 research/experiments/spike-D-fixtures/*.pptx
@@ -13,6 +18,17 @@ research/experiments/spike-D-fixtures/*.pdf
 research/experiments/spike-D-fixtures/*.ttf
 research/experiments/spike-D-fixtures/*.otf
 research/experiments/spike-D-fixtures/*.ttc
+research/experiments/spike-D-fixtures/*.norm
+
+# B 类保留（勿加排除规则，否则报告引用的证据会消失）：
+#   research/experiments/spike-E/          ← A 级语义验收的产物与渲染证据
+#   research/experiments/sandun-raw/covers/ ← 四份案例封面（视觉取证实物）
+#   research/experiments/sandun-raw/slides-svg/ ← 页面 SVG 源码
+
+# 通用规则：任何实验目录下的临时/归一化中间文件都不入库
+research/experiments/**/*.norm
+research/experiments/**/.nested-*
+research/experiments/**/*.tmp
 
 # --- 用户材料与交付物 -------------------------------------------------------
 # 用 /* 而非整体目录模式：整体忽略后 Git 不会下降进目录，! 例外将失效
