@@ -1,0 +1,71 @@
+# ---------------------------------------------------------------------------
+# Apophis-PptxSmith 仓库忽略规则
+# 原则：决策与研究文本（research/*.md、.scratch/**）必须入库；
+#       实验二进制与运行产物不入库，由 manifest 记录 sha256 复现。
+# ---------------------------------------------------------------------------
+
+# --- Spike / 实验产物 -------------------------------------------------------
+# 二进制 fixture 只由 manifest 的 sha256 锚定，不入库（见
+# research/experiments/2026-09-25_spike-D_fixture-manifest_季度经营汇报.md）
+research/experiments/spike-D-fixtures/
+research/experiments/**/*.docx
+research/experiments/**/*.xlsx
+research/experiments/**/*.pptx
+research/experiments/**/*.pdf
+research/experiments/**/*.ttf
+research/experiments/**/*.otf
+research/experiments/**/*.ttc
+
+# --- 用户材料与交付物 -------------------------------------------------------
+# 用 /* 而非整体目录模式：整体忽略后 Git 不会下降进目录，! 例外将失效
+input/*
+output/*
+!input/.gitkeep
+!output/.gitkeep
+
+# --- 运行时与构建产物 -------------------------------------------------------
+node_modules/
+dist/
+build/
+out/
+.next/
+target/
+bin/
+obj/
+*.tsbuildinfo
+
+# --- Python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# --- 环境与密钥（严禁入库） -------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# --- 编辑器与系统 -----------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# --- 本地临时 ---------------------------------------------------------------
+*.log
+tmp/
+temp/
+.cache/
