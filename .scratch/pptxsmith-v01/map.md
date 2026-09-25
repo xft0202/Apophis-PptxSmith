@@ -16,6 +16,13 @@
 - **架构地基规则**：单节点/一键部署不等于临时技术；生产数据库、对象存储、备份、身份、任务恢复、审计和供应链从第一天按长期合同建设，禁止把 SQLite、本地生产文件、仅进程内队列或计划迁移组件放入受支持路径。
 - 决策票类型：`grilling` 需要所有者判断；`research` 由联网/源码调查解决事实；`prototype` 用具体低保真产物帮助决策；`task` 只做阻塞决策的准备工作。
 - **研究实验物豁免**（所有者 2026-09-25 授权）：为执行 Spike D 而生成的二进制 fixture 与四套架构的最小验证原型，允许存在于 `research/experiments/` 并明确标注「可丢弃」，以换取真实恢复/升级/验收证据。该豁免只覆盖夹具与验证原型，不授权创建生产脚手架、生产 monorepo 或任何进入 v0.1 主线的代码。
+- **环境约束**（本项目实测 2026-09-25，详见 `docs/目标软件验收矩阵.md` 与 ADR-0011）：
+  - 唯一部署形态是 **Linux 服务器 + Docker Compose**；用户安装项恒为「Docker + 自己的模型 key」，零其他安装；
+  - **验收宿主 ≠ 部署宿主**：Windows 只是维护者侧质检与测量仪器，不进生产镜像/依赖树/安装步骤；脚本与产物隔离在 `research/experiments/`；
+  - 唯一验收宿主是本机 **WPS 演示 11.8.2.8411**（`F:\WPS Office\11.8.2.8411\office6\wpp.exe`）；**本机无 Microsoft PowerPoint**，该侧已按方案 A 接受为未验证；
+  - **不建第二台机器**：S4/S5 所需的 .NET SDK、Rust、Temporal/Restate/Hatchet、PostgreSQL、对象存储、身份与 provider gateway 全部在 Docker Desktop（29.7.2 / Compose v5.4.0 / 6 CPU / 8 GB）容器内运行，与生产形态同构；
+  - **不要在 Windows 宿主机上验证架构或数据库**，容器优先；
+  - WPS 的 COM 自动化服务器注册在 **32 位（WoW6432Node）** 节点：自动化验收脚本须以 x86 目标编译或经 32 位宿主调用；`PowerPoint.Application` 与 `KWPP.Application` 指向同一 `wpp.exe`，脚本必须显式断言宿主身份，不能靠 ProgID 判断。
 
 ## Decisions so far
 
@@ -25,13 +32,15 @@
 - [Spike D 长期架构全景验证规格](../../research/experiments/2026-09-25_spike-D_长期架构全景验证规格.md)：统一四套架构的恢复、备份、权限、provider、PPTX、目标软件和 SANDUN 体验 fixture，未执行。
 - [Spike D Fixture Manifest：季度经营汇报](../../research/experiments/2026-09-25_spike-D_fixture-manifest_季度经营汇报.md)：固定事实、冲突、排版、安全、角色和输出 manifest；二进制材料与 hash 尚未生成。
 - [冻结架构决策驱动与质量属性](issues/13-冻结架构决策驱动与质量属性.md)：质量属性、证据等级和硬淘汰条件已冻结；长期生产基础原则已明确要求第一天使用经评审的长期数据/文件/权限基础。
+- [验收宿主与部署宿主分离](../../docs/adr/0011-验收宿主与部署宿主分离.md)：Linux Docker 是唯一部署形态，Windows 只是维护者侧质检与测量仪器；当前唯一验收宿主是 WPS 演示 11.8.2.8411，本机无 Microsoft PowerPoint，已按方案 A 接受为未验证并以保守余量与审计明示补强。
 
 ## Not yet specified
 
 - 受控补丁何时重启、首个支持对象边界与旧稿保护承诺；
 - 从既有 PPTX 提取风格包的输入协议和授权边界；
+- **Microsoft PowerPoint 验收宿主的长期方案**：是否引入第二台机器/VM 与正版 Office 授权，或长期只以 WPS 为主验收目标；留待 01 总架构定稿时决定（当前按方案 A 接受未验证）；
+- **WPS 版本跨度**：11.8.2.8411 属较早期专业版，与新版个人版/专业版的行为差异未测；若目标用户多在较新版本，校准与探针需在新版本复跑；
 - 风格包 v1 以外的场景包（党政、咨询、学术、培训等）及发布标准；
-- WPS 与 Microsoft PowerPoint 的双目标验收矩阵细节；
 - 模型成本预算、并发、任务取消与失败重试的产品策略；
 - Rust 客户端的离线能力、同步协议与何时启动；
 - 社区治理、版本支持周期、贡献者晋升和安全响应细则。
