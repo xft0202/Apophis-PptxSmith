@@ -1,0 +1,403 @@
+{
+ "scanned_at": "2026-09-26T17:00:42+0800",
+ "candidates": {
+  "betteroffice": {
+   "repo": "openooxml/betteroffice",
+   "stars": 249,
+   "archived": false,
+   "open_issues": 59,
+   "created_at": "2026-07-11",
+   "pushed_at": "2026-09-26",
+   "license": "Apache-2.0",
+   "language": "Rust",
+   "description": "Native OOXML engines in Rust - DOCX, XLSX & PPTX editing, rendering and real-time collaboration, compiled to WASM for the web.",
+   "releases": [
+    {
+     "tag": "@betteroffice/xlsx@0.2.1",
+     "published": "2026-09-16"
+    },
+    {
+     "tag": "@betteroffice/xlsx@0.2.0",
+     "published": "2026-09-16"
+    },
+    {
+     "tag": "@betteroffice/xlsx-react@0.2.1",
+     "published": "2026-09-16"
+    }
+   ],
+   "commits_180d": 100,
+   "commits_180d_human": 99,
+   "commits_180d_authors": 4,
+   "top_author_180d": {
+    "eliahilse": 94,
+    "dsaad68": 4,
+    "xhayankhan": 1
+   },
+   "last_commit": "2026-09-26",
+   "top_contributor": "eliahilse",
+   "top_contributor_pct": 71,
+   "top3_pct": 91,
+   "contributors_count": 14,
+   "verdict": "观察（新项目但极活跃）"
+  },
+  "office_oxide": {
+   "repo": "yfedoseev/office_oxide",
+   "stars": 136,
+   "archived": false,
+   "open_issues": 8,
+   "created_at": "2026-03-01",
+   "pushed_at": "2026-09-23",
+   "license": "Apache-2.0",
+   "language": "Rust",
+   "description": "The fastest Office document library for Python, Rust, Go, JS/TS, C# and WASM. DOCX, XLSX, PPTX, DOC, XLS, PPT. Up to 100× faster than python-docx/openpyxl/python-pptx. 100% pass rate on valid Office f",
+   "releases": [
+    {
+     "tag": "v0.1.12",
+     "published": "2026-09-21"
+    },
+    {
+     "tag": "v0.1.11",
+     "published": "2026-09-11"
+    },
+    {
+     "tag": "v0.1.10",
+     "published": "2026-09-08"
+    }
+   ],
+   "commits_180d": 91,
+   "commits_180d_human": 66,
+   "commits_180d_authors": 8,
+   "top_author_180d": {
+    "yfedoseev": 58,
+    "dependabot[bot]": 25,
+    "xugangqiang": 2
+   },
+   "last_commit": "2026-09-21",
+   "top_contributor": "yfedoseev",
+   "top_contributor_pct": 64,
+   "top3_pct": 94,
+   "contributors_count": 7,
+   "verdict": "观察（新项目但极活跃）"
+  },
+  "ppt-rs": {
+   "repo": "yingkitw/ppt-rs",
+   "stars": 49,
+   "archived": false,
+   "open_issues": 8,
+   "created_at": "2025-11-26",
+   "pushed_at": "2026-09-20",
+   "license": "Apache-2.0",
+   "language": "Rust",
+   "description": "The Rust library for generating PowerPoint presentations that actually works.",
+   "releases": [],
+   "commits_180d": 30,
+   "commits_180d_human": 30,
+   "commits_180d_authors": 1,
+   "top_author_180d": {
+    "yingkitw": 30
+   },
+   "last_commit": "2026-09-20",
+   "top_contributor": "yingkitw",
+   "top_contributor_pct": 100,
+   "top3_pct": 100,
+   "contributors_count": 1,
+   "verdict": "淘汰（G1无发版）"
+  },
+  "pptx-template": {
+   "repo": "m3dev/pptx-template",
+   "stars": 119,
+   "archived": false,
+   "open_issues": 12,
+   "created_at": "2017-06-08",
+   "pushed_at": "2025-12-26",
+   "license": "Apache-2.0",
+   "language": "Python",
+   "description": "Build PowerPoint presentation from template(pptx) and model(json) data like other template engines",
+   "releases": [
+    {
+     "tag": "1.0.0",
+     "published": "2025-12-26"
+    },
+    {
+     "tag": "0.2.8",
+     "published": "2019-05-07"
+    }
+   ],
+   "commits_180d": 0,
+   "commits_180d_human": 0,
+   "commits_180d_authors": 0,
+   "top_author_180d": {},
+   "last_commit": "2025-12-26",
+   "top_contributor": "pjbollinger",
+   "top_contributor_pct": 27,
+   "top3_pct": 64,
+   "contributors_count": 7,
+   "verdict": "淘汰（G2近180天无提交）"
+  },
+  "pptxtojson": {
+   "repo": "pipipi-pikachu/pptxtojson",
+   "stars": 456,
+   "archived": false,
+   "open_issues": 6,
+   "created_at": "2022-04-08",
+   "pushed_at": "2026-09-19",
+   "license": "MIT",
+   "language": "JavaScript",
+   "description": "Office PowerPoint(.pptx) file to JSON | 将 PPTX 文件转为可读的 JSON 数据",
+   "releases": [
+    {
+     "tag": "v2.0.1",
+     "published": "2026-04-15"
+    },
+    {
+     "tag": "1.5.0",
+     "published": "2025-06-22"
+    },
+    {
+     "tag": "v1.1.0",
+     "published": "2024-12-22"
+    }
+   ],
+   "commits_180d": 41,
+   "commits_180d_human": 41,
+   "commits_180d_authors": 4,
+   "top_author_180d": {
+    "hy16657": 20,
+    "pipipi-pikachu": 17,
+    "electroluxcode": 3
+   },
+   "last_commit": "2026-09-19",
+   "top_contributor": "hy16657",
+   "top_contributor_pct": 49,
+   "top3_pct": 99,
+   "contributors_count": 5,
+   "verdict": "过门"
+  },
+  "undoc": {
+   "repo": "iyulab/undoc",
+   "stars": 36,
+   "archived": false,
+   "open_issues": 2,
+   "created_at": "2025-12-20",
+   "pushed_at": "2026-09-21",
+   "license": "MIT",
+   "language": "Rust",
+   "description": "High-performance Rust library for extracting content from DOCX, XLSX, and PPTX into Markdown, plain text, or JSON with CJK support and .NET/Python bindings.",
+   "releases": [
+    {
+     "tag": "v0.12.0",
+     "published": "2026-09-21"
+    },
+    {
+     "tag": "v0.11.0",
+     "published": "2026-09-11"
+    },
+    {
+     "tag": "v0.10.0",
+     "published": "2026-09-09"
+    }
+   ],
+   "commits_180d": 100,
+   "commits_180d_human": 100,
+   "commits_180d_authors": 3,
+   "top_author_180d": {
+    "birdnamoo": 76,
+    "unjong": 17,
+    "dalbitglow": 7
+   },
+   "last_commit": "2026-09-21",
+   "top_contributor": "birdnamoo",
+   "top_contributor_pct": 86,
+   "top3_pct": 98,
+   "contributors_count": 5,
+   "verdict": "降级/隔离（G4头号86%）"
+  },
+  "genoffice": {
+   "repo": "genspark-ai/genoffice",
+   "stars": 7759,
+   "archived": false,
+   "open_issues": 174,
+   "created_at": "2026-07-31",
+   "pushed_at": "2026-09-26",
+   "license": "Apache-2.0",
+   "language": "TypeScript",
+   "description": "Free, open-source AI Office suite: Docs, Sheets, Slides, PDF, Markdown and HTML editors with a built-in AI agent, plus a `genoffice` CLI and agent skill so Claude Code, Codex and Cursor can create and",
+   "releases": [
+    {
+     "tag": "v0.10.1038",
+     "published": "2026-09-22"
+    },
+    {
+     "tag": "v0.10.915",
+     "published": "2026-09-21"
+    },
+    {
+     "tag": "v0.10.639",
+     "published": "2026-09-17"
+    }
+   ],
+   "commits_180d": 100,
+   "commits_180d_human": 100,
+   "commits_180d_authors": 3,
+   "top_author_180d": {
+    "aniruddhaadak80": 88,
+    "GoodScholar": 10,
+    "tokg-venv": 2
+   },
+   "last_commit": "2026-09-26",
+   "top_contributor": "aniruddhaadak80",
+   "top_contributor_pct": 72,
+   "top3_pct": 87,
+   "contributors_count": 28,
+   "verdict": "观察（新项目但极活跃）"
+  },
+  "ai-to-pptx": {
+   "repo": "SmartSchoolAI/ai-to-pptx",
+   "stars": 1457,
+   "archived": false,
+   "open_issues": 5,
+   "created_at": "2024-02-16",
+   "pushed_at": "2026-06-12",
+   "license": "GPL-3.0",
+   "language": "TypeScript",
+   "description": "前端后端同时开源。 Ai-to-pptx是一个使用AI技术(DeepSeek)制作PPTX的助手，支持在线生成和导出PPTX。 主要功能: 1 使用DeepSeek等大语言模型来生成大纲 2 生成PPTX的时候可以选择不同的模板 3 支持导出PPTX",
+   "releases": [
+    {
+     "tag": "0.2",
+     "published": "2025-02-10"
+    }
+   ],
+   "commits_180d": 1,
+   "commits_180d_human": 1,
+   "commits_180d_authors": 1,
+   "top_author_180d": {
+    "SmartSchoolAI": 1
+   },
+   "last_commit": "2026-06-12",
+   "top_contributor": "SmartSchoolAI",
+   "top_contributor_pct": 58,
+   "top3_pct": 86,
+   "contributors_count": 4,
+   "verdict": "淘汰（G1发版超12月）"
+  },
+  "aspose-foss-py": {
+   "repo": "aspose-slides-foss/Aspose.Slides-FOSS-for-Python",
+   "stars": 4,
+   "archived": false,
+   "open_issues": 0,
+   "created_at": "2026-03-04",
+   "pushed_at": "2026-09-23",
+   "license": "MIT",
+   "language": "Python",
+   "description": "Open-source Python library for creating, reading and editing PowerPoint (.pptx) presentations — slides, shapes, text, tables, charts, animations, transitions and Markdown export. MIT licensed.",
+   "releases": [
+    {
+     "tag": "26.8.0",
+     "published": "2026-07-28"
+    },
+    {
+     "tag": "26.4.0",
+     "published": "2026-04-19"
+    },
+    {
+     "tag": "26.3.1",
+     "published": "2026-03-05"
+    }
+   ],
+   "commits_180d": 52,
+   "commits_180d_human": 52,
+   "commits_180d_authors": 3,
+   "top_author_180d": {
+    "yury-knml": 47,
+    "?": 3,
+    "babar-raza": 2
+   },
+   "last_commit": "2026-09-23",
+   "top_contributor": "yury-knml",
+   "top_contributor_pct": 92,
+   "top3_pct": 100,
+   "contributors_count": 3,
+   "verdict": "观察（新项目但极活跃；G4头号92%）"
+  },
+  "ppt-rs-alt": {
+   "repo": "yingkitw/ppt-rs",
+   "stars": 49,
+   "archived": false,
+   "open_issues": 8,
+   "created_at": "2025-11-26",
+   "pushed_at": "2026-09-20",
+   "license": "Apache-2.0",
+   "language": "Rust",
+   "description": "The Rust library for generating PowerPoint presentations that actually works.",
+   "releases": [],
+   "commits_180d": 30,
+   "commits_180d_human": 30,
+   "commits_180d_authors": 1,
+   "top_author_180d": {
+    "yingkitw": 30
+   },
+   "last_commit": "2026-09-20",
+   "top_contributor": "yingkitw",
+   "top_contributor_pct": 100,
+   "top3_pct": 100,
+   "contributors_count": 1,
+   "verdict": "淘汰（G1无发版）"
+  },
+  "html2pptx": {
+   "repo": "abdelkrimkr/html2pptx",
+   "stars": 24,
+   "archived": false,
+   "open_issues": 11,
+   "created_at": "2025-10-18",
+   "pushed_at": "2026-07-18",
+   "license": null,
+   "language": "JavaScript",
+   "description": "Automatically convert HTML files to PowerPoint presentations - Command-line tool and Node.js library",
+   "releases": [],
+   "commits_180d": 24,
+   "commits_180d_human": 14,
+   "commits_180d_authors": 3,
+   "top_author_180d": {
+    "abdelkrimkr": 13,
+    "google-labs-jules[bot]": 10,
+    "abewthomas": 1
+   },
+   "last_commit": "2026-07-18",
+   "top_contributor": "abdelkrimkr",
+   "top_contributor_pct": 63,
+   "top3_pct": 100,
+   "contributors_count": 3,
+   "verdict": "淘汰（G1无发版）"
+  },
+  "pptx-designer": {
+   "repo": "sunchaokun/pptx-designer",
+   "stars": 4,
+   "archived": false,
+   "open_issues": 0,
+   "created_at": "2026-08-24",
+   "pushed_at": "2026-08-31",
+   "license": "MIT",
+   "language": "Python",
+   "description": "Code-first Python library for generating editable PowerPoint presentations with native PPTX objects, SVG support, and LLM-friendly build APIs.",
+   "releases": [
+    {
+     "tag": "v1.0.0b10",
+     "published": "2026-09-03"
+    }
+   ],
+   "commits_180d": 44,
+   "commits_180d_human": 44,
+   "commits_180d_authors": 2,
+   "top_author_180d": {
+    "?": 43,
+    "sunchaokun": 1
+   },
+   "last_commit": "2026-08-31",
+   "top_contributor": "sunchaokun",
+   "top_contributor_pct": 100,
+   "top3_pct": 100,
+   "contributors_count": 1,
+   "verdict": "观察（新项目但极活跃；G4头号100%）"
+  }
+ }
+}
