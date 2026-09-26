@@ -16,9 +16,9 @@
 | `verify_fixtures.py` | 在跑架构之前校验材料自身是否满足输入契约（当前 49/49 通过） |
 | `fixtures-hashes.json` | 产物 bytes 与 sha256、未知部件路径、固定事实集 |
 | `fonts-manifest.json` | 字体许可证与校准状态（OFL 可入库 / 宿主专有仅本机） |
-| `NotoSansSC-Regular.ttf` / `NotoSansSC-Bold.ttf` | 从本机 `NotoSansSC-VF.ttf` 实例化的静态字重（OFL 1.1，`fsType: 0` 可嵌入） |
+| ~~`NotoSansSC-*.ttf`~~ | **已于 2026-09-26 删除**（21 MB）。运行 `generate_fixtures.py` 会自动从宿主 `C:\Windows\Fonts\NotoSansSC-VF.ttf` 重新实例化 |
 
-输入契约的权威定义在 `../2026-09-25_spike-D_fixture-manifest_季度经营汇报.md`。
+输入契约的权威定义在 `../../archive/旧调研与规格/2026-09-25_spike-D_fixture-manifest_季度经营汇报.md`（**已归档**）。
 
 ## 复现
 

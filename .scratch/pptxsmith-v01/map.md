@@ -61,10 +61,10 @@
 ## Decisions so far
 
 - [中文字体与校准矩阵方案](issues/04-中文字体与校准矩阵方案.md)：固定静态 Source Han Sans/Noto CJK 基线，统一使用 HarfBuzz-backed shaping，按字体×目标软件二维校准；商用字体上传必须单独处理授权。
-- [SANDUN 与竞品体验基准调查](../../research/2026-09-25_SANDUN与竞品体验基准.md)：汇总 SANDUN、Gamma、Plus AI、Gemini in Slides 的官方/实测交互证据和首次十分钟指标。
-- [跨项目长期架构全景证据与取舍矩阵](../../research/2026-09-25_跨项目长期架构全景证据与取舍矩阵.md)：记录 durable workflow、数据库/对象、身份、模型网关、PPTX、解析和完整架构组合的证据边界。
-- [Spike D 长期架构全景验证规格](../../research/experiments/2026-09-25_spike-D_长期架构全景验证规格.md)：统一四套架构的恢复、备份、权限、provider、PPTX、目标软件和 SANDUN 体验 fixture，未执行。
-- [Spike D Fixture Manifest：季度经营汇报](../../research/experiments/2026-09-25_spike-D_fixture-manifest_季度经营汇报.md)：固定事实、冲突、排版、安全、角色和输出 manifest；**二进制材料已生成并通过 49/49 输入契约自检**（五件、hash 已回填），但四套架构一次未跑。
+- [SANDUN 与竞品体验基准调查](../../research/archive/旧调研与规格/2026-09-25_SANDUN与竞品体验基准.md)：汇总 SANDUN、Gamma、Plus AI、Gemini in Slides 的官方/实测交互证据和首次十分钟指标。
+- [跨项目长期架构全景证据与取舍矩阵](../../research/archive/旧调研与规格/2026-09-25_跨项目长期架构全景证据与取舍矩阵.md)：记录 durable workflow、数据库/对象、身份、模型网关、PPTX、解析和完整架构组合的证据边界。
+- [Spike D 长期架构全景验证规格](../../research/archive/旧调研与规格/2026-09-25_spike-D_长期架构全景验证规格.md)：统一四套架构的恢复、备份、权限、provider、PPTX、目标软件和 SANDUN 体验 fixture，未执行。
+- [Spike D Fixture Manifest：季度经营汇报](../../research/archive/旧调研与规格/2026-09-25_spike-D_fixture-manifest_季度经营汇报.md)：固定事实、冲突、排版、安全、角色和输出 manifest；**二进制材料已生成并通过 49/49 输入契约自检**（五件、hash 已回填），但四套架构一次未跑。
 - [冻结架构决策驱动与质量属性](issues/13-冻结架构决策驱动与质量属性.md)：质量属性、证据等级和硬淘汰条件已冻结；长期生产基础原则已明确要求第一天使用经评审的长期数据/文件/权限基础。
 - **交互与前端基线（所有者 2026-09-26，经澄清）**：所有者认可 SANDUN 的
   **交互方式与前端设计**，作为**借鉴样本而非照抄对象**——
@@ -136,7 +136,7 @@
 
 ## Frontier
 
-当前处理 **引擎能力对比**：**[引擎能力对比：Open XML SDK vs Apache POI（同题实测）](issues/23-引擎能力对比_SDK与POI同题实测.md)**。
+当前处理 **引擎能力对比**：**[引擎能力实测：按产物技术需求逐条验收（含商业 SDK 能力基线）](issues/23-引擎能力实测_按产物需求逐条验收.md)**。
 
 活跃度门槛已筛完（票 02 关闭）：10 个候选只剩 2 个过门。接下来只回答一件事：
 **过门的两个候选，在我们的产品承诺上谁更强**——判据是 PPTX 交付本身，
