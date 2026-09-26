@@ -47,6 +47,7 @@
 - [Spike D 长期架构全景验证规格](../../research/experiments/2026-09-25_spike-D_长期架构全景验证规格.md)：统一四套架构的恢复、备份、权限、provider、PPTX、目标软件和 SANDUN 体验 fixture，未执行。
 - [Spike D Fixture Manifest：季度经营汇报](../../research/experiments/2026-09-25_spike-D_fixture-manifest_季度经营汇报.md)：固定事实、冲突、排版、安全、角色和输出 manifest；**二进制材料已生成并通过 49/49 输入契约自检**（五件、hash 已回填），但四套架构一次未跑。
 - [冻结架构决策驱动与质量属性](issues/13-冻结架构决策驱动与质量属性.md)：质量属性、证据等级和硬淘汰条件已冻结；长期生产基础原则已明确要求第一天使用经评审的长期数据/文件/权限基础。
+- [引擎基座复用盘点](issues/02-引擎基座复用盘点.md)：**过活跃度硬门后仅 2 个候选**——Open XML SDK（C#，MIT）与 Apache POI（Java，Apache-2.0）；ShapeCrawler（头号88%）、PptxGenJS（停更15个月）、python-pptx（停更两年）、ppt-master（★56k但头号98%）、unioffice（商业许可）、officegen、gopptx/cjk-pptx-engine 全部淘汰；**Go 侧无过门候选**，该比较路径关闭；过门只表示获得被比较资格，**实现语言仍未锁定**。
 - [当前架构假设](issues/22-当前架构假设_单机自托管与PPTX专用流水线.md)：家族级形态冻结为「控制面 + durable workflow + 专用文档流水线 + PostgreSQL 事实库 + S3-compatible 对象合同 + 长期身份/审计/观测边界」；列出 9 条不可逆合同、7 类可延后但契约形状固定的实现、5 类明确排除的形态；不预判任何实现语言。单机部署前提已写入第 1.1 节。
 - [验收宿主与部署宿主分离](../../docs/adr/0013-验收宿主与部署宿主分离.md)：Linux Docker 是唯一部署形态，Windows 只是维护者侧质检与测量仪器；当前唯一验收宿主是 WPS 演示 11.8.2.8411，本机无 Microsoft PowerPoint，已按方案 A 接受为未验证并以保守余量与审计明示补强。
 
@@ -76,12 +77,13 @@
 
 ## Frontier
 
-当前处理 vendor 级反锚定调查：**[跨项目长期架构全景与反锚定调查](issues/21-跨项目长期架构全景与反锚定调查.md)**。形态已由上述「冻结长期架构形态」落定，该票现在只回答「具体 vendor 选哪个」。
+当前处理 **引擎能力对比**：**[引擎能力对比：Open XML SDK vs Apache POI（同题实测）](issues/23-引擎能力对比_SDK与POI同题实测.md)**。
 
-本票关闭前：不进入生产实现，不把旧答案写入 ADR，不提前定案实现语言（ADR-0003 仍 challenged，ADR-0009 仍 proposed）。14–20 的模块调查可按形态合同推进，但与 vendor 相关的结论必须等本票证据。
+活跃度门槛已筛完（票 02 关闭）：10 个候选只剩 2 个过门。接下来只回答一件事：
+**过门的两个候选，在我们的产品承诺上谁更强**——判据是 PPTX 交付本身，
+不是语言偏好。
+
+关闭前：不进入生产实现，不把旧答案写入 ADR，不提前定案实现语言
+（ADR-0003 仍 challenged，ADR-0009 仍 proposed）。
 
 （前沿票的具体内容以该票文件与 `Decisions so far` 索引为准；本段只声明当前锁定的票，不重复记录票内结论。）
-
-
-
-
