@@ -1,9 +1,11 @@
 # SANDUN 真实流程实测脚本（研究实验物 · 可丢弃）
 
-本目录记录**用真实账号走完整 SANDUN 流程**的脚本与产物，用于本项目的能力对照。
+本目录保留 2026-09-26 **用真实账号走完整 SANDUN 流程**的脚本与产物，作为立项前竞品研究的历史证据。
+
+**2026-09-28 工作边界**：后续仅在当前 Linux 本机研究和测试；旧 Windows/WPS 命令不是当前执行要求。历史账号授权不自动授权再次登录、建项目或消耗积分，本轮没有重跑这些操作。当前说明见 [开发与验证环境](../../../docs/开发与验证环境.md)。
 完整报告见 [`research/2026-09-26_SANDUN真实流程与产物实证.md`](../../2026-09-26_SANDUN真实流程与产物实证.md)。
 
-## 走通的流程
+## 历史记录中走通的流程
 
 ```text
 登录 → 建项目 → agent/start → 需求单(自动提交默认值)
@@ -33,7 +35,8 @@
 # { "account": "手机号", "password": "密码" }
 
 # 方式二：环境变量
-$env:SANDUN_ACCOUNT="..."; $env:SANDUN_PASSWORD="..."
+export SANDUN_ACCOUNT="..."
+export SANDUN_PASSWORD="..."
 ```
 
 会话 `token` 存于 `session.json`，同样被忽略。
@@ -54,15 +57,17 @@ $env:SANDUN_ACCOUNT="..."; $env:SANDUN_PASSWORD="..."
 
 ## 边界声明
 
-- 使用**所有者授权的测试账号**，消耗其积分（所有者明确表示无妨）；
+- 当时实验记录为使用**所有者授权的测试账号**并消耗积分；这是历史授权，不是当前可重复执行的授权；
 - 所有请求带 `Origin`/`Referer` 与真实 UA，**未绕过任何鉴权**，未调用未授权端点；
 - 下载产物是**我们自己的项目**的输出，非其官方案例；
-- 本目录属 ADR-0006 的「研究性 spike」，**可丢弃**，不进生产。
+- 本目录是**可丢弃的研究资产**，不构成产品脚手架或选型决定；旧工程 ADR 已清理。
 - 产物仅用于本项目研究对照，**不再分发**。
 
-## 复现
+## 历史执行记录（不是当前本机步骤）
 
-```bash
+以下保留原 Windows 命令用于追溯。无需恢复该环境；若后续确需重新采集，应先确定研究问题、本机可执行步骤与账号/费用授权。
+
+```powershell
 E:\Python312\python.exe research/experiments/sandun-live/flow.py login
 E:\Python312\python.exe research/experiments/sandun-live/flow.py create
 E:\Python312\python.exe research/experiments/sandun-live/flow.py start
@@ -74,7 +79,7 @@ C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe -NoProfile `
   -ExecutionPolicy Bypass -File research/experiments/sandun-live/probe_sandun.ps1
 ```
 
-导出端点（实测）：
+当时观察到的导出端点（不保证当前接口不变）：
 
 ```text
 POST /api/export/pptx            {"projectId": "..."}  → {jobId}

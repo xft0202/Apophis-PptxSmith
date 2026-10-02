@@ -1,5 +1,5 @@
 # 统一行尾为 LF，避免 Windows/Linux 贡献者之间的无意义 diff
-# （ADR-0007：服务端唯一支持 Linux Docker；仓库内文本必须跨平台一致）
+# 仓库文本保持跨平台一致；行尾规则不代表产品部署架构已经定案。
 * text=auto eol=lf
 
 # 显式声明文本类型，防止中文 Markdown 被误判为二进制

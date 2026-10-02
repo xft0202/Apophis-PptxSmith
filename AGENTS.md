@@ -2,11 +2,7 @@
 
 ### Issue tracker
 
-Issues and specs live as markdown files under `.scratch/<feature-slug>`. See `docs/agents/issue-tracker.md`.
-
-### Triage labels
-
-Use the default canonical labels: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, and `wontfix`. See `docs/agents/triage-labels.md`.
+Issues and specs live as GitHub issues. See `docs/agents/issue-tracker.md`.
 
 ### Domain docs
 
